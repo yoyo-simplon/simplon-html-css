@@ -1,0 +1,215 @@
+p
+{ 
+    color:#17bcee;
+}
+
+h1
+{ 
+    color:navy;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Uroob";
+    border: 2px solid rgb(0, 122, 96);
+    border-radius: 10px;
+    background: repeating-radial-gradient(farthest-side ellipse at center, rgb(14, 241, 241), rgb(230, 176, 235), rgb(76, 241, 241) 80px);
+}
+
+body
+{
+    background-image: url("back.jpeg");
+
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Chilanka",sans-serif;
+
+}
+
+
+img
+{
+    
+    
+    text-align: center;
+    display:flex;
+    justify-content:center;
+}
+
+.bordure2
+{
+    border: 2px solid rgb(0, 122, 96);
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(0, 77, 128);
+    background-color: rgb(58, 232, 245); 
+    transition-property: background-color; 
+    transition-duration: 1s; 
+}
+
+.bordure2:hover
+{
+
+background-color: pink
+}
+
+
+.bordure 
+{
+   border: 5px rgba(15, 5, 151, 0.692) double;
+}
+
+.conteneur
+{
+    display:flex;
+    justify-content: space-around;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.conteneur:hover
+{
+
+transform: translateX(200px); 
+}
+
+.conteneur2
+{
+    border:2px solid rgb(0, 122, 96)
+    
+}
+
+.games
+{
+    align-self: flex-end;
+}
+
+
+.height2
+{
+    height:250px;
+}
+
+
+section
+
+{
+
+    -webkit-column-count:3; 
+
+    -moz-column-count: 3; 
+
+    column-count: 3; 
+
+   
+
+}
+
+
+
+@keyframes transformation {
+
+    from {
+
+        transform: translateX(0px);
+
+    }
+
+
+    30% {
+
+        transform: translateX(150px);
+
+    }
+
+
+    60% {
+
+        transform: translateX(150px) rotate(30deg);
+
+    }
+
+
+    80% {
+
+        transform: translate(100px, 80px) rotate(30deg);
+
+    }
+
+
+    to {
+
+        transform: translate(100px, 80px) rotate(30deg);
+    }
+
+}
+
+
+
+
+
+
+#panda
+{
+    
+    
+    height:300px;
+
+}
+
+
+#panda:hover
+{
+
+        animation: transformation 2s;
+
+}
+
+
+
+
+.bulma
+{
+    height:600px;
+    display:flex;
+    justify-content: center;
+    transition-property: transform;
+    transition-duration: 1s;
+    
+}
+
+.bulma:hover
+{
+    transform: rotateY(360deg);
+
+}
+
+
+
+
+@keyframes heartbeat {
+    0% {
+      transform: scale( 1 );    
+    }
+    20% {
+      transform: scale( 1.25 ) 
+        translateX(5%) 
+        translateY(5%);
+    } 
+    40% {
+      transform: scale( 1.5 ) 
+        translateX(9%) 
+        translateY(10%);
+    }
+  }
+
+
+
+
+.imageflottante
+
+{
+    height: 150px;
+    float: both;
+    animation: heartbeat  1s infinite;
+
+}
