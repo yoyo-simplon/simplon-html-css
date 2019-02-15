@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    
+</head>
+<body>
+        <nav class="col-1">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#a_propos_titre">A propos</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#diplome">Diplome/Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="col-2">
+            <header><div id="nom_prenom">
+                        <p id="tg">TECHER<br />
+                        Guillaume</p>
+                        <p id="apprenant">Apprenant Simplon Réunion</p>
+
+
+
+
+
+                        <div id="v_container"><p><a href="#a_propos_titre">˅</a></p></div>
+                        
+
+
+
+
+
+
+
+
+                    </div>
+            </header>
+          <main class="content">
+          <article><p></p>
+        
+            <h2 id="a_propos_titre">A propos de moi ...</h2>
+            <div id="a_propos">
+                
+                <div id="a_propos_descr">
+                    <div id="photo"><img src="photo.jpeg" alt="une photo"></div>
+                    <p id="texte">Je suis actuellement un apprenant simplon réunion.</p>
+                </div>
+            </div>
+
+
+            <div id="diplome">
+                <h2>Diplome et formation</h2>
+                <div id="parcours">
+                    <div id="date">
+                        <p>2019</p>
+                        <p>2018</p>
+                        <p>2018</p>
+                        <p>2015</p>
+                    </div>
+                    <div id="formation">
+                        <p>Developpeur Web (Simplon Reunion)</p>
+                        <p>WordPress (Simplon Reunion)</p>
+                        <p>Méthodes agiles (Simplon Reunion)</p>
+                        <p>Technicien Informatique (Axiom)</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="cv">
+                <h2>Mon CV</h2>
+                <p id="txt_cv">Envie de consulté mon CV ?<br /></p>
+                <form id="btn_cv" action="CV Guillaume Techer.pdf">
+                    <input type="submit" value="Cliquez ici" />
+            </div>
+
+
+        </form>
+        <h2>Contact</h2>
+        <p id="contact">Merce de remplir ce forulaire pour me contacter :</p>
+        <form id="contact2" method="post" action="envoi.php">
+            <p class="ligneform"><label for="nom">Nom :</label><input class="champ" type="text" id="nom" name="nom" tabindex="1" /></p>
+                <p class="ligneform"><label for="email">Email :</label><input class="champ" type="text" id="email" name="email" tabindex="2" /></p>
+                <p class="ligneform"><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="50" rows="8"></textarea></p>
+            <div><input type="submit" name="envoi" value=" Envoyer " /></div>
+        </form>
+        
+        
+        </article>
+          </main>
+            <footer>2019-Guillaume TECHER ©</footer>
+        </div>
+</body>
+</html>
