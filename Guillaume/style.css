@@ -1,106 +1,185 @@
+/* <----CSS Tricks linear gradient on text---->
+
+  background: -webkit-linear-gradient(rgb(4, 49, 145), rgb(90, 117, 235));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/ 
+
+
+/* <-----Animations des h2---->
+
+h2:hover{
+  transform: translateX(10px); /* Animation des h2
+*/
+
+
+
+
+/* <----DEBUT LAYOUT----> */
 * {
   box-sizing: border-box; 
 }
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
 }
-.col-1 {
-  background: #D7E8D4;
+#main {
+  display: flex;
   flex: 1;
 }
-.col-2 {
-  display: flex;
-  flex-direction: column;
-  flex: 5;
-}
-.content {
-  display: flex;
-  flex-direction: row;
-}
-.content > article {
-  flex: 4;
-  min-height: 60vh;
-  
+#main > article {
+  flex: 1;
+  padding: 0;
+  margin: auto;
 }
 header, footer {
-  background: yellowgreen;
   height: 20vh;
 }
-header{
-  font-size: 80px;
-    font-family: roboto;
-    text-align: center;
-    background: cornflowerblue;
-    color: white;
-    padding: 50px 0;
-    margin: 0;
-    padding: 0% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+header, footer, article{
+  padding: 1em;
+}
+footer{
+  background: #444;
+  color: #fff;
+}
 
+/* ----FIN LAYOUT---- */
+
+
+
+
+
+/* ----DEBUT MENU---- */
+#menu{
+  font-size: 1vw;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(#2f2f2f99,#1e1e1e66);
+  z-index: 99;
+  font-weight: bold;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+li{
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
+  transition-property: background-color; /* transition background-color */
+  transition-duration: 0.5s; /* transition 1s */
+  color: white;
+  font-family: 'Comfortaa', cursive;
+}
+li > i{
+  padding-right: 0.5vmin;
+}
+ul > a{
+  text-decoration: none;
+}
+li:hover{
+  background-color: #348bed99;
+  color: #fff;
+}
+/* ----FIN MENU---- */
+
+
+
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(54, 133, 236);
+  text-shadow: 1px 1px 0px #575757;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease; /* Transition de type ease */
+  margin: 0;
+  position: relative;
+  top: -7vh;
+}
+
+
+/* ----DEBUT SECTION ACCUEIL---- */
+#sectionAccueil{
+  background:url('code2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
-
-  background-image: radial-gradient(circle, #5895ff, #091163);
-
+  font-size: 10vmin;
+  color: white;
 }
 #tg{
   margin: 0;
-  margin-left: 176px;
-  padding-top: 40vh;
-}
-
-#apprenant{
-  font-size: 20px;
+  position: relative;
+  top: 40vh;
   text-align: center;
-  margin-left: 176px;
-  padding-top: 10vh;
+  font-family: 'Comfortaa', cursive;
 }
-
+#apprenant{
+  font-size:3vmin;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
 .arrow-down.icon {
-  color: #000;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 2px;
-  width: 1px;
-  height: 16px;
-  background-color: currentColor;
+  *color: #000;
+  *position: absolute;
+  *margin-left: 10px;
+  *margin-top: 2px;
+  *width: 1px;
+  *height: 16px;
+  *background-color: currentColor;
 }
-
-
-
-header, footer, article, nav {
-  padding: 1em;
-  
-}
-
 #v_container{
-  padding-left: 170px;
-  
+  text-align: center;
+  animation: rebond 1s infinite;
+  position: relative;
+  top: 50vh;
+  font-size: 8vmin;
 }
-
 #v_container > p > a{
   text-decoration: none;
   color: white;
   text-align: center;
-  
+}
+@keyframes rebond {
+    0% {transform: translatey(0px);}
+    50% {transform: translatey(40%);}
+    100% {transform: translatey(0px);}
+}
+/* ----FIN SECTION ACCUEIL---- */
 
-  
-  
+
+
+
+
+#section2, #section3, #section3b, #section4, #section5{
+  margin: 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  font-size: 3vmin;
+  font-family: 'Comfortaa', cursive;
 }
 
 
 
 
-
-article{
-  margin-left: 176px;
+/* ----DEBUT SECTION 2---- */
+#section2{
+  background: #bdd4e7;
+  height: 170vh;
 }
-
 #a_propos_descr{
   display: flex;
   justify-content: space-evenly;
@@ -109,33 +188,139 @@ article{
 #photo{
   margin-right: 3%;
 }
-
-h2{
+img{
+  height: 40vmin;
+  border-style: solid;
+  border-width: 10px 10px 50px 10px;
+  border-color: white;
+  background: linear-gradient(rgb(194, 194, 194), rgb(98, 92, 78));
+  border-radius: 5px;
+}
+q{
+  font-size: 50px;
+  quotes:'«' '»'; /*Active les guillemets normale...*/
+  font-size: 3vmin;
+}
+#texte{
+  background: -webkit-linear-gradient(rgb(4, 49, 145), rgb(90, 117, 235));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+}
+#compétence{
+display: flex;
+justify-content: space-evenly;
+}
+.titre_comp > i{
+  position: relative;
+  top: -4vh;
+  font-size: 7vw;
+  color: #3684e9;
+}
+.titre_comp{
+  display: flex;
+  flex-direction: column;
+  width: 27vw;
   text-align: center;
-  padding-top: 100px;
-  text-transform: uppercase;
-  color: rgb(110, 171, 252);
-
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease; /* Transition de type ease */
+  position: relative;
+  top: 17vmin;
+  font-size: 1.5vw;
 }
-
-h2:hover{
-  transform: translateX(100px); /* On déplace l'objet */
+.texte_comp{
+  /*font-size: 2.2vmin;*/
+  text-align: justify;
+  position: relative;
+  top: 4vmin;
+  font-size: 1.2vw;
 }
-#parcours{
+/* ----FIN SECTION 2---- */
+
+
+
+
+/* ----DEBUT SECTION 3---- */
+#section3{
+  background: #aab9cf;
+}
+#parcours_date{
   display:flex;
   justify-content: center;
+  background: -webkit-linear-gradient(rgb(4, 49, 145), rgb(90, 117, 235));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#parcours{
+  margin-left: 3%;
+
+          /* <------En construction------> 
+          2013 - 2014
+          Obtention du titre professionnel de technicien informatique
+          Formation de 15 mois incluant plusieurs périodes de stages en entreprises. Participation au déploiements de postes du conseil général. Remise en état d’ordinateurs. Installation et configuration de serveurs virtualisés. 
+
+          2014 - 2017
+          Autoformations : photographie, photomontages, modélisation 3D
+          Apprendre la photographie était pour moi un projet qui me tenais a cœur. Durand cette période j’ai acquis une certaine maîtrise concernant la prise de photos, la connaissance des éléments d’un appareil photo. Du développement numérique a l’aide de logiciel dédié Darktable, Lightroom, Photoshop et GIMP. Le photomontage avec Photoshop, La création d’image 3D à l’aide de Blender.
+
+
+          2017-2018
+          Technicien informatique
+          Installations Windows et Linux, remise en état d’ordinateur et d’imprimante. Création d’un serveur web et serveur proxy. Création de site Web WordPress. Création de clé usb multiboot. Récupération de données et effacement définitif de données d’un disque dur. Utiliser les langage Html et Css pour la création de site Web. 
+
+          */
+}
+/* ----FIN SECTION 3---- */
+
+
+
+/* ----DEBUT SECTION 3b---- */
+#section3b{
+  background: #8fa1bd;
+  height: 100vh;
+}
+/* ----FIN SECTION 3b---- */
+
+
+input[type=submit]{
+  width: 15vmin;
+  height: 10vmin;
+  font-size: 2vmin;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(37, 37, 37);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+input[type=submit]:hover{
+  background-color: rgb(37, 37, 37); /* Black */
+  color: white;
+  cursor: pointer;
 }
 
-#formation{
-  margin-left: 3%;
+
+
+
+/* ----DEBUT SECTION 4---- */
+#section4{
+  background: #8693ab;
+  align-items: center;
 }
 #txt_cv, #btn_cv{
   text-align: center;
 }
+/* ----FIN SECTION 4---- */
 
+
+
+
+
+/* ----DEBUT SECTION 5---- */
+#section5{
+  height: 100vh;
+  background: #637074;
+}
 #contact2{
   display: flex;
   flex-direction: column;
@@ -145,55 +330,19 @@ h2:hover{
   display: flex;
 }
 label{
-  width: 150px;
+  width: 10vw;
 }
 #contact{
   text-align: center;
 }
 #message, #email, #nom{
-  width: 240px;
+  width: 76vmin;
+  font-size: 2vmin;
 }
-nav{
-  padding-left: 0;
-  padding-right: 0;
-  padding: 0;
-  
-}
-.col-1{
-  background: #444;
-  position: fixed;
-  height: 100%;
-}
-ul{
-  padding: 0;
-  margin: 0;
-}
+/* ----FIN SECTION 5---- */
 
-li{
-  padding: 10px 0;
-  list-style-type: none;
-  padding-left: 0;
-  background: #444;
-  text-align: center;
-  transition-property: background-color; /* Active la transition sur background-color */
-  transition-duration: 0.5s; /* La transition dure 1s */
-}
 
-li > a{
-  color: #fff;
-  text-decoration: none;
-  *padding: 10px 0;
-  padding: 0 10px;
-}
 
-li:hover{
-  background-color: red;
-  text-decoration: underline;
-  color: #fff;
-}
 
-footer{
-  padding-left: 176px;
-  background: #444;
-  color: #fff;
-}
+
+
