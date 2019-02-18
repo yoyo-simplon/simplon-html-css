@@ -1,0 +1,113 @@
+.content{
+    width:1020px;
+    height: 1010px;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    flex-wrap: nowrap;
+}
+
+body{
+    height: 1020px;
+    background-image: url("../images/bg.jpg");
+    background-attachment: fixed;
+}
+.main{
+    width: 1020px;
+    height: 100%;
+    margin: 0px;
+    background-color: white;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav li{
+    display: flex;
+
+}
+nav li a{
+    color:white;
+
+}
+nav a:visited{
+   color: #cfa205;
+}
+nav{
+    width: 1020px;
+    height: 60px;
+    justify-items: center;
+}
+.header{
+    width: 1020px;
+    height: 440px;
+    background-color: black;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.titre{
+    font-size: 133px;
+    height: 320px;
+}
+.social{
+    height: 60px;
+    background-color: lightgrey;
+    
+}
+
+.intro, .article{
+    background-color: white;
+}
+.article{
+width: 900px;
+height: 675px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+justify-items: center;
+
+}
+.article img{
+width:260px;
+height:195 ;
+}
+
+.article p{
+    width: 260px;
+    height: 480px;
+    font-size: 14px;
+    color:#7a7a7a ;
+    font-family: "Josefin Sans","Bitter";
+}
+h4{
+    font-size: 18px;
+}
+.intro{
+    width: 900px;
+    height: 90px;
+    justify-items: center;
+    align-items: center;
+    color:#7a7a7a;
+    margin-top: 60px;
+}
+.titre p:nth-child(1){
+font-size: 133px;
+color:#cfa205;
+}
+.titre p:nth-child(2){
+    font-size: 18px;
+color:#cfa205;
+}
+h1, h3{
+    justify-content: center;
+}
+
