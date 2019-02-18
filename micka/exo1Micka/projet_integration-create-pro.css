@@ -1,0 +1,70 @@
+body {
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    height: 1010px;
+    width: 1410px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+}
+
+.header {
+    color: gold;
+    text-align: center;
+    font-size: 100px;
+    background-color: black;
+    height: 320px;
+    width: 1020px;
+
+}
+
+.social {
+    background-color: darkgrey;
+    height: 60px;
+    width: 1020px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+
+}
+
+.intro {
+    background-color: white;
+    height: 90px;
+    width: 900px;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.corps {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ul {
+    list-style: none;
+    flex-direction: row;
+    align-items: flex-start;
+}

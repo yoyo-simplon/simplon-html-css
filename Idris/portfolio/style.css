@@ -1,25 +1,37 @@
 body
 {
-    text-align: center;
+    background-color: rgba(109, 139, 62, 0.322);
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGAAhfEwioZ5B-8ikbnq7i5zaLB-l0acZLaHgcjvY9IndEN1oDg);
 }
 
 #identité
 {
+    background-color: rgba(109, 139, 62, 0.322);
+}
+
+.nom
+{
+    text-align: center;
     font-size: 50px;
-    background-color: rgba(109, 139, 62, 0.322); 
+}
+
+.prenom{
+    text-align: center;
+    font-size: 50px;
 }
 
 #description
 {
-    font-size: 30px;
-    display: flex;
+    display:flex;
     justify-content: space-around;
+    font-size: 30px;
     background-color: rgba(109, 139, 62, 0.322);
+
 }
 
 #formulaire
 {
-    justify-content: center;
+    text-align: center;
     font-size: 30px;
     background-color: rgba(109, 139, 62, 0.322);
 }
