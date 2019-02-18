@@ -1,0 +1,9 @@
+/*.block_page{
+    background-image: url("../img/bg.jpg");
+    background-size: 50%;
+}*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
