@@ -48,7 +48,7 @@ width: 900px;
 #bloc_article
 {
     height:675px;
-    width: 900px;
+    width:900px;
     display: flex;
     justify-content: space-between;
 
@@ -57,7 +57,7 @@ width: 900px;
 
 #article1 
 {
-   
+   width: 195px;
 }
 
 #img_article1
@@ -74,7 +74,7 @@ width: 900px;
 
 #article2 
 {
-    
+    width: 195px;
 }
 
 #img_article2
@@ -92,7 +92,7 @@ width: 900px;
 
  #article3 
  {
-     
+    width: 195px;
 
  }
 
