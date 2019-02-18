@@ -8,7 +8,9 @@ font-family: 'Bitter', serif;*/
 
 body
 {
-    background: 
+    background-image: url(../img/bg.jpg);
+    width: 1020px;
+    margin: auto;
 }
 #menu {
 height: 60px;
