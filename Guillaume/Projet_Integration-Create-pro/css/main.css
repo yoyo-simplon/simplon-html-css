@@ -103,5 +103,7 @@ width: 900px;
 
 body
 {
-    background: 
+    background-image: url("../img/bg.jpg");
+    width: 1020px;
+    margin: auto;
 }
