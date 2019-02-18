@@ -8,16 +8,32 @@ font-family: 'Bitter', serif;*/
 
 body
 {
-    background: 
+    background-image: url(../img/bg.jpg);
+    width: 1020px;
+    margin: auto;
 }
 #menu {
 height: 60px;
 width: 1020px;
+background: black;
 }
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+    padding: 0 10px;
+  }
 
 #baniere {
     height: 320px;
     width: 1020px;
+    background: black;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #titre_baniere
@@ -36,13 +52,14 @@ width: 1020px;
 
 #main
 {
-    
+    background: white;
 }
 
 #txt_central 
 {
 height: 90px;
 width: 900px;
+text-align: center;
 }
 
 #bloc_article
