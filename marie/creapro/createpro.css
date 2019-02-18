@@ -1,0 +1,73 @@
+
+    body
+    {
+     background-image: url("images/bg.jpg");
+    }
+
+    header
+    {
+        background-color: black;
+        width: 1020px;
+        display: flex;
+        margin-left: 200px;
+    }
+
+
+  .banner
+  {
+background-color: #e8e8e8;
+width: 1020px;
+height: 60px;
+margin-left: 200px;
+  }
+
+    h1
+ {
+    color: #cfa205;
+    font-size: 133px;
+    text-align: center;
+    background-color: black;
+ }
+   
+    
+    h2
+    {
+    color: #cfa205;
+    font-size: 18px;
+    text-align: center;
+    }
+    
+    .intro
+    {
+        color: #7a7a7a;
+        font-size: 14px;
+        text-align: center;
+    }
+    .menulist
+    {
+        background-color: black;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section
+    {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 1020px;
+        height: 500px;
+        margin-left: 200px;
+     
+     }
+
+
+    .images
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
