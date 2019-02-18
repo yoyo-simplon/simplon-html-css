@@ -6,6 +6,10 @@
 /*font-family: 'Josefin Sans', Sans-serif;
 font-family: 'Bitter', serif;*/
 
+body
+{
+    background: 
+}
 #menu {
 height: 60px;
 width: 1020px;
@@ -60,6 +64,9 @@ text-align: center;
 {
     height:675px;
     width: 900px;
+    display: flex;
+    justify-content: space-between;
+
 
 }
 
@@ -116,9 +123,3 @@ text-align: center;
     width: 260px;
 }
 
-body
-{
-    background-image: url("../img/bg.jpg");
-    width: 1020px;
-    margin: auto;
-}
