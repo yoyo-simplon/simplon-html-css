@@ -1,0 +1,50 @@
+.block_page{
+    background-image: url("../img/bg.jpg");
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;}
+
+nav{
+    background-color: blue;
+    width: 1020px;
+    height: 60px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-items: center; 
+    justify-content: space-around; 
+}
+
+a:link{
+    text-decoration: none;
+}
+
+nav li{
+    margin-right: 15px;
+   }
+
+nav a{
+    color: white;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: goldenrod;
+    font-size: 60px;
+}
+
+h3{
+    color: goldenrod;
+    font-size: 12px;
+}
+
+

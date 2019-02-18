@@ -1,0 +1,162 @@
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: row;
+     margin: 0;
+ }
+ 
+ .col-1 {
+     background: deepskyblue;
+     flex: 1;
+     display: -webkit-box;
+     display: -moz-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: flex-end;
+ }
+ 
+ .content p {
+     width: 500px;
+ }
+ 
+ .col-2 {
+     display: flex;
+     flex-direction: column;
+     flex: 5;
+ }
+ 
+ header {
+     display: flex
+ }
+ 
+ .cadre {
+     background-color: rgba(255, 255, 255, 0.5);
+     height: 900px;
+     width: 900px;
+ }
+ 
+ .comp {
+     display: flex;
+ }
+ 
+ .dev {
+     flex: 1 1 auto;
+ }
+ 
+ .mus {
+     flex: 1 1 auto;
+ }
+ 
+ .graph {
+     flex: 1 1 auto;
+ }
+ 
+ #circuit {
+     display: block;
+     max-width: 100px;
+     max-height: 100px;
+     width: auto;
+     height: auto;
+     filter: invert(100%)
+ }
+ 
+ #circuit:hover {
+     transition-property: transform;
+     transition-duration: 1s;
+     transition-timing-function: ease;
+ }
+ 
+ .navul {
+     list-style: none;
+     margin: 0;
+     background: deepskyblue;
+ }
+ 
+ .navul a {
+     text-decoration: none;
+     display: block;
+     padding: 1em;
+     color: black;
+     text-align: center;
+     padding: 10px;
+     border-top: 1px solid rgba(255, 255, 255, 0.3);
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
+ 
+ .a1:hover {
+     background: darken(#D7E8D4, 2%);
+ }
+ 
+ @media all and (max-width: 800px) {
+     .navigation {
+         justify-content: space-around;
+     }
+ }
+ 
+ @media all and (max-width: 600px) {
+     .navigation {
+         -webkit-flex-flow: column wrap;
+         flex-flow: column wrap;
+         padding: 0;
+     }
+ }
+ 
+ .moi {
+     background-image: url("sources/tokyo-skyline.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 1200px;
+     width: 1200px;
+ }
+ 
+ .cv {
+     background-image: url("sources/tokyo2-skyline.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 1200px;
+     width: 1200px;
+ }
+ 
+ .créations {
+     background-image: url("sources/yokohama-skyline.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 1200px;
+     width: 1200px;
+ }
+ 
+ .content {
+     flex-direction: column;
+     display: flex;
+ }
+ 
+ .article {
+     flex-direction: column;
+     flex: 3;
+     min-height: 60vh;
+ }
+ 
+ .aside {
+     background: beige;
+     flex: 1;
+ }
+ 
+ header,
+ footer {
+     background: navy;
+     height: 20vh;
+ }
+ 
+ header,
+ footer,
+ article,
+ nav,
+ aside {
+     padding: 1em;
+ }
