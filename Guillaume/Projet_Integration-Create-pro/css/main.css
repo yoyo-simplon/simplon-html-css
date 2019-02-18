@@ -84,7 +84,7 @@ li{
 }
 
 #réseaux_sociaux div{
-    width: 100%;
+    width: 26%;
     display: flex;
     justify-content: space-evenly;
 }
