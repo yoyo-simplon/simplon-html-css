@@ -50,7 +50,8 @@ width: 900px;
     height:675px;
     width: 900px;
     display: flex;
-    flex-direction:column;
+    justify-content: space-between;
+
 
 }
 
