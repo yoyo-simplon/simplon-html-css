@@ -60,6 +60,7 @@ li{
 height: 90px;
 width: 900px;
 text-align: center;
+margin: auto;
 }
 
 #bloc_article
@@ -68,13 +69,14 @@ text-align: center;
     width:900px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 
 
 }
 
 #article1 
 {
-   width: 195px;
+   width: 260px;
 }
 
 #img_article1
@@ -91,7 +93,7 @@ text-align: center;
 
 #article2 
 {
-    width: 195px;
+    width: 260px;
 }
 
 #img_article2
@@ -109,7 +111,7 @@ text-align: center;
 
  #article3 
  {
-    width: 195px;
+    width: 260px;
 
  }
 
