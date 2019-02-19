@@ -5,6 +5,7 @@ body {
 #conteneurphoto
 {
         display: flex;
+        outline: 2px solid blue;
 }
 
 .elementphoto 
@@ -13,7 +14,7 @@ body {
         column-width: 260px;
         column-gap: 3px;  
 }
-#conteneurtitre
+h1
 {
         display: flex;
         justify-content: center
@@ -50,10 +51,13 @@ ul {
     display:block;
     float:left;   
     width:200px;
- /*   line-height:50px; hauteur de l'image de fond
-    background:black url(images/noir-1.png) repeat-x;
- */   color: white; 
+color: white; 
     text-decoration:none;
     text-align:center;
     }
 
+   .menu {
+            display: flex;
+            justify-content: center;
+                
+    } 
