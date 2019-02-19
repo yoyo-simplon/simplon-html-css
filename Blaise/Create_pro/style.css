@@ -22,21 +22,38 @@ nav{
 
 }
 
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+
+
 }
 
 
 .titres{
     display: flex;
-    justify-content: center;
-    align-items: center; 
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     height: 320px;
     width: 1020px;
-    color: white;
+    color:#cfa205;
+
+    
+}
+
+.titres h1{
+
+    font-size: 130px;
+    margin: 0px;
 
 }
 
@@ -46,15 +63,23 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 18px;
 
 }
 
 .reseauxsociaux{
 
-    background-color:#e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: grey;
     height: 60px;
     width: 1020px;
 
+}
+
+.reseauxsociaux i{
+    font-size: 25px;
 }
 
 .impression{
@@ -69,10 +94,11 @@ ul{
 }
 
 section{
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: blue;
+    background:white;
     height: 675px;
     width: 900px;
 
@@ -81,9 +107,10 @@ section{
 article{
 
 
-    background: grey;
+    background: white;
     height: 675px;
     width: 260px;
+    font-size: 14px;
 
 }
 
@@ -98,5 +125,6 @@ img{
 .impressionsection{
 
     padding: 60px;
+    background-color: white;
 
 }
