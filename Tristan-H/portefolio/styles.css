@@ -131,7 +131,7 @@
      width: 1200px;
  }
  
- .content {
+ section {
      flex-direction: column;
      display: flex;
  }
