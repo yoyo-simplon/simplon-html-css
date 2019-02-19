@@ -6,4 +6,17 @@ header{
     background: #bf0f00;
     height: 200px;
     width: 100%;
+    
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+justify-content: flex-start;
+
+}
+
+li {
+    margin-right: 15px;
 }
