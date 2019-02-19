@@ -1,0 +1,130 @@
+body{
+display: flex;
+justify-content: center;
+background-size: cover;
+background-image: url(images/bg.jpg);
+height: 1010px;
+width: 1400px;
+
+}
+
+header{
+
+     background-color: black;
+
+}
+
+
+nav{
+
+    height: 60px;
+    width: 1020px;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+
+.titres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 320px;
+    width: 1020px;
+    color:#cfa205;
+
+    
+}
+
+.titres h1{
+
+    font-size: 130px;
+    margin: 0px;
+
+}
+
+
+.titres ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+
+}
+
+.reseauxsociaux{
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: grey;
+    height: 60px;
+    width: 1020px;
+
+}
+
+.reseauxsociaux i{
+    font-size: 25px;
+}
+
+.impression{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 90px;
+    width: 900px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:white;
+    height: 675px;
+    width: 900px;
+
+}
+
+article{
+
+
+    background: white;
+    height: 675px;
+    width: 260px;
+    font-size: 14px;
+
+}
+
+img{
+
+    background-color: red;
+    height: 195px;
+    width: 260px;
+
+}
+
+.impressionsection{
+
+    padding: 60px;
+    background-color: white;
+
+}
