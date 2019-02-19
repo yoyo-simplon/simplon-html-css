@@ -1,6 +1,8 @@
 body
 {
     background: url("images/bg.jpg");
+    font-family: 'Bitter', serif;
+    font-size: 18px;
              
 }
 
@@ -10,19 +12,22 @@ header
     width: 1020px;
     display: flex;
     margin-left: 200px;
+    justify-content: center;
 }
 
-h1
+.h1
 {
+    font-family: 'Josefin Sans', sans-serif;
     color: #cfa205;
     font-size: 133px;
-    text-align: center;
+    
     background-color: black;
+    
       
 }
 
 
-h2
+.h2
 {
     color: #cfa205;
     font-size: 18px;
@@ -42,6 +47,7 @@ h2
 .menulist
 {
     background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -80,5 +86,15 @@ section
 
 
 
+.link
+{
+    color:#cfa205;
+    text-decoration:none;
+}
 
+.link2
+{
+    color:white;
+    text-decoration:none;
+}
 
