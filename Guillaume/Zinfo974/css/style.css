@@ -6,7 +6,6 @@ header{
     background: #bf0f00;
     height: 200px;
     width: 100%;
-<<<<<<< HEAD
     
 }
 
@@ -20,7 +19,6 @@ justify-content: flex-start;
 
 li {
     margin-right: 15px;
-=======
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,5 +28,4 @@ li {
     height: 50px;
     justify-self: right;
     margin-right: 10px;
->>>>>>> bed6dc5a2c9fac79f087f8bf23002e54d63222ae
 }
