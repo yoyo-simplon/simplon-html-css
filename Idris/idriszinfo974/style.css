@@ -1,0 +1,89 @@
+.barre_bleu
+{
+    background-color: blue;
+    height: 10px;
+
+}
+
+.entete img
+{
+
+height: 100px;
+width: 100px;
+
+}
+
+.reseauxsociaux i
+{
+    font-size: 50px;
+}
+
+.entete
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    height: 200px;
+    border-color: black;
+    margin-bottom: 0px;
+    font-size : 20px;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40px;
+    background:grey;
+    margin-top: 0px;
+    align-items: center;
+
+}
+
+section
+{
+
+display: flex;
+flex-direction: row;
+background-color: red;
+border: 2px black solid;
+height: 700px;
+width: 1350px;
+margin-bottom: 20px;
+
+
+}
+
+article
+{
+
+border: 2px black solid;
+width: 100%;
+
+}
+
+.blocpage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer
+{
+    height: 200px;
+    background-color: blue;
+}
+
+.li input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
