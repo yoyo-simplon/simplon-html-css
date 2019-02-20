@@ -69,10 +69,12 @@ text-decoration: none;
 {
 display: flex;    
 flex-direction: column;
+width: 60%;
 }
 
 .article
 {
     display: flex;
+    
 }
 
