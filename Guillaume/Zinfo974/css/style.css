@@ -2,6 +2,7 @@ body{
     margin: auto;
 
 }
+
 header{
     display:flex;
     background: #bf0f00;
@@ -211,33 +212,3 @@ footer{
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
