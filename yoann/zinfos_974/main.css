@@ -174,4 +174,10 @@ figcaption {
     i {
         font-size: 1.3em;
     }
+
+    nav img{
+        width:auto;
+        height:auto;
+        max-width:80px;
+    }
 }
