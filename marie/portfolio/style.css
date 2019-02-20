@@ -1,0 +1,56 @@
+/*elements de la page principal*/
+body
+{
+background-color: lightgreen;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+}
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+  
+}
+
+#titre
+{
+    text-align: center;
+}
+h1
+{
+font-family: fantasy;
+font: bold;
+text-transform: uppercase
+ 
+}
+
+h2
+{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font: normal;
+text-transform: uppercase;
+}
+
+h3
+{
+font-family: Arial, Helvetica, sans-serif;
+font: normal;
+text-transform: uppercase;
+}
+
+#banner_image
+{
+    background-size: cover;
+    width: 100px;
+    height: 40px;
+}
+
+#section1
+{
+color: white;
+}
+
+#section1
+{
+    background-color: aquamarine
+}
