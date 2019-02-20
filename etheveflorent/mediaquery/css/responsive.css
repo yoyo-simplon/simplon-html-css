@@ -1,0 +1,13 @@
+@media screen and (max-width:900px){
+    .content{
+        max-width: 900px;
+
+    }
+    .titre p{
+        font-size: 115px;
+    }
+    .main{
+        max-width: 900px;
+    }
+
+}

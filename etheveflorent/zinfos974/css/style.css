@@ -1,0 +1,102 @@
+.content{
+    width: 1020px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+   margin-top: 30px;
+}
+#social{
+    position: absolute;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+header{
+    height: 500px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        outline: 1px solid yellow;
+}
+
+#logo{
+margin-right: 10px;
+    width:100px;
+}
+#menu_haut{
+    width:800px;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    outline: 1px solid black;
+}
+#navigation{
+    width: 850px;
+}
+#navigation ul{
+    list-style: none;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+   
+}
+#navigation li{
+    margin-right: 30px;
+
+}
+
+#carousel{
+    width: 1020px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.article{
+    display:flex;
+    flex-direction: row;
+    width: 1000px;
+
+}
+.article img{
+    width: 800px;
+    margin: 20px;
+}
+.sous_article1{
+    display: flex;
+    flex-direction: column;
+}
+.sous_article1 img{
+    width: 440px;
+}
+.sous_article2{
+    display: flex;
+    flex-direction: row;
+}
+.sous_article2 img{
+width: 200px;
+    
+}
+#main{
+    display: flex;
+    flex-direction: column;
+}
+#main button{
+margin-left: 50%;
+width: 100px;
+}
+
+.pages img{
+    width: 30px;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+#social img{
+    width: 30px;
+}
