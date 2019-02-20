@@ -56,4 +56,23 @@ text-decoration: none;
 {
     align-self: right;
     text-align: right;
+    position: absolute;
+    right: 0%;
 }
+
+#blocmain
+{
+    display: flex;
+}
+
+#blocarticle
+{
+display: flex;    
+flex-direction: column;
+}
+
+.article
+{
+    display: flex;
+}
+
