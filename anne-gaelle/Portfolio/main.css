@@ -323,7 +323,7 @@ textarea:focus {
 
 hr {
     width: 50%;
-    background-color: #632C65;
+    border: 1px outset black;
 }
 
 fieldset {
