@@ -63,6 +63,8 @@ text-decoration: none;
 #blocmain
 {
     display: flex;
+    height: 700px;
+    
 }
 
 #blocarticle
@@ -70,8 +72,15 @@ text-decoration: none;
 display: flex;    
 flex-direction: column;
 width: 60%;
+justify-content: space-around;
 }
 
+#blocvideo
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
 .article
 {
     display: flex;
