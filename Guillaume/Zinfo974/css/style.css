@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+
+}
+header{
+    background: #bf0f00;
+    height: 200px;
+    width: 100%;
+    
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+justify-content: flex-start;
+
+}
+
+li {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#bouton_connexion{
+    height: 50px;
+    justify-self: right;
+    margin-right: 10px;
+}

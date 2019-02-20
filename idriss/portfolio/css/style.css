@@ -1,0 +1,71 @@
+@font-face{
+    font-family:'mapolice';
+    src: url('GreatVibes-Regular.otf')
+}
+p
+{
+   color: rgb(0, 255, 191);
+    font-size: 25px;(107, 25, 25)
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align:justify;
+
+
+}
+.nom
+{color: whitesmoke;
+font-family: 'mapolice';
+font-size: 35px;
+text-align:center;
+}
+h1
+{
+    color: red;
+    font-size: x-large;
+    opacity: 0.6;
+}
+.test
+{
+    color: greenyellow;
+    text-align: right
+}
+.black
+{
+    color: purple;
+    text-decoration: underline;
+
+}
+.test2
+{
+font-family:'mapolice';
+color: rgb(218, 32, 88);
+text-align: center;
+
+}
+body
+{
+    background-color:lightskyblue;
+    color: white;
+    background: url("images/coq.jpg") top left;
+}
+ul
+{
+    color:yellow;
+    font-size: 18px;
+
+}
+ol
+{
+    color:green;
+    font-size: 18px;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    
+}
+mark
+{
+    background-color:orangered;
+    color: blueviolet ;
+}

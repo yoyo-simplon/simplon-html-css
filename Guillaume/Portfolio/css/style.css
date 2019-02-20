@@ -226,6 +226,7 @@ justify-content: space-evenly;
   position: relative;
   top: 17vmin;
   font-size: 1.5vw;
+  margin-bottom: 15vh;
 }
 .texte_comp{
   /*font-size: 2.2vmin;*/
@@ -233,7 +234,13 @@ justify-content: space-evenly;
   position: relative;
   top: 4vmin;
   font-size: 1.2vw;
+  hyphens: auto;
 }
+div.titre_comp:nth-child(3){
+  margin-bottom: unset;
+}
+
+
 /* ----FIN SECTION 2---- */
 
 
@@ -253,22 +260,6 @@ justify-content: space-evenly;
 }
 #parcours{
   margin-left: 3%;
-
-          /* <------En construction------> 
-          2013 - 2014
-          Obtention du titre professionnel de technicien informatique
-          Formation de 15 mois incluant plusieurs périodes de stages en entreprises. Participation au déploiements de postes du conseil général. Remise en état d’ordinateurs. Installation et configuration de serveurs virtualisés. 
-
-          2014 - 2017
-          Autoformations : photographie, photomontages, modélisation 3D
-          Apprendre la photographie était pour moi un projet qui me tenais a cœur. Durand cette période j’ai acquis une certaine maîtrise concernant la prise de photos, la connaissance des éléments d’un appareil photo. Du développement numérique a l’aide de logiciel dédié Darktable, Lightroom, Photoshop et GIMP. Le photomontage avec Photoshop, La création d’image 3D à l’aide de Blender.
-
-
-          2017-2018
-          Technicien informatique
-          Installations Windows et Linux, remise en état d’ordinateur et d’imprimante. Création d’un serveur web et serveur proxy. Création de site Web WordPress. Création de clé usb multiboot. Récupération de données et effacement définitif de données d’un disque dur. Utiliser les langage Html et Css pour la création de site Web. 
-
-          */
 }
 /* ----FIN SECTION 3---- */
 
@@ -341,8 +332,49 @@ label{
 }
 /* ----FIN SECTION 5---- */
 
-
-
-
+/*----DEBUT MEDIAS QUERIES----*/
+@media screen and (max-width: 1020px) {
+  body{
+    width: auto;
+  }
+  #menu{
+    width: auto;
+  }
+  ul{
+    font-size: 3vw;
+    flex-wrap:wrap;
+  }
+  #tg{
+    font-size: 15vmin;
+  }
+  #apprenant{
+    font-size: 4vw;
+  }
+  #compétence{
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titre_comp{
+    width: 60vw;
+    font-size: 25px;
+  }
+  .texte_comp{
+    font-size: 18px;
+  }
+  #section2{
+    width: auto;
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 450px){
+  #section2{
+    width: auto;
+  }
+  .texte_comp{
+    font-size: 13px
+  }
+}
+/*----FIN MEDIAS QUERIES----*/
 
 

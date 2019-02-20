@@ -1,12 +1,13 @@
 body
 {
-    background-color: rgba(109, 139, 62, 0.322);
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGAAhfEwioZ5B-8ikbnq7i5zaLB-l0acZLaHgcjvY9IndEN1oDg);
 }
 
+
 #identité
 {
-    background-color: rgba(109, 139, 62, 0.322);
+
+    background-color:rgb(226, 226, 114);
 }
 
 .nom
@@ -25,15 +26,24 @@ body
     display:flex;
     justify-content: space-around;
     font-size: 30px;
-    background-color: rgba(109, 139, 62, 0.322);
+    background-color: rgb(226, 226, 114);
 
+}
+
+a
+{
+display: flex;
+justify-content: center;
 }
 
 #formulaire
 {
     text-align: center;
     font-size: 30px;
-    background-color: rgba(109, 139, 62, 0.322);
+    background-color: rgb(226, 226, 114);
+    padding-bottom: 5px;
+    margin-top: 50px;
+
 }
 
 @keyframes maphoto {
