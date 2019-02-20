@@ -2,8 +2,9 @@ body
 {
     
     font-family: Arial, serif;
-    color: #E45523;
-    margin: 0px; 
+    color: rgb(255, 255, 255);
+  width: 1400px; 
+  background-size: cover;
     
 }
 .logo
@@ -19,17 +20,18 @@ body
 header{
     
     background-color: rgb(255, 6, 6);
+    width: 1400px;
 }
 
 #réseaux_sociaux 
 {
     height: 60px;
-    width: 1020px;
+    display: inline-block;
     background-color: #fd0000; 
     align-items: right;
     justify-content: space-around;
     color: black; 
-   margin: 0 1000px;
+   margin: 0 500px;
  }
 
 #réseaux_sociaux div{
@@ -59,7 +61,7 @@ form {
 }
 .menu {
     height: 60px;
-    width: 2000px;
+    width: 1280px;
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
@@ -91,21 +93,22 @@ nav ul li a {
 section{
     display: flex;
     
-    justify-content: space-between;
+    justify-content: space-around;
     background: rgb(107, 106, 106);
     height: 900px;
-    width: 2000px;
-  s
+    
+  
 }
 
-article{
+article
+{
 
 
-    background: white;
-    height: 675px;
-    width: 260px;
-
+    background-color: white; 
+    height : 675px;
+    width : 260px; 
 }
+
 #img{
   
     width: 253px;
@@ -114,7 +117,53 @@ article{
     background-color: rgb(160, 160, 160);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    
     flex-direction: column;
     margin-top: 25px; 
+}
+
+@media screen and (max-width: 1280px)
+
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+
+/* Sur les téléviseurs */
+
+@media tv
+
+
+/* Sur tous types d'écrans orientés verticalement */
+
+@media all and (orientation: portrait)
+
+p
+
+{
+
+    color: blue;
+
+}
+
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+
+@media screen and (max-width: 1024px)
+
+{
+
+    p
+
+    {
+
+        color: red; 
+
+        background-color: black;
+
+        font-size: 1.2em;
+
+    }
+
 }
