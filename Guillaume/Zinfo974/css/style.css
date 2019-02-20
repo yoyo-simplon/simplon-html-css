@@ -2,6 +2,7 @@ body{
     margin: auto;
 
 }
+
 header{
     display:flex;
     background: #bf0f00;
@@ -87,3 +88,24 @@ justify-content: space-around;
     
 }
 
+footer
+{
+    display:flex;
+    background: #bf0f00;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  color: white;
+}
+
+#adress
+{
+    text-align: center;
+    
+}
+
+footer ul
+{
+display: block;
+}
