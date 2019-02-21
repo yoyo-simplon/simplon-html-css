@@ -83,11 +83,29 @@ a:link{
 
 }
 
+@keyframes slide_show{
+    0%{
+        content:url("../images/img1.jpg");
+    }
+    30%{
+        content:url("../images/img2.jpg");;
+    }
+    90%{
+        content:url("../images/img3.jpg");
+    }
+}
+
 #carousel{
     width: 1020px;
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    animation: slide_show 10s infinite;
+    transition: linear;
+    
+}
+#carousel img{
+    width: 400px;
 }
 .article{
     display:flex;
@@ -121,6 +139,7 @@ width: 200px;
 #main button{
 margin-left: 450;
 width: 150px;
+margin-bottom: 20px;
 }
 
 .pages img{
