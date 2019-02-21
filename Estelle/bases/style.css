@@ -1,0 +1,17 @@
+/* pour les media queries (responsive)*/
+/* min-width = largeur mini
+max-width = largeur maxi */
+
+@media screen and (min-width: /*taille en px*/){
+    body /* exemple */ {
+
+    }
+}
+
+/* rappel flexbox pour faire bouger un block, selectionner le block parent*/
+
+display : inline /* mettre tout les block aligner */
+
+
+
+
