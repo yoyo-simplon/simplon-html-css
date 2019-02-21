@@ -83,12 +83,44 @@ a:link{
 
 }
 
+@keyframes slide_show{
+    0%{
+        content:url("../images/img1.jpg");
+    }
+
+    25%{
+        content:url("../images/img2.jpg");
+    }
+
+    50%{
+        content:url("../images/img3.jpg");
+    }
+
+    75%{
+        content:url("../images/img4.jpg");
+    }
+    100%{
+        content:url("../images/img5.jpg");
+    }
+}
+
 #carousel{
     width: 1020px;
     display: flex;
+    height: 300px;
     justify-content: center;
     margin-top: 60px;
+    animation: slide_show 10s infinite;
+    transition: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 3s;
+    
 }
+#carousel img{
+    width: 600px;
+}
+
 .article{
     display:flex;
     flex-direction: row;
@@ -121,6 +153,7 @@ width: 200px;
 #main button{
 margin-left: 450;
 width: 150px;
+margin-bottom: 20px;
 }
 
 .pages img{
