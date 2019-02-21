@@ -97,6 +97,7 @@ footer
     align-items: center;
     justify-content: space-between;
   color: white;
+  font-size: 20px;
 }
 
 #adress
@@ -108,4 +109,5 @@ footer
 footer ul
 {
 display: block;
+
 }
