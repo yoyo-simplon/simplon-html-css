@@ -154,6 +154,13 @@ footer{
     height: 120px;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+  color: white;
+  font-size: 20px;
+}
+
+#adress
+{
     justify-content: space-around;
     text-align: center;
     color: white;
@@ -268,3 +275,12 @@ footer{
     }
     /*Fin menu Mobile*/
 }
+<<<<<<< HEAD
+
+footer ul
+{
+display: block;
+
+}
+=======
+>>>>>>> 9f449d51e79cdb0732a4e3d1a59073dd7d985837

@@ -1,52 +1,75 @@
+body{
+    background-image: url("../images/4770.jpg");
+    background-size: 100%;
+}
+
 .content{
     width: 1020px;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    
+   
 }
 .top{
     display: flex;
     flex-direction: row;
-   margin-top: 30px;
+    margin-top: 50px;
+    background-color: black ;
+
 }
 #social{
     position: absolute;
-    margin-right: 0px;
-    padding-right: 0px;
+margin-left: 900px;
+    margin-top:10px; 
 }
 header{
-    height: 500px;
+    height: 600px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-        outline: 1px solid yellow;
+ 
+    background-color: ;
 }
 
 #logo{
 margin-right: 10px;
-    width:100px;
+    width:130px;
 }
 #menu_haut{
-    width:800px;
-    height: 100px;
+    width:820px;
+    height: 80px;
     margin-top: 30px;
     display: flex;
+    margin-left: 60px;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:flex-end;
-    outline: 1px solid black;
+    
+    
 }
 #navigation{
     width: 850px;
+    margin-bottom: 0px;
+    margin-right: 60
 }
 #navigation ul{
     list-style: none;
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-   
 }
+
+a:link{
+    color: white;
+        font-size: 25;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: none;
+}
+
 #navigation li{
     margin-right: 30px;
 
@@ -56,7 +79,7 @@ margin-right: 10px;
     width: 1020px;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .article{
     display:flex;
@@ -65,7 +88,7 @@ margin-right: 10px;
 
 }
 .article img{
-    width: 800px;
+    width: 80%;
     margin: 20px;
 }
 .sous_article1{
@@ -88,8 +111,8 @@ width: 200px;
     flex-direction: column;
 }
 #main button{
-margin-left: 50%;
-width: 100px;
+margin-left: 450;
+width: 150px;
 }
 
 .pages img{
