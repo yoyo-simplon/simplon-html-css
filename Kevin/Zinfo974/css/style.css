@@ -1,0 +1,283 @@
+body{
+    margin: auto;
+
+}
+/* Header fixe*/
+header, #barresociale{
+    position: fixed;
+    width: 100%;
+}
+#barresociale{
+    margin-top: 200px;
+}
+/* FIN Header fixe*/
+header{
+    display:flex;
+    background: #bf0f00;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Menu icone pour mobile*/
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+    /*background: #4C8FEC center;*/
+    color: white;
+    position: relative;
+    bottom: 120px;
+}
+/*FIN Menu icone pour mobile*/
+ul
+{
+    list-style-type: none;
+    display: flex;
+justify-content: flex-start;
+padding-left: 0;
+
+}
+
+li {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#bouton_connexion{
+    height: 50px;
+    justify-self: right;
+    margin-right: 10px;
+}
+
+#menu ul li a  
+{
+text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#barresociale
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 15px black;
+    background: linear-gradient(#fff, #c5c5c5);
+    z-index: -9;
+
+}
+
+
+
+#icons a i{
+    transition-duration: 0.5s;
+    color: #bf0f00;
+}
+#icons a:hover{
+    cursor: pointer;
+}
+#icons a i.fa-envelope:hover{
+    color: rgb(188, 132, 60);
+    transition-duration: 0.5s;
+}
+#icons a i.fa-facebook:hover{
+    color: #365899;;
+    transition-duration: 0.5s;
+}
+#icons a i.fa-twitter-square:hover{
+    color: #1da1f2;
+    transition-duration: 0.5s;
+}
+
+.fab,.fas 
+{
+    font-size:50px;
+}
+
+#searchbar
+{
+    align-self: right;
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    margin-right: 10px;
+}
+
+#blocmain
+{
+    display: flex;
+    height: auto;
+    padding-top: 250px;/*On laisse la place pour le header*/
+    
+}
+
+#blocarticle
+{
+display: flex;    
+flex-direction: column;
+width: 60%;
+justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+}
+
+.bloctext{
+    width: 30%;
+    margin-left: 20px;
+}
+#blocvideo
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 40%;
+ align-items: center;
+}
+.article
+{
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+.article img{
+    margin: auto 0;
+}
+footer{
+    display:flex;
+    background: #bf0f00;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  color: white;
+  font-size: 20px;
+}
+
+#adress
+{
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width: 992px){
+    header{
+        flex-direction: column;
+        
+    }
+    #menu{
+        align-self: flex-start;
+        position: relative;
+        margin-left: 20px;
+        flex-wrap: wrap;
+        top: -21px;
+    }
+    #menu ul{
+        flex-direction: column;
+        justify-content: left;
+    }
+    #bouton_connexion{
+        position: absolute;
+        top:100px;
+        right: 0vw;
+    }
+    #barresociale{
+        justify-content: initial;
+            
+    }
+    #icons{
+        margin-left: 10px;
+    }
+    #main{
+        width: auto;
+    }
+    #blocmain{
+        flex-direction: column;
+        align-items: center;
+    }
+    #blocarticle{
+        width: 90%;
+    }
+    .bloctext{
+        width: 90%;
+       
+    }
+    .article{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article img{
+        width: 90%;
+    }
+    #blocvideo{
+        width: 100%;
+    }
+    .video{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .video img{
+        width: 100%;
+    }
+    form{
+        width: 100px;
+    }
+    form input{
+        width: 98px;
+    } 
+    footer{
+        width: auto;
+        font-size: 10px;
+    }
+    footer img{
+        width: 70%;
+        display: none;
+    }
+    /*Menu mobile*/
+    #menu-icon {
+
+        display:inline-block;
+        position: relative;
+        bottom: 120px;
+
+	}
+    nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #bf0f00;
+		border: 5px solid #444;
+		left: -15px;
+		top: -90px;
+		width: 250%;
+        border-radius: 4px 0 4px 4px;
+        z-index: 9;
+
+	}
+    nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+    }
+    nav:hover ul {
+
+		display: block;
+
+    }
+    /*Fin menu Mobile*/
+}
+
+footer ul
+{
+display: block;
+
+}
