@@ -2,7 +2,15 @@ body{
     margin: auto;
 
 }
-
+/* Header fixe*/
+header, #barresociale{
+    position: fixed;
+    width: 100%;
+}
+#barresociale{
+    margin-top: 200px;
+}
+/* FIN Header fixe*/
 header{
     display:flex;
     background: #bf0f00;
@@ -11,7 +19,18 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+/*Menu icone pour mobile*/
+#menu-icon {
 
+	display: hidden;
+	width: 40px;
+	height: 40px;
+    /*background: #4C8FEC center;*/
+    color: white;
+    position: relative;
+    bottom: 120px;
+}
+/*FIN Menu icone pour mobile*/
 ul
 {
     list-style-type: none;
@@ -48,6 +67,7 @@ text-decoration: none;
     align-items: center;
     box-shadow: 1px 1px 15px black;
     background: linear-gradient(#fff, #c5c5c5);
+    z-index: -1;
 
 }
 
@@ -91,6 +111,7 @@ text-decoration: none;
 {
     display: flex;
     height: auto;
+    padding-top: 250px;/*On laisse la place pour le header*/
     
 }
 
@@ -100,6 +121,7 @@ display: flex;
 flex-direction: column;
 width: 60%;
 justify-content: space-around;
+z-index: -5;
 }
 
 h1{
@@ -117,6 +139,7 @@ h1{
  justify-content: space-around;
  width: 40%;
  align-items: center;
+ z-index: -5;
 }
 .article
 {
@@ -133,6 +156,13 @@ footer{
     height: 120px;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+  color: white;
+  font-size: 20px;
+}
+
+#adress
+{
     justify-content: space-around;
     text-align: center;
     color: white;
@@ -141,6 +171,7 @@ footer{
 @media screen and (max-width: 992px){
     header{
         flex-direction: column;
+        height: 120px;
         
     }
     #menu{
@@ -156,11 +187,12 @@ footer{
     }
     #bouton_connexion{
         position: absolute;
-        top:100px;
+        top:35px;
         right: 0vw;
     }
     #barresociale{
         justify-content: initial;
+        top: -80px;
             
     }
     #icons{
@@ -211,4 +243,125 @@ footer{
         width: 70%;
         display: none;
     }
+    /*Menu mobile*/
+    #menu-icon {
+
+        display:inline-block;
+        position: relative;
+        bottom: 40px;
+
+	}
+    nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #bf0f00;
+		border: 5px solid #444;
+		left: -15px;
+		top: -90px;
+		width: 250%;
+        border-radius: 4px 0 4px 4px;
+        z-index: 9;
+
+	}
+    nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+    }
+    nav:hover ul {
+
+		display: block;
+
+    }
+    /*Fin menu Mobile*/
 }
+/*
+.wrapper {
+    background: linear-gradient(45deg, #26547c 0%, #06d6a0 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .wrapper .disclaimer {
+    bottom: 15px;
+    position: absolute;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  .input-group .search {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    padding: 5px;
+    position: relative;
+    transition: all 150ms cubic-bezier(0.2, 0.6, 0.252, 1.2);
+  }
+  .input-group .search ~ .bar {
+    height: 4px;
+    width: 15px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
+    display: block;
+    opacity: 1;
+    right: -9px;
+    top: 24px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    transition: opacity 150ms ease;
+  }
+  .input-group .search::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .input-group .search:-ms-input-placeholder {
+    color: #fff;
+  }
+  .input-group .search::-ms-input-placeholder {
+    color: #fff;
+  }
+  .input-group .search::placeholder {
+    color: #fff;
+  }
+  .input-group .search:focus {
+    height: 25px;
+    width: 200px;
+    border-radius: 3px;
+    color: #26547c;
+    cursor: initial;
+  }
+  .input-group .search:focus::-webkit-input-placeholder {
+    color: #a1a1a1;
+  }
+  .input-group .search:focus:-ms-input-placeholder {
+    color: #a1a1a1;
+  }
+  .input-group .search:focus::-ms-input-placeholder {
+    color: #a1a1a1;
+  }
+  .input-group .search:focus::placeholder {
+    color: #a1a1a1;
+  }
+  .input-group .search:focus ~ .bar {
+    box-shadow: none;
+    opacity: 0;
+    right: 0;
+    top: 5px;
+  }
+*/
+
