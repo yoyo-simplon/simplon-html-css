@@ -12,17 +12,23 @@ body{
     
    
 }
+.menu_milieu{
+    margin-left: 500px;
+    margin-top: 20px;
+}
 .top{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 30px;
+    width: 1020px;
     background-color: black ;
+    box-shadow:0 10px 10px rgba(0,0,0,2); 
 
 }
 #social{
     position: absolute;
-margin-left: 900px;
-    margin-top:10px; 
+    margin-left: 900px;
+    margin-top:20px; 
 }
 header{
     height: 600px;
@@ -35,15 +41,17 @@ header{
 }
 
 #logo{
-margin-right: 10px;
-    width:130px;
+    position: absolute;
+    width:100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%; 
 }
 #menu_haut{
-    width:820px;
     height: 80px;
     margin-top: 30px;
     display: flex;
-    margin-left: 60px;
+    margin-left: 80px;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:flex-end;
@@ -53,7 +61,7 @@ margin-right: 10px;
 #navigation{
     width: 850px;
     margin-bottom: 0px;
-    margin-right: 60
+    margin-right: 0px;
 }
 #navigation ul{
     list-style: none;
@@ -64,14 +72,14 @@ margin-right: 10px;
 
 a:link{
     color: white;
-        font-size: 25;
+        font-size: 20px;
     font-weight: bold;
     font-family: arial;
     text-decoration: none;
 }
 
 #navigation li{
-    margin-right: 30px;
+    margin-right: 10px;
 
 }
 
