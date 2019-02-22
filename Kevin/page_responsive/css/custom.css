@@ -1,0 +1,60 @@
+body
+{
+    
+display: flex;
+flex-direction: column;
+}
+
+ header img
+{
+    height:300px;
+    width: 1200px;
+ margin:auto;   
+}
+
+#barremenu
+{
+    display:flex;
+    justify-content: flex-end;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+justify-content: flex-start;
+padding-left: 0;
+}
+
+#blocarticle
+{
+display: flex;    
+flex-direction: column;
+}
+
+
+
+.bloctext{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.article
+{
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+.article img{
+    margin: auto 0;
+}
+
+footer
+{
+    height: 80px;
+    width: auto;
+    
+}
+
+
+@media screen and (max-width: 992px)
