@@ -1,0 +1,13 @@
+body
+{
+    background-color:white;
+}
+
+
+.ul
+{
+      display: flex;
+     flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
