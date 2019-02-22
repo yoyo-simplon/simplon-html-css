@@ -1,0 +1,67 @@
+nav
+{
+
+    height: 30px;
+    width: 1267px;
+    background-color: grey;
+    border: 2px black solid;
+    padding-bottom: 20px;
+    
+
+
+    
+}
+
+p a{
+
+display: flex;
+align-items: center;
+
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+
+
+.bgimg{
+
+    height: 500px;
+    width: 1267px;
+    border: 2px black solid;
+    background-color: red;
+
+
+}
+
+.blocpage
+{
+
+    height: 800px;
+    width: 1267px;
+    background-color: grey;
+    border: 2px black solid;
+
+}
+
+footer{
+
+    height: 200px;
+    width: 1267px;
+    background-color: green;
+    border: 2px black solid;
+
+
+
+}
+
+
+
+
