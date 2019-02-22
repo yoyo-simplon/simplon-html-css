@@ -1,8 +1,18 @@
+/*https://codepen.io/erikterwan/pen/EVzeRP*/
+
 body{
     margin: auto;
 
 }
-
+/*----Header fixe----*/
+header, #barresociale{
+    position: fixed;
+    width: 100%;
+}
+#barresociale{
+    margin-top: 200px;
+}
+/*----FIN Header fixe----*/
 header{
     display:flex;
     background: #bf0f00;
@@ -12,35 +22,51 @@ header{
     justify-content: space-between;
 }
 
-ul
-{
+
+
+/*----MENU DESKTOP----*/
+ul{
     list-style-type: none;
     display: flex;
-justify-content: flex-start;
-padding-left: 0;
-
+    justify-content: flex-start;
+    padding-left: 0;
 }
 
 li {
-    margin-right: 15px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 #bouton_connexion{
     height: 50px;
     justify-self: right;
     margin-right: 10px;
 }
-
-#menu ul li a  
-{
-text-decoration: none;
-    color: white;
-    font-size: 20px;
+#menu ul a{
+    text-decoration: none;
 }
 
+#menu ul a li{
+text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+}
+#menu > ul:nth-child(1) > a:nth-child(4) > li:nth-child(1){
+  margin-right: 0;
+}
+
+
+/*----FIN MENU DESKTOP----*/
+
+
+
+
+
+/*----BARRE SOCIAL----*/
 #barresociale
 {
     display: flex;
@@ -48,10 +74,8 @@ text-decoration: none;
     align-items: center;
     box-shadow: 1px 1px 15px black;
     background: linear-gradient(#fff, #c5c5c5);
-
+    z-index: 0;
 }
-
-
 
 #icons a i{
     transition-duration: 0.5s;
@@ -73,33 +97,35 @@ text-decoration: none;
     transition-duration: 0.5s;
 }
 
-.fab,.fas 
-{
+.fab,.fas {
     font-size:50px;
 }
 
-#searchbar
-{
+#searchbar{
     align-self: right;
     text-align: right;
     position: absolute;
     right: 0%;
     margin-right: 10px;
 }
+/*----FIN BARRE SOCIAL----*/
 
-#blocmain
-{
+
+#blocmain{
     display: flex;
     height: auto;
+    padding-top: 250px;/*On laisse la place pour le header*/
     
 }
 
-#blocarticle
-{
+/*----BLOC ARTICLE----*/
+
+#blocarticle{
 display: flex;    
 flex-direction: column;
 width: 60%;
 justify-content: space-around;
+z-index: -5;
 }
 
 h1{
@@ -110,14 +136,6 @@ h1{
     width: 30%;
     margin-left: 20px;
 }
-#blocvideo
-{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- width: 40%;
- align-items: center;
-}
 .article
 {
     display: flex;
@@ -127,21 +145,208 @@ h1{
 .article img{
     margin: auto 0;
 }
+/*----FIN BLOC ARTICLE----*/
+
+#blocvideo
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 40%;
+ align-items: center;
+ z-index: -5;
+}
+
 footer{
     display:flex;
     background: #bf0f00;
     height: 120px;
     width: 100%;
     align-items: center;
+    justify-content: space-between;
+  color: white;
+  font-size: 20px;
+}
+
+#adress
+{
     justify-content: space-around;
     text-align: center;
     color: white;
     font-weight: bold;
 }
-@media screen and (max-width: 992px){
+/*--------------------------------------------*/
+.search-container {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #bf0f00;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .search-container button:hover {
+    background: #444343;
+  }
+
+
+/*----HAMBURGER MENU----*/
+#menuToggle{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.*/
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #d4b2b2;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu_hamburger
+{
+  position: absolute;
+  width: 300px;
+  margin: 90px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  flex-direction: column;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu_hamburger li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menu_hamburger a{
+    color: #bf0f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/*----HAMBURGER MENU----*/
+
+
+
+
+
+/*----MEDIA QUERIES----*/
+@media screen and (max-width: 1024px){
     header{
         flex-direction: column;
-        
+        height: 120px;
+    }
+    .logo_zinfo974{
+        margin: auto;
+        text-align: center;
+    }
+    header a img{
+        width: 80%;
     }
     #menu{
         align-self: flex-start;
@@ -156,11 +361,12 @@ footer{
     }
     #bouton_connexion{
         position: absolute;
-        top:100px;
+        top:35px;
         right: 0vw;
     }
     #barresociale{
         justify-content: initial;
+        top: -80px;
             
     }
     #icons{
@@ -198,17 +404,45 @@ footer{
         width: 100%;
     }
     form{
-        width: 100px;
+        width: auto;
     }
     form input{
         width: 98px;
     } 
     footer{
         width: auto;
-        font-size: 10px;
+        font-size: 15px;
+        flex-direction: column;
     }
     footer img{
         width: 70%;
         display: none;
+    }  
+    #menuToggle{
+        visibility: visible
     }
+    #menu{
+        display: none;
+    }
+    #menu_hamburger a:first-child{
+        *color: blue;
+        position: relative;
+        bottom: 50px;
+        border: solid 1px;
+        text-align: center;
+        *background: grey;
+        
+    }
+    #menu_hamburger a:first-child li{
+        justify-content: center;
+    }
+    #menu_hamburger a:hover{
+        color: #333;
+    }
+    #bouton_connexion{
+        display: none;
+    }
+    
 }
+/*---- FIN MEDIA QUERIES----*/
+

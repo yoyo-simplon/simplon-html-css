@@ -7,13 +7,14 @@
     <title>zinfo 974</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="icon" href="images/zinfologo.png" size="16x16 32x32" type="image/png">
     <script src="main.js"></script>
 </head>
 
 <body>
     <header>
         <img src="images/zinfologo.jpg" alt="zinfo">
-        <h1><br/> info 974</h1>
+        <h1><br /> info 974</h1>
         <form class="w3-container">
 
             <label class="w3-text-blue"><b>recherche</b></label>
@@ -24,54 +25,112 @@
         </form>
     </header>
     <nav>
-        <ul>
-            <li>Local</li>
-            <li>Océan Indien</li>
-            <li>National</li>
-            <li>International</li>
+        <ul class="principal">
+            <li>
+                <a href="#">accueil</a>
+            </li>
+            <li>
+                <a href="#">Local</a>
+            </li>
+            <li>
+                <a href="#">Océan Indien</a>
+            </li>
+            <li>
+                <a href="#"> National</a>
+            </li>
+            <li>
+                <a href="#"> International</a>
+            </li>
+
+        </ul>
+        <ul class="local">
+            <li>politique</li>
+            <li>faits divers</li>
+            <li>sport</li>
+            <li>économie</li>
+            <li>culture</li>
+        </ul>
+        <ul class="oi">
+            <li>politique</li>
+            <li>faits divers</li>
+            <li>sport</li>
+            <li>économie</li>
+            <li>culture</li>
+        </ul>
+        <ul class="nat">
+            <li>politique</li>
+            <li>faits divers</li>
+            <li>sport</li>
+            <li>économie</li>
+            <li>culture</li>
+        </ul>
+        <ul class="inter">
+            <li>politique</li>
+            <li>faits divers</li>
+            <li>sport</li>
+            <li>économie</li>
+            <li>culture</li>
         </ul>
     </nav>
     <main>
         <section>
-            <div class=carousel>
+            <article class="car">
+                <div class="left"></div>
+                <div class=carousel>
 
-                <ul class=panes>
+                    <ul class=panes>
 
-                    <li>
+                        <li>
 
-                        <img src="images/fd01.jpg" alt="">
-                    </li>
+                            <img src="images/fd01.jpg" alt="fait 1">
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <img src="images/fd02.png" alt="">
-                    </li>
+                            <img src="images/fd02.png" alt="fait 2">
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <img src="images/fd03.jpg" alt="">
-                    </li>
+                            <img src="images/fd03.jpg" alt="fait 3">
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <img src="images/fd04.jpg" alt="">
-                    </li>
+                            <img src="images/fd04.jpg" alt="fait 4">
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <img src=pane-05.jpg alt="">
-                    </li>
+                            <img src="images/petrel_de_barau_alya_2g.jpg" alt="fait 5">
+                        </li>
 
-                </ul>
+                    </ul>
 
-            </div>
 
+                </div>
+                <div class="right"></div>
+            </article>
             <article>
                 <h1>A LA UNE</h1>
+                <img src="images/petrel_de_barau_alya_2g.jpg" alt="pétrel de barau">
+                <p class="une">plusieurs prétrels ont été retrouvé mort</p>
             </article>
             <article></article>
-
         </section>
+        <aside>
+            <div class="sorties">
+                <h3>sorties de la semaine</h3>
+                <div class=affiches>
+
+
+
+                </div>
+            </div>
+            <div>
+                <h3>météo</h3>
+            </div>
+        </aside>
     </main>
 </body>
 

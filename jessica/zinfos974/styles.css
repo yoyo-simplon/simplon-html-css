@@ -2,7 +2,7 @@ body
 {
     
     font-family: Arial, serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   width: 1400px; 
   background-size: cover;
     
@@ -166,4 +166,17 @@ p
 
     }
 
+}
+.footer{
+    display: flex; 
+    flex-direction: column; 
+    font-size: 20px;
+    padding: 60px;
+    background-color: grey;
+}
+.adresse{
+    width: 1400px;
+    height: 200px;
+    background-color: rgb(133, 133, 133); 
+    border: 2em;
 }
