@@ -2,7 +2,7 @@
 body{
     margin:0;
     }
-body div:first-child{
+#top_menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,7 +61,7 @@ nav ul a li:first-child{
 }
 section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 200px;
 }
 section img{
