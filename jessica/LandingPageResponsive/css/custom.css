@@ -1,0 +1,40 @@
+.body
+{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 1010px;
+    background-color: grey;
+}
+
+h1{
+    color: blue; 
+    background-image: url(intro-bg.jpg);
+}
+
+
+nav ul li 
+ {
+ text-align: center;
+
+}
+.p1{ 
+display: flex;
+text-align: left;
+}
+.p2{
+    display: flex;
+    text-align: right;
+}
+.p3{
+    display: flex;
+    text-align: left; 
+}
+nav li{
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+
+}

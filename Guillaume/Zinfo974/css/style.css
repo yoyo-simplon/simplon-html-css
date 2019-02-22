@@ -1,8 +1,10 @@
+/*https://codepen.io/erikterwan/pen/EVzeRP*/
+
 body{
     margin: auto;
 
 }
-/* Header fixe*/
+/*----Header fixe----*/
 header, #barresociale{
     position: fixed;
     width: 100%;
@@ -10,7 +12,7 @@ header, #barresociale{
 #barresociale{
     margin-top: 200px;
 }
-/* FIN Header fixe*/
+/*----FIN Header fixe----*/
 header{
     display:flex;
     background: #bf0f00;
@@ -19,47 +21,52 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-/*Menu icone pour mobile*/
-#menu-icon {
 
-	display: hidden;
-	width: 40px;
-	height: 40px;
-    /*background: #4C8FEC center;*/
-    color: white;
-    position: relative;
-    bottom: 120px;
-}
-/*FIN Menu icone pour mobile*/
-ul
-{
+
+
+/*----MENU DESKTOP----*/
+ul{
     list-style-type: none;
     display: flex;
-justify-content: flex-start;
-padding-left: 0;
-
+    justify-content: flex-start;
+    padding-left: 0;
 }
 
 li {
-    margin-right: 15px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 #bouton_connexion{
     height: 50px;
     justify-self: right;
     margin-right: 10px;
 }
-
-#menu ul li a  
-{
-text-decoration: none;
-    color: white;
-    font-size: 20px;
+#menu ul a{
+    text-decoration: none;
 }
 
+#menu ul a li{
+text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+}
+#menu > ul:nth-child(1) > a:nth-child(4) > li:nth-child(1){
+  margin-right: 0;
+}
+
+
+/*----FIN MENU DESKTOP----*/
+
+
+
+
+
+/*----BARRE SOCIAL----*/
 #barresociale
 {
     display: flex;
@@ -67,11 +74,8 @@ text-decoration: none;
     align-items: center;
     box-shadow: 1px 1px 15px black;
     background: linear-gradient(#fff, #c5c5c5);
-    z-index: -1;
-
+    z-index: 0;
 }
-
-
 
 #icons a i{
     transition-duration: 0.5s;
@@ -93,30 +97,30 @@ text-decoration: none;
     transition-duration: 0.5s;
 }
 
-.fab,.fas 
-{
+.fab,.fas {
     font-size:50px;
 }
 
-#searchbar
-{
+#searchbar{
     align-self: right;
     text-align: right;
     position: absolute;
     right: 0%;
     margin-right: 10px;
 }
+/*----FIN BARRE SOCIAL----*/
 
-#blocmain
-{
+
+#blocmain{
     display: flex;
     height: auto;
     padding-top: 250px;/*On laisse la place pour le header*/
     
 }
 
-#blocarticle
-{
+/*----BLOC ARTICLE----*/
+
+#blocarticle{
 display: flex;    
 flex-direction: column;
 width: 60%;
@@ -132,15 +136,6 @@ h1{
     width: 30%;
     margin-left: 20px;
 }
-#blocvideo
-{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- width: 40%;
- align-items: center;
- z-index: -5;
-}
 .article
 {
     display: flex;
@@ -150,6 +145,18 @@ h1{
 .article img{
     margin: auto 0;
 }
+/*----FIN BLOC ARTICLE----*/
+
+#blocvideo
+{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 40%;
+ align-items: center;
+ z-index: -5;
+}
+
 footer{
     display:flex;
     background: #bf0f00;
@@ -168,11 +175,178 @@ footer{
     color: white;
     font-weight: bold;
 }
-@media screen and (max-width: 992px){
+/*--------------------------------------------*/
+.search-container {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #bf0f00;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .search-container button:hover {
+    background: #444343;
+  }
+
+
+/*----HAMBURGER MENU----*/
+#menuToggle{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.*/
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #d4b2b2;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu_hamburger
+{
+  position: absolute;
+  width: 300px;
+  margin: 90px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  flex-direction: column;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu_hamburger li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menu_hamburger a{
+    color: #bf0f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/*----HAMBURGER MENU----*/
+
+
+
+
+
+/*----MEDIA QUERIES----*/
+@media screen and (max-width: 1024px){
     header{
         flex-direction: column;
         height: 120px;
-        
+    }
+    .logo_zinfo974{
+        margin: auto;
+        text-align: center;
+    }
+    header a img{
+        width: 80%;
     }
     #menu{
         align-self: flex-start;
@@ -230,138 +404,45 @@ footer{
         width: 100%;
     }
     form{
-        width: 100px;
+        width: auto;
     }
     form input{
         width: 98px;
     } 
     footer{
         width: auto;
-        font-size: 10px;
+        font-size: 15px;
+        flex-direction: column;
     }
     footer img{
         width: 70%;
         display: none;
+    }  
+    #menuToggle{
+        visibility: visible
     }
-    /*Menu mobile*/
-    #menu-icon {
-
-        display:inline-block;
+    #menu{
+        display: none;
+    }
+    #menu_hamburger a:first-child{
+        *color: blue;
         position: relative;
-        bottom: 40px;
-
-	}
-    nav ul, nav:active ul { 
-
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #bf0f00;
-		border: 5px solid #444;
-		left: -15px;
-		top: -90px;
-		width: 250%;
-        border-radius: 4px 0 4px 4px;
-        z-index: 9;
-
-	}
-    nav li {
-
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
+        bottom: 50px;
+        border: solid 1px;
+        text-align: center;
+        *background: grey;
+        
     }
-    nav:hover ul {
-
-		display: block;
-
+    #menu_hamburger a:first-child li{
+        justify-content: center;
     }
-    /*Fin menu Mobile*/
+    #menu_hamburger a:hover{
+        color: #333;
+    }
+    #bouton_connexion{
+        display: none;
+    }
+    
 }
-/*
-.wrapper {
-    background: linear-gradient(45deg, #26547c 0%, #06d6a0 100%);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .wrapper .disclaimer {
-    bottom: 15px;
-    position: absolute;
-  }
-  
-  .input-group {
-    position: relative;
-  }
-  .input-group .search {
-    height: 15px;
-    width: 15px;
-    background-color: #fff;
-    border: 0;
-    border-radius: 50%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    color: #fff;
-    outline: none;
-    padding: 5px;
-    position: relative;
-    transition: all 150ms cubic-bezier(0.2, 0.6, 0.252, 1.2);
-  }
-  .input-group .search ~ .bar {
-    height: 4px;
-    width: 15px;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-    position: absolute;
-    display: block;
-    opacity: 1;
-    right: -9px;
-    top: 24px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    transition: opacity 150ms ease;
-  }
-  .input-group .search::-webkit-input-placeholder {
-    color: #fff;
-  }
-  .input-group .search:-ms-input-placeholder {
-    color: #fff;
-  }
-  .input-group .search::-ms-input-placeholder {
-    color: #fff;
-  }
-  .input-group .search::placeholder {
-    color: #fff;
-  }
-  .input-group .search:focus {
-    height: 25px;
-    width: 200px;
-    border-radius: 3px;
-    color: #26547c;
-    cursor: initial;
-  }
-  .input-group .search:focus::-webkit-input-placeholder {
-    color: #a1a1a1;
-  }
-  .input-group .search:focus:-ms-input-placeholder {
-    color: #a1a1a1;
-  }
-  .input-group .search:focus::-ms-input-placeholder {
-    color: #a1a1a1;
-  }
-  .input-group .search:focus::placeholder {
-    color: #a1a1a1;
-  }
-  .input-group .search:focus ~ .bar {
-    box-shadow: none;
-    opacity: 0;
-    right: 0;
-    top: 5px;
-  }
-*/
+/*---- FIN MEDIA QUERIES----*/
 
