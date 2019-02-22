@@ -1,0 +1,54 @@
+body
+{
+    margin-left: 200px;
+    margin-right: 200px; 
+}
+header
+{
+    background: "img/intro-bg.jpg";
+    border: 2px solid red;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+}
+.info1
+{
+    background-color: rgb(105, 102, 102)lack;
+    border: 2px solid black;
+}
+.info2
+{
+    background-color: rgb(105, 102, 102)lack;
+    border: 2px solid black;
+}
+.info3
+{
+    background-color: rgb(105, 102, 102)lack;
+    border: 2px solid black;
+}
+
+footer 
+{
+    backgroun: url("img/banner-bg.jpg");
+    border: 2px solid black
+}
+
+/* @media all and (max-width: 1024px)
+{
+    
+    {
+        min-width: 544px;
+        min-height: 992px;
+    }
+*/
+}
