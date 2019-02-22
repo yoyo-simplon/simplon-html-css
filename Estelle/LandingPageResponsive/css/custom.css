@@ -1,0 +1,114 @@
+/* menu du haut + bootstrap*/
+
+body{
+    background-image: url(../img/intro-bg.jpg);
+    
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+   ;
+}
+
+ul.menu-haut{
+    display: flex;
+    list-style-type: none;    
+}
+
+a:link{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    
+}
+
+/* landing page*/
+
+div.landing{
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;  
+    flex-direction: column;
+}
+
+div.centre{
+    color: white;
+    margin-top: 200px
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-bottom: 10px: 
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr.landing{
+    color: white;
+    width: 450px
+}
+
+/* structure des textes et des images */
+
+
+div.contain1{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+div.contain2{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+div.contain3{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+hr{
+    color: lightgrey;
+}
+
+@media screen and (max-width:800px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+    
+  ul.menu-haut{
+     display: flex;
+     justify-content: space-around;
+  }
+    
+  p.bootstrap{
+     display: flex;
+     justify-content: space-around;  
+    }
+}
+
