@@ -144,10 +144,23 @@ strong {
     button {
         height: 35px;
     }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .social {
+        margin-top: 25px;
+    }
 }
 
 /* WIDTH MAX : 544PX */
 @media all and (max-width: 544px) {
+    #main {
+        width: auto;
+        margin: auto;
+    }
+
     .social {
         font-size: 0.8em;
     }
@@ -160,16 +173,27 @@ strong {
         flex-direction: column;
     }
 
-    nav ul {
+    ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: row !important;
         width: 100%;
         height: auto;
+        font-size: 1em;
+        padding-left: 0;
     }
 
-    #main {
-        width: auto;
+    .footnav {
+        margin-left: 0;
+    }
+
+    .footnav ul {
+        justify-content: space-around !important;
+        width: 100%;
+    }
+
+    #copyright {
         margin: auto;
+        font-size: 0.8em;
     }
 
     footer {
