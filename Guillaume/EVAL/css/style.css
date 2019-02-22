@@ -80,13 +80,14 @@ section p{
     width: 70%;
 }
 #bottom_banner{
-    height: 200px;
+    height: 120px;
     background-image: url(../img/banner-bg.jpg);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
     display: flex;
+    background-size: cover;
 }
 body > footer:nth-child(5) > div:nth-child(1){
     display: inline;
