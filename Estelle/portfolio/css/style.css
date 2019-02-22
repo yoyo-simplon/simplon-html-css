@@ -1,12 +1,13 @@
 body{
     background-color: #2c3e50;
-
 }
 
 .block{
     background-color: #BED1D1;
     width: 1020px;
-    margin-left: 200px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*structure barre de menu*/
@@ -35,6 +36,7 @@ a:link{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    
 }
 
 /*structure h3 + img + p*/
