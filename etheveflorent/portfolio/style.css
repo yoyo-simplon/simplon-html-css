@@ -120,7 +120,7 @@ div {
     column-count: 4;
     hyphens: auto;
     transform: scale(0.8);
-    background-image: linear-gradient(blue,#8b8989,#cdc9c9);
+
 
 }
 
@@ -153,4 +153,21 @@ textarea {
 #contact {
     display: flex;
     justify-content: center;
+}
+.competences .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:lightsalmon;
+}
+section{
+    width:230px;
+    height: 350px;
+    display: block;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: solid 1px black;
+}
+section ul{
+list-style: none;
 }
