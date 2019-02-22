@@ -1,17 +1,18 @@
-/* pour les media queries (responsive)*/
-/* min-width = largeur mini
-max-width = largeur maxi */
-
-@media screen and (min-width: /*taille en px*/){
-    body /* exemple */ {
-
-    }
-}
-
-/* rappel flexbox pour faire bouger un block, selectionner le block parent*/
-
-display : inline /* mettre tout les block aligner */
-
-
-
-
+.header{
+    height: 100px;
+    background: #34495e;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .menu{
+    float: center;
+    line-height: 100px;
+  }
+  
+  .menu a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
