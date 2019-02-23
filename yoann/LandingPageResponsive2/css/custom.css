@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+button{
+    border-radius: 5px;
+    background-color:rgb(226, 218, 218);
+    border:1px solid rgb(114, 107, 107);
+    font-family: sans-serif;
+    padding:8px 10px;
+    text-transform: uppercase;
+    font-size:0.58em;
+    letter-spacing: 0.15rem;
+    min-width:100%;
+}
+.autre{
+    width:80%;
+}
+
+hr{
+    width:25%;
+}
+
+h1{
+    color:white;
+}
+
+header h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 5px rgb(61, 55, 55);
+}
+
+header h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size: 1.25em;
+    text-shadow: 3px 3px 5px rgb(61, 55, 55);
+    width:100%;
+    margin-left:11.9%;
+   
+}
+nav:first-child{
+    background-color:rgb(204, 193, 193);
+    padding:10px 10px;
+}
+
+nav:first-child li{
+    margin-left: 2.5%;
+}
+
+nav:first-child li:first-child{
+   margin-right:50%;
+}
+
+nav:first-child a{
+    text-decoration:none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    color:rgb(114, 107, 107);
+}
+
+nav:first-child ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    width:90%;
+}
+
+header{
+    background-image:url("../img/intro-bg.jpg");
+    background-position: center;
+    background-position: 20% 48%;
+    height:82%;
+    background-size: 115%
+}
+
+#contenu-text-header{
+    height:100%;
+    width:30%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:15%;
+    height:30%;
+}
+
+#contenu-text-header ul{
+    display:flex;
+    list-style-type:none;
+    justify-content: space-between;
+    width:85%;
+    margin-left:6%;
+}
+
+#contenu-text-header li{
+    
+    min-width:32%;
+    
+}
+
+span{
+    padding-right:5%;
+}
+
+
+#contenu-text-header hr{
+    width:90%;
+    margin:auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+img{
+    height:280px;
+}
+
+article{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    margin:auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 15%;
+    
+    
+
+}
+
+#reverse{
+    display:flex;
+    flex-direction: row-reverse;
+
+}
+
+section{
+    background-color: rgb(204, 193, 193);
+}
+
+#pas-de-fond{
+    background-color:white;
+
+}
+
+footer{
+    height:50%;
+}
+#banniere-bas{
+    background-image:url("../img/banner-bg.jpg");
+    
+    display:flex;
+    height:60%;
+}
+
+
+#banniere-bas ul{
+    display:flex;
+    list-style-type:none;
+
+}
+
+
+
+
+
