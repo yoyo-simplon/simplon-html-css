@@ -1,0 +1,112 @@
+
+body{
+    margin:0;
+    }
+#top_menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}
+header{
+    background: grey;
+    height: 280px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/intro-bg.jpg);
+    color: white;
+    background-size: cover;
+    background-position-y: center;
+}
+header h1{
+    margin: 0;
+}
+header hr{
+    width: 50%;
+    width: 243px;
+    color: white;
+}
+.bouton_social{
+    background: white;
+    color: black;
+}
+nav{
+
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    padding: 0;
+}
+nav ul a{
+    text-decoration: none;
+}
+nav ul li{
+    display: inline;
+    color: black;
+}
+nav ul a li:first-child{
+    align-self: flex-start;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+section img{
+    /*! width: 30%; */
+    height: 71%;
+}
+section div{
+    width: 48%;
+    /*! height: inherit; */
+}
+section h2{
+    font-size: 14px;
+}
+section p{
+    font-size: 10px;
+    width: 70%;
+}
+#bottom_banner{
+    height: 120px;
+    background-image: url(../img/banner-bg.jpg);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    background-size: cover;
+}
+body > footer:nth-child(5) > div:nth-child(1){
+    display: inline;
+    color: blue;
+    font-weight: bold;
+
+
+}
+body > footer:nth-child(5) > div:nth-child(1) ul{
+padding: 0;
+margin: 0;
+}
+footer div ul li{
+    display: inline;
+    margin-right: 20px;
+}
+body > footer:nth-child(5) > p:nth-child(2){
+    margin: 0;
+}
+@media screen and (max-width: 1024px){
+
+}
