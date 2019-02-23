@@ -1,124 +1,205 @@
-header {
-    display: flex;
-    background-color: red;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-main {
-    display: flex;
-}
-
-ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-
-li:hover {
-    color: red;
-}
-
-input {}
-
-
-/*------------------------------------*\
+    header {
+        display: flex;
+        background-color: red;
+        color: white;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    .principal a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: red;
+    }
+    
+    .local {
+        display: none;
+    }
+    
+    .oi {
+        display: none;
+    }
+    
+    .nat {
+        display: none;
+    }
+    
+    .inter {
+        display: none;
+    }
+    
+    .principal a:hover {
+        color: white;
+        background-color: red;
+    }
+    
+    ul a:focus {
+        color: white;
+        background-color: red;
+    }
+    
+    section {
+        direction: flex;
+        justify-content: center;
+    }
+    /*------------------------------------*\
     $CAROUSEL
 \*------------------------------------*/
-
-.carousel {
-    overflow: hidden;
-    width: 50%;
-}
-
-.panes {
-    list-style: none;
-    position: relative;
-    width: 500%;
-    /* Number of panes * 100% */
-    overflow: hidden;
-    /* This is used solely to clear floats, it does not add functionality. */
-    -moz-animation: carousel 30s infinite;
-    -webkit-animation: carousel 30s infinite;
-    animation: carousel 30s infinite;
-}
-
-.panes>li {
-    position: relative;
-    float: left;
-    width: 20%;
-    /* 100 / number of panes */
-}
-
-.carousel img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-}
-
-.carousel h2 {
-    font-size: 1em;
-    padding: 0.5em;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    text-align: right;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-@keyframes carousel {
-    0% {
-        left: 0;
+    
+    .car {
+        display: flex;
+        flex-flow: row wrap;
     }
-    11% {
-        left: 0;
+    
+    .carousel {
+        overflow: hidden;
+        width: 50%;
+        display: block;
     }
-    12.5% {
-        left: -100%;
+    
+    .panes {
+        list-style: none;
+        position: relative;
+        width: 500%;
+        /* Number of panes * 100% */
+        overflow: hidden;
+        /* This is used solely to clear floats, it does not add functionality. */
+        -moz-animation: carousel 30s infinite;
+        -webkit-animation: carousel 30s infinite;
+        animation: carousel 30s infinite;
     }
-    23.5% {
-        left: -100%;
+    
+    .panes>li {
+        position: relative;
+        float: left;
+        width: 20%;
+        /* 100 / number of panes */
     }
-    25% {
-        left: -200%;
+    
+    .carousel img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
     }
-    36% {
-        left: -200%;
+    
+    .carousel h2 {
+        font-size: 1em;
+        padding: 0.5em;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        text-align: right;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.75);
     }
-    37.5% {
-        left: -300%;
+    
+    @keyframes carousel {
+        0% {
+            left: 0;
+        }
+        11% {
+            left: 0;
+        }
+        12.5% {
+            left: -110%;
+        }
+        23.5% {
+            left: -110%;
+        }
+        25% {
+            left: -210%;
+        }
+        36% {
+            left: -210%;
+        }
+        37.5% {
+            left: -310%;
+        }
+        48.5% {
+            left: -310%;
+        }
+        50% {
+            left: -410%;
+        }
+        61% {
+            left: -410%;
+        }
+        62.5% {
+            left: -310%;
+        }
+        73.5% {
+            left: -310%;
+        }
+        75% {
+            left: -210%;
+        }
+        86% {
+            left: -210%;
+        }
+        87.5% {
+            left: -110%;
+        }
+        98.5% {
+            left: -110%;
+        }
+        100% {
+            left: 0;
+        }
     }
-    48.5% {
-        left: -300%;
+    
+    .affiches {
+        width: 200px;
+        height: 250px;
+        background-image: url("images/all-inclusive-Qi1s2sMz.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation: fade 15s infinite;
     }
-    50% {
-        left: -400%;
+    
+    @keyframes fade {
+        50% {
+            background-image: url("images/black-snake-FTKRhy7I.jpg")
+        }
+        100% {
+            background-image: url("images/dragons-3-IMxZbYQu.jpg")
+        }
     }
-    61% {
-        left: -400%;
+    
+    .sorties {
+        border-color: 5px solid black;
+        margin: 0;
+        padding: 0;
     }
-    62.5% {
-        left: -300%;
+    
+    @media all and (max-width: 800px) {
+        .principal {
+            justify-content: space-around;
+        }
     }
-    73.5% {
-        left: -300%;
+    
+    @media all and (max-width: 600px) {
+        .principal {
+            -webkit-flex-flow: column wrap;
+            flex-flow: column wrap;
+            padding: 0;
+        }
     }
-    75% {
-        left: -200%;
+    
+    @media all and(max-width: 600px) {
+        .sorties {
+            display: none;
+        }
     }
-    86% {
-        left: -200%;
-    }
-    87.5% {
-        left: -100%;
-    }
-    98.5% {
-        left: -100%;
-    }
-    100% {
-        left: 0;
-    }
-}

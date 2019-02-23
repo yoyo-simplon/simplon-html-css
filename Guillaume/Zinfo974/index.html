@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Zinfo974</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -11,9 +11,10 @@
 </head>
 <body>
     <header>
-        <a id="logo_zinfo974" href="#"><img src="img/logo zinfo974.png" alt="logo Zinfo974" srcset=""></a>
+        <a class="logo_zinfo974" href="#"><img src="img/logo zinfo974.png" alt="logo Zinfo974" srcset=""></a>
         
         <nav id="menu">
+            <a href="#" id="menu-icon"><i class="fas fa-bars"></i></a><!--Menu icone pour mobile-->
             <ul>
                         <li><a href="#"> ZINFO LOCAL</a></li>
                         <li><a href="#"> ZINFO NATIONAL</a></li>
@@ -23,71 +24,87 @@
             </ul>
         </nav>
         <input id="bouton_connexion" type="submit" value="SE CONNECTER">
+    
     </header>
+        <div id="barresociale">
+                <div id="icons">
+                    <a href="#" title="newsletter"><i class="fas fa-envelope"></i></a>
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+                </div>
+
+                <!--<div class="wrapper">
+                    <div class="input-group">
+                        <input class="search" type="text" placeholder="Searching for something?"/><span class="bar"></span>
+                </div>
+                </div>-->
+
+                
+                <div id="searchbar">
+                    <form>
+                    <input type="search" id="recherche" name="q"
+                    placeholder="Recherche">
+                    <button></button>
+                    </form>
+                </div>
+                
     
-    <main>
-<div id="barresociale">
-    <div id="icons">
-    <i class="fas fa-envelope"></i>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter-square"></i>
-</div>
-   <div id="searchbar">
-    <form>
         
-          <input type="search" id="recherche" name="q"
-           placeholder="Recherche">
-          <button>Rechercher</button>
-         </form>
- </div>
- 
-     
-</div>
+        
+            
+        </div>
 
-<h1> A LA UNE </h1>
-<div id="blocmain"> 
-    <div id="blocarticle">
-        <div class="article">
-            <img src="http://via.placeholder.com/300x200" alt="image">
-            <div class="bloctext"> 
-                <h2> TITRE</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam.
-            </div>
-        </div>
-        <div class="article"> <img src="http://via.placeholder.com/300x200" alt="image">
-            <div class="bloctext"> 
-                    <h2>TITRE</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam.
-            </div>
-        </div>
+      <main>  
+        <div id="blocmain"> 
+            <div id="blocarticle">
+                <h1> A LA UNE </h1>
+                <div class="article">
+                    <img src="img/300x200.png" alt="image">
+                    <div class="bloctext"> 
+                        <h2> TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam.
+                    </div>
+                </div>
+                <div class="article"> <img src="img/300x200.png" alt="image">
+                    <div class="bloctext"> 
+                            <h2>TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam.
+                    </div>
+                </div>
     
-        <div class="article"> <img src="http://via.placeholder.com/300x200" alt="image">
-            <div class="bloctext"> 
-                <h2>TITRE</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam. 
+                <div class="article"> <img src="img/300x200.png" alt="image">
+                    <div class="bloctext"> 
+                        <h2>TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi eget mauris diam. 
+                    </div>
+                </div>
             </div>
+            <div id="blocvideo">
+                <div class="video">
+                    <img src="img/300x200.png" alt="video">
+                </div>
+                <div class="video"> 
+                    <img src="img/300x200.png" alt="video">
+                </div>
+                <div class="video">
+                    <img src="img/300x200.png" alt="video">
+                </div>
+            </div>
+
         </div>
-    </div>
-    <div id="blocvideo">
-        <div class="video">
-            <img src="http://via.placeholder.com/300x200" alt="video">
-        </div>
-        <div class="video"> 
-            <img src="http://via.placeholder.com/300x200" alt="video">
-        </div>
-        <div class="video">
-            <img src="http://via.placeholder.com/300x200" alt="video">
-        </div>
-</div>
-
-    </div>
-
-
-
-
-
 
     </main>
+    <footer>
+        <a id="logo_zinfo974" href="#"><img src="img/logo zinfo974.png" alt="logo Zinfo974" srcset=""></a>
+        <p id="contact">
+            06 92 97 75 75<br />
+            contact@zinfos974.com
+        </p>
+        <p id="adresse">
+            1F Rue de La Martinique<br />
+            97490 Sainte-Clotilde
+        </p>
+    </footer>
   
 </body>
 </html>
