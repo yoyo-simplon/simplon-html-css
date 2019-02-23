@@ -8,9 +8,10 @@
 }
 
 h1{
-    color: blue; 
-    font-size:30px;
+    color: rgb(255, 255, 255); 
+    font-size:50px;
 }
+
 
 header {
     background-image: url(intro-bg.jpg);
@@ -57,16 +58,25 @@ footer {
     height: 300px;
     justify-content: center;
 }
-article {
-
+#zone1
+{
     display: flex;
-    justify-content: space-around;
-    width: 1900px;
-    margin: auto;
-    background-color: rgb(233, 232, 232);
-}
-#phone{
-    display: flex;
-    justify-content: left;
     background-color: rgb(201, 201, 201);
+}
+#zone3{
+     display: flex;
+    background-color: rgb(201, 201, 201); 
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+hr{
+margin: 30px;
+}
+h2{
+    margin: 50px;
+   display: flex;
 }
