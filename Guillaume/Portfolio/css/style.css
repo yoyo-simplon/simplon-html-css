@@ -4,7 +4,7 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-*/ 
+*/
 
 
 /* <-----Animations des h2---->
@@ -18,32 +18,45 @@ h2:hover{
 
 /* <----DEBUT LAYOUT----> */
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
 }
+
 #main {
   display: flex;
   flex: 1;
 }
-#main > article {
+
+#main>article {
   flex: 1;
   padding: 0;
   margin: auto;
 }
-header, footer {
+
+header,
+footer {
   height: 20vh;
 }
-header, footer, article{
+
+header,
+footer,
+article {
   padding: 1em;
 }
-footer{
+
+footer {
   background: #444;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 
 /* ----FIN LAYOUT---- */
@@ -53,142 +66,159 @@ footer{
 
 
 /* ----DEBUT MENU---- */
-#menu{
+#menu {
   font-size: 1vw;
   position: fixed;
   width: 100%;
-  background: linear-gradient(#2f2f2f99,#1e1e1e66);
+  background: linear-gradient(#2f2f2f99, #1e1e1e66);
   z-index: 99;
   font-weight: bold;
 }
-ul{
+
+ul {
   display: flex;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
-li{
+
+li {
   padding: 10px;
   list-style-type: none;
   text-align: center;
-  transition-property: background-color; /* transition background-color */
-  transition-duration: 0.5s; /* transition 1s */
+  transition-property: background-color;
+  /* transition background-color */
+  transition-duration: 0.5s;
+  /* transition 1s */
   color: white;
   font-family: 'Comfortaa', cursive;
 }
-li > i{
+
+li>i {
   padding-right: 0.5vmin;
 }
-ul > a{
+
+ul>a {
   text-decoration: none;
 }
-li:hover{
+
+li:hover {
   background-color: #348bed99;
   color: #fff;
 }
+
 /* ----FIN MENU---- */
 
 
 
 
-h2{
+h2 {
   text-align: center;
   text-transform: uppercase;
   color: rgb(54, 133, 236);
   text-shadow: 1px 1px 0px #575757;
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease; /* Transition de type ease */
   margin: 0;
-  position: relative;
-  top: -7vh;
+  margin-bottom: 2vh;
 }
 
 
 /* ----DEBUT SECTION ACCUEIL---- */
-#sectionAccueil{
-  background-image:url(../img/code2.png);
+#sectionAccueil {
+  background-image: url(../img/code2.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   font-size: 10vmin;
   color: white;
 }
-#tg{
+
+#tg {
   margin: 0;
-  position: relative;
-  top: 40vh;
   text-align: center;
   font-family: 'Comfortaa', cursive;
+  padding-top: 40vh;
+  padding-bottom: 10vh;
 }
-#apprenant{
-  font-size:3vmin;
+
+#apprenant {
+  font-size: 3vmin;
   text-align: center;
-  position: relative;
-  top: 50vh;
   margin: 0;
   font-family: 'Comfortaa', cursive;
 }
-.arrow-down.icon {
-  *color: #000;
-  *position: absolute;
-  *margin-left: 10px;
-  *margin-top: 2px;
-  *width: 1px;
-  *height: 16px;
-  *background-color: currentColor;
-}
-#v_container{
+
+#v_container {
   text-align: center;
   animation: rebond 1s infinite;
-  position: relative;
-  top: 50vh;
   font-size: 8vmin;
 }
-#v_container > p > a{
+
+#v_container>p>a {
   text-decoration: none;
   color: white;
   text-align: center;
 }
+
 @keyframes rebond {
-    0% {transform: translatey(0px);}
-    50% {transform: translatey(40%);}
-    100% {transform: translatey(0px);}
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(40%);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
 }
+
 /* ----FIN SECTION ACCUEIL---- */
 
 
 
 
 
-#section2, #section3, #section3b, #section4, #section5{
+#section2,
+#section3,
+#section3b,
+#section4,
+#section5 {
   margin: 0;
-  height: 70vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
   font-size: 3vmin;
   font-family: 'Comfortaa', cursive;
+  padding: 30px 0;
 }
 
 
 
 
 /* ----DEBUT SECTION 2---- */
-#section2{
+#section2 {
   background: #bdd4e7;
-  height: 170vh;
+  height: 100%;
 }
-#a_propos_descr{
+
+#a_propos_descr {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 25%;
+  margin: 0 6%;
 }
-#photo{
-  margin-right: 3%;
+
+#photo {
+  margin-right: 14%;
 }
-img{
+
+#photo img {
+  width: 200%;
+}
+
+#section img {
   height: 40vmin;
   border-style: solid;
   border-width: 10px 10px 50px 10px;
@@ -196,47 +226,51 @@ img{
   background: linear-gradient(rgb(194, 194, 194), rgb(98, 92, 78));
   border-radius: 5px;
 }
-q{
+
+q {
   font-size: 50px;
-  quotes:'«' '»'; /*Active les guillemets normale...*/
+  quotes: '«''»';
+  /*Active les guillemets normale...*/
   font-size: 3vmin;
 }
-#texte{
+
+#texte {
   background: -webkit-linear-gradient(rgb(4, 49, 145), rgb(90, 117, 235));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: auto;
 }
-#compétence{
-display: flex;
-justify-content: space-evenly;
+
+#compétence {
+  display: flex;
+  justify-content: space-evenly;
 }
-.titre_comp > i{
-  position: relative;
-  top: -4vh;
+
+.titre_comp>i {
   font-size: 7vw;
   color: #3684e9;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
-.titre_comp{
+
+.titre_comp {
   display: flex;
   flex-direction: column;
   width: 27vw;
   text-align: center;
-  position: relative;
-  top: 17vmin;
   font-size: 1.5vw;
   margin-bottom: 15vh;
 }
-.texte_comp{
-  /*font-size: 2.2vmin;*/
+
+.texte_comp {
   text-align: justify;
-  position: relative;
-  top: 4vmin;
   font-size: 1.2vw;
   hyphens: auto;
+  margin-top: 3vh;
 }
-div.titre_comp:nth-child(3){
+
+div.titre_comp:nth-child(3) {
   margin-bottom: unset;
 }
 
@@ -247,33 +281,98 @@ div.titre_comp:nth-child(3){
 
 
 /* ----DEBUT SECTION 3---- */
-#section3{
+#section3 {
   background: #aab9cf;
 }
-#parcours_date{
-  display:flex;
+
+#parcours_date {
+  display: flex;
   justify-content: center;
   background: -webkit-linear-gradient(rgb(4, 49, 145), rgb(90, 117, 235));
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#parcours{
+
+#parcours {
   margin-left: 3%;
 }
+
 /* ----FIN SECTION 3---- */
 
 
 
 /* ----DEBUT SECTION 3b---- */
-#section3b{
+#section3b {
   background: #8fa1bd;
-  height: 100vh;
+  height: 100%;
 }
+
+
+
+
+
+
+
+#projets section {
+  display: flex;
+  /* flex-direction: column; */
+  width: auto;
+  padding: 0 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tuto_guillaume,
+#create_pro,
+#zinfo974,
+#landing_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tuto_guillaume p,
+#create_pro p,
+#zinfo974 p,
+#landing_page p {
+  text-align: center;
+}
+
+#tuto_guillaume div,
+#create_pro div,
+#zinfo974 div,
+#landing_page div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.img_monitor {
+  width: 600px;
+}
+
+.img_mobile {
+  width: 200px;
+  position: relative;
+  right: 82px;
+}
+
+#tuto_guillaume a {
+  text-decoration: none;
+  margin-bottom: 4vh;
+}
+
+#tuto_guillaume input {
+  width: 100%;
+  padding: 0 50;
+}
+
 /* ----FIN SECTION 3b---- */
 
 
-input[type=submit]{
+input[type=submit] {
   width: 15vmin;
   height: 10vmin;
   font-size: 2vmin;
@@ -281,11 +380,14 @@ input[type=submit]{
   background-color: white;
   color: black;
   border: 2px solid rgb(37, 37, 37);
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
 }
-input[type=submit]:hover{
-  background-color: rgb(37, 37, 37); /* Black */
+
+input[type=submit]:hover {
+  background-color: rgb(37, 37, 37);
+  /* Black */
   color: white;
   cursor: pointer;
 }
@@ -293,14 +395,19 @@ input[type=submit]:hover{
 
 
 
+
+
 /* ----DEBUT SECTION 4---- */
-#section4{
+#section4 {
   background: #8693ab;
   align-items: center;
 }
-#txt_cv, #btn_cv{
+
+#txt_cv,
+#btn_cv {
   text-align: center;
 }
+
 /* ----FIN SECTION 4---- */
 
 
@@ -308,73 +415,137 @@ input[type=submit]:hover{
 
 
 /* ----DEBUT SECTION 5---- */
-#section5{
-  height: 100vh;
+#section5 {
+  height: 100%;
   background: #637074;
 }
-#contact2{
+
+#contact2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ligneform{
+
+.ligneform {
   display: flex;
 }
-label{
+
+label {
   width: 10vw;
 }
-#contact{
+
+#contact {
   text-align: center;
 }
-#message, #email, #nom{
+
+#message,
+#email,
+#nom {
   width: 76vmin;
   font-size: 2vmin;
 }
+
 /* ----FIN SECTION 5---- */
 
 /*----DEBUT MEDIAS QUERIES----*/
 @media screen and (max-width: 1020px) {
-  body{
+  body {
     width: auto;
   }
-  #menu{
+
+  #menu {
     width: auto;
   }
-  ul{
+
+  ul {
     font-size: 3vw;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
-  #tg{
+
+  #tg {
     font-size: 15vmin;
   }
-  #apprenant{
+
+  #apprenant {
     font-size: 4vw;
   }
-  #compétence{
+
+  #a_propos_descr {
+    flex-direction: column;
+  }
+
+  #photo {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #photo img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #texte {
+    text-align: center;
+  }
+
+  #compétence {
     width: auto;
     flex-direction: column;
     align-items: center;
   }
-  .titre_comp{
+
+  .titre_comp {
     width: 60vw;
     font-size: 25px;
+    margin: 0;
   }
-  .texte_comp{
+
+  .texte_comp {
     font-size: 18px;
   }
-  #section2{
+
+  div.titre_comp:nth-child(3)>div:nth-child(3) {
+    margin-bottom: 3vh;
+  }
+
+  #section2 {
     width: auto;
-    height: 200vh;
+    height: 100%;
+  }
+
+  #projets section {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tuto_guillaume,
+  #create_pro,
+  #zinfo974,
+  #landing_page {
+    width: 300px;
+    flex-direction: column;
+  }
+
+  .img_monitor {
+    width: 300px;
+  }
+
+  .img_mobile {
+    width: 100px;
   }
 }
-@media screen and (max-width: 450px){
-  #section2{
+
+@media screen and (max-width: 450px) {
+  #section2 {
     width: auto;
   }
-  .texte_comp{
-    font-size: 13px
+
+  .texte_comp {
+    font-size: 13px;
   }
 }
+
 /*----FIN MEDIAS QUERIES----*/
-
-
