@@ -78,7 +78,7 @@
      display: flex;
      flex-direction: column;
      align-items: flex-start;
-     background-color: rgba(255, 255, 255, 0.5);
+     background-color: rgba(255, 255, 255, 0.8);
      width: 100%;
      height: 95%;
  }
@@ -99,20 +99,6 @@
      flex: 1 1 auto;
  }
  
- #circuit {
-     display: block;
-     max-width: 100px;
-     max-height: 100px;
-     width: auto;
-     height: auto;
-     filter: invert(100%)
- }
- 
- #circuit:hover {
-     transition-property: transform;
-     transition-duration: 1s;
-     transition-timing-function: ease;
- }
  nav{
      margin-top: 200px;
      margin-left: 0px;
@@ -121,7 +107,7 @@
  .navul {
       list-style: none;
       margin: 0;
-      background: deepskyblue;
+      background-color: darkred;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -145,7 +131,7 @@
  }
  
  .navul li a:hover {
-     background: darken(deepskyblue, 2%);
+     background: darken(darkgrey, 2%);
  }
  
  @media all and (max-width: 800px) {
@@ -180,7 +166,7 @@
      padding-bottom: none;
  }
  .cv ul li{
-     text-align: left;
+     text-align: right;
  }
  
  main {
@@ -188,10 +174,7 @@
  }
  
  .CREA {
-     background-image: url("sources/yokohama-skyline.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-    
+         
      height: 750px;
  }
  
