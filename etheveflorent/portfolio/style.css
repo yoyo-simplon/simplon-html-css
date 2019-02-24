@@ -6,11 +6,12 @@
     display: flex;
     flex-direction: row;
     justify-self: flex-start;
-    border-radius: 40px;
-    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
-    animation: animationFrames 1.8s infinite;
+    border-radius: 50%;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 255, .2);
+    animation: animationFrames 5s infinite;
     animation-timing-function: linear;
 }
+
 
 @keyframes animationFrames{
     0% {
@@ -36,16 +37,6 @@
     }
   }
   
-
-
-.logo:hover {
-    /*transform:rotate(360000deg);
-    transition-timing-function: linear;
-    transition-duration: 180s;*/
-    animation: animationFrames 3s infinite;
-
-}
-
 .container-fluid {
     position: sticky;
     top: 0;
@@ -53,8 +44,7 @@
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
     display: block;
     text-align: left;
-    margin-right: 280px;
-    width: auto;
+    width: 100%;
 }
 
 .navBar {
@@ -64,18 +54,17 @@
     margin-right: 0px;
     border: 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .navBar ul {
     display: flex;
     flex-direction: row;
-    text-align: left;
-
+    width: 40%;
 }
 
 .navBar li {
-    margin-left: 30px;
+    margin-left: 35px;
     text-align: left;
     align-items: flex-end;
     list-style: none;
@@ -90,7 +79,7 @@ nav li:hover {
     width: 100%;
     direction: flex;
     flex-flow: row nowrap;
-    justify-items: flex-end;
+    justify-content: center;
     
 }
 
@@ -101,7 +90,7 @@ div {
 
 .titre {
     align-content: center;
-    padding-left: 50%;
+    padding-left: 40%;
     font-size: 1.3em;
     color: firebrick;
     margin-top: 0px;
@@ -110,18 +99,14 @@ div {
 }
 
 .nom {
-    padding-left: 40%;
+    padding-left: 35%;
     font-size: 3em;
 }
 
 .content {
     font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    column-count: 4;
-    hyphens: auto;
-    transform: scale(0.8);
-
-
+    transform: scale(0.9);
 }
 
 textarea {
@@ -133,41 +118,93 @@ textarea {
     background-color: coral;
 
 }
-
-@keyframes arts {
-    from {
-        background-color: coral;
-    }
-
-    to {
-        background-color: crimson;
-    }
-}
-
-
-.header:hover {
-    animation: arts 3s infinite;
-    
-}
-
 #contact {
     display: flex;
     justify-content: center;
 }
-.competences .content{
+ .content{
+     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color:lightsalmon;
+    flex-direction: column;
+    margin: 0px;
 }
 section{
-    width:230px;
-    height: 350px;
-    display: block;
+    width:95%;
+    height: 200px;
+    display: flex;
     margin: 0px;
+    justify-content: flex-start;
+    flex-direction: row;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-border: solid 1px black;
+    outline: solid 1px lavender;
+}
+section:nth-of-type(even){
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;   
+}
+
+section:nth-of-type(odd){
+background-color: lightgrey; 
+}
+section img{
+    display: flex;
+    align-self: center;
+
+}
+section div{
+    width: 33.3333333%;
+    font-size: 18px;
+}
+section div:nth-child(odd){
+float: right;
+    margin-right: 11%;
+    
+}
+section div:nth-child(even){
+float: left;
+    margin-left: 9%;
+    
 }
 section ul{
 list-style: none;
+}
+.image_circle{
+    border-radius: 50%;
+    border: 4px solid #eee;
+    height: 158px;;
+}
+
+
+
+
+
+@media all and (max-width:920px){
+    section div:nth-child(even){
+    float: left;
+    margin-left: 8%;
+    
+}
+    section{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .logo{
+        margin-right: 300px;
+    }
+.navBar li {
+    width: 100%;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+    
+    section div:nth-child(odd){
+float: right;
+    margin-right: 7%;
+    
+}
 }
