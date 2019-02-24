@@ -16,7 +16,8 @@
  @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 
  :root {
-     --main-bg-color: #6C7B8B;
+     --main-bg-color: rgb(139, 108, 108);
+     --nav-color: rgb(105, 3, 3);
  }
 
 
@@ -109,7 +110,7 @@
  .navul {
      list-style: none;
      margin: 0;
-     background-color: darkred;
+     background-color: var(--nav-color);
      display: -webkit-box;
      display: -moz-box;
      display: -ms-flexbox;
@@ -123,9 +124,12 @@
  .navul a {
      text-decoration: none;
      display: block;
-
      padding: 1em;
-     color: aliceblue;
+     font-family: 'Rubik Mono One', sans-serif;
+     color: var(--nav-color);
+     text-shadow: 0 5px 4px rgba(0, 0, 0, .6);
+     font-size: 15pt;
+     line-height: 1;
      text-align: center;
      /* padding: 10px;*/
      border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -133,7 +137,8 @@
  }
 
  .navul li a:hover {
-     background: darken(darkgrey, 2%);
+     background-color: darken(var(--nav-color), 2%);
+     color: var(--main-bg-color);
  }
 
  @media all and (max-width: 800px) {
@@ -160,7 +165,7 @@
 
  .CV {
      background-color: grey;
-    
+
      background-size: cover;
 
      height: 676px;
@@ -178,7 +183,7 @@
  }
 
  .CREA {
-background-color: lightgrey;
+     background-color: lightgrey;
      height: 750px;
  }
 
