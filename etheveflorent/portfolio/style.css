@@ -170,7 +170,7 @@ section{
     outline: solid 1px lavender;
 }
 section:nth-of-type(even){
-    display: :flex;
+    display:flex;
     flex-direction: row;
     justify-content: flex-end;
  
