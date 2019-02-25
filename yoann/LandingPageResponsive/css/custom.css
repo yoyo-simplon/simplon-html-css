@@ -1,0 +1,64 @@
+.autre{
+    width:80%;
+}
+
+hr{
+    width:25%;
+}
+
+h1{
+    color:white;
+}
+nav:first-child{
+    background-color:rgb(204, 193, 193);
+    padding:10px 10px;
+}
+body{
+    height:100%;
+}
+header{
+    background-image:url("../img/intro-bg.jpg");
+    height:400px;
+}
+
+img{
+    height:225px;
+}
+
+article{
+    display:flex;
+    justify-content: space-around;
+    width:50%;
+    margin:auto;
+    
+
+}
+
+#reverse{
+    display:flex;
+    flex-direction: row-reverse;
+
+}
+
+section{
+    background-color: rgb(204, 193, 193);
+}
+
+#pas-de-fond{
+    background-color:white;
+
+}
+
+#banniere-bas{
+    background-image:url("../img/banner-bg.jpg");
+    height:400px;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width:15%;
+}
+
+

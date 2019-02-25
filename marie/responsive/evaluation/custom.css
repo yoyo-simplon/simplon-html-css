@@ -1,0 +1,76 @@
+
+{
+body
+{
+    background: url("img/intro-bg.png");
+    background-color: white
+    
+ }
+
+ h1
+ {
+   text-align: center
+ }
+
+ .button
+ {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    display:flex
+
+ }
+
+ header
+ {
+   background-color white;
+   width: 1020px;
+   display: flex;
+    margin-left: 200px;
+
+}
+
+section
+{
+   display: flex
+   flex direction:row;
+
+}
+
+#conteneur
+{
+   display: flex
+   flex-direction: column;
+
+}
+article
+{
+   display:flex;
+   flex-wrap: wrap;
+}
+
+}
+image
+{
+height:100px;
+width: 100px;
+display: flex;
+flex-direction: column;
+justify-content:right;
+}
+
+footer
+{
+   background: url("img/bg.jpg");
+   height:100px;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li
+  {
+     display: flex;
+     flex-wrap: wrap;
+  }
