@@ -2,8 +2,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 
@@ -14,11 +14,11 @@
             <nav class="navBar">
                 <img src="poisson.jpg" class="logo" alt="poisson" />
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="#competences">Compétence</a></li>
-                    <li><a href="#diplomes">Diplôme</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" aria-labeledby="accueil">Accueil</a></li>
+                    <li><a href="#apropos" aria-labeledby="apropos">A propos</a></li>
+                    <li><a href="#competences" aria-labeledby="competence">Compétence</a></li>
+                    <li><a href="#diplomes" aria-labeledby="diplôme">Diplôme</a></li>
+                    <li><a href="#contact" aria-labeledby="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,39 +44,32 @@
         <div class="titre">Compétences</div>
         <div class="content">
             <section>
-                <header>WEB</header>
-                <article>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                        <li>JAVASCRIPT</li>
+                <div>
+                    <h4>2015-2016</h4>
 
-                    </ul>
-                </article>
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+
             </section>
 
             <section>
-                <header>Compilateur</header>
-                <article>
-                    <ul>
-                        <li>Netbeans</li>
-                        <li>Eclipse</li>
-                        <li>Visual code</li>
-                        <li>Web Dev</li>
-                    </ul>
-                </article>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+                <div>
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
             </section>
 
             <section>
-                <header>Base de données</header>
-                <article>
-                    <ul>
-                        <li>SQL</li>
-                        <li>UML</li>
-                        <li>Merise</li>
-                    </ul>
-                </article>
+                <div>
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+
             </section>
 
         </div>
@@ -86,19 +79,49 @@
     <div class="diplomes" id="diplomes">
         <div class="titre">diplômes</div>
         <div class="content">
+            
+                <section>
+                    <div>
+                        <h4>2015-2016</h4>
 
-        </div>
+                        AFPAR Saint Denis formation développeur logicel 8 mois
+                    </div>
+                    <img src="ecole.png" alt=ecole" class="image_circle" aria-labelledby="ecole" />
+
+                </section>
+
+                <section>
+                    <img src="ecole.png" alt=ecole" class="image_circle" />
+                    <div>
+                        <h4>2007-2014</h4>
+                        Ecole d'ingenieur Supinfo
+
+                    </div>
+
+                </section>
+                <section>
+                    <div>
+                        <h4>2015-2016</h4>
+
+                        AFPAR Saint Denis formation développeur logicel 8 mois
+                    </div>
+                    <img src="ecole.png" alt=ecole" class="image_circle" />
+
+                </section>
+
+            </div>
+       
 
     </div>
 
     <div id="contact" id="contact">
         <form method="POST">
-            Nom<input type="text" id="nom" /><br>
-            email<input type="email" id="email" /><br>
-            objet<input type="text" id="objet" /><br>
-            <textarea>
+            <label for="nom">Nom</label><input type="text" id="nom" title="nom" aria-label="Nom" aria-labelledby="Votre nom" /><br>
+            <label for="email">Email</label><input type="email" id="email" title="email" aria-label="email" /><br>
+            <label for="objet">objet</label><br>
+            <textarea id="objet" title="objet" aria-label="Avis">
 
-</textarea>
+        </textarea>
         </form>
     </div>
 </body>
