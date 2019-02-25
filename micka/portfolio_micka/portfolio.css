@@ -1,0 +1,52 @@
+body {
+    background-image: url("image_2.jpg");
+    width: 100%;
+}
+#bloc_page{width: 900px;
+            margin: auto;}
+header {
+    background-color: rgb(250, 166, 70);
+    display: flex;  
+   
+        
+}
+
+#titre_page {display: flex; 
+    
+}
+
+#logo{display: flex;
+height: 120px;
+padding: 7px;}
+
+nav ul
+{list-style-type: none;
+display: flex;
+justify-content: space-around;
+}
+
+nav a:hover
+{color: orange;
+border-bottom: 3px solid maroon;}
+
+nav {
+    display: flex;
+    background-image: url("image_nav.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 160px;
+    opacity: 0.8;
+    border-radius: 20px white solid;
+    box-shadow: 1px 3px 3px grey;
+  margin: 7px;
+}
+
+section {
+    background-color: rgb(250, 166, 70);
+    width: 90%;
+    border: 2px white solid;
+    color: white;
+    padding: 12px;
+    margin: 50px;
+}

@@ -1,0 +1,10 @@
+$black : #000;
+$grey  : #eee;
+nav li a {
+    color : $black;
+    background-color : $grey;
+    &:hover {
+        color : $grey;
+        background-color : $black;
+    }
+}
