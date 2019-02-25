@@ -1,6 +1,7 @@
 
 .body
 {
+    
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -10,41 +11,34 @@
 
 h1{
     color: rgb(255, 255, 255); 
-    font-size:50px;
+    font-size:60px;
 }
 
 
 header {
     background-image: url(images/header.jpg);
 }
-/*#top_menu {
+#top_menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40px;
-    background-color: rgb(192, 192, 192);
-}*/
-nav {
-    text-align: center;
-    display: flex;
+    
 }
 nav ul li{
     display: inline;
     color: black;
-}
-nav ul a li:first-child{
-    align-self: flex-end;
-}
-#menu {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 280px;
-    justify-content: flex-end;
+
+        .nav{
+     
+        text-align: center;
+        display: flex;
+            }
 }
 
+
 #banner {
-    background-image: url(intro-bg.jpg);
+   
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -59,23 +53,22 @@ footer {
     height: 300px;
     justify-content: center;
 }
-#zone1
+#zone1 .zonne245
 {
     display: flex;
     background-color: rgb(201, 201, 201);
 }
 #zone3{
-     display: flex;
-    background-color: rgb(201, 201, 201); 
+    
+    display: flex;
+    background-color: rgb(241, 241, 241); 
 }
 
-hr{
-margin: 30px;
-}
+
 h2 {
     display: flex;
-    flex-direction: column; 
-
+    justify-content: center; 
+    text-align: center;
 }
 
 #article1
@@ -94,6 +87,6 @@ flex-direction: column;
 {
     display: flex;
     justify-content: space-between;
-    flex-direction: column-reverse;
+  
     margin-left: 300px;
 }
