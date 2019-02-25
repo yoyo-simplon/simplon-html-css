@@ -236,6 +236,17 @@ footer p{
     margin-top:3%;
 }
 
+article h1{
+    margin-top:5%;
+    color:black;
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+article p{
+    margin-top:5%;
+}
+
 
 
 
