@@ -1,0 +1,29 @@
+/* BASICS : Declarations */
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+
+@mixin flex {
+    display: flex;
+    align-content: center;
+    outline: 2px solid red;
+}
+
+$anthracite: #545454;
+
+/* GENERAL */
+#main {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: $anthracite;
+}
+
+.flex {
+    @include flex();
+}
+
+#projects {
+    #project_img {
+        @include flex;
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+}
