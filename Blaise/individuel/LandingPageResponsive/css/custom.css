@@ -1,0 +1,96 @@
+/**** DEBUT HEADER ****/
+header { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid black
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav_header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.entete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/intro-bg.jpg");
+    border: 2px solid red;
+}
+
+
+
+
+/**** FIN HEADER ****/
+
+.bloc_page {
+    border: 2px solid blueviolet;
+}
+
+/**** DEBUT SECTION ****/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    border: 2px solid fuchsia;
+
+}
+
+/**** DEBUT ARTICLE ****/
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+    border: 2px solid red;
+}
+
+article img {
+    border: 2px solid black;
+
+}
+article p {
+    border: 2px solid black;
+}
+/**** FIN ARTICLE****/
+/**** FIN SECTION ****/
+
+
+/**** DEBUT FOOTER ****/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/banner-bg.jpg");
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    border: 2px solid greenyellow;
+
+}
+
+.nav_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    flex-basis: 50%;
+}
+
+/**** FIN FOOTER ****/
