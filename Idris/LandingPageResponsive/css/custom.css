@@ -1,44 +1,83 @@
+
 nav
 {
 
-    height: 30px;
-    width: 1267px;
-    background-color: grey;
-    border: 2px black solid;
-    padding-bottom: 20px;
-    
-
-
-    
-}
-
-p a{
-
+background-color:white;
+height: 50px;
 display: flex;
+flex-direction: row;
 align-items: center;
+justify-content: space-between;
+padding-left: 300px;
+padding-right: 300px;
 
 }
 
-ul
-{
+nav ul{
+    
+    
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
+    
 
 }
 
 
 
-.bgimg{
-
-    height: 500px;
-    width: 1267px;
-    border: 2px black solid;
-    background-color: red;
+.landingpage{
 
 
+display: flex;
+flex-direction: column;
+align-items: center;
+background-image: url(../img/intro-bg.jpg);
+padding-top: 100px;
+padding-bottom: 100px;
+color: white;
+
+
+}
+
+.landingpage p{
+
+    display: flex;
+    justify-content:  center;
+    font-size: 50px;
+   
+}
+
+
+hr{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    
+   
+
+}
+
+.landingpage ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+i {
+
+padding: 10px 30px;
+background:white;
+color: #000000;
+-webkit-border-radius: 11px;
+-moz-border-radius: 11px;
+border-radius: 11px;
+border: 2px solid #46a28d;
+}
+i:hover {
+background: #34393E;
+color: #5EB6DD;
 }
 
 .blocpage
@@ -61,7 +100,5 @@ footer{
 
 
 }
-
-
 
 
