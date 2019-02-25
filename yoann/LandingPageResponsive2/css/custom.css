@@ -24,6 +24,8 @@ button{
 }
 .autre{
     width:80%;
+    display:flex;
+    list-style-type: none;
 }
 
 hr{
@@ -48,7 +50,7 @@ header h2{
     font-size: 1.25em;
     text-shadow: 3px 3px 5px rgb(61, 55, 55);
     width:100%;
-    margin-left:11.9%;
+    margin-left:10.8%;
    
 }
 nav:first-child{
@@ -61,7 +63,7 @@ nav:first-child li{
 }
 
 nav:first-child li:first-child{
-   margin-right:50%;
+   margin-right:65%;
 }
 
 nav:first-child a{
@@ -70,13 +72,18 @@ nav:first-child a{
     font-weight: bold;
     font-size: 0.8em;
     color:rgb(114, 107, 107);
+ 
 }
 
 nav:first-child ul{
     display:flex;
     list-style-type: none;
     justify-content: flex-end;
-    width:90%;
+    width:70%;
+}
+
+nav:first-child .autre{
+   margin-top:0px;
 }
 
 header{
@@ -102,8 +109,8 @@ header{
     display:flex;
     list-style-type:none;
     justify-content: space-between;
-    width:85%;
-    margin-left:6%;
+    width:86%;
+    
 }
 
 #contenu-text-header li{
@@ -118,8 +125,7 @@ span{
 
 
 #contenu-text-header hr{
-    width:90%;
-    margin:auto;
+    width:85%;
     margin-top: 0;
     margin-bottom: 0;
     
@@ -165,13 +171,69 @@ footer{
     
     display:flex;
     height:60%;
+    background-position: center;
+    background-position: 25% 48.9%;
+    background-size: 118%
 }
 
+
+
+
+#banniere-bas h2{
+font-family: sans-serif;
+font-weight: bold;
+color:white;
+font-size: 2.25em;
+text-shadow: 3px 3px 5px rgb(61, 55, 55);
+width:100%;
+margin-left:10.8%;
+
+}
+
+#contenu-bb{
+    display:flex;
+    width:80%;
+    margin-top:7%;
+    margin:auto;
+}
 
 #banniere-bas ul{
     display:flex;
     list-style-type:none;
+    width:80%;
+}
 
+#banniere-bas li{
+    margin-left: 2.5%;
+}
+#banniere-bas a{
+    margin-left: 2.5%;
+}
+
+footer p{
+    font-family: sans-serif;
+    /*font-weight: bold;*/
+    font-size: 0.8em;
+    color:rgb(114, 107, 107);
+    margin-left: 19.2%;
+    margin-top:1%;
+}
+
+.autre a{
+    text-decoration:none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    color:rgb(6, 114, 255);
+}
+
+.autre li{
+    margin-left:1.5%;
+}
+
+.autre{
+    margin-left: 18%;
+    margin-top:3%;
 }
 
 
