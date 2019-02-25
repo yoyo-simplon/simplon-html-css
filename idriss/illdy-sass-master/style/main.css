@@ -1,0 +1,24 @@
+/* BASICS */
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+/* GENERAL */
+#main {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  width: 100%;
+  color: #545454;
+}
+
+.flex {
+  display: flex;
+  align-content: center;
+  outline: 2px solid red;
+}
+
+#projects #project_img {
+  display: flex;
+  align-content: center;
+  outline: 2px solid red;
+  flex-wrap: nowrap;
+  width: 80%;
+}
+
+/*# sourceMappingURL=main.css.map */
