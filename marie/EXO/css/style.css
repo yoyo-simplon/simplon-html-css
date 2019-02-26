@@ -1,5 +1,22 @@
-#banner
+
+/* entête */
+header
 {
-    background-image: url("../images/header.jpeg");
-    height: 200px;
-}
+    background-image: url("header.jpg");
+    background-position: center;
+    font-size: cover;
+    height: auto;
+ }
+
+
+nav
+{
+display:flex;
+direction: right;
+ }
+ 
+ li
+ {
+display: flex;
+align-content: center;
+ }
