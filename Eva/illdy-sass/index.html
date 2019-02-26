@@ -2,8 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="main.css" />
         <title>illdy</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     </head>
 
 
@@ -11,7 +14,7 @@
 
    <header>                                                                                                              <!-- HERO -->
 
-        <nav >                                                                                                             <!-- NAV -->
+            <nav >                                                                                                             <!-- NAV -->
                 <ul class="navtop">
                    <li>about</li>
                    <li>Portfolio</li>
@@ -21,16 +24,16 @@
                    <li>Our team</li>
                    <li>Contact us</li>
                 </ul>
-              </nav>
+            </nav>
 
        <div class="titre"> 
            <h1>Clean.Slick.Pixel Perfect</h1>
-           <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam.</p>
+           <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam quae secundum naturam essent.</p>
         </div>
 
-        <div class="button"> 
-            <button onclick="#">Learn more</button>
-            <button onclick="#">Download</button>
+        <div class="doublebouton"> 
+            <button class="boutton1" onclick="alert('Learn More')">Learn more</button>
+            <button class="boutton2" onclick="alert('Download!')">Download</button>
         </div>
     </header>
 
@@ -43,10 +46,12 @@
     <section class="projects">
             <h2>Projects</h2>
             <p>Positum est a nostris in iis esse rebus, quae secundum.</p>
-            <img src="images/bureau.jpg" alt="bureau">
-            <img src="images/plafond.jpg" alt="plafond">
-            <img src="images/ordi.jpg" alt="ordi">
-            <img src="images/carnet.jpg" alt="carnet">
+            <div class="imgprojets">
+                <img src="images/bureau.jpg" alt="bureau">
+                <img src="images/plafond.jpg" alt="plafond">
+                <img src="images/ordi.jpg" alt="ordi">
+                <img src="images/carnet.jpg" alt="carnet">
+            </div>
     </section>
 
     <section class="services">
@@ -73,31 +78,64 @@
     <section class="latest-news">
             <h2>Latest News</h2>
             <p>Positum est a nostris in iis esse rebus, quae secundum.</p>
-            <button onclick="#" > SEE BLOG</button>
+            <button onclick="alert('See Blog')"> SEE BLOG</button>
 
             <div class="news">
+
                 <article class="news1">
                     <img src="images/mers.jpg">
                     <h3>News1</h3>
                     <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
+                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>                     
+                    <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>
                 </article>
+
                 <article class="news2">
-                        <img src="images/vallees.jpg">
-                        <h3>News2</h3>
-                        <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                                Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-                    </article>
-                <article class="news3">
-                        <img src="images/montagnes.jpg">
-                        <h3>News3</h3>
+                    <img src="images/vallees.jpg">
+                    <h3>News2</h3>
                     <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
+                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p> 
+                    <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>       
                 </article>
+
+                <article class="news3">
+                    <img src="images/montagnes.jpg">
+                    <h3>News3</h3>
+                    <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                        Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>  
+                    <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>      
+                </article>
+
             </div>
     </section>
                         
     <footer class="footer">
+
+            <ul class="products">
+                <h3>Products</h3>
+                    <li>Our work</li>
+                    <li>Club</li>
+                    <li>News</li>
+                    <li>Annoumcement</li>
+            </ul>
+            <ul class="information">
+                <h3>Information</h3>
+                    <li>Pricing</li>
+                    <li>Terms</li>
+                    <li>Affiliates</li>
+                    <li>Blog</li>
+            </ul>
+            <ul class="support">
+                <h3>Support</h3>
+                    <li>Documentation</li>
+                    <li>FAQs</li>
+                    <li>Forums</li>
+                    <li>Contact</li>
+            </ul>
+ 
+            <p class="copyright">
+                Theme: Illdy. (c) Copyright 2016. All Rights Reserved.
+            </p>
 
     </footer>
 
