@@ -8,6 +8,10 @@ $yellow:rgba(255,
 217,
 0,
 1);
+body {
+    margin: 0px;
+}
+
 header {
     height: 800px;
     display: flex;
@@ -98,5 +102,38 @@ section {
         h2 {
             font-weight: bold;
         }
+        .img-article2 {
+            display: flex;
+            justify-content: center;
+            img {
+                display: block;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 0px;
+                width: 25%;
+                height: 25%;
+            }
+        }
+    }
+}
+
+.icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p {
+        padding: 1em;
+        width: 350px;
+        color: grey;
+    }
+}
+
+.article3 {
+    background-color: #0a1b2a;
+    h2 {
+        color: $white-text;
+    }
+    p {
+        color: grey;
     }
 }
