@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*variable que je nomme moi même*/
+/*imbrication parent-child*/
+.entete, .footer {
+  background-image: url(jjjjjbhjhjg);
+}
+.entete ul, .footer ul {
+  list-style-type: none;
+}
+
+/*héritage*/
+.entete, .footer {
+  background-image: url(jjjjjbhjhjg);
+  display: flex;
+}
+
+/*mixin je choisit les propriétés que je désire et j'en fais un paquage*/
+/*si je veux réutiliser le mixin 1, @include 1*/
+nav {
+  Color: blue;
+  font-style: arial;
+}
+
+/*# sourceMappingURL=tests_css.css.map */
