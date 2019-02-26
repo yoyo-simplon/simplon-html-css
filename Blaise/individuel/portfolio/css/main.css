@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "police_un";
+    src: url("font-family/Lobster/Lobster-Regular.ttf")
+}
+
+@font-face {
+    font-family: "police_deux";
+    src: url("font-family/Roboto/RobotoSlab-Regular.ttf")
+}
+
+p {
+    font-family: "police_deux";
+}
+
+body {
+
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffa502;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/****** DEBUT HEADER ******/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    height: 100vh;
+    font-family: "police_un";
+    background-image: url(../images/banner_top.png);
+    border-bottom: 3px solid white;
+
+}
+
+#Accueil p {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.titre h1 {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 10em;
+    color: white;
+    padding: 20px;
+    border: 7px solid white;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    border: 4px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+
+}
+
+nav a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+/****** FIN HEADER ******/
+
+/************ DEBUT SECTION ************/
+
+article h1 {
+    font-family: "police_un";
+}
+
+article {
+
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+/****** DEBUT ARTICLE 1 ******/
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.velkoz {
+    border: 6px solid #ffa502;
+    margin-right: 30px;
+    box-shadow: 1px 1px 1px 6px white;
+}
+
+#presentation h1 {
+    font-size: 5em;
+    margin: 0px;
+    padding-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.perso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.perso p {
+    font-size: 3em;
+    color: white;
+    overflow-wrap: normal;
+}
+
+.velkoz {
+    border-radius: 100%;
+    height: 300px;
+}
+
+.routine_gamer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+
+    /* margin-top: 100px; */
+}
+/****** FIN ARTICLE 1 ******/
+
+/****** DEBUT ARTICLE 2 ******/
+
+#mon_contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#mon_contenu img {
+    border-radius: 3px;
+    box-shadow: 1px 1px 30px #ffa502;
+    height: 70%;
+}
+
+/****** FIN ARTICLE 2 ******/
+
+/************ FIN SECTION  ************/
+
+/************ DEBUT FORMULAIRE  ************/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1 {
+    text-align: center;
+    color: #ffa502;
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+    white-space:nowrap;
+}
+
+form {
+    box-shadow: 1px 1px 10px orangered;
+    border-radius: 3px;
+    background-color: #F2F2F2 ;
+    padding: 50px ;
+    height: 75%;
+    width: 30%;
+}
+
+input[type=text], input[type=mail], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    resize: none;
+    transition: 1s;
+}
+
+input[type=text]:focus, input[type=mail]:focus, textarea:focus {
+    border: 3px solid #ffa502;
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: #ffa502;
+    color: white;
+    font-size: 1em;
+    box-shadow: 0px -2px 7px #313A3D inset;
+    transition: filter 0.2s;
+
+}
+
+input[type=button]:hover {
+    filter: brightness(1.1);
+}
+
+input[type=button]:active {
+    box-shadow: 0px 2px 7px #313A3D inset;
+  }
+
+
+/************ FIN FORMULAIRE  ************/

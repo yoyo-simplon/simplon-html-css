@@ -1,0 +1,92 @@
+
+.body
+{
+    
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 1010px;
+   
+}
+
+h1{
+    color: rgb(255, 255, 255); 
+    font-size:60px;
+}
+
+
+header {
+    background-image: url(images/header.jpg);
+}
+#top_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    
+}
+nav ul li{
+    display: inline;
+    color: black;
+
+        .nav{
+     
+        text-align: center;
+        display: flex;
+            }
+}
+
+
+#banner {
+   
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer {
+    background-image: url(intro-bg.jpg);
+    color: white;
+    height: 300px;
+    justify-content: center;
+}
+#zone1 .zonne245
+{
+    display: flex;
+    background-color: rgb(201, 201, 201);
+}
+#zone3{
+    
+    display: flex;
+    background-color: rgb(241, 241, 241); 
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+#article1
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-left: 300px;
+}
+#article2{
+    display: flex;
+flex-direction: column;
+}
+
+#article3
+{
+    display: flex;
+    justify-content: space-between;
+  
+    margin-left: 300px;
+}

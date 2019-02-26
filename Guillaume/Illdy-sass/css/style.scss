@@ -1,3 +1,22 @@
+/* Mixin*/
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/*Variable*/
+
+$Jaune-illdy:#f1d204;
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +25,76 @@
 .banniere {
     background-image: url(../img/header.jpg);
     background-size: cover;
-    height: auto;
+    height: 50vw;
+    padding: 0 20%;
+    @include flex-col();
+    color: white;
+
+
+    .texte-et-bouton{
+        margin-top: 25%;
+        @include flex-col();
+        align-items: center;
+        h1{
+            font-size: 4vw;
+            .point-jaune-titre{
+                color: $Jaune-illdy;
+            }
+        }
+        p{
+            margin: 3% 0;
+            text-align: center;
+        }
+        .button-container{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+
+                button{
+                padding: 4% 10%;
+                background: #ffffff4d;
+                border: solid white;
+                cursor: pointer;
+                transition: background .5s;
+                color: white;
+                font-weight: bold;
+                &:hover{
+                    background: $Jaune-illdy;
+                    border: solid $Jaune-illdy;
+                    transition: background .5s;
+                    
+
+                }
+
+            }
+        }
+        
+
+    }
+
+    .logo-et-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    .menu{
+        width: 85%;
+        text-align: right;
+        a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left:1vw;
+            &:hover{
+                color: #f1d204;
+            }
+
+        }
+    }
+        
+    }
+
 }
+
+
 

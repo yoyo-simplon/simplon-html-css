@@ -1,0 +1,57 @@
+/* Mixin*/
+/*Variable*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.banniere {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  height: 50vw;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  color: white; }
+  .banniere .texte-et-bouton {
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .banniere .texte-et-bouton h1 {
+      font-size: 4vw; }
+      .banniere .texte-et-bouton h1 .point-jaune-titre {
+        color: #f1d204; }
+    .banniere .texte-et-bouton p {
+      margin: 3% 0;
+      text-align: center; }
+    .banniere .texte-et-bouton .button-container {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly; }
+      .banniere .texte-et-bouton .button-container button {
+        padding: 4% 10%;
+        background: #ffffff4d;
+        border: solid white;
+        cursor: pointer;
+        transition: background .5s;
+        color: white;
+        font-weight: bold; }
+        .banniere .texte-et-bouton .button-container button:hover {
+          background: #f1d204;
+          border: solid #f1d204;
+          transition: background .5s; }
+  .banniere .logo-et-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%; }
+    .banniere .logo-et-menu .menu {
+      width: 85%;
+      text-align: right; }
+      .banniere .logo-et-menu .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left: 1vw; }
+        .banniere .logo-et-menu .menu a:hover {
+          color: #f1d204; }
