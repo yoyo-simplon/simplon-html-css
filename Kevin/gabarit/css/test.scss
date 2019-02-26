@@ -1,0 +1,88 @@
+/* $widtheight:100vh; 
+$parging: 50vh; 
+
+.section2
+{
+height:$widtheight; 
+width:$widtheight;
+margin:$parging;
+padding:$parging;
+}
+
+.section3
+{
+    @extend .section2;
+    color: blue;
+}
+*/
+@mixin text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-align:center;
+
+}
+@mixin title { 
+    font-family: 'Poppins', sans-serif;
+        text-align:center;
+        font-size: 20px;
+     margin:40px; 
+    font-weight:bold;
+    
+ }
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+
+h2
+{
+@include title;
+}
+
+p{
+    @include text;
+}
+.entete{
+    display:flex;
+    background-image: url("../img/header.jpg");
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 950px;
+    height: 500px;
+}  
+/*
+.section2
+{
+    display: flex;
+}
+*/
+.images
+{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+ul
+{
+    display:flex;
+    justify-content: space-between;
+    list-style-type:none;  
+    color: white;
+}
+
+#titre_entete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+}
+
+#bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
