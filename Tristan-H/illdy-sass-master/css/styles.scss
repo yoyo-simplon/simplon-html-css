@@ -123,8 +123,10 @@ section {
     justify-content: center;
     p {
         padding: 1em;
-        width: 350px;
-        color: grey;
+        width: 300px;
+        font-family: $Poppins;
+        color: #bdbdbd;
+        font-size: 11px;
     }
 }
 
@@ -134,6 +136,17 @@ section {
         color: $white-text;
     }
     p {
-        color: grey;
+        color: #bdbdbd;
+        font-size: 12px;
+    }
+    .landscape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 25%;
+        margin-right: 25%;
+        img {
+            width: 300px;
+        }
     }
 }

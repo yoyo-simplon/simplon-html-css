@@ -123,8 +123,10 @@ section article .img-article2 img {
 
 .icone p {
   padding: 1em;
-  width: 350px;
-  color: grey;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  color: #bdbdbd;
+  font-size: 11px;
 }
 
 .article3 {
@@ -136,5 +138,18 @@ section article .img-article2 img {
 }
 
 .article3 p {
-  color: grey;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.article3 .landscape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.article3 .landscape img {
+  width: 300px;
 }
