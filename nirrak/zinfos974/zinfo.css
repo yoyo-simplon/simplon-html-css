@@ -1,0 +1,74 @@
+body
+{
+    margin-left:200px;
+    margin-right:200px;
+    background-color:
+}
+.conteneur
+{
+    background:rgb(155, 20, 20);
+    display: flex;
+    justify-content: center;
+}
+
+.menu
+{
+display:flex;
+justify-content: space-between;
+padding: 10px;
+border: 1px solid blue;
+}
+
+form
+{
+    display:flex;
+    justify-content: right;
+       
+}
+.jour
+{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 916px;
+    height: 350px;
+    border:1px solid black;
+}
+
+section
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    }
+
+    .info1
+    {
+        padding: 10px;
+        border: 1px solid red;
+        width: 200px;
+        height: 450px;
+    }
+
+.info2
+{
+padding:10px;
+border:1px solid yellow;
+width: 200px;
+height: 450px;
+}
+
+.info3
+{
+padding: 10px;
+border: 1px solid green;
+width: 200px;
+height: 450px;
+}
+
+.test
+{
+    display:flex;
+    justify-content: center;
+}
+

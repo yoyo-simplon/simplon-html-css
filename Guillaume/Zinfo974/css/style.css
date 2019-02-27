@@ -1,0 +1,610 @@
+/*https://codepen.io/erikterwan/pen/EVzeRP*/
+
+body {
+    margin: auto;
+
+}
+
+/*----Header fixe----*/
+header,
+#barresociale {
+    position: fixed;
+    width: 100%;
+}
+
+#barresociale {
+    margin-top: 200px;
+}
+
+/*----FIN Header fixe----*/
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #bf0f00;
+    height: 200px;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
+
+/*----MENU DESKTOP----*/
+ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+li {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#bouton_connexion {
+    height: 50px;
+    justify-self: right;
+    margin-right: 10px;
+}
+
+#menu ul a {
+    text-decoration: none;
+}
+
+#menu ul a li {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+#menu>ul:nth-child(1)>a:nth-child(4)>li:nth-child(1) {
+    margin-right: 0;
+}
+
+
+/*----FIN MENU DESKTOP----*/
+
+
+
+
+
+/*----BARRE SOCIAL----*/
+#barresociale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 15px black;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#c5c5c5));
+    background: linear-gradient(#fff, #c5c5c5);
+    z-index: 0;
+}
+
+#icons a i {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: #bf0f00;
+}
+
+#icons a:hover {
+    cursor: pointer;
+}
+
+#icons a i.fa-envelope:hover {
+    color: rgb(188, 132, 60);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+#icons a i.fa-facebook:hover {
+    color: #365899;
+    ;
+    -webkit-transition-duration: 0.5s;
+    ;
+    transition-duration: 0.5s;
+}
+
+#icons a i.fa-twitter-square:hover {
+    color: #1da1f2;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.fab,
+.fas {
+    font-size: 50px;
+}
+
+#searchbar {
+    -ms-flex-item-align: right;
+    align-self: right;
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    margin-right: 10px;
+}
+
+/*----FIN BARRE SOCIAL----*/
+
+
+#blocmain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    padding-top: 250px;
+    /*On laisse la place pour le header*/
+
+}
+
+/*----BLOC ARTICLE----*/
+
+#blocarticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 60%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    z-index: -5;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bloctext {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 80px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.article img {
+    margin: auto 0;
+}
+
+/*----FIN BLOC ARTICLE----*/
+
+#blocvideo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 40%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: -5;
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #bf0f00;
+    height: 120px;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+#adress {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/*--------------------------------------------*/
+.search-container {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #bf0f00;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.search-container button:hover {
+    background: #444343;
+}
+
+
+/*----HAMBURGER MENU----*/
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    visibility: hidden;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    -webkit-transform-origin: 4px 0px;
+
+    transform-origin: 4px 0px;
+
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease,
+        -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.*/
+#menuToggle input:checked~span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #d4b2b2;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked~span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu_hamburger {
+    position: absolute;
+    width: 300px;
+    margin: 90px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    -webkit-transform-origin: 0% 0%;
+
+    transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu_hamburger li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menu_hamburger a {
+    color: #bf0f00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+    -webkit-transform: none;
+    transform: none;
+}
+
+/*----HAMBURGER MENU----*/
+
+
+
+
+
+/*----MEDIA QUERIES----*/
+@media screen and (max-width: 1024px) {
+    header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 120px;
+    }
+
+    .logo_zinfo974 {
+        margin: auto;
+        text-align: center;
+    }
+
+    header a img {
+        width: 80%;
+    }
+
+    #menu {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        position: relative;
+        margin-left: 20px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        top: -21px;
+    }
+
+    #menu ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+
+    #bouton_connexion {
+        position: absolute;
+        top: 35px;
+        right: 0vw;
+    }
+
+    #barresociale {
+        -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
+        top: -80px;
+
+    }
+
+    #icons {
+        margin-left: 10px;
+    }
+
+    #main {
+        width: auto;
+    }
+
+    #blocmain {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    #blocarticle {
+        width: 90%;
+    }
+
+    .bloctext {
+        width: 90%;
+
+    }
+
+    .article {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .article img {
+        width: 90%;
+    }
+
+    #blocvideo {
+        width: 100%;
+    }
+
+    .video {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .video img {
+        width: 100%;
+    }
+
+    form {
+        width: auto;
+    }
+
+    form input {
+        width: 98px;
+    }
+
+    footer {
+        width: auto;
+        font-size: 15px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    footer img {
+        width: 70%;
+        display: none;
+    }
+
+    #menuToggle {
+        visibility: visible
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu_hamburger a:first-child {
+        *color: blue;
+        position: relative;
+        bottom: 50px;
+        border: solid 1px;
+        text-align: center;
+        *background: grey;
+
+    }
+
+    #menu_hamburger a:first-child li {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    #menu_hamburger a:hover {
+        color: #333;
+    }
+
+    #bouton_connexion {
+        display: none;
+    }
+
+}
+
+/*---- FIN MEDIA QUERIES----*/

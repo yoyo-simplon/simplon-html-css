@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zinfo974</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo_zinfo974" href="#"><img src="img/logo-zinfo974.png" alt="logo Zinfo974"></a>
+
+        <nav id="menu">
+
+            <ul>
+                <a href="#">
+                    <li>ZINFO LOCAL</li>
+                </a>
+                <a href="#">
+                    <li>ZINFO NATIONAL</li>
+                </a>
+                <a href="#">
+                    <li>SPORTS</li>
+                </a>
+                <a href="#">
+                    <li>FAITS DIVERS</li>
+                </a>
+
+            </ul>
+        </nav>
+        <div role="navigation">
+            <div id="menuToggle">
+                <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+                <input type="checkbox" />
+
+                <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+                <ul id="menu_hamburger">
+                    <a href="#">
+                        <li>Se connecter</li>
+                    </a>
+                    <a href="#">
+                        <li>ZINFO LOCAL</li>
+                    </a>
+                    <a href="#">
+                        <li>ZINFO NATIONAL</li>
+                    </a>
+                    <a href="#">
+                        <li>SPORTS</li>
+                    </a>
+                    <a href="#">
+                        <li>FAITS DIVERS</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <input id="bouton_connexion" type="submit" value="SE CONNECTER">
+
+    </header>
+    <div id="barresociale">
+        <div id="icons">
+            <a href="#" title="newsletter"><i class="fas fa-envelope"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a>
+        </div>
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Chercher.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <main>
+        <div id="blocmain">
+            <div id="blocarticle">
+                <h1> A LA UNE </h1>
+                <div class="article">
+                    <img src="img/300x200.png" alt="image">
+                    <div class="bloctext">
+                        <h2> TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam
+                        vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi
+                        eget mauris diam.
+                    </div>
+                </div>
+                <div class="article"> <img src="img/300x200.png" alt="image">
+                    <div class="bloctext">
+                        <h2>TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam
+                        vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi
+                        eget mauris diam.
+                    </div>
+                </div>
+
+                <div class="article"> <img src="img/300x200.png" alt="image">
+                    <div class="bloctext">
+                        <h2>TITRE</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dolor justo, bibendum eget diam
+                        vehicula, maximus elementum quam. Vestibulum sit amet feugiat sem, quis congue risus. Morbi
+                        eget mauris diam.
+                    </div>
+                </div>
+            </div>
+            <div id="blocvideo">
+                <div class="video">
+                    <img src="img/300x200.png" alt="video">
+                </div>
+                <div class="video">
+                    <img src="img/300x200.png" alt="video">
+                </div>
+                <div class="video">
+                    <img src="img/300x200.png" alt="video">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <a id="logo_zinfo974" href="#"><img src="img/logo-zinfo974.png" alt="logo Zinfo974"></a>
+        <p id="contact">
+            06 92 97 75 75<br />
+            contact@zinfos974.com
+        </p>
+        <p id="adresse">
+            1F Rue de La Martinique<br />
+            97490 Sainte-Clotilde
+        </p>
+    </footer>
+
+</body>
+
+</html>

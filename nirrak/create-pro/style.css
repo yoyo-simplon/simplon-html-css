@@ -1,0 +1,63 @@
+body {
+    background-image: url("/home/user/cours/Create-pro/images/bg.jpg");
+}
+
+#conteneurphoto
+{
+        display: flex;
+        outline: 2px solid blue;
+}
+
+.elementphoto 
+{
+        column-count: 3;
+        column-width: 260px;
+        column-gap: 3px;  
+}
+h1
+{
+        display: flex;
+        justify-content: center
+}
+
+.elementitre
+{
+    font-size: 133px;
+    color: #cfa205;
+}
+
+#conteneurpbo
+{
+        display: flex;
+        justify-content: center
+}
+
+.elementpbo
+{
+    font-size: 18px;
+    color: #cfa205;
+}
+
+ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+   li {
+    float:left; /*pour IE*/
+    border-left:1px solid black;
+    }
+   ul li a {
+    display:block;
+    float:left;   
+    width:200px;
+color: white; 
+    text-decoration:none;
+    text-align:center;
+    }
+
+   .menu {
+            display: flex;
+            justify-content: center;
+                
+    } 

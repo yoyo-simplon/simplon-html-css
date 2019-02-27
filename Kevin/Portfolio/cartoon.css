@@ -1,0 +1,100 @@
+@keyframes otherside {
+
+    0% { 
+        transform:translateX(0px);
+    }
+    
+    50% {
+        transform: translateX(150px);
+        }
+    
+    100% {
+        transform: translateX(500px);
+    }
+}
+@keyframes infiniterotate {
+
+    0% {
+        transform:rotate(0deg);
+    }
+    100% 
+    {
+            transform: rotate(360deg);
+        }
+
+    }
+
+.koala
+{
+    animation:infiniterotate 3s infinite linear;  
+    
+} 
+
+    textarea
+{
+ width:400px;
+ height:150px;   
+}
+
+.navion
+
+{
+  display: flex;
+  justify-content:space-around;
+}
+
+nav
+{
+    font-size: 4.5em;
+}
+
+
+#saymyname
+{
+    color: red;
+text-align: center;
+text-shadow: 3px 3px 3px  black;
+border: 3px black solid;
+}
+
+#saymyname:hover{
+animation:otherside 5s;
+}
+ul
+{
+color: blue;
+text-align: justify;
+font-weight: bold;
+}
+
+p
+
+{
+    font-family: "Comic Sans MS", Arial, Impact, sans-serif ;
+	text-align:left;
+}
+
+.welcome
+{
+    color:green;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2
+{
+    text-decoration: underline;
+}
+
+img
+{
+    height: 5Opx;
+    width: 100px;
+}
+
+body
+
+{
+    background-image: url("wallpaper.jpg");
+  
+}

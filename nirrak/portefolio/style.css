@@ -1,0 +1,89 @@
+body
+{
+    background-color: rgb(217, 255, 0);
+}
+
+@keyframes animation-p {
+
+        from {
+                margin-left: 15%;
+                width: 50%;
+        }
+    
+        to {    
+                
+                margin-left: 65%;
+                width: 50%;
+        }
+}
+
+p 
+{
+        font-weight: bold;
+        font-size: 20px;
+        animation-duration: 3s;
+        animation-name: animation-p;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+
+p:hover
+{
+        text-decoration:none;
+        background-color: white;
+
+}
+
+h1
+{ 
+        padding-left: 30px;
+        color : blue;
+        margin-left: 50px; 
+        border-radius: 20px;
+        box-shadow: 6px 5px 10px grey;
+}
+
+h1:hover
+{
+        color: red;
+}
+
+
+
+#conteneurcv
+{ 
+        display: flex;     
+        flex-direction: column; 
+}
+
+.elementcv 
+{
+        margin-left: 150px;
+}
+
+#conteneurphoto
+{
+        display: flex;
+}
+
+.elementphoto 
+{
+        margin-left: 200px;    
+       
+}
+
+.elementphoto:hover
+{
+    transform: scale(1.1);  
+}
+
+#conteneurcontact
+{
+        display: flex;
+}
+
+.elementcontact
+{
+        margin-left: 150px;
+        
+}

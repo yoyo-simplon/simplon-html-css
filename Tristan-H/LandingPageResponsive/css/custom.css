@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex: 1, auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+nav {
+    width: 1040px;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: space-around;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: rgb(100, 149, 255);
+    font-weight: bold;
+}
+
+ul a:hover {
+    color: black;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1040px;
+    height: 500px;
+    background-image: url(../img/intro-bg.jpg);
+}
+
+.intro h1,
+.intro h3 {
+    color: white;
+}
+
+article {
+    width: 300px
+}
+
+.pair {
+    background-color: rgb(238, 238, 238);
+}
+
+section {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 30px;
+}
+
+img {
+    width: 200px;
+}
+
+article a {
+    text-decoration: none;
+    color: rgb(100, 149, 255);
+}
+
+footer ul {
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.end {
+    background-image: url("../img/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1040px;
+    height: 100px;
+}
+
+.end h2 {
+    color: white;
+}

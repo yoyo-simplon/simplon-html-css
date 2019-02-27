@@ -1,0 +1,194 @@
+/* Mixin*/
+/*Variable*/
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.banniere {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  height: 50vw;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  color: white; }
+  .banniere .texte-et-bouton {
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .banniere .texte-et-bouton h1 {
+      font-size: 4vw;
+      font-family: "Poppins", sans-serif; }
+      .banniere .texte-et-bouton h1 .point-jaune-titre {
+        color: #f1d204;
+        font-family: initial; }
+    .banniere .texte-et-bouton p {
+      margin: 3% 0;
+      text-align: center; }
+    .banniere .texte-et-bouton .button-container {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly; }
+      .banniere .texte-et-bouton .button-container button {
+        padding: 4% 10%;
+        background: #ffffff4d;
+        border: solid white;
+        cursor: pointer;
+        transition: background .5s;
+        color: white;
+        font-weight: bold; }
+        .banniere .texte-et-bouton .button-container button:hover {
+          background: #f1d204;
+          border: solid #f1d204;
+          transition: background .5s; }
+  .banniere .logo-et-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%; }
+    .banniere .logo-et-menu .menu {
+      width: 85%;
+      text-align: right; }
+      .banniere .logo-et-menu .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-left: 1vw; }
+        .banniere .logo-et-menu .menu a:hover {
+          color: #f1d204; }
+
+main {
+  font-size: 12px; }
+  main .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .section1 h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      color: #545454;
+      margin-top: 40px; }
+    main .section1 .text-about {
+      padding: 2% 25%;
+      text-align: center;
+      margin-bottom: 8%;
+      margin-top: 5px; }
+    main .section1 p {
+      color: #a1a8aa;
+      line-height: 1.7em;
+      margin-bottom: 50px; }
+    main .section1 .projet-img {
+      display: flex;
+      width: 100%; }
+      main .section1 .projet-img img {
+        width: inherit; }
+    main .section1 .services {
+      display: flex;
+      padding: 0 19%;
+      text-align: center; }
+      main .section1 .services h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.05rem; }
+      main .section1 .services i {
+        font-size: 1.5rem;
+        margin-bottom: 10px; }
+      main .section1 .services .web-design h3,
+      main .section1 .services .web-design i {
+        color: #f18b6d; }
+      main .section1 .services .web-developpement h3,
+      main .section1 .services .web-developpement i {
+        color: #f1d204; }
+      main .section1 .services .seo-analysis h3,
+      main .section1 .services .seo-analysis i {
+        color: #6a4d8a; }
+  main .section2 {
+    background: #222f36;
+    color: #6e787c; }
+    main .section2 .section2-head {
+      text-align: center; }
+    main .section2 h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      color: white;
+      margin-top: 40px;
+      padding-top: 4%; }
+    main .section2 button {
+      padding: 4% 10%;
+      background: #ffffff4d;
+      border: solid white;
+      cursor: pointer;
+      transition: background .5s;
+      color: white;
+      font-weight: bold;
+      padding: .8% 3%;
+      margin-top: 3%;
+      margin-bottom: 3%; }
+      main .section2 button:hover {
+        background: #f1d204;
+        border: solid #f1d204;
+        transition: background .5s; }
+    main .section2 .groupe-article {
+      display: flex;
+      padding: 0 14%;
+      justify-content: space-around;
+      padding-bottom: 6%; }
+      main .section2 .groupe-article .article-section2 {
+        display: flex;
+        flex-direction: column;
+        width: 22vw;
+        align-items: center; }
+        main .section2 .groupe-article .article-section2 img {
+          width: inherit; }
+        main .section2 .groupe-article .article-section2 .text-article {
+          background: white;
+          height: 300px;
+          width: inherit;
+          padding-bottom: 8%; }
+        main .section2 .groupe-article .article-section2 h3 {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.05rem;
+          padding: 10% 5%;
+          margin-bottom: 36px; }
+        main .section2 .groupe-article .article-section2 p {
+          padding: 10% 5%; }
+        main .section2 .groupe-article .article-section2 a {
+          padding: 15% 5%;
+          text-decoration: none;
+          font-weight: bold;
+          color: inherit; }
+          main .section2 .groupe-article .article-section2 a:hover {
+            color: #f1d204; }
+
+footer {
+  background: #292825;
+  display: flex;
+  flex-direction: column;
+  color: #6e787c; }
+  footer .link-footer {
+    display: flex;
+    padding: 0 15%; }
+    footer .link-footer div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 15%; }
+      footer .link-footer div h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.05rem;
+        color: white;
+        margin: 35% 0; }
+    footer .link-footer a {
+      color: inherit;
+      text-decoration: none;
+      margin-bottom: 25%; }
+      footer .link-footer a:hover {
+        color: #f1d204; }
+  footer .copyright {
+    background: #242320;
+    padding: 3%;
+    text-align: center; }
+    footer .copyright .copyright-white {
+      color: white; }
+
+/*# sourceMappingURL=style.css.map */
