@@ -2,8 +2,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -13,11 +14,11 @@
             <nav class="navBar">
                 <img src="poisson.jpg" class="logo" alt="poisson" />
                 <ul>
-                    <li><a href="#" >Accueil</a></li>
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="#competences">Compétence</a></li>
-                    <li><a href="#diplomes">Diplôme</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" aria-labeledby="accueil">Accueil</a></li>
+                    <li><a href="#apropos" aria-labeledby="apropos">A propos</a></li>
+                    <li><a href="#competences" aria-labeledby="competence">Compétence</a></li>
+                    <li><a href="#diplomes" aria-labeledby="diplôme">Diplôme</a></li>
+                    <li><a href="#contact" aria-labeledby="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,19 +43,35 @@
     <div class="competences" id="competences">
         <div class="titre">Compétences</div>
         <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis pulvinar est eget gravida.
-            Vestibulum sit amet tristique nulla. Sed nunc nisi, dignissim in urna non, euismod condimentum mi.
-            Vestibulum non urna pharetra, gravida diam vitae, consequat sem. Aenean tempor lacus sit amet rhoncus
-            faucibus.
-            Phasellus dictum erat et eleifend hendrerit. Donec nec gravida urna. Morbi leo odio, pharetra id posuere
-            eu, scelerisque ut leo.
-            Nullam rutrum sodales tellus non dignissim. Donec porta euismod consequat. In euismod libero odio, eget
-            fringilla metus egestas ut. Cras tincidunt,
-            dolor in tincidunt tincidunt, urna risus efficitur tortor, a dignissim ante neque a lorem. Fusce ac dapibus
-            nisi.
-            Nullam consectetur tristique tortor, ac sagittis tortor euismod at. Donec mollis, nisi vitae sagittis
-            porttitor, nulla
-            ipsum molestie nunc, sed dictum nisl nibh nec nisl.
+            <section>
+                <div>
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+
+            </section>
+
+            <section>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+                <div>
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <img src="ecole.png" alt=ecole" class="image_circle" />
+
+            </section>
+
         </div>
     </div>
 
@@ -62,33 +79,51 @@
     <div class="diplomes" id="diplomes">
         <div class="titre">diplômes</div>
         <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis pulvinar est eget gravida.
-            Vestibulum sit amet tristique nulla. Sed nunc nisi, dignissim in urna non, euismod condimentum mi.
-            Vestibulum non urna pharetra, gravida diam vitae, consequat sem. Aenean tempor lacus sit amet rhoncus
-            faucibus.
-            Phasellus dictum erat et eleifend hendrerit. Donec nec gravida urna. Morbi leo odio, pharetra id posuere
-            eu, scelerisque ut leo.
-            Nullam rutrum sodales tellus non dignissim. Donec porta euismod consequat. In euismod libero odio, eget
-            fringilla metus egestas ut. Cras tincidunt,
-            dolor in tincidunt tincidunt, urna risus efficitur tortor, a dignissim ante neque a lorem. Fusce ac dapibus
-            nisi.
-            Nullam consectetur tristique tortor, ac sagittis tortor euismod at. Donec mollis, nisi vitae sagittis
-            porttitor, nulla
-            ipsum molestie nunc, sed dictum nisl nibh nec nisl.
-        </div>
+            
+                <section>
+                    <div>
+                        <h4>2015-2016</h4>
+
+                        AFPAR Saint Denis formation développeur logicel 8 mois
+                    </div>
+                    <img src="ecole.png" alt=ecole" class="image_circle" aria-labelledby="ecole" />
+
+                </section>
+
+                <section>
+                    <img src="ecole.png" alt=ecole" class="image_circle" />
+                    <div>
+                        <h4>2007-2014</h4>
+                        Ecole d'ingenieur Supinfo
+
+                    </div>
+
+                </section>
+                <section>
+                    <div>
+                        <h4>2015-2016</h4>
+
+                        AFPAR Saint Denis formation développeur logicel 8 mois
+                    </div>
+                    <img src="ecole.png" alt=ecole" class="image_circle" />
+
+                </section>
+
+            </div>
+       
 
     </div>
 
     <div id="contact" id="contact">
-    <form method="POST">
-        Nom<input type="text" id="nom" /><br>
-        email<input type="email" id="email" /><br>
-        objet<input type="text" id="objet" /><br>
-        <textarea>
+        <form method="POST">
+            <label for="nom">Nom</label><input type="text" id="nom" title="nom" aria-label="Nom" aria-labelledby="Votre nom" /><br>
+            <label for="email">Email</label><input type="email" id="email" title="email" aria-label="email" /><br>
+            <label for="objet">objet</label><br>
+            <textarea id="objet" title="objet" aria-label="Avis">
 
-</textarea>
-    </form>
-</div>
+        </textarea>
+        </form>
+    </div>
 </body>
 
 </html>

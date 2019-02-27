@@ -1,0 +1,58 @@
+body
+{
+    margin-left:200px;
+    margin-right:200px;
+}
+
+.banniere
+{
+background:url(img/banner-bg.jpg);
+width:;
+height:;
+}
+section
+{
+border: 1px solid red;
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+header
+{
+    background:url(img/intro-bg.jpg);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    align-content:center;   
+    border:1px solid black;  
+}
+.boutons
+{
+    display:flex;
+    justify-content: center;
+}
+
+#article1
+{
+    display:flex;
+flex-direction:row;
+}
+
+#article2
+{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#article3
+{
+    display:flex;
+flex-direction:row;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+}

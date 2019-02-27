@@ -1,169 +1,219 @@
  * {
      box-sizing: border-box;
  }
- 
+
  body {
-     display: flex;
+
      min-height: 100vh;
-     flex-direction: row;
+
      margin: 0;
+     background-color: var(--main-bg-color);
+     /*padding: 120px;*/
+     text-align: center;
  }
- 
- .col-1 {
-     background: deepskyblue;
-     flex: 1;
+
+ @import url('https://fonts.googleapis.com/css?family=Maven+Pro:900');
+ @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+
+ :root {
+     --main-bg-color: rgb(139, 108, 108);
+     --nav-color: rgb(105, 3, 3);
+ }
+
+
+
+
+ .staticTextShadow span {
+     font-family: 'Rubik Mono One', sans-serif;
+     color: var(--main-bg-color);
+     font-size: 10vw;
+     line-height: 1;
+     display: inline-block;
+     text-shadow: 0 15px 40px rgba(0, 0, 0, .6);
+ }
+
+ .animatedTextShadow span {
+     font-family: 'Rubik Mono One', sans-serif;
+     color: var(--main-bg-color);
+     font-size: 10vw;
+     line-height: 1;
+     display: inline-block;
+     animation: move 2s ease-in-out infinite;
+ }
+
+ /*--- Animation Logic Starts ---*/
+
+ @keyframes move {
+     0% {
+         transform: translate(-33%, 0);
+     }
+
+     50% {
+         text-shadow: 0 15px 40px rgba(0, 0, 0, .6);
+     }
+
+     100% {
+         transform: translate(33%, 0);
+     }
+ }
+
+ .animatedTextShadow span:nth-child(2) {
+     animation-delay: .5s;
+ }
+
+ .animatedTextShadow span:nth-child(3) {
+     animation-delay: 1.5s;
+ }
+
+ .animatedTextShadow span:nth-child(4) {
+     animation-delay: 2s;
+ }
+
+ /*--- Animation Logic Ends ---*/
+
+ main {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .cadre {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background-color: rgba(255, 255, 255, 0.8);
+     width: 100%;
+     height: 95%;
+ }
+
+ .comp {
+     display: flex;
+ }
+
+ .dev {
+     flex: 1 1 auto;
+ }
+
+ .mus {
+     flex: 1 1 auto;
+ }
+
+ .graph {
+     flex: 1 1 auto;
+ }
+
+ nav {
+     margin-top: 200px;
+     margin-left: 0px;
+     margin-right: 0px;
+ }
+
+ .navul {
+     list-style: none;
+     margin: 0;
+     background-color: var(--nav-color);
      display: -webkit-box;
      display: -moz-box;
      display: -ms-flexbox;
      display: -webkit-flex;
      display: flex;
-     flex-flow: column wrap;
+     flex-direction: row;
      justify-content: flex-end;
+     align-items: flex-end;
  }
- 
- .content p {
-     width: 500px;
- }
- 
- .col-2 {
-     display: flex;
-     flex-direction: column;
-     flex: 5;
- }
- 
- header {
-     display: flex
- }
- 
- .cadre {
-     background-color: rgba(255, 255, 255, 0.5);
-     width: 1100px;
-     height: 600px;
- }
- 
- .comp {
-     display: flex;
- }
- 
- .dev {
-     flex: 1 1 auto;
- }
- 
- .mus {
-     flex: 1 1 auto;
- }
- 
- .graph {
-     flex: 1 1 auto;
- }
- 
- #circuit {
-     display: block;
-     max-width: 100px;
-     max-height: 100px;
-     width: auto;
-     height: auto;
-     filter: invert(100%)
- }
- 
- #circuit:hover {
-     transition-property: transform;
-     transition-duration: 1s;
-     transition-timing-function: ease;
- }
- 
- .navul {
-     list-style: none;
-     margin: 0;
-     background: deepskyblue;
- }
- 
+
  .navul a {
      text-decoration: none;
      display: block;
      padding: 1em;
-     color: black;
+     font-family: 'Rubik Mono One', sans-serif;
+     color: var(--nav-color);
+     text-shadow: 0 5px 4px rgba(0, 0, 0, .6);
+     font-size: 15pt;
+     line-height: 1;
      text-align: center;
-     padding: 10px;
+     /* padding: 10px;*/
      border-top: 1px solid rgba(255, 255, 255, 0.3);
      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
  }
- 
- .a1:hover {
-     background: darken(#D7E8D4, 2%);
+
+ .navul li a:hover {
+     background-color: darken(var(--nav-color), 2%);
+     color: var(--main-bg-color);
  }
- 
+
  @media all and (max-width: 800px) {
-     .navigation {
+     .navul {
          justify-content: space-around;
      }
  }
- 
+
  @media all and (max-width: 600px) {
-     .navigation {
+     .navul {
          -webkit-flex-flow: column wrap;
          flex-flow: column wrap;
          padding: 0;
      }
  }
- 
- .moi {
+
+ .MOI {
      background-image: url("sources/tokyo-skyline.jpg");
-     background-blend-mode: lighten;
      background-repeat: no-repeat;
-     background-size: contain;
-     width: 1200px;
+     background-size: cover;
+
      height: 800px;
  }
- 
- .cv {
-     background-image: url("sources/tokyo2-skyline.jpg");
-     background-repeat: no-repeat;
-     background-blend-mode: lighten;
-     background-size: contain;
-     width: 1200px;
+
+ .CV {
+     background-color: grey;
+
+     background-size: cover;
+
      height: 676px;
      padding-bottom: none;
  }
- 
- main {
-     background-color: lightblue;
+
+ .cv ul li {
+     text-align: right;
  }
- 
- .créations {
-     background-image: url("sources/yokohama-skyline.jpg");
-     background-repeat: no-repeat;
-     background-size: contain;
-     width: 1200px;
+
+ main {
+     display: flex;
+     align-items: center;
+
+ }
+
+ .CREA {
+     background-color: lightgrey;
      height: 750px;
  }
- 
+
  section {
      flex-direction: column;
      display: flex;
+     width: 900px;
+     background-color: none;
  }
- 
+
  .article {
      flex-direction: column;
      flex: 3;
      min-height: 60vh;
  }
- 
- .aside {
-     background: beige;
-     flex: 1;
+
+ footer ul {
+     list-style: none;
  }
- 
+
  header,
  footer {
-     background: navy;
+     background-color: var(--main-bg-color);
      height: 20vh;
+     color: aliceblue;
  }
- 
+
  header,
  footer,
  article,
- nav,
- aside {
+ nav {
      padding: 1em;
  }
