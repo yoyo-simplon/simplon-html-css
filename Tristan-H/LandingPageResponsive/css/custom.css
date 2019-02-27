@@ -1,8 +1,8 @@
 body {
-    margin-left: 150px;
     display: flex;
+    flex: 1, auto;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -21,7 +21,7 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    flex: 1;
+    align-items: space-around;
     list-style: none;
 }
 
@@ -29,6 +29,10 @@ ul a {
     text-decoration: none;
     color: rgb(100, 149, 255);
     font-weight: bold;
+}
+
+ul a:hover {
+    color: black;
 }
 
 .intro {
@@ -45,10 +49,24 @@ ul a {
     color: white;
 }
 
+article {
+    width: 300px
+}
+
+.pair {
+    background-color: rgb(238, 238, 238);
+}
+
 section {
-    width: 1040px;
+    width: 700px;
     display: flex;
     flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 30px;
 }
 
 img {
@@ -61,8 +79,23 @@ article a {
 }
 
 footer ul {
+    width: 300px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
     list-style: none;
+}
+
+.end {
+    background-image: url("../img/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1040px;
+    height: 100px;
+}
+
+.end h2 {
+    color: white;
 }
