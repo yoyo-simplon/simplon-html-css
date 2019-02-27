@@ -153,3 +153,8 @@ section article .img-article2 img {
 .article3 .landscape img {
   width: 300px;
 }
+
+.ls {
+  background-color: white;
+  width: 300px;
+}
