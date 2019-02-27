@@ -1,0 +1,35 @@
+
+/*variable que je nomme moi même*/
+$bidule:#ffffff;
+
+/*imbrication parent-child*/
+.entete{
+    background-image: url(jjjjjbhjhjg);
+
+    ul{list-style-type:none;      
+}
+}
+
+/*héritage*/
+.entete{
+    background-image: url(jjjjjbhjhjg);
+    display:flex;
+}
+
+.footer{
+@extend .entete;
+}
+
+/*mixin je choisit les propriétés que je désire et j'en fais un paquage*/
+@mixin test {
+Color: blue;
+font-style: arial;
+}
+
+/*si je veux réutiliser le mixin 1, @include 1*/
+nav{
+@include test;
+
+}
+
+

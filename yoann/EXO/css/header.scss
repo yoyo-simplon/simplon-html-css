@@ -1,0 +1,29 @@
+#banner{
+    background-image: url("../images/header.jpg");
+    height:$hauteur-banner;
+    background-size: 90%;
+    background-position-x: -20%;
+   nav{
+       width:30%;
+       margin:auto;
+       padding-top:2.8%;
+       margin-left:38%;
+
+        ul{
+            display:flex;
+            justify-content: space-between;
+            list-style-type: none;
+            font:{
+                family: sans-serif;
+                size:0.8em;
+                weight:normal;
+            }
+                color:white;
+            
+                a{
+                    &:hover { text-decoration: underline; }
+                }
+        }
+
+   } 
+ }
