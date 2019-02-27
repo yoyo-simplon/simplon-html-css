@@ -82,8 +82,6 @@ main {
     main .section1 .projet-img {
       display: flex;
       width: 100%; }
-      main .section1 .projet-img img {
-        width: inherit; }
     main .section1 .services {
       display: flex;
       padding: 0 19%;
@@ -94,14 +92,11 @@ main {
       main .section1 .services i {
         font-size: 1.5rem;
         margin-bottom: 10px; }
-      main .section1 .services .web-design h3,
-      main .section1 .services .web-design i {
+      main .section1 .services .web-design h3, main .section1 .services .web-design i {
         color: #f18b6d; }
-      main .section1 .services .web-developpement h3,
-      main .section1 .services .web-developpement i {
+      main .section1 .services .web-developpement h3, main .section1 .services .web-developpement i {
         color: #f1d204; }
-      main .section1 .services .seo-analysis h3,
-      main .section1 .services .seo-analysis i {
+      main .section1 .services .seo-analysis h3, main .section1 .services .seo-analysis i {
         color: #6a4d8a; }
   main .section2 {
     background: #222f36;
@@ -112,83 +107,6 @@ main {
       font-family: "Poppins", sans-serif;
       font-size: 30px;
       color: white;
-      margin-top: 40px;
-      padding-top: 4%; }
-    main .section2 button {
-      padding: 4% 10%;
-      background: #ffffff4d;
-      border: solid white;
-      cursor: pointer;
-      transition: background .5s;
-      color: white;
-      font-weight: bold;
-      padding: .8% 3%;
-      margin-top: 3%;
-      margin-bottom: 3%; }
-      main .section2 button:hover {
-        background: #f1d204;
-        border: solid #f1d204;
-        transition: background .5s; }
-    main .section2 .groupe-article {
-      display: flex;
-      padding: 0 14%;
-      justify-content: space-around;
-      padding-bottom: 6%; }
-      main .section2 .groupe-article .article-section2 {
-        display: flex;
-        flex-direction: column;
-        width: 22vw;
-        align-items: center; }
-        main .section2 .groupe-article .article-section2 img {
-          width: inherit; }
-        main .section2 .groupe-article .article-section2 .text-article {
-          background: white;
-          height: 300px;
-          width: inherit;
-          padding-bottom: 8%; }
-        main .section2 .groupe-article .article-section2 h3 {
-          font-family: "Poppins", sans-serif;
-          font-size: 1.05rem;
-          padding: 10% 5%;
-          margin-bottom: 36px; }
-        main .section2 .groupe-article .article-section2 p {
-          padding: 10% 5%; }
-        main .section2 .groupe-article .article-section2 a {
-          padding: 15% 5%;
-          text-decoration: none;
-          font-weight: bold;
-          color: inherit; }
-          main .section2 .groupe-article .article-section2 a:hover {
-            color: #f1d204; }
-
-footer {
-  background: #292825;
-  display: flex;
-  flex-direction: column;
-  color: #6e787c; }
-  footer .link-footer {
-    display: flex;
-    padding: 0 15%; }
-    footer .link-footer div {
-      display: flex;
-      flex-direction: column;
-      margin-right: 15%; }
-      footer .link-footer div h3 {
-        font-family: "Poppins", sans-serif;
-        font-size: 1.05rem;
-        color: white;
-        margin: 35% 0; }
-    footer .link-footer a {
-      color: inherit;
-      text-decoration: none;
-      margin-bottom: 25%; }
-      footer .link-footer a:hover {
-        color: #f1d204; }
-  footer .copyright {
-    background: #242320;
-    padding: 3%;
-    text-align: center; }
-    footer .copyright .copyright-white {
-      color: white; }
+      margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */
