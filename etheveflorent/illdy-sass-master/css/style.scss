@@ -1,9 +1,20 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+
+* {
+    margin: 0;
+}
+
+@mixin marge($marge) {
+    margin: $marge;
+=======
 *{
     margin:0;
 }
 
 @mixin marge($marge) {
     margin:$marge;
+>>>>>>> master
 }
 
 @mixin flex($direction) {
@@ -11,16 +22,351 @@
     flex-direction: $direction;
 }
 
+<<<<<<< HEAD
+@mixin boutton {
+    background-color: #FFDE00;
+    padding: 10px;
+    width: 220px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+#menu_top {
+    @include flex(row);
+    justify-content: space-around;
+    color: white;
+
+=======
 #menu_top{
   @include flex(row);
   justify-content: space-around;
   color: white;
+>>>>>>> master
     nav {
 
         ul {
             @include flex(row);
             justify-content: space-around;
             list-style: none;
+<<<<<<< HEAD
+            width: 7500px;
+
+            li {
+                margin-right: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-family: "Lato";
+                }
+            }
+
+        }
+    }
+
+    nav {
+        @include flex(row);
+        width: 60%;
+    }
+
+}
+
+header {
+    background-image: url("../images/header.jpg");
+    height: 700px;
+}
+
+img {
+    width: 300px;
+    columns: 2;
+}
+
+#intro {
+    position: relative;
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    i {
+        font-size: 20px;
+        color: yellow;
+    }
+
+    h1 {
+        @include marge(10);
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 80px;
+        color: white;
+    }
+
+    h6 {
+        @include marge(20px);
+        @include marge(10);
+        font-family: Lato;
+        color: white;
+        font-size: 0.8em;
+    }
+
+    #link_top {
+        @include marge(10);
+
+        button {
+            @include boutton();
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 3px solid white;
+
+            }
+        }
+
+    }
+}
+
+main {
+    color: lightgray;
+}
+
+section {
+    @include flex(column);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+    p {
+        color: #9AA2A4;
+        font-family: Poppins;
+        text-align: center;
+    }
+
+    p {
+
+        margin-top: 40px;
+    }
+
+    h4 {
+        justify-content: center;
+        font-weight: bold;
+        font-family: Lato;
+        font-size: 3em;
+        color: #545454;
+    }
+
+
+    #services {
+        @include flex(column);
+        outline: solid 2px black;
+
+    }
+}
+
+.sous_services {
+    @include flex(row);
+}
+
+#articles {
+    @include flex(row);
+    width: 1020px;
+    justify-content: space-around;
+
+    article:nth-child(2){
+        height: 104-%;
+    }
+    article {
+        width: 300px;
+        background-color: white;
+        height: auto;
+
+        p{
+        color: #9AA2A4;
+        padding-left: 30px;
+        }
+    h2{
+        color: #545454;
+        padding-left: 30px;
+        
+    }
+    a{
+        color:#FFDE00;
+        text-decoration: none;
+        padding-left: 30px;
+        margin-top:30px;
+        margin-bottom:30px; 
+    }
+    
+}
+
+}
+
+#news {
+    background-color: #222F36;
+    @include flex(column);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    #content {
+        @include flex(column);
+        align-items: center;
+
+        button {
+            width: 300px;
+            @include marge(30px);
+            align-items: center;
+            @include boutton();
+            i{
+                font-size: 25px;
+                margin-right: 5px;
+                border-radius: 50%;
+                width: 30px;
+            }
+
+        }
+        h3{
+        @include flex(row);
+        justify-content: center;
+        margin-top: 40px;
+        font-family: Poppins;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        }
+    }
+    
+}
+footer{
+    background-color: #242320;
+    width: 100%;
+    margin-right: 0px;
+}
+#projets {
+    @include flex(column);
+    flex-wrap: nowrap;
+
+    background-image: url("../images/bg-stripped.jpg");
+
+
+    height: auto;
+    width: 100%;
+
+    h4 {
+        @include marge(40px);
+    }
+img{
+    width: 100%;
+}
+
+    #projets_img {
+        @include flex(row);
+        justify-content: center;
+
+    }
+}
+.web {
+    width: 400px;
+    @include flex(column);
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        @include boutton();
+    }
+
+    h4 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    i {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 400px;
+    }
+}
+
+.web:nth-of-type(1) {
+
+    h4,
+    i {
+        color: #F18B6D;
+    }
+}
+
+.web:nth-of-type(2) {
+
+    h4,
+    i {
+        color: #FFDE00;
+    }
+}
+
+.web:nth-of-type(3) {
+
+    h4,
+    i {
+        color: #6A4D8A;
+    }
+}
+
+#ext_link {
+    @include flex(row);
+    background-color: #292825;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+
+
+
+section{
+    width:200px;
+}
+    h3 {
+        padding: 20px;
+    }
+
+    nav {
+        @include flex(column);
+        margin-left: 60px;
+
+        ul {
+            align-items: flex-start;
+            padding-left: 0px;
+            justify-content: space-around;
+        }
+
+        li {
+            margin-bottom: 10px;
+            list-style: none;
+            margin-bottom: 20px;
+            a{
+                color: #9AA2A4;
+            }
+            &:before{
+                content:"\003e";
+                font-family: FontAwesome;
+                color: #9AA2A4;
+                margin-right: 5px;
+                size: 0.8em;
+            }
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+=======
             li{
                 margin-right: 10px;
             }
@@ -63,5 +409,6 @@ img{
         &:ȟover {
             background-color: rgb(255, 255, 255);      
     }
+>>>>>>> master
     }
 }
