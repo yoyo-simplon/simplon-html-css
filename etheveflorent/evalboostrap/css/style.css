@@ -1,0 +1,22 @@
+header{
+    background-image:url("../img/banner-bg.jpg"); 
+}
+.menu_haut{
+    background-color: #F8F8F8;
+}
+img{
+    width: 200px;
+}
+.article{
+    width: 800px;
+}
+.article:nth-of-type(even){
+background-color :#FFFFFF;
+}
+button{
+    border:1px;
+    border-radius: 10px;
+}
+.content{
+    background-color: #F8F8F8;
+}
