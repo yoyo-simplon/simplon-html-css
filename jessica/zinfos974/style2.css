@@ -1,0 +1,224 @@
+body
+{
+    
+    font-family: Arial, serif;
+    color: rgb(0, 0, 0);
+  width: 1400px; 
+  background-size: cover;
+  background-color: gray;
+  border: 3px;
+  background-size: cover;
+    
+    /*! width: 253px; */
+    background-size: cover;
+}
+.logo
+{
+    width: 253px;
+    margin-left: 25px ;
+    display: flex;
+    vertical-align: top; 
+    
+
+}
+    
+header{
+    
+    background-color: rgb(255, 6, 6);
+    width: 1400px;
+    margin-left: 300px;
+    background-size: cover;
+}
+
+#réseaux_sociaux 
+{
+    height: 60px;
+    display: inline-block;
+    background-color: #fd0000; 
+    align-items: right;
+    justify-content: space-around;
+    color: black; 
+   margin: 0 500px;
+   
+ }
+
+#réseaux_sociaux div{
+    width: 26%;
+    display: flex;
+    justify-content: space-evenly;
+    background-size: cover;
+
+}
+#réseaux_sociaux div a{
+    font-size: 2em;
+    height: 36px;
+    margin-top: 20px;
+    background-size: cover;
+}
+
+#réseaux_sociaux div a i:hover{
+    cursor: pointer;
+    color:#f5f5f4;
+    background-size: cover;
+}
+form {
+    margin: 0;
+    padding: 0;
+   margin: 0 1080px; 
+   
+}
+.menu {
+    height: 60px;
+    width: 1280px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    background-size: cover;
+}
+ul{
+    list-style: none;
+    padding: 0 60px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    background-size: cover;
+
+}
+li
+{
+    border: 5px; 
+    font-weight: bold;
+    float: right;
+    background-size: cover;
+}
+nav ul li a {
+    color:#f7f5f5;
+        font-size: 20px; 
+        margin-bottom: 80px; 
+        margin-right: 30px;
+        background-size: cover;
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav li
+    {
+        display: block;
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+section{
+    display: flex;
+    
+    justify-content: space-around;
+    background: grey;
+    height: 900px;
+    background-size: cover;
+  
+}
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 200px;
+    src: url("//applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+  }
+  
+  body, html {
+      height:100%;
+      width:100%;
+      font-family: "San Francisco";
+      font-weight: 200px;
+      background-size: cover;
+  }
+  .flexFont {
+      height:8em;
+      
+      background-color:#ffffff00;
+      padding:1%;
+      margin: 10px;
+  }
+  
+  .smaller {
+      font-size: 0.7em;
+      background-color:red;
+      width: 10em;
+  }
+  h2{
+      justify-content: flex-start;
+  }
+article
+{
+
+
+    background-color: white; 
+    height :400px;
+    width : 260px; 
+    margin-top: 30px;
+padding: 261*196px;
+    background-size: cover;
+}
+#img{
+  
+    width: 253px;
+    
+}
+.corps {
+    background-color: rgb(160, 160, 160);
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    flex-direction: column;
+    margin-top: 25px; 
+}
+
+
+.adresse{
+    margin-top: 5px;
+    width: 1400px;
+    height: 200px;
+    background-color: rgb(133, 133, 133); 
+   
+    text-align: justify;
+    font-size: 20px;
+    background-color: white;
+    
+}
+.video {
+    display: flex;
+   justify-content: center;
+   
+}
+#bloc_page
+
+{
+
+   /* width: 900px;
+
+    margin: 40px;
+
+}
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}

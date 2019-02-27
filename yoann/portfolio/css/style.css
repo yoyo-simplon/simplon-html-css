@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+
+    font-family: 'lastrough';
+
+    src: url('../fonts/lastrough.otf');
+
+}
+
+.contenaire-flex{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+
+h1{
+    width:100%;
+    text-align: center;
+    font-family: 'lastrough';
+    font-size:10em;
+    color:white;
+    /*background-color: rgba( 250, 144, 104, 0.8);*/
+    background-image:url("../img/texture-papier.jpg");
+    background-blend-mode:lighten;
+    z-index: 0;
+    height: 50vh;
+    background-position: top;
+    background-size:20%;
+   
+   
+   /* padding-top:10%;
+    padding-bottom:10%;*/
+}
+/*
+#cadre{
+    width:100%;
+    box-shadow: 0px 0px 0px ;
+    list-style: none;
+    list-style: disc;
+    align-items:center;
+    padding-left:0px;
+
+    
+}  
+.pas-de-puce{
+    list-style-type: none;
+    align-items:center;
+    justify-content: center;
+}
+*/
+
+ul{
+    width:100%;
+    border-radius: 10px;
+    background-color:white ;
+    box-shadow: 5px 5px 10px #f97976;
+    list-style: none;
+    /*align-items:center;
+    justify-content: center;*/
+    padding-left:47%;
+    margin:auto;
+    
+    
+}
+
+
+
+li{
+    width:13%;
+    list-style-position: inside;
+    flex-direction: column;
+    list-style: none;
+    list-style: disc;
+    color:#f97976;
+    
+
+}
+
+h2{
+    width:100%;
+    text-align: center;
+    font-family: 'lastrough';
+    background-color:#f97976;
+    color:white;
+    font-size:2em;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+span{
+    color:black;
+}
+
+label{
+    background-color:#f97976;
+}
+
+/*animation*/
+
+@keyframes masuperanimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(150px) rotate(30deg);
+    }
+}
+
+div#anim
+{
+    margin: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: #008;
+}
+
+div#anim:hover
+{
+    animation: masuperanimation 2s; /* On utilise "ma super animation" définie plus tôt */
+}
+
+
+
+
+
+

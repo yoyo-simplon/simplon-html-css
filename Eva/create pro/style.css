@@ -1,0 +1,100 @@
+body
+{
+    background: url("images/bg.jpg");
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+             
+}
+
+header
+{
+    background-color: black;
+    width: 1020px;
+    display: flex;
+    margin-left: 200px;
+    justify-content: center;
+}
+
+.h1
+{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #cfa205;
+    font-size: 133px;
+    
+    background-color: black;
+    
+      
+}
+
+
+.h2
+{
+    color: #cfa205;
+    font-size: 18px;
+    text-align: center;
+}
+
+.intro
+{
+    color: #7a7a7a;
+    font-size:14px;
+    text-align: center;
+
+
+}
+
+
+.menulist
+{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+ul
+{
+    display:flex;
+    justify-content: space-around; 
+}
+
+section
+{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  margin-left: 200px;
+  height: 500px;
+}
+
+.images
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.fond
+{
+    background-color: #e8e8e8;
+    width: 1020px;
+    height: 60px;
+  margin-left: 200px;
+
+}
+
+
+
+.link
+{
+    color:#cfa205;
+    text-decoration:none;
+}
+
+.link2
+{
+    color:white;
+    text-decoration:none;
+}
+
