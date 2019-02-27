@@ -1,0 +1,13 @@
+#header-1{
+    background-image:url(../img/intro-bg.jpg);
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#header-2{
+    background-color: grey;
+}
+#navigateur_1{
+    display: flex;}
+
+#alone{display: flex; justify-content:flex-start;}
+#groupe{display: flex; justify-content:flex-end;}
