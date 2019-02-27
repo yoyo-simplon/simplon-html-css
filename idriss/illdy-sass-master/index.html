@@ -8,60 +8,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/Normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 </head>
 
 <body>
     <!-- BODY -->
-    <div id="main">
+    <div id="main" class="bloc">
         <!-- HEADER -->
-        <header>
+        <header class="bloc">
             <nav>
-                <ul>
-                    <li></li>
+                <ul class="flex bold">
+                    <li id="logo">illdy</li>
                     <a>
-                        <li></li>
+                        <li>About</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Portfolio</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Testimonials</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Services</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Blog</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Our Team</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li>Contact Us</li>
                     </a>
                 </ul>
             </nav>
-            <div id="banniere">
-                <h1></h1>
-                <p></p>
+            <div id="banniere" class="flex column">
+                <h1  class="bold">Clean<span class="yellow lato">.</span>Slick<span class="yellow lato">.</span>Pixel Perfect</h1>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                 <div class="flex boutons">
-                    <button>Learn More</button>
+                    <button id="btn_more">Learn More</button>
                     <button>Download</button>
                 </div>
             </div>
         </header>
 
         <!-- MAIN -->
-        <main>
-            <section id="about" class="flex">
-                <h2></h2>
-                <p></p>
+        <main class="bloc">
+            <section id="about" class="flex column bloc">
+                <h2 class="bold">About</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
             </section>
 
-            <section id="projects" class="flex">
-                <h2></h2>
-                <p></p>
-                <div class="project_img">
+            <section id="projects" class="flex column bloc">
+                <h2 class="bold">Projects</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <div class="project_img flex bloc">
                     <img src="images/bureau.jpg" alt="accessibility powa" title="Bureau" />
                     <img src="images/plafond.jpg" alt="accessibility powa" title="Plafond" />
                     <img src="images/ordi.jpg" alt="accessibility powa" title="Ordinateur" />
@@ -69,114 +71,129 @@
                 </div>
             </section>
 
-            <section id="services" class="flex">
-                <h2></h2>
-                <p></p>
-                <div class="flex">
-                    <article>
-                        <!--ICONE-->
-                        <h3>Web Design</h3>
-                        <p></p>
+            <section id="services" class="flex column bloc">
+                <h2 class="bold">Services</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <div class="flex bloc articles">
+                    <article id="w_design">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3 class="bold">Web Design</h3>
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     </article>
-                    <article>
-                        <!--ICONE-->
-                        <h3>Web Development</h3>
-                        <p></p>
+                    <article id="w_dev">
+                        <i class="fas fa-code"></i>
+                        <h3 class="bold">Web Development</h3>
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     </article>
-                    <article>
-                        <!--ICONE-->
-                        <h3>SEO Analysis</h3>
-                        <p></p>
+                    <article id="seo">
+                        <i class="fas fa-search"></i>
+                        <h3 class="bold">SEO Analysis</h3>
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
                     </article>
                 </div>
             </section>
 
-            <section id="latest_news" class="flex">
-                <h2></h2>
-                <p></p>
-                <button>See Blog</button>
-                <div class="news_art">
+            <section id="latest_news" class="flex column bloc">
+                <h2 class="bold">Latest News</h2>
+                <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                <button class="bold flex"><span><i class="fas fa-angle-right"></i> See Blog</span></button>
+                <div class="news_art flex">
                     <article>
-                        <img>
-                        <h3></h3>
-                        <p></p>
-                        <button>Read More</button>
+                        <img src="images/mers.jpg" alt="accessibility powa" title="Mers" />
+                        <div class="texte flex column">
+                            <h3 class="bold">We Have Made Illdy Theme SEO Friendly</h3>
+                            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem
+                                ipsum</p>
+                            <a class="yellow"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
                     </article>
                     <article>
-                        <img>
-                        <h3></h3>
-                        <p></p>
-                        <button>Read More</button>
+                        <img src="images/vallees.jpg" alt="accessibility powa" title="Vallées" />
+                        <div class="texte flex column">
+                            <h3 class="bold"> Stunning One Page WordPress Theme for Masses</h3>
+                            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem
+                                ipsum</p>
+                            <a class="yellow"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
                     </article>
                     <article>
-                        <img>
-                        <h3></h3>
-                        <p></p>
-                        <button>Read More</button>
+                        <img src="images/montagnes.jpg" alt="accessibility powa" title="Montagnes" />
+                        <div class="texte flex column">
+                            <h3 class="bold">Hello World!</h3>
+                            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                                Lorem
+                                ipsum</p>
+                            <a class="yellow"><i class="fas fa-angle-right"></i> Read More</a>
+                        </div>
                     </article>
                 </div>
             </section>
         </main>
 
         <!-- FOOTER -->
-        <footer class="flex">
-            <div id="footer_nav">
-                <ul>
+        <footer class="flex bloc column">
+            <div id="footer_nav" class="bloc flex">
+                <ul class="flex column">
                     <li>
-                        <h4></h4>
+                        <h4  class="bold">PRODUCTS</h4>
                     </li>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Our Work</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Club</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> News</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Announcement</li>
                     </a>
                 </ul>
 
-                <ul>
+                <ul class="flex column">
                     <li>
-                        <h4></h4>
+                        <h4  class="bold">INFORMATION</h4>
                     </li>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Pricing</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Terms</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Affiliates</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Blog</li>
                     </a>
                 </ul>
 
-                <ul>
+                <ul class="flex column">
                     <li>
-                        <h4></h4>
+                        <h4 class="bold">SUPPORT</h4>
                     </li>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Documentation</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> FAQs</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Forums</li>
                     </a>
                     <a>
-                        <li></li>
+                        <li><i class="fas fa-angle-right"></i> Contact</li>
                     </a>
                 </ul>
             </div>
-            <div id="copyright">
-                <p></p>
+            <div id="copyright" class="bloc flex">
+                <p>Theme: Illdy. <span id="white"><i class="far fa-copyright"></i> Copyright 2016. All Rights Reserved.</span></p>
             </div>
 
         </footer>
