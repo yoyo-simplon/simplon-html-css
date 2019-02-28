@@ -1,0 +1,50 @@
+.header{
+    background-image:url("../img/banner-bg.jpg"); 
+}
+#title > *{
+    color: white;
+}
+#articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+article h3{
+    font-weight: bold;
+
+}
+article:nth-of-type(odd){
+background-color :#EEEEEE;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    border:1px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+}
+.content{
+    background-color: rgb(253, 188, 188);
+}
+.footer{
+    background-image: url("../img/bg.jpg");
+height: 60vh;
+    color: white;
+}
+.footer p{
+    font-size: 35px;
+    
+}
+h1{
+    color: white;
+}
+h1+p{
+    color: white;
+}    
