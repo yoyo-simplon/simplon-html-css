@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* CSS
+Projet.05: maquette illddy
+
+Objectifs
+- Créer une page HTML à partir d'un modèle
+- Utiliser SASS pour créer votre feuille CSS
+- Récupérer les codes couleurs à partir d'une image
+- Utiliser une police externe
+- Utiliser une police d'icône (font icon)
+
+Cadre
+- Binome : Eva / Thierry
+*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Poppins:600");
+/* mixins */
+/* indiquer une dimension aux boites */
+/* layout des titres*/
+/* generic */
+body {
+  background-color: white;
+  color: #afb5b6;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+/* - - -  - - -  - - -  header hero  - - -  - - -  - - - */
+header {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 800px;
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+/* - - -  - - -  - - -  navbar top  - - -  - - -  - - - */
+.navtop {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-left: 40%;
+  margin-right: 20%;
+  padding-top: 40px;
+}
+
+.navtop li {
+  list-style: none;
+}
+
+/* - - -  - - -  - - -  titre principal  - - -  - - -  - - - */
+.titre {
+  padding-top: 150px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titre h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.doublebouton {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boutton1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: white 2px solid;
+  width: 250px;
+  height: 60px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.boutton2 {
+  background-color: #ffcc00;
+  border: none;
+  width: 250px;
+  height: 60px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* - - -  - - -  - - -  about section  - - -  - - -  - - - */
+.about {
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.about h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #606060;
+  font-weight: bold;
+}
+
+/* - - -  - - -  - - -  projects section  - - -  - - -  - - - */
+.titre-projects {
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre-projects p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titre-projects h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #606060;
+  font-weight: bold;
+}
+
+.projects img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgprojets {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* - - -  - - -  - - -  services section  - - -  - - -  - - - */
+.titre-services {
+  padding-top: 50px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre-services p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titre-services h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #606060;
+  font-weight: bold;
+}
+
+.detail-services {
+  margin-left: 70px;
+  margin-right: 70x;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* 3 boites */
+.service1 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.service2 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.service3 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* - - -  - - -  - - -  latest news section  - - -  - - -  - - - */
+.latest-news {
+  padding: 0;
+  margin: 0;
+  background-color: #222f36;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.news {
+  padding: 50px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.titre-latest-news {
+  padding-top: 30px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre-latest-news p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titre-latest-news h2 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.doublebouton20 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boutton22 {
+  background-color: #ffcc00;
+  border: none;
+  width: 250px;
+  height: 60px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* 3 boites */
+.news1 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.news2 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.news3 {
+  margin: 10px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.news1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news3 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* - - -  - - -  - - -  footer  - - -  - - -  - - - */
+.footnav {
+  background-color: #292825;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.footcopyright {
+  background-color: #242320;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
