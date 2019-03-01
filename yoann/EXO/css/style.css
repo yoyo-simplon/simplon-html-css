@@ -1,3 +1,6 @@
+.test {
+  color: red; }
+
 #banner {
   background-image: url("../images/header.jpg");
   height: 80%;
@@ -29,4 +32,4 @@ html, body {
 header {
   height: 100%; }
 
-/*# sourceMappingURL=styleGenerate.css.map */
+/*# sourceMappingURL=style.css.map */
