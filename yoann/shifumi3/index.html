@@ -1,0 +1,28 @@
+
+<head>
+    <title>Jeu de "Pierre-Papier-Ciseaux" en Javascript</title>
+    
+    </head>
+    
+    <body>
+        <button onclick="comparer(choix1,choix2)">START</button>
+        <input type="button" class="btn" value="pierre" />
+        <input type="button" class="btn" value="feuille" />
+        <input type="button" class="btn" value="ciseaux" />
+    
+        <script>
+            var choix1=4;
+            var choix2=2;
+             
+           
+             
+            function comparer(choix1, choix2){
+                if(choix1>choix2){
+                    return choix1;
+                }else{
+                    return choix2;}
+                }
+            
+            </script>
+      
+    </body>
