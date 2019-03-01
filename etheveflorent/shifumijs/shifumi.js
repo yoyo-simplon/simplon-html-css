@@ -1,6 +1,4 @@
 var choix = prompt("Choisir: pierre, feuille, ciseau");
-var choix = document.getElementById("choix");
-var r = document.getElementById("resultat");
 var tab = ["pierre", "feuille", "ciseau"];
 var ordi = tab[Math.floor(Math.random()*tab.length-1)];
 
