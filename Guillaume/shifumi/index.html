@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Votre choix
+        var VotreChoix = prompt("Choisir Pierre, Feuille ou Ciseaux")
+        //Choix de l'ordi
+        var B = ["Pierre","Feuille","Ciseaux"];
+        var choixIa2 = B[Math.floor(Math.random()*B.length)];
+        //Condition
+        if (VotreChoix === choixIa2) {
+            alert("Egalité !")
+
+                } else if(choixIa2 == "Pierre" && VotreChoix == "Feuille"){
+                    alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
+
+                } else if(choixIa2 == "Ciseaux" && VotreChoix == "Pierre"){
+                    alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
+
+                } else if(choixIa2 == "Feuille" && VotreChoix == "Ciseaux"){
+                    alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
+
+                    } else{alert("l'ordi à choisi " + choixIa2 + " vous avez perdu")}
+
+    </script>
+</body>
+</html>
