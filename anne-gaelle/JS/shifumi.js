@@ -1,5 +1,9 @@
 var saisie = prompt('pierre, feuille ou ciseaux ?');
 
+var choix = ["pierre", "feuille", "ciseaux"];
+var ordi = choix[Math.floor(Math.random()*3)]; // aléatoire avec l'ARRAY
+
+/* Aléatoire avec les CONDITIONS (+ long)
 var ordi = Math.random();
 if (ordi < 0.34) {
     ordi = "pierre";
@@ -7,7 +11,7 @@ if (ordi < 0.34) {
     ordi = "feuille";
 } else {
     ordi = "ciseaux";
-}
+}*/
 
 alert("Vous avez choisi " + saisie + " et l'ordinateur a choisi " + ordi + ".");
 
