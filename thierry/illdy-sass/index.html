@@ -1,105 +1,171 @@
+<!-- HTML
+Projet.05: maquette illddy
+
+Objectifs
+- Créer une page HTML à partir d'un modèle
+- Utiliser SASS pour créer votre feuille CSS
+- Récupérer les codes couleurs à partir d'une image
+- Utiliser une police externe
+- Utiliser une police d'icône (font icon)
+
+Cadre
+- Binome : Eva / Thierry
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="main.css" />
         <title>illdy</title>
+
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     </head>
 
+    <body>
 
-<body>
+        <header>                                                                                                                     <!-- HEADER HERO -->
 
-   <header>                                                                                                              <!-- HERO -->
+                <nav >                                                                                                              <!-- NAVTOP -->
+                    <ul class="navtop">
+                        <li>about</li>
+                        <li>Portfolio</li>
+                        <li>Testimonials</li>
+                        <li>Services</li>
+                        <li>Log</li>
+                        <li>Our team</li>
+                        <li>Contact us</li>
+                    </ul>
+                </nav>
 
-        <nav >                                                                                                             <!-- NAV -->
-                <ul class="navtop">
-                   <li>about</li>
-                   <li>Portfolio</li>
-                   <li>Testimonials</li>
-                   <li>Services</li>
-                   <li>Log</li>
-                   <li>Our team</li>
-                   <li>Contact us</li>
-                </ul>
-              </nav>
+                <div class="titre">                                                                                                     <!-- TITRE -->
+                    <h1>Clean.Slick.Pixel Perfect</h1>
+                    <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam quae secundum naturam essent.</p>
+                </div>
+                <div class="doublebouton"> 
+                    <button class="boutton1" onclick="alert('Learn More')">Learn more</button>
+                    <button class="boutton2" onclick="alert('Download!')">Download</button>
+                </div>
 
-       <div class="titre"> 
-           <h1>Clean.Slick.Pixel Perfect</h1>
-           <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam.</p>
-        </div>
+        </header>
 
-        <div class="button"> 
-            <button onclick="#">Learn more</button>
-            <button onclick="#">Download</button>
-        </div>
-    </header>
-
-    <section class="about">
-            <h2>About</h2>
-            <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>
-    </section>
-
-    <section class="projects">
-            <h2>Projects</h2>
-            <p>Positum est a nostris in iis esse rebus, quae secundum.</p>
-            <img src="images/bureau.jpg" alt="bureau">
-            <img src="images/plafond.jpg" alt="plafond">
-            <img src="images/ordi.jpg" alt="ordi">
-            <img src="images/carnet.jpg" alt="carnet">
-    </section>
-
-    <section class="services">
-            <h2>Services</h2>
-            <p>Positum est a nostris in iis esse rebus, quae secundum.</p>
-
-            <article>
-                <h3>Web Design</h3>
-                <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                        Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-            </article>
-            <article>
-                    <h3>Web Development</h3>
+            <section class="about">                                                                                                     <!-- SECTION ABOUT -->
+                    <h2>About</h2>
                     <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-                </article>
-            <article>
-                <h3>SEO Analysis</h3>
-                <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                        Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-            </article> 
-    </section>
+                        Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>
+            </section>
 
-    <section class="latest-news">
-            <h2>Latest News</h2>
-            <p>Positum est a nostris in iis esse rebus, quae secundum.</p>
-            <button onclick="#" > SEE BLOG</button>
+            <section class="projects">                                                                                                   <!-- SECTION PROJECTS -->
+                    <div class="titre-projects">
+                        <h2>Projects</h2>
+                        <p>Positum est a nostris in iis esse rebus, quae secundum.</p>        
+                    </div>
+                    <div class="imgprojets">
+                        <img src="images/bureau.jpg" alt="bureau">
+                        <img src="images/plafond.jpg" alt="plafond">
+                        <img src="images/ordi.jpg" alt="ordi">
+                        <img src="images/carnet.jpg" alt="carnet">
+                    </div>
+            </section>
 
-            <div class="news">
-                <article class="news1">
-                    <img src="images/mers.jpg">
-                    <h3>News1</h3>
-                    <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-                </article>
-                <article class="news2">
-                        <img src="images/vallees.jpg">
-                        <h3>News2</h3>
-                        <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                                Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-                    </article>
-                <article class="news3">
-                        <img src="images/montagnes.jpg">
-                        <h3>News3</h3>
-                    <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
-                            Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
-                </article>
-            </div>
-    </section>
-                        
-    <footer class="footer">
+            <section class="services">                                                                                                   <!-- SECTION SERVICES -->
+                    <div class="titre-services">
+                        <h2>Services</h2>
+                        <p>Positum est a nostris in iis esse rebus, quae secundum.</p>    
+                    </div>
 
-    </footer>
+                    <div class="detail-services">
+                        <article class="service1">
+                            <h3>Web Design</h3>
+                                <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                    Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
+                        </article>
+                        <article class="service2">
+                            <h3>Web Development</h3>
+                                <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                    Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
+                        </article>
+                        <article class="service3">
+                            <h3>SEO Analysis</h3>
+                                <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                    Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>        
+                        </article> 
+                    </div>
+            </section>
+
+            <section class="latest-news">                                                                                                <!-- SECTION LATEST NEWS -->
+
+                    <div class="titre-latest-news">
+                        <h2>Latest News</h2>
+                        <p>Positum est a nostris in iis esse rebus, quae secundum.</p>    
+                    </div>
+
+                    <div class="doublebouton20">         
+                        <button class="boutton22" onclick="alert('See Blog')"> SEE BLOG</button>
+                    </div>
+
+                    <div class="news">
+
+                        <article class="news1">
+                            <img src="images/mers.jpg">
+                            <h3>We Have Made illdy Theme SEO Friendly.</h3>
+                            <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                    Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>                     
+                            <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>
+                        </article>
+
+                        <article class="news2">
+                            <img src="images/vallees.jpg">
+                            <h3>Stunning One Page WordPress Theme for Masses.</h3>
+                            <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                    Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p> 
+                            <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>       
+                        </article>
+
+                        <article class="news3">
+                            <img src="images/montagnes.jpg">
+                            <h3>Hello World!</h3>
+                            <p>Positum est a nostris in iis esse rebus, quae secundum naturam essent, non dolere; Sedulo, inquam, faciam. 
+                                Nec tamen ullo modo summum pecudis bonum et hominis idem mihi videri potest. Quam nemo umquam voluptatem appellavit, appellat</p>  
+                            <button type="button" onclick="alert('Full news article!')"><i class="fas fa-chevron-circle-right"></i> Read More</button>      
+                        </article>
+                    </div>
+
+            </section>
+                                
+            <footer class="foot">                                                                                                     <!-- FOOTER -->
+                <nav class="footnav">
+                    <ul class="products">
+                        <h3>Products</h3>
+                            <li>Our work</li>
+                            <li>Club</li>
+                            <li>News</li>
+                            <li>Annoumcement</li>
+                    </ul>
+                    <ul class="information">
+                        <h3>Information</h3>
+                            <li>Pricing</li>
+                            <li>Terms</li>
+                            <li>Affiliates</li>
+                            <li>Blog</li>
+                    </ul>
+                    <ul class="support">
+                        <h3>Support</h3>
+                            <li>Documentation</li>
+                            <li>FAQs</li>
+                            <li>Forums</li>
+                            <li>Contact</li>
+                    </ul>        
+                </nav>
+                <div class="footcopyright">
+                        <p class="copyright">
+                            Theme: Illdy. (c) Copyright 2016. All Rights Reserved.
+                        </p>        
+                </div>
+
+            </footer>
 
 
-</body>
+    </body>
+</html>
