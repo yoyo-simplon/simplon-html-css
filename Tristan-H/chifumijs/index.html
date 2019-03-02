@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Chi Fu Mi</h2>
+    <p id="demo"></p>
+    <script>
+        var choix = ["pierre", "feuille", "ciseaux"];
+        var ordi = choix[Math.random(choix.length - 1)];
+
+        var main = prompt("chi fu mi", "Pierre Feuille Ciseau");
+
+        if (main == "pierre") {
+            if (ordi == 0) {
+                alert("Match nul!");
+            } else if (ordi == 1) {
+                alert("perdu!");
+            } else if (ordi == 2) {
+                alert("Gagné!");
+            }
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+
+</body>
+
+</html>
