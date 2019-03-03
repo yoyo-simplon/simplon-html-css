@@ -1,6 +1,6 @@
 var choixUtilisateur= prompt("choisissez Pierre, feuille ou ciseaux!")
 var choix = ["pierre", "feuille", "ciseaux"]
-var aleatoire = (Math.floor(Math.random() * 2));
+var aleatoire = (Math.floor(Math.random() * 3));
 
 
 
@@ -25,4 +25,4 @@ if (choixUtilisateur== ordinateur_choix) {
 }
 
 console.log("Mon choix : " + choixUtilisateur);
-console.log("Celui de l'ordi : " + ordinateur_choix);
+console.log("Choix de l'ordi : " + ordinateur_choix);
