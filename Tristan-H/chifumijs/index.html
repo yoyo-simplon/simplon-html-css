@@ -5,21 +5,51 @@
     <h2>Chi Fu Mi</h2>
     <p id="demo"></p>
     <script>
-        var choix = ["pierre", "feuille", "ciseaux"];
-        var ordi = choix[Math.random(choix.length - 1)];
+        var i=0
+        while(i<3){
+            var choix = ["pierre", "feuille", "ciseaux"];
+            // sort un nombre aléatoire avec les numéro du length de l'array
+            var ordi = Math.floor(Math.random() * choix.length);
 
-        var main = prompt("chi fu mi", "Pierre Feuille Ciseau");
+            var text;
+            //popup choix jouer et algorythm de vitoire
+            var jouer = prompt("à toi de jouer", "pierre, feuille, ciseaux?");
+            switch (jouer) {
+                case "pierre":
+                    if (ordi == 0) {
+                        alert("Match nul!");
+                    } else if (ordi == 1) {
+                        alert("Perdu!");
+                    } else if (ordi == 2) {
+                        alert("Gagné!");
+                    }
 
-        if (main == "pierre") {
-            if (ordi == 0) {
-                alert("Match nul!");
-            } else if (ordi == 1) {
-                alert("perdu!");
-            } else if (ordi == 2) {
-                alert("Gagné!");
+                    break;
+                case "feuille":
+                    if (ordi == 0) {
+                        alert("gagné!");
+                    } else if (ordi == 1) {
+                        alert("Match null!");
+                    } else if (ordi == 2) {
+                        alert("Perdu!");
+                    }
+                    break;
+                case "Ciseaux":
+                    if (ordi == 0) {
+                        alert("Perdu!");
+                    } else if (ordi == 1) {
+                        alert("Gagné!");
+                    } else if (ordi == 2) {
+                        alert("Match nul!");
+                    }
+                    break;
+                default:
+                    alert("non! Pierre, feuille, ciseaux!");
             }
         }
-        document.getElementById("demo").innerHTML = txt;
+        
+            
+        
     </script>
 
 </body>
