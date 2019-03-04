@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pierre feuille ciseaux</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+
+    </body>
+</html>
+ 
+<style>
+    img {
+        width: 50px;
+        height: 50px;
+    }
+</style>
+  
+<script type="text/javascript">
+
+var C = 1;      /* Compteur de match */
+var SA = 0;     /* Compteur du score de l'utilisateur   */
+var SB = 0;     /* Compteur du score de l'ordinateur */
+  
+    function comparer(B, A) {
+  
+        if(A == B) {
+            alert("Il y a égalité : \n Ordinateur a choisi : " + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
+        }
+        else if((A == "pierre" && B == "ciseaux") || (A == "feuille" && B == "pierre") || (A == "ciseaux" && B == "feuille")) {
+            SA++;
+            alert("Vous avez gagné : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
+        }
+        else if((A == "feuille" && B == "ciseaux") || (A == "pierre" && B == "feuille") || (A == "ciseaux" && B == "pierre")) {
+            SB++;
+            alert("Vous avez perdu : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
+        }
+  
+    }
+  
+    function FchoixOrdi() {
+        var D = Math.floor(Math.random() * 60);
+  
+            if (D <= 20) {
+                D = "pierre";
+            }
+            else if(D > 20 && D <= 40) {
+                D = "feuille";
+            }
+            else if(D > 40) {
+                D = "ciseaux";
+            }
+            return D;
+    }
+   
+    function main() {  
+
+            for (let i=0; i<3 ; i++)
+            {
+                var A = prompt("Entrer : pierre ou feuille ou ciseaux");    /*  choix de l'utilisateur  */
+                alert ("Utilisateur : " + A + "\n \n") 
+                if ((A !== "pierre") && (A !== "feuille") && (A !== "ciseaux")) {
+                    alert (" ERREUR DE SAISIE !!!  \n \n")
+                    break;
+                }
+                
+                var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+                alert ("Ordinateur : " + B + "\n \n")
+
+                /*  Lancement de la comparaison et affichage du score   */
+                comparer(B, A);
+
+                /* Incrémentation du compteur de match  */
+                C++;
+            }       
+    }
+  
+    main();
+
+    alert ("  ~  GAME OVER  ~  \n \n")
+
+   
+</script>

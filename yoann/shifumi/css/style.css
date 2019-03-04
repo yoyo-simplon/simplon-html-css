@@ -1,0 +1,5 @@
+button.PFC_btn { padding:0; cursor:pointer; }
+button.PFC_btn img { display:block; width:120px; height:100px; }
+button.PFC_btn_replay { padding:10px; cursor:pointer; }
+#PFC_show_result b { color:green; }
+#PFC_show_result h4 { font-weight:normal; }
