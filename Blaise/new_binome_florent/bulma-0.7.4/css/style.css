@@ -1,0 +1,33 @@
+#header {
+  background-image: url("../img/intro-bg.jpg"); }
+
+#title * {
+  color: white; }
+
+.columns {
+  margin: 0px;
+  padding: 0px; }
+
+#mes_boutons {
+  width: 30%;
+  margin-top: 20px; }
+
+footer {
+  height: 300px;
+  display: flex;
+  align-items: center; }
+
+.mid article:nth-child(1) {
+  background-color: #DADADA;
+  border-bottom: 2px solid #C8C8C8; }
+.mid article:nth-child(3) {
+  background-color: #DADADA;
+  border-bottom: 2px solid #C8C8C8;
+  border-top: 2px solid #C8C8C8; }
+.mid p {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px; }
+
+/*# sourceMappingURL=style.css.map */

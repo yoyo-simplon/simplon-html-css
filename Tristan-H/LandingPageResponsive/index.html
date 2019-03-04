@@ -6,59 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="javascript" href="js/bootstrap.min.js">
 </head>
 
 <body>
-
     <header>
-        <nav>
-            <h3>Bootstrap</h3>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+
+        <!-- Nav tabs -->
+        <nav class="nav">
+            <p class="navbar-brand">Bootstrap</p>
+            <ul class="nav nav-tabs" id="navId">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab5Id" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
             </ul>
         </nav>
-        <div class="intro">
-            <H1>Landing Page</H1>
-            <H3>A template by Bootstrap</H3>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
         </div>
 
+        <script>
+            $('#navId a').click(e => {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Landing Page</h1>
+                <p class="lead">A Template by start Bootstrap</p>
+                <hr class="my-2">
+                <div class="row ">
+                    <p class="btnjbt">
+                        <a class="btn btn-light btn-md" href="Jumbo action link" role="button"><i class="fab fa-twitter"></i>TWITTER</a>
+                    </p>
+                    <p class="btnjbt">
+                        <a class="btn btn-light btn-md" href="Jumbo action link" role="button"><i class="fab fa-github"></i>GITHUB</a>
+                    </p>
+                    <p class="btnjbt">
+                        <a class="btn btn-light btn-md" href="Jumbo action link" role="button"><i class="fab fa-linkedin-in"></i>LINKEDIN</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
     </header>
-    <main>
-        <section class="pair">
-            <article>
+    <div class="container">
+        <section class="row" id="pair">
+            <article class="col-md-6">
                 <h2>Death to the stock Photo: <br>Special Thanks</h2>
                 <p>A special thanks to <a href="#">Death to the Stock Photo</a> for providing the photographs that you see un this template. Visite their website to become a member. </p>
 
             </article>
-            <aside> <img src="img/ipad.png" alt="ipad"></aside>
+            <span class="col-md-6"><img src="img/ipad.png" alt="ipad"></span>
+
 
         </section>
-        <section class="impair">
-            <aside>
-                <img src="img/dog.png" alt="dog">
-            </aside>
-            <article>
+        <section class="row">
+            <span class="col-md-6"><img src="img/dog.png" alt="dog"></span>
+            <article class="col-md-6">
                 <h2>3D Device Mockups by PSDCovers</h2>
                 <p>Turn your 2d designs into high quality, 3D products shots in seconds using free photoshop actions by <a href="#">PSDCovers</a>! Visit Their website to download some of their awesome, free photoshop actions!
                 </p>
             </article>
         </section>
-        <section class="pair">
-            <article>
+        <section class="row" id="pair">
+            <article class="col-md-6">
                 <h2>Google Web Fonts and Font Awesome Icons</h2>
                 <p>This template features the 'Lato' font, part of the <a href="#">Google web Font library</a>, as well as <a href="#">icons from Font Awesome</a>. </p>
             </article>
-            <aside>
-                <img src="img/phones.png" alt="phones">
-            </aside>
+            <span class="col-md-6"><img src="img/phones.png" alt="phones"></span>
+
+
         </section>
         <section>
 
         </section>
-    </main>
+    </div>
 
     <footer>
         <article class="end">
@@ -71,7 +113,9 @@
         </ul>
         <p>Copyright c Your Company 2014. All right reserved</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

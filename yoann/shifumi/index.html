@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+</head>
+
+
+<body>
+   
+    <h4>pierre - feuille - ciseaux</h4>
+    <button type="button" class="PFC_btn" value="0" />
+      <img src="http://www.groupepromix.com/userfiles/images/granite.png" alt="pierre" /></button>
+    <button type="button" class="PFC_btn" value="1" />
+      <img src="https://thumbs.dreamstime.com/b/feuille-de-papier-chiffonn%C3%A9e-6457832.jpg" alt="papier" /></button>
+    </button>
+    <button type="button" class="PFC_btn" value="2" />
+      <img src="https://www.humanosphere.info/wp-content/uploads/2015/04/120522_5w6rb_objet_ciseaux_sn635.jpg" alt="ciseaux" /></button>
+    </button>
+  <p>Jouez :</p>
+  <div id="PFC_show_result"></div>
+
+  <script>
+    var PFC = {
+        init:function(){
+            this.equal = "égalité";
+            this.win = "gagné";
+            this.lose = "perdu";
+            this.txt_equal = "égalité";
+            this.txt_win = "Vous gagnez !";
+            this.txt_lose = "Vous avez perdu.";
+    
+            this.my_point = 0;
+            this.ia_point = 0;
+            this.count = 0;
+            this.bet = ['pierre', 'feuille', 'ciseaux'];
+    
+            this.show_result = document.getElementById('PFC_show_result');
+            this.show_result.innerHTML = '';
+            this.txt_result = '';
+     
+        // -----------------
+        // au clic sur un des 3 boutons : on joue 
+        var PFC_btns = document.querySelectorAll('.PFC_btn');
+        PFC_btns.forEach(function(PFC_btn) {
+          PFC_btn.addEventListener('click', function() {
+            PFC.play(PFC_btn.value);
+          }, false);
+        });
+        // -----------------
+        // bouton "rejouer" : le bouton n'existe pas dans le DOM au départ.
+        // on doit le relier à un élément existant
+        document.body.addEventListener( 'click', function ( event ) {
+          if( event.target.className == 'PFC_btn_replay' ) {
+            PFC.reset();
+          };
+        });
+        // -----------------
+        },
+        play:function( player_bet ){
+            var i = Number(player_bet);
+            var j = Math.floor(Math.random() * 3); // 0, 1 or 2
+    
+            if (this.my_point < 3 && this.ia_point < 3)  // il faut 3 victoires
+            {
+                this.show_result.innerHTML += this.score(i,j);
+          this.count++;
+            }
+    
+            if ( (this.my_point >= 3 || this.ia_point >= 3) && this.txt_result == '' )  // on a 3 victoires
+            {
+                this.show_result.innerHTML += this.result(this.my_point,this.ia_point);
+            }
+        },
+        score:function(i,j) {
+            var txtHTML = '';
+            txtHTML += "(vous) <b>" + this.bet[i] + "</b> - (IA) <b>" + this.bet[j] + "</b> : ";
+    
+            if (i === j) {
+                txtHTML += this.equal + "<br />";
+            } else if ((i == 0 && j == 2) || (i == 1 && j == 0) || (i == 2 && j == 1)) {
+                txtHTML += "<b>" + this.win + "</b><br />";
+                this.my_point++;
+            } else {
+                txtHTML += this.lose + "<br />";
+                this.ia_point++;
+            }
+            txtHTML += "Score : " + this.my_point + " - " + this.ia_point + "<br />";
+            return txtHTML;
+        },
+        result:function(my_point,ia_point) {
+            var txtHTML = '';
+            if( this.my_point==this.ia_point ){
+                this.txt_result = this.txt_equal;
+            } else if( this.my_point>this.ia_point ){
+                this.txt_result = this.txt_win;
+            } else {
+                this.txt_result = this.txt_lose;
+            }
+            txtHTML += "<h4>Résultat final (en "+this.count+" coups) : <b>"+this.txt_result+"</b></h4>";
+            txtHTML += "<button type=\"button\" class=\"PFC_btn_replay\">Rejouer ?</button><br />";
+            return txtHTML;
+        },
+        reset:function() {
+            this.txt_result = '';
+            this.show_result.innerHTML = '';
+            this.my_point = 0;
+            this.ia_point = 0;
+            this.count = 0;
+        }
+    }
+    // -----------------
+    // lancement du jeu : 
+    document.body.onload = function(){
+        PFC.init(); // on initialise PFC
+    };
+    // -----------------
+    </script>
+
+</body>
+
+
+</html>

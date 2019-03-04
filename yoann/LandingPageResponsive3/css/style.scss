@@ -1,0 +1,207 @@
+/*general*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+hr{
+    width:25%;
+    border:0.5px solid rgb(223, 226, 233);
+    font-size:40px;
+}
+
+section, article{
+    height:20%;
+}
+
+section{
+    justify-content: space-around;
+    width:80%;
+    margin-left:25%;
+}
+
+img{
+    height: auto;
+    min-width: 40%;
+    height:20%;
+}
+
+#reverse{
+    flex-direction: row-reverse;
+}
+/*fin general*/
+
+
+
+/*nav haut*/
+.gris{
+    background-color:rgb(223, 226, 233);
+    height:4.4%;
+}
+
+.container-fluid ul{
+        list-style-type: none;
+        justify-content: space-between;
+        width:70%;
+        margin:auto;
+        padding-top:0.3%;
+    }
+
+    .container-fluid a{
+        font-style:none;
+        color:rgb(143, 138, 138);
+        font-weight:bold;
+        width:100%;
+        font-size:0.8em;
+    }
+
+
+
+
+.container-fluid li:first-child{
+    margin-right:50%;
+}
+
+/*fin nav haut*/
+
+/*début header*/
+
+header{
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    background-image:url("../img/intro-bg.jpg");
+    background-position: center;
+    background-position: 20% 48%;
+    height:82%;
+    background-size: 115%;
+
+    #bloc-titres{
+        margin-left:35%;
+    }
+   
+    h1{
+            color:white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 3.5em;
+            text-shadow: 3px 3px 5px rgb(61, 55, 55);
+            margin:auto;
+            padding-top:32.5%;
+    }
+    h2{
+        font-family: sans-serif;
+        font-weight: bold;
+        color:white;
+        font-size: 1.25em;
+        text-shadow: 3px 3px 5px rgb(61, 55, 55);
+        width:100%;
+        margin-left:10.8%;
+        margin:auto;
+        margin-left:5.5%;
+        margin-bottom:2%;
+    }
+    hr{
+        width:35%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin:auto;
+        margin-bottom:0.5%;
+    }
+    ul.row#reseaux-sociaux1{
+        width:50%;
+
+        li{ 
+            width:30%;
+            
+                button.btn.btn-primary.button-mod{
+                    background-color:rgb(223, 226, 233);
+                    border:0.5px solid rgb(127, 131, 139);
+                    color:black;
+                    text-transform: uppercase;
+                    font-size:0.7em;
+                    width:90%;
+                    letter-spacing: 0.15rem;
+                    span{
+                        padding-right:5%;
+                    }
+                }
+            }
+       
+        li:first-child{
+        margin-right:0%;
+    }
+   
+
+    
+     }
+
+    
+    
+}
+
+/*fin header*/
+
+/*début footer*/
+footer{
+    background-image:url("../img/banner-bg.jpg");
+    display:flex;
+    height:25%;
+    background-position: center;
+    background-position: 25% 48.9%;
+    background-size: 118%;
+
+    h2{
+        font-family: sans-serif;
+        font-weight: bold;
+        color:white;
+        font-size: 2em;
+        text-shadow: 3px 3px 5px rgb(61, 55, 55);
+        width:100%;
+        padding-top:8.5%;
+        margin-left:5.5%;
+        margin-right:5.5%;
+        margin-bottom:2%;
+    }
+
+    ul.row#reseaux-sociaux2{
+        width:50%;
+        margin-left:60%;
+        margin-bottom:80%;
+        
+        
+
+        li{ 
+            width:25%;
+            
+                button.btn.btn-primary.button-mod{
+                    background-color:rgb(223, 226, 233);
+                    border:0.5px solid rgb(127, 131, 139);
+                    color:black;
+                    text-transform: uppercase;
+                    font-size:0.7em;
+                    width:90%;
+                    letter-spacing: 0.15rem;
+                    span{
+                        padding-right:5%;
+                    }
+                }
+            }
+
+            li:first-child{
+                margin-right:0%;
+       
+    }
+}
+}
+/*fin footer*/
+

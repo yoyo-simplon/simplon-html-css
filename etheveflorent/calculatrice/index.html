@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculatrice</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <table>
+<input type="text" id="text" value=""/><br>
+<button type="button" onclick="ajout_chiffre(7)">7</button>
+<button type="button" onclick="ajout_chiffre(8)">8</button>
+<button type="button" onclick="ajout_chiffre(9)">9</button>
+<button type="button" onclick="ajout_chiffre('/')">/</button>
+<br>
+
+<button type="button" onclick="ajout_chiffre(4)">4</button>
+<button type="button" onclick="ajout_chiffre(5)">5</button>
+<button type="button" onclick="ajout_chiffre(6)">6</button>
+<button type="button" onclick="ajout_chiffre('*')">*</button>
+<br>
+
+<button type="button" onclick="ajout_chiffre(1)">1</button>
+<button type="button" onclick="ajout_chiffre(2)">2</button>
+<button type="button" onclick="ajout_chiffre(3)">3</button>
+<button type="button" onclick="ajout_chiffre('-')">-</button><br>
+
+<button type="button" onclick="ajout_chiffre(0)">0</button>
+<button type="button" onclick="ajout_chiffre(',')">,</button>
+<button type="button" onclick="inverse()">-/+</button>
+<button type="button" onclick="ajout_chiffre('+')">+</button><br>
+<button type="button" onclick="calculer()" >=</button>
+<button type="button" onclick="reset()" >c</button>
+    </table>
+</body>
+</html>

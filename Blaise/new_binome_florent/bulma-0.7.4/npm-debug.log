@@ -1,0 +1,236 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'bulma-o-steps' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bulma-o-steps
+8 silly fetchNamedPackageData bulma-o-steps
+9 silly mapToRegistry name bulma-o-steps
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/bulma-o-steps
+13 verbose request uri https://registry.npmjs.org/bulma-o-steps
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 09:49:22
+16 verbose request id a2649d6aabb7530a
+17 verbose etag W/"998283b9d11369967741ec3542ce4b63"
+18 verbose lastModified Mon, 01 Oct 2018 22:01:53 GMT
+19 http request GET https://registry.npmjs.org/bulma-o-steps
+20 http 304 https://registry.npmjs.org/bulma-o-steps
+21 verbose headers { date: 'Thu, 28 Feb 2019 05:49:23 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=d6b11af6161c9a0028243805fc89dc8b51551332963; expires=Fri, 28-Feb-20 05:49:23 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '4b009b906896a84b-CDG',
+21 verbose headers   etag: '"998283b9d11369967741ec3542ce4b63"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Mon, 01 Oct 2018 22:01:53 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   'x-amz-meta-rev': '10-3d055bf5e5d1b976fdda927e03165f75',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 28 Feb 2019 05:49:23 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=d6b11af6161c9a0028243805fc89dc8b51551332963; expires=Fri, 28-Feb-20 05:49:23 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '4b009b906896a84b-CDG',
+22 silly get     etag: '"998283b9d11369967741ec3542ce4b63"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Mon, 01 Oct 2018 22:01:53 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     'x-amz-meta-rev': '10-3d055bf5e5d1b976fdda927e03165f75',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/bulma-o-steps from cache
+24 verbose get saving bulma-o-steps to /home/user/.npm/registry.npmjs.org/bulma-o-steps/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule bulma-o-steps@1.0.9 checking installable status
+38 silly cache add args [ 'bulma-o-steps', null ]
+39 verbose cache add spec bulma-o-steps
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'bulma-o-steps',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'bulma-o-steps',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed bulma-o-steps@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for bulma-o-steps
+43 info addNameTag [ 'bulma-o-steps', 'latest' ]
+44 silly mapToRegistry name bulma-o-steps
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/bulma-o-steps
+48 verbose addNameTag registry:https://registry.npmjs.org/bulma-o-steps not in flight; fetching
+49 verbose get https://registry.npmjs.org/bulma-o-steps not expired, no request
+50 silly addNameTag next cb for bulma-o-steps with tag latest
+51 silly addNamed bulma-o-steps@1.0.9
+52 verbose addNamed "1.0.9" is a plain semver version for bulma-o-steps
+53 silly cache afterAdd bulma-o-steps@1.0.9
+54 verbose afterAdd /home/user/.npm/bulma-o-steps/1.0.9/package/package.json not in flight; writing
+55 verbose afterAdd /home/user/.npm/bulma-o-steps/1.0.9/package/package.json written
+56 silly fetchNamedPackageData bulma
+57 silly mapToRegistry name bulma
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/bulma
+61 verbose request uri https://registry.npmjs.org/bulma
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 09:49:24
+64 verbose etag W/"b9a86349dd34fcd3ff454acc5dcecfed"
+65 verbose lastModified Fri, 08 Feb 2019 11:38:42 GMT
+66 http request GET https://registry.npmjs.org/bulma
+67 http 304 https://registry.npmjs.org/bulma
+68 verbose headers { date: 'Thu, 28 Feb 2019 05:49:24 GMT',
+68 verbose headers   connection: 'keep-alive',
+68 verbose headers   'set-cookie':
+68 verbose headers    [ '__cfduid=d7c5ed7b85047c0893ccce8cc2aa3ea1b1551332964; expires=Fri, 28-Feb-20 05:49:24 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+68 verbose headers   'cf-cache-status': 'HIT',
+68 verbose headers   'cache-control': 'max-age=300',
+68 verbose headers   'cf-ray': '4b009b939b79a84b-CDG',
+68 verbose headers   etag: '"b9a86349dd34fcd3ff454acc5dcecfed"',
+68 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+68 verbose headers   'last-modified': 'Fri, 08 Feb 2019 11:38:42 GMT',
+68 verbose headers   vary: 'accept-encoding, accept',
+68 verbose headers   'x-amz-meta-rev': '83-663790a9e5705bd7440fcd92e3e802a1',
+68 verbose headers   server: 'cloudflare' }
+69 silly get cb [ 304,
+69 silly get   { date: 'Thu, 28 Feb 2019 05:49:24 GMT',
+69 silly get     connection: 'keep-alive',
+69 silly get     'set-cookie':
+69 silly get      [ '__cfduid=d7c5ed7b85047c0893ccce8cc2aa3ea1b1551332964; expires=Fri, 28-Feb-20 05:49:24 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+69 silly get     'cf-cache-status': 'HIT',
+69 silly get     'cache-control': 'max-age=300',
+69 silly get     'cf-ray': '4b009b939b79a84b-CDG',
+69 silly get     etag: '"b9a86349dd34fcd3ff454acc5dcecfed"',
+69 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+69 silly get     'last-modified': 'Fri, 08 Feb 2019 11:38:42 GMT',
+69 silly get     vary: 'accept-encoding, accept',
+69 silly get     'x-amz-meta-rev': '83-663790a9e5705bd7440fcd92e3e802a1',
+69 silly get     server: 'cloudflare' } ]
+70 verbose etag https://registry.npmjs.org/bulma from cache
+71 verbose get saving bulma to /home/user/.npm/registry.npmjs.org/bulma/.cache.json
+72 silly resolveWithNewModule bulma@0.7.4 checking installable status
+73 silly cache add args [ 'bulma@^0.7.1', null ]
+74 verbose cache add spec bulma@^0.7.1
+75 silly cache add parsed spec Result {
+75 silly cache add   raw: 'bulma@^0.7.1',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'bulma',
+75 silly cache add   rawSpec: '^0.7.1',
+75 silly cache add   spec: '>=0.7.1 <0.8.0',
+75 silly cache add   type: 'range' }
+76 silly addNamed bulma@>=0.7.1 <0.8.0
+77 verbose addNamed ">=0.7.1 <0.8.0" is a valid semver range for bulma
+78 silly addNameRange { name: 'bulma', range: '>=0.7.1 <0.8.0', hasData: false }
+79 silly mapToRegistry name bulma
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry uri https://registry.npmjs.org/bulma
+83 verbose addNameRange registry:https://registry.npmjs.org/bulma not in flight; fetching
+84 verbose get https://registry.npmjs.org/bulma not expired, no request
+85 silly addNameRange number 2 { name: 'bulma', range: '>=0.7.1 <0.8.0', hasData: true }
+86 silly addNameRange versions [ 'bulma',
+86 silly addNameRange   [ '0.0.4',
+86 silly addNameRange     '0.0.5',
+86 silly addNameRange     '0.0.6',
+86 silly addNameRange     '0.0.7',
+86 silly addNameRange     '0.0.8',
+86 silly addNameRange     '0.0.9',
+86 silly addNameRange     '0.0.10',
+86 silly addNameRange     '0.0.11',
+86 silly addNameRange     '0.0.12',
+86 silly addNameRange     '0.0.13',
+86 silly addNameRange     '0.0.14',
+86 silly addNameRange     '0.0.15',
+86 silly addNameRange     '0.0.16',
+86 silly addNameRange     '0.0.17',
+86 silly addNameRange     '0.0.18',
+86 silly addNameRange     '0.0.19',
+86 silly addNameRange     '0.0.20',
+86 silly addNameRange     '0.0.21',
+86 silly addNameRange     '0.0.22',
+86 silly addNameRange     '0.0.23',
+86 silly addNameRange     '0.0.24',
+86 silly addNameRange     '0.0.25',
+86 silly addNameRange     '0.0.26',
+86 silly addNameRange     '0.0.27',
+86 silly addNameRange     '0.0.28',
+86 silly addNameRange     '0.1.0',
+86 silly addNameRange     '0.1.1',
+86 silly addNameRange     '0.1.2',
+86 silly addNameRange     '0.2.0',
+86 silly addNameRange     '0.2.1',
+86 silly addNameRange     '0.2.3',
+86 silly addNameRange     '0.3.0',
+86 silly addNameRange     '0.3.1',
+86 silly addNameRange     '0.3.2',
+86 silly addNameRange     '0.4.0',
+86 silly addNameRange     '0.4.1',
+86 silly addNameRange     '0.4.2',
+86 silly addNameRange     '0.4.3',
+86 silly addNameRange     '0.4.4',
+86 silly addNameRange     '0.5.0',
+86 silly addNameRange     '0.5.1',
+86 silly addNameRange     '0.5.2',
+86 silly addNameRange     '0.5.3',
+86 silly addNameRange     '0.6.0',
+86 silly addNameRange     '0.6.1',
+86 silly addNameRange     '0.6.2',
+86 silly addNameRange     '0.7.0',
+86 silly addNameRange     '0.7.1',
+86 silly addNameRange     '0.7.2',
+86 silly addNameRange     '0.7.3',
+86 silly addNameRange     '0.7.4' ] ]
+87 silly addNamed bulma@0.7.4
+88 verbose addNamed "0.7.4" is a plain semver version for bulma
+89 silly cache afterAdd bulma@0.7.4
+90 verbose afterAdd /home/user/.npm/bulma/0.7.4/package/package.json not in flight; writing
+91 verbose afterAdd /home/user/.npm/bulma/0.7.4/package/package.json written
+92 silly loadAllDepsIntoIdealTree Finishing
+93 silly idealTree:prePrune bulma@0.7.4
+93 silly idealTree:prePrune ├── bulma-o-steps@1.0.9
+93 silly idealTree:prePrune └── bulma@0.7.4
+94 silly loadIdealTree Finishing
+95 silly currentTree bulma@0.7.4
+96 silly idealTree bulma@0.7.4
+96 silly idealTree ├── bulma-o-steps@1.0.9
+96 silly idealTree └── bulma@0.7.4
+97 silly generateActionsToTake Starting
+98 silly install generateActionsToTake
+99 verbose stack TypeError: Cannot read property 'target' of null
+99 verbose stack     at module.exports (/usr/share/npm/lib/install/filter-invalid-actions.js:24:36)
+99 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+99 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+99 verbose stack     at /usr/share/npm/node_modules/slide/lib/chain.js:18:7
+99 verbose stack     at Installer.computeLinked (/usr/share/npm/lib/install.js:411:41)
+99 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+99 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+99 verbose stack     at /usr/share/npm/node_modules/slide/lib/chain.js:18:7
+99 verbose stack     at module.exports (/usr/share/npm/lib/install/diff-trees.js:50:3)
+99 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+100 verbose cwd /home/user/Desktop/Blaise/exo/bulma-0.7.4
+101 error Linux 4.15.0-45-generic
+102 error argv "/usr/bin/node" "/usr/bin/npm" "install" "bulma-o-steps"
+103 error node v8.10.0
+104 error npm  v3.5.2
+105 error Cannot read property 'target' of null
+106 error If you need help, you may report this error at:
+106 error     <https://github.com/npm/npm/issues>
+107 verbose exit [ 1, true ]

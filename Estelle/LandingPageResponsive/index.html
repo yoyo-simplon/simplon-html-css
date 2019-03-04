@@ -2,70 +2,104 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/custom.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="scree" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+  <!--Narbar type Bulma -->
+    <nav class="nav">
+        <div class="nav-left">
+            <p>Start Bootstrap</p>
+        </div>
+        <div class="nav-right" >
+            <a class="nav-item">About</a>
+            <a class="nav-item">Services</a>
+            <a class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+  <!-- Header type bulma -->
     <header>
-        <nav>
-            <p class="bootstrap">Start Bootstrap</p>
-            <ul class="menu-haut">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="landing">
-            <div class="centre">
+        <p class="level">
+            <div class="level-item has-text-centered">
                 <h1>Landing Page</h1>
+            </div>
+            <div class="level-item has-text-centered">
                 <h2>A Template by Start Bootstrap</h2>
             </div>
-            <hr class="landing">   
-        </div>
-        <!--<div class="connect">
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-        </div>-->
+            <div class="level-item has-text-centered">
+                <hr>
+            </div>
+            <div class="level-item has-text-centered">
+                <a class="button"><i class="fab fa-twitter"></i>TWITTER</a>
+                <a class="button"><i class="fab fa-github"></i>GITHUB</a>
+                <a class="button"><i class="fab fa-linkedin-in"></i>LINKEDIN</a>
+            </div>
+        </p>
     </header>
-    <div id="container">
-        <div class="contain1">
+
+    <section class="article">
+        <article class="article1">
             <div class="blocktext1">
-                <hr>
-                <h3>Death</h3>
-                <p>A special thanks to</p>
+                <hr class="block">
+                <h3>Death to the Stock Photo: Special Thanks</h3>
+                <p>A special thanks to Death to Stock Photo for providing the 
+                    photographs that you see in this template. Visit their website to 
+                    become a member.
+                </p>
             </div>
-            <div>
-                <img src="img/ipad.png" alt="ipad" width="200" height="150">
-            </div>    
-        </div>
-        <div class="contain2">
+            <img src="img/ipad.png" alt="ipad" width="300" height="300">
+        </article>
+        <hr class="hr-article">
+        <article class="article2">
             <div class="blocktext2">
-                <hr>
-                <h3>3D Device</h3>
-                <p>Turn your 2D</p>
+                <hr class="block">
+                <h3>3D Device Mockups By PSDCovers</h3>
+                <p>Turn your 2D designs into high quality, 3D product shots in seconds
+                        using free Photoshop actions by PSDCovers! Visit their website to 
+                        download of their awesome, free photoshop actions!
+                </p>
             </div>
-            <div>
-                <img src="img/dog.png" alt="chien" width="200" height="150">
-            </div>    
-        </div>
-        <div class="contain3">
+            <img src="img/dog.png" alt="dog" width="300" height="300"> 
+        </article>
+        <hr class="hr-article">
+        <article class="article3">
             <div class="blocktext3">
-                <hr>
-                <h3>Google</h3>
-                <p>This template</p>
+                <hr class="block">
+                <h3>Google Web Fonts and Font Awesome Icons</h3>
+                <p>This template features the 'Lato' font, part of the Google Web Font 
+                    library, as well as icons from Font Awesome.
+                </p>    
             </div>
-    
-                <img src="img/phones.png" alt="telephone" width="200" height="150">
-               
+            <img src="img/phones.png" alt="phones" width="300" height="300">        
+        </article>
+    </section>
+    <hr class="hr-article">
+    <section class="basdepage">
+        <div class="bottom-body">
+            <h1>Connect to Start Boostrap</h1>
+            <div class="social">
+                <a class="button"><i class="fab fa-twitter"></i>TWITTER</a>
+                <a class="button"><i class="fab fa-github"></i>GITHUB</a>
+                <a class="button"><i class="fab fa-linkedin-in"></i>LINKEDIN</a>
+            </div>
         </div>
-    </div>
-    <footer>
-        <div class="footnav"></div>
-    </div>
-        <p>Copyright</p>
-    </footer>
+    </section>
+  <footer>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">.</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">.</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">.</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <p>Copyright Your Company 2014. All Rights Reserved</p>
+  </footer>
 </body>
 </html>

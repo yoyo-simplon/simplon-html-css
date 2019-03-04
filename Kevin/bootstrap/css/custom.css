@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+ul 
+{
+    display: flex;
+    list-style-type:none;
+    justify-content: flex-end;
+    background-color: grey;
+    margin: auto;
+    text-align: justify;
+}
+
+
+#banniere
+{
+    background-image: url("intro-bg.jpg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    width:auto;
+    height:500px ; 
+    text-align:center;
+    margin:auto;
+}
+
+#banniere h1 
+{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+#banniere p
+{
+color:white;
+}
+
+
+.bloctext
+{
+display: flex;
+flex-direction: row;
+margin:20px;
+}
+
+article img 
+{
+    width:350px;
+    height:auto;
+}
+
+#carouselExampleSlidesOnly
+
+{
+    margin:12px;
+  width:350px;
+ height:auto;
+}
+footer 
+{
+    background-image: url("banner-bg.jpg");
+    background-repeat: no-repeat; 
+    background-position: center;
+    width:auto;
+    height:250px; 
+    text-align: center;
+    margin:auto;
+    font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+
+@media all and (max-device-width: 992px)
+{}
