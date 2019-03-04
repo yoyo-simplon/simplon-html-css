@@ -1,55 +1,134 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chi Fu Mi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    
+</head>
+
 <body>
-    <h2>Chi Fu Mi</h2>
+    <header>
+        <h1>Chi Fu Mi</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Partie 1</h2>
+            <p id="partie1"></p>
+        </article>
+        <article>
+            <h2>Partie 2</h2>
+            <p id="partie2"></p>
+        </article>
+        <article>
+            <h2>Partie 3</h2>
+            <p id="partie3"></p>
+        </article>
+    </section>
+
     <p id="demo"></p>
+
     <script>
-        var i=0
-        while(i<3){
+        var i = 0;
+        var scorejoueur = 0;
+        var scoreordi = 0;
+        var text = "";
+        var résultat = "";
+
+        while (i < 3) {
+            i++;
             var choix = ["pierre", "feuille", "ciseaux"];
             // sort un nombre aléatoire avec les numéro du length de l'array
             var ordi = Math.floor(Math.random() * choix.length);
 
             var text;
-            //popup choix jouer et algorythm de vitoire
+            //popup choix jouer et algorythm de vitoire par manche
             var jouer = prompt("à toi de jouer", "pierre, feuille, ciseaux?");
             switch (jouer) {
                 case "pierre":
                     if (ordi == 0) {
                         alert("Match nul!");
+                        résultat = "mattch nul!";
                     } else if (ordi == 1) {
                         alert("Perdu!");
+                        résultat = "Perdu!";
+                        scoreordi++;
                     } else if (ordi == 2) {
                         alert("Gagné!");
+                        résultat = "Gagné!";
+                        scorejoueur++;
+
                     }
 
                     break;
                 case "feuille":
                     if (ordi == 0) {
                         alert("gagné!");
+                        résultat = "Gagné!";
+                        scorejoueur++;
                     } else if (ordi == 1) {
                         alert("Match null!");
+                        résultat = "mattch nul!";
                     } else if (ordi == 2) {
                         alert("Perdu!");
+                        résultat = "Perdu!";
+                        scoreordi++;
+
                     }
                     break;
-                case "Ciseaux":
+                case "ciseaux":
                     if (ordi == 0) {
                         alert("Perdu!");
+                        résultat = "Perdu!";
+                        scoreordi++;
                     } else if (ordi == 1) {
                         alert("Gagné!");
+                        résultat = "Gagné!";
+                        scorejoueur++;
                     } else if (ordi == 2) {
                         alert("Match nul!");
+                        résultat = "mattch nul!";
                     }
                     break;
                 default:
                     alert("non! Pierre, feuille, ciseaux!");
+                    i--;
+
             }
+            if (i == 1) {
+                document.getElementById("partie1").innerHTML = résultat;
+            } else if (i == 2) {
+                document.getElementById("partie2").innerHTML = résultat;
+            } else if (i == 3) {
+                document.getElementById("partie3").innerHTML = résultat;
+            }
+
+
+        }
+
+        //algorythm de victoire en 3 manche
+        if (scorejoueur >= 2) {
+            text = "vous êtes le grand vainqueur!";
+        }
+        if (scorejoueur == 1 && scoreordi == 0) {
+            text = "vous êtes le grand vainqueur!";
+        }
+
+        if (scoreordi >= 2) {
+            text = "l'ordi est le grand vainqueur!"
+        }
+        if (scoreordi == 1 && scorejoueur == 0) {
+            text = "l'ordi est le grand vainqueur!";
+        }
+        if (scorejoueur == 1 && scoreordi==1) {
+            text = "Il n'y a pas de vainqueur!"
         }
         
-            
-        
+        document.getElementById("demo").innerHTML = text;
     </script>
 
 </body>
