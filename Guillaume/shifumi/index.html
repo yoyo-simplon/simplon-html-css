@@ -7,28 +7,74 @@
     <title>Document</title>
 </head>
 <body>
+    <button id="test" onclick="shifumi()">Jouer</button>
+    
+    <p class="resultat"></p>
+    <div id="mon-texte">
+            Lorem ipsum <span>test</span>
+    </div>
+
+
+
+
+
+
     <script>
+
+        /*
+        function choixJoueurBtn(){
+        var btn = document.getElementById("test");
+                var texte = btn.innerText || btn.textContent;
+        }
+
+        */
         
+        
+
+
+
+        function shifumi(){
+        let manche = 0
+        let compteurVictoir = 0
+        let compteurDefaite = 0
+    
+        while(manche < 3){
         //Votre choix
-        var VotreChoix = prompt("Choisir Pierre, Feuille ou Ciseaux")
+        var votreChoix = prompt("Choisir Pierre, Feuille ou Ciseaux")
         //Choix de l'ordi
         var B = ["Pierre","Feuille","Ciseaux"];
         var choixIa2 = B[Math.floor(Math.random()*B.length)];
         //Condition
-        if (VotreChoix === choixIa2) {
+        if (votreChoix === choixIa2) {
             alert("Egalité !")
 
-                } else if(choixIa2 == "Pierre" && VotreChoix == "Feuille"){
+                } else if(   
+                (choixIa2 == "Pierre" && votreChoix == "Feuille")||
+                (choixIa2 == "Ciseaux" && votreChoix == "Pierre") ||
+                (choixIa2 == "Feuille" && votreChoix == "Ciseaux")){
+                    compteurVictoir ++; 
                     alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
+                    
+                    if (compteurVictoir > compteurDefaite){
+                        manche++
+                    }
 
-                } else if(choixIa2 == "Ciseaux" && VotreChoix == "Pierre"){
-                    alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
+                }  else{
+                    compteurDefaite ++;
+                    alert("l'ordi à choisi " + choixIa2 + " vous avez perdu")}
+                alert("Le compteur est à : \n" + compteurVictoir + " Pour vous \n" +  compteurDefaite + " pour l'ordinateur")
+                if (compteurDefaite > compteurVictoir){
+                        manche++
+                    }
+                }
+                alert("Terminer ! \n" + "Voici les résultas : \n\n" + compteurVictoir + " Pour vous \n" + compteurDefaite + " pour l'ordinateur")
+            }
 
-                } else if(choixIa2 == "Feuille" && VotreChoix == "Ciseaux"){
-                    alert("L'ordi a choisi " + choixIa2 + " Vous avez gagné !")
 
-                    } else{alert("l'ordi à choisi " + choixIa2 + " vous avez perdu")}
 
+                
+            
+            
     </script>
 </body>
 </html>
