@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pierre feuille ciseaux</title>
+        <title>Pierre - Feuille - Ciseaux</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-
+        <div id="contenu">
+            <button id="choixPierre">Pierre</button>
+            <button id="choixFeuille">Feuille</button>
+            <button id="choixCiseaux">Ciseaux</button>  
+        </div>
     </body>
 </html>
- 
-<style>
-    img {
-        width: 50px;
-        height: 50px;
-    }
-</style>
-  
+
 <script type="text/javascript">
 
-var C = 1;      /* Compteur de match */
+var M = 1;      /* Compteur de match    */
 var SA = 0;     /* Compteur du score de l'utilisateur   */
 var SB = 0;     /* Compteur du score de l'ordinateur */
   
-    function comparer(B, A) {
+    function comparer(B, A, M) {
   
         if(A == B) {
-            alert("Il y a égalité : \n Ordinateur a choisi : " + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
+            alert("Il y a égalité : \n Ordinateur a choisi : " + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
         }
         else if((A == "pierre" && B == "ciseaux") || (A == "feuille" && B == "pierre") || (A == "ciseaux" && B == "feuille")) {
             SA++;
-            alert("Vous avez gagné : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
+            alert("Vous avez gagné : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
         }
         else if((A == "feuille" && B == "ciseaux") || (A == "pierre" && B == "feuille") || (A == "ciseaux" && B == "pierre")) {
             SB++;
-            alert("Vous avez perdu : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + C + "\n \n")
-        }
-  
+            alert("Vous avez perdu : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
+        }  
     }
   
     function FchoixOrdi() {
@@ -52,32 +48,76 @@ var SB = 0;     /* Compteur du score de l'ordinateur */
             }
             return D;
     }
-   
+
     function main() {  
 
-            for (let i=0; i<3 ; i++)
-            {
-                var A = prompt("Entrer : pierre ou feuille ou ciseaux");    /*  choix de l'utilisateur  */
-                alert ("Utilisateur : " + A + "\n \n") 
-                if ((A !== "pierre") && (A !== "feuille") && (A !== "ciseaux")) {
-                    alert (" ERREUR DE SAISIE !!!  \n \n")
-                    break;
-                }
+        var cpierre = document.getElementById('choixPierre');
+        var cfeuille = document.getElementById('choixFeuille');
+        var cciseaux = document.getElementById('choixCiseaux');
                 
-                var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
-                alert ("Ordinateur : " + B + "\n \n")
+        cpierre.addEventListener('click', function() {
+           var A = "pierre";
+           alert ("Utilisateur : " + A + "\n \n");
+           
+           var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
 
-                /*  Lancement de la comparaison et affichage du score   */
-                comparer(B, A);
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
 
-                /* Incrémentation du compteur de match  */
-                C++;
-            }       
+            M++;    /*  Incrémentation du compteur de match     */
+   
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }
+        });
+
+        cfeuille.addEventListener('click', function() {
+            var A = "feuille";
+            alert ("Utilisateur : " + A + "\n \n");
+
+           var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
+
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
+
+            M++;    /*  Incrémentation du compteur de match     */
+   
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }
+
+        });
+
+            cciseaux.addEventListener('click', function() {
+            var A = "ciseaux";
+            alert ("Utilisateur : " + A + "\n \n");
+
+            var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
+
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
+
+            M++;    /*  Incrémentation du compteur de match     */
+
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }          
+        });
     }
   
+    alert ("     ~  LE JEU COMMENCE  ~  \n \n ")
     main();
-
-    alert ("  ~  GAME OVER  ~  \n \n")
-
    
 </script>
