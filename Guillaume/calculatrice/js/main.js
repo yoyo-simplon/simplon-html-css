@@ -1,25 +1,53 @@
-let resutat = 0;
-let chiffre1 = 0;
-let chiffre2 = 0;
+let resultat = 0;
+let chiffre1 = "";
+let chiffre2 = "";
 let operateur = "";
+let separateur = "";
 
+// function resetChiffre(){
 
-function calcul(chiffre1,chiffre2){
-    
-if(operateur === "+"){
-    resutat = chiffre1 + chiffre2;
-} else if(operateur==="-"){
-    resutat = chiffre1 - chiffre2;
-} else if(operateur==="/"){
-    resutat = chiffre1 / chiffre2;
-} else if(operateur==="*"){
-    resutat = chiffre1 * chiffre2;
-}else{
-    resutat ="Erreur..."
+// }
+function reset(i) {
+    resultat = 0;
+    chiffre1 = "";
+    chiffre2 = "";
+    operateur = "";
+    separateur = "";
+    alert("Remise a zero ...")
 }
-return resutat}
 
-chiffre1 = prompt("entrer le chiffre 1");
-operateur = prompt("Entrer l'opérateur (+ , - , / , *) ")
-chiffre2 = prompt("entrer le chiffre 2");
-alert("Le résultat est " + resutat)
+function ope(i) {
+    operateur = i
+}
+
+function chiffre(i) {
+    if (operateur === "")
+    chiffre1 += i;
+    else{
+    chiffre2 += i;
+    }
+    
+};
+
+function egal(i){
+
+    if (operateur === "+" ){
+        resultat = Number(chiffre1) + Number(chiffre2);
+        alert(resultat)
+    } else if (operateur === "-") {
+        resultat = Number(chiffre1) - Number(chiffre2);
+        alert(resultat)
+        
+    } else if (operateur === "/") {
+        resultat = Number(chiffre1) / Number(chiffre2);
+        alert(resultat)
+        
+    } else if (operateur === "*") {
+        resultat = Number(chiffre1) * Number(chiffre2);
+        alert(resultat)
+        
+    } else {alert("Erreur...")}
+    
+    
+}
+

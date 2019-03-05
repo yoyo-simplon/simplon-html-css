@@ -5,6 +5,16 @@
 
 button{
     text-align: center;
-    padding: 2%;
+    padding: 1% 0;
     width: 5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.un,.deux,.trois,.quatre,.cinc,.six,.sept,.huit,.neuf{
+    background: #999;}
+.egal{
+    width: 15.5%;
 }
