@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mibloc {
+  width: 50%;
+}
+
+.is-primary {
+  background-color: #3A539B !important;
+}
+
+#logo {
+  font-size: 2.3em;
+  color: #3A539B;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+
+.hero {
+  background-image: url("ressources/head.png");
+  background-size: cover;
+  height: 40vh;
+}
+
+#prez p {
+  margin: 15px;
+  font-size: 1.2em;
+}
+
+#clickMe {
+  width: 150px;
+}
+
+#how {
+  flex-direction: row !important;
+}
+#how .container {
+  margin: 25px;
+}
+#how .container i {
+  margin-bottom: 15px;
+  color: #3A539B;
+}
+#how .container i,
+#how .container h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#how .container p {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=custom.css.map */
