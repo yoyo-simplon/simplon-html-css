@@ -1,0 +1,74 @@
+
+<head>
+<title>Jeu de "Pierre-Papier-Ciseaux" en Javascript</title>
+
+</head>
+
+<body>
+    <button onclick="PFC()">START</button>
+    <input type="button" class="btn" value="pierre" />
+    <input type="button" class="btn" value="feuille" />
+    <input type="button" class="btn" value="ciseaux" />
+
+    <script>
+        var equal = "égalité";
+        var win = "you win";
+        var lose = "ia win";
+        var user_point=0;
+        var ia_point=0;
+         
+        function PFC(i, j) {
+          while (user_point < 2 && ia_point < 2) {
+         var i = prompt("pierre, feuille, ciseaux");
+          var j = Math.random()*90;
+         
+        if (i === "pierre") {
+        } else if (i === "feuille") {
+        } else if (i === "ciseaux") {
+        } else {
+          alert("entrez pierre, feuille, ciseaux")
+        }
+         
+          if (j <=30) {
+            j="pierre";
+          } else if (j <=60 && j >30) {
+            j="feuille";
+          } else if (j <=90 && j >60) {
+            j="ciseaux";
+          }
+          console.log("vous: "+i+", l'ordinateur: "+j);
+         
+         
+          if (i===j) {
+            console.log(equal);
+          } else if (i=="ciseaux" && j=="pierre"){
+            console.log(lose);
+            ia_point++;
+          } else if (i=="ciseaux" && j=="feuille"){
+            console.log(win);
+            user_point++;
+          } else if (i=="pierre" && j=="ciseaux"){
+            console.log(win);
+            user_point++;
+          } else if (i=="pierre" && j=="feuille"){
+            console.log(lose);
+            ia_point++;
+          } else if (i=="feuille" && j=="ciseaux"){
+            console.log(lose);
+            ia_point++;
+          } else if (i=="feuille" && j=="pierre"){
+            console.log(win);
+            user_point++;
+          }
+          console.log(user_point+" - "+ia_point);
+          document.getElementsByTagName("p")[0].innerHTML=user_point+" - "+ia_point;
+        }
+         
+        if (user_point==2 || ia_point==2){
+          user_point=0;
+          ia_point=0;
+        }
+    }      
+        </script>
+  
+</body>

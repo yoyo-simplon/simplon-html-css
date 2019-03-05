@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shi_Fu_Mi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <script>
+        var shi_fu_mi = ["pierre", "papier", "ciseau"];
+        var aleatoire = (Math.round(Math.random() * 2));
+        var mon_choix = prompt("Pierre, Papier, Ciseau ?");
+
+        ordinateur_choix = shi_fu_mi[aleatoire];
+
+        if (mon_choix == ordinateur_choix) {
+            alert("Match null");
+        } else if ((mon_choix == "pierre" && ordinateur_choix == "ciseau") || (mon_choix == "papier" && ordinateur_choix =="pierre") || (mon_choix == "ciseau" && ordinateur_choix =="papier" )) {
+            alert("L'oridinateur à choisi " + ordinateur_choix + " ...Vous avez gagné");
+        } else {
+            alert("L'oridinateur à choisi " + ordinateur_choix + " ...Noob");
+        }
+
+        console.log("Mon choix : " + mon_choix);
+        console.log("Celui de l'ordi : " + ordinateur_choix);
+
+    </script>
+</body>
+</html>

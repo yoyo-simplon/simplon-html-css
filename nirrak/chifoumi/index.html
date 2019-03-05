@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pierre - Feuille - Ciseaux</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div id="contenu">
+            <button id="choixPierre">Pierre</button>
+            <button id="choixFeuille">Feuille</button>
+            <button id="choixCiseaux">Ciseaux</button>  
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+
+var M = 1;      /* Compteur de match    */
+var SA = 0;     /* Compteur du score de l'utilisateur   */
+var SB = 0;     /* Compteur du score de l'ordinateur */
+  
+    function comparer(B, A, M) {
+  
+        if(A == B) {
+            alert("Il y a égalité : \n Ordinateur a choisi : " + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
+        }
+        else if((A == "pierre" && B == "ciseaux") || (A == "feuille" && B == "pierre") || (A == "ciseaux" && B == "feuille")) {
+            SA++;
+            alert("Vous avez gagné : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
+        }
+        else if((A == "feuille" && B == "ciseaux") || (A == "pierre" && B == "feuille") || (A == "ciseaux" && B == "pierre")) {
+            SB++;
+            alert("Vous avez perdu : \n Ordinateur a choisi : "  + B + "\n Utilisateur a choisi : " + A + "\n \n Score Ordinateur = " + SB + "\n Score Utilisateur = " + SA + "\n \n Round : " + M + "\n \n")
+        }  
+    }
+  
+    function FchoixOrdi() {
+        var D = Math.floor(Math.random() * 60);
+  
+            if (D <= 20) {
+                D = "pierre";
+            }
+            else if(D > 20 && D <= 40) {
+                D = "feuille";
+            }
+            else if(D > 40) {
+                D = "ciseaux";
+            }
+            return D;
+    }
+
+    function main() {  
+
+        var cpierre = document.getElementById('choixPierre');
+        var cfeuille = document.getElementById('choixFeuille');
+        var cciseaux = document.getElementById('choixCiseaux');
+                
+        cpierre.addEventListener('click', function() {
+           var A = "pierre";
+           alert ("Utilisateur : " + A + "\n \n");
+           
+           var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
+
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
+
+            M++;    /*  Incrémentation du compteur de match     */
+   
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }
+        });
+
+        cfeuille.addEventListener('click', function() {
+            var A = "feuille";
+            alert ("Utilisateur : " + A + "\n \n");
+
+           var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
+
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
+
+            M++;    /*  Incrémentation du compteur de match     */
+   
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }
+
+        });
+
+            cciseaux.addEventListener('click', function() {
+            var A = "ciseaux";
+            alert ("Utilisateur : " + A + "\n \n");
+
+            var B = FchoixOrdi();   /*  choix de l'ordinateur  */ 
+            alert ("Ordinateur : " + B + "\n \n");
+
+            /*  Lancement de la comparaison et affichage du score   */
+            comparer(B, A, M);
+
+            M++;    /*  Incrémentation du compteur de match     */
+
+            if (M > 3) {
+                M = 1;
+                SA = 0;
+                SB = 0;
+                alert ("   ~   GAME OVER   ~   ")
+            }          
+        });
+    }
+  
+    alert ("     ~  LE JEU COMMENCE  ~  \n \n ")
+    main();
+   
+</script>

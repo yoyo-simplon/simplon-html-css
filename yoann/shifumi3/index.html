@@ -1,0 +1,62 @@
+
+<head>
+    <title>Jeu de "Pierre-Papier-Ciseaux" en Javascript</title>
+    
+    </head>
+    
+    <body>
+        <button onclick="initialisation()">START</button>
+       
+    
+        <script>
+          //initialisation de variables
+           var choix_joueur = 0;
+            var choix_ordi = 0;
+            var choix = ['pierre','feuille','ciseau'];
+           
+                //fonction initialisation
+             function initialisation(choix_joueur,choix_ordi){
+                var choix_joueur = prompt('choisissez pierre, feuille ou ciseau');
+                var rand = choix[Math.floor(Math.random() * choix.length)];
+                //alert(rand);
+                choix_ordi=rand;
+
+           
+                if (choix_joueur==choix_ordi){
+                        alert('égalité');
+                    }else if(((choix_joueur=="pierre")&&(choix_ordi=="ciseau"))||((choix_joueur=="feuille")&&(choix_ordi=="pierre"))||((choix_joueur=="ciseau")&&(choix_ordi=="feuille"))){
+                        alert('gagné');
+                    }else{
+                        alert('perdu');    
+                    }
+                }
+        
+    
+            
+    /* if ((choix_joueur=="pierre")&&(choix_ordi=="ciseau")){
+                    alert('gagné pierre ciseau');
+                }else if((choix_joueur=="pierre")&&(choix_ordi=="feuille")){
+                    alert('perdu pierre feuille');
+                }else if((choix_joueur=="pierre")&&(choix_ordi=="pierre")){
+                    alert('égalité pierre pierre');
+                }else if((choix_joueur=="feuille")&&(choix_ordi=="ciseau")){
+                    alert('perdu feuille ciseau');
+                }else if((choix_joueur=="feuille")&&(choix_ordi=="feuille")){
+                    alert('égalité feuille feuille');
+                }else if((choix_joueur=="feuille")&&(choix_ordi=="pierre")){
+                    alert('gagné feuille pierre');
+                }else if((choix_joueur=="ciseau")&&(choix_ordi=="ciseau")){
+                    alert('égalité ciseau ciseau');
+                }else if((choix_joueur=="ciseau")&&(choix_ordi=="feuille")){
+                    alert('gagné ciseau feuille');
+                }else {
+                    alert('perdu ciseau pierre');
+                }*/
+                
+
+       
+            
+            
+            </script>
+      
+    </body>
