@@ -18,6 +18,8 @@ function reset(i) {
 
 function ope(i) {
     operateur = i
+    document.getElementById("text").innerHTML = "" +
+                    chiffre1 + " " + operateur+" " + chiffre2
 }
 
 function chiffre(i) {
@@ -26,28 +28,30 @@ function chiffre(i) {
     else{
     chiffre2 += i;
     }
-    
+    document.getElementById("text").innerHTML = "" +
+                    chiffre1 + " " + operateur+" " + chiffre2
 };
 
 function egal(i){
 
     if (operateur === "+" ){
         resultat = Number(chiffre1) + Number(chiffre2);
-        alert(resultat)
+        //alert(resultat)
     } else if (operateur === "-") {
         resultat = Number(chiffre1) - Number(chiffre2);
-        alert(resultat)
+        //alert(resultat)
         
     } else if (operateur === "/") {
         resultat = Number(chiffre1) / Number(chiffre2);
-        alert(resultat)
+        //alert(resultat)
         
     } else if (operateur === "*") {
         resultat = Number(chiffre1) * Number(chiffre2);
-        alert(resultat)
+        //alert(resultat)
         
     } else {alert("Erreur...")}
     
-    
+    document.getElementById("text").innerHTML = "" +
+                    chiffre1 + " " + operateur+" " + chiffre2 + "<br><br>" + "= "+ resultat;
 }
 
