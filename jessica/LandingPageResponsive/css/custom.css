@@ -13,23 +13,17 @@ padding-right: 300px;
 
 }
 
-nav ul{
-    
-    
+nav ul {
     display: flex;
     flex-direction: row;
-
+   
 }
 
-a 
-{
-    color:black;
+a {
+ color:black;
 }
-
-
 
 .landingpage{
-
 
 display: flex;
 flex-direction: column;
@@ -38,8 +32,6 @@ background-image: url(../img/intro-bg.jpg);
 padding-top: 100px;
 padding-bottom: 100px;
 color: white;
-
-
 }
 
 .landingpage p{
@@ -151,12 +143,7 @@ padding-left:150px ;
 
     display:flex;
     flex-direction: row;
-  
-    
-    
-   
-    
-    }
+}
 
 .blue{
     height: 300px;
@@ -172,11 +159,9 @@ padding-left:150px ;
     color: white;
 }
 
-
-
 .grey{
 
-color: black;
+color: blue;
 height: 30px;
 display: flex;
 flex-direction: column;

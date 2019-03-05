@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Shifume</title>
+</head>
+<body>
+    <script>
+
+        
+
+        var shifumi = ["pierre", "papier", "ciseau"];
+        var random = (Math.round(Math.random() * 3));
+        var votrechoix = prompt("Pierre, Papier, Ciseau ?");
+        var choixdelordi = shifumi[random];
+
+        if (votrechoix == choixdelordi) 
+            {alert("nul");}
+
+        else if ((votrechoix == "pierre" && choixdelordi == "ciseau") ||
+            (votrechoix == "ciseau" && choixdelordi =="papier") ||
+            (votrechoix == "papier" && choixdelordi =="pierre")) 
+            
+
+            {alert("L'ordi à choisi " + choixdelordi + "Vous avez gagné");}
+
+        else {alert("L'oridinateur à choisi " + choixdelordi + " vous avez perdu");}
+
+        console.log("votre choix : " + votrechoix);
+        console.log("choix de l'ordi : " + choixdelordi);
+    
+
+    </script>
+</body>
+</html>
