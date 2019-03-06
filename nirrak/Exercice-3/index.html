@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 3</title>
+    </head>
+
+    <body>
+
+        <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onkeypress="clavierPresser(event)">
+        
+        <script type="text/javascript">
+
+            var mot = "";
+
+            function clavierPresser(event) {
+        
+                // Récupération du code de l'élément taper au clavier
+                var codeAsciiClavier = event.which || event.keyCode; 
+        
+                // Conversion en string du code
+                var charClavier = String.fromCharCode(codeAsciiClavier); 
+        
+                // Concaténation de la lettre avec le mot
+                mot = mot + charClavier;
+
+                alert ("Vous avez tapé : " + mot)
+
+                
+        
+            }
+        
+        </script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+

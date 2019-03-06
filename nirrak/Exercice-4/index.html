@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 4</title>
+    </head>
+
+    <body>
+        <form>
+            <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+            <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+            <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+            <button type="button" name="button" id="bouton">RAZ</button>
+        </form>
+    </body>
+
+    <script type="text/javascript">
+    
+        var O = "";
+        var N = document.getElementById("nom");
+        var P = document.getElementById("prénom");
+        var V = document.getElementById("ville");
+
+        var B = document.getElementById("bouton");
+
+        B.addEventListener("click", function() {
+            document.getElementById("nom").value = O;
+            document.getElementById("prenom").value = O;
+            document.getElementById("ville").value = O;
+        }, true);
+    
+    </script>
+
+</html>
