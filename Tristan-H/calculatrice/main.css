@@ -1,0 +1,17 @@
+.ecran{
+    border:solid 1px;
+    font-size: 20px;
+}
+.bouttons{
+    display: flex;
+    flex-direction: row;
+}
+.chiffres{
+    margin-right: 20px;
+}
+input{
+    padding: 1em;
+    margin: 0.5em;
+    font-size: 20px;
+    width: 100px;
+}

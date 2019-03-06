@@ -8,21 +8,24 @@ document.getElementById("text").value="";
 
 
 function ajout_chiffre(c){
-    if(c==",") c=".";
+    if(c=="," && calcul.charAt(calcul.length-1)!=".") c=".";
 
-if(calcul.substr(calcul.length-1) =="+" || calcul.substr(calcul.length-1) =="/" 
-|| calcul.substr(calcul.length-1) =="*"  || calcul.substr(calcul.length-1) =="-")
+if( calcul.charAt(calcul.length-1) ==["+"||"*"||"\/"||"-" ]  && c==["+"||"*"||"\/"||"-" ]  )
 {
-var tmp=calcul.substringg(calcul.length-1);
-    tmp+=tc;
-    console.log(calcul);
+var tmp=calcul.split();
+console.log("tmp : "+tmp);
+    tmp[tmp.length-1]=c;
+
+    console.log("tmp2 : "+tmp);
+    calcul=tmp.join();
     document.getElementById("text").value=calcul;
 
 }else{
+    console.log("calcul1 : "+calcul);
     calcul+=c;
     document.getElementById("text").value=calcul;
 }
-
+console.log("calcul2 : "+calcul);
 
 
 }
