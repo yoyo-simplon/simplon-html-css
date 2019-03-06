@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onkeypress="myFunction()" />
+   
+  </form>
+  <script> 
+  
+ let inputNom = document.getElementById('nom');
+  inputNom.onkeypress = function(i){
+        var nom = document.getElementById("nom");
+        var nom = nom.value;
+        alert (nom);
+    
+  }
+  </script> 
+    
+</body>
+</html>

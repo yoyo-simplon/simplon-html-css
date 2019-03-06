@@ -18,3 +18,14 @@ button{
 .egal{
     width: 15.5%;
 }
+.affichage{
+    /*position: fixed;*/
+    
+    height: 6vh;
+    font-size: 1.9vw;
+    font-family: sans-serif;
+}
+.calculatrice{
+    
+    
+}
