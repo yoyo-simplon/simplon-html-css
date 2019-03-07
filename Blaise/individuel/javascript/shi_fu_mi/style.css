@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    height: 90vh;
+}
+
+.bloc_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
