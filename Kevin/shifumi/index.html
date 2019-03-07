@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> PFC JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    
-    </head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> PFC JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 
-    <body>
-        <h1> Bienvenue sur mon 1er jeu PFC</h1>
-    
-        <button onclick> Pierre </button>
+</head>
+
+<body>
+  <h1> Bienvenue sur mon 1er jeu PFC</h1>
+
+  <!-- <button onclick> Pierre </button> 
         <button onclick> Feuille </button>
-        <button onclick> Ciseaux </button>
+        <button onclick> Ciseaux </button>-->
 
-    <script>let param = ["Pierre", "Feuille", "Ciseaux"];
+  <script>
+    let param = ["Pierre", "Feuille", "Ciseaux"];
 
+    let randomIA = param[Math.round(Math.random() * 2)];
 
-        let randomIA = param[Math.round(Math.random() * 3)];
+    let pointsUser = 0;
+    let pointsIA = 0;
+
+    for (let nb = 1; nb <= 3; nb++) {
+
+      let choixUtilisateur = prompt("Manche" + nb + "Pierre? Feuille? Ciseaux?");
+
+      if (((choixUtilisateur == "Pierre") && (randomIA == "Ciseaux")) || ((choixUtilisateur == "Ciseaux") && (randomIA == "Feuille")) || ((choixUtilisateur == "Feuille") && (randomIA == "Pierre")))
+       {
+        alert("Ordi" + randomIA + " Vous" + choixUtilisateur + " Vous avez gagné!");
+        pointsUser = pointsUser + 1;
+        alert("score Utilisateur" + pointsUser + "score Ordinateur" + pointsIA);
         
-        let pointUser = 0;
-        let pointIA = 0;
-        
-        for (let nb = 1; score <= 5; score++) {
-          let choixUtilisateur = prompt("Manche" + nb + "Pierre? Feuille? Ciseaux?");
-          
-          if ((choixUtilisateur = "Pierre") && (randomIA = "Ciseaux") || (choixUtilisateur = "Ciseaux") && (randomIA = "Feuille") || (choixUtilisateur = "Feuille") && (randomIA = "Pierre")) {
-            alert("Ordi" + randomIA + " Vous" + choixUtilisateur + " Vous avez gagné!");
-            alert("score Utilisateur" + pointsUser + "score Ordinateur" + pointsIA);
-            pointUser = pointUser + 1; 
-          } 
-          else if (choixUtilisateur === randomIA) {
-            alert(randomIA + choixUtilisateur + "Egalité");
-          } 
-          else {
-            alert(randomIA + choixUtilisateur + "Vous avez perdu!");
-            pointsIA = pointsIA + 1;
-            alert("score Utilisateur" + pointsUtilisateur + "score Ordinateur" + pointsOrdi);
-          }
-        }</script>
-    </body>  
-    </html>
+      } else if (choixUtilisateur === randomIA) {
+        alert(randomIA + choixUtilisateur + "Egalité");
+        alert("score Utilisateur" + pointsUser + "score Ordinateur" + pointsIA);
+      } else {
+        alert(randomIA + choixUtilisateur + "Vous avez perdu!");
+        pointsIA = pointsIA + 1;
+        alert("score Utilisateur" + pointsUser + "score Ordinateur" + pointsIA);
+      }
+    }
+  </script>
+</body>
+
+</html>
