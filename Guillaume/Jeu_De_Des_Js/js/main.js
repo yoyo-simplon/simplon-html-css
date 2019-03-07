@@ -11,6 +11,8 @@ function jeuDes(){
 var des6 = [1, 2, 3, 4, 5, 6];
 var desNouvLancer = des6[Math.floor(Math.random() * des6.length)];
 
+document.getElementById("diceFace").src= "images/dice-" + desNouvLancer + ".png"
+
 if(desNouvLancer === 1){
     currentScoreA = 0;
     //alert("Le des a fait : " + desNouvLancer +"\nScore du JoueurA : " + currentScoreA)
