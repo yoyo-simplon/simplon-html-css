@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculatrice</title>
+    </head>
+
+    <body>
+                <form>
+                    <label for="Calcul">Calcul : </label><input type="text" name="calcul" value="" id="calcul" />
+                </form>
+
+                <div class="contenu">
+                    <div id="chiffre">
+                        <button id="bouton-0">0</button>
+                        <button id="bouton-1">1</button>
+                        <button id="bouton-2">2</button>
+                        <button id="bouton-3">3</button>
+                        <button id="bouton-4">4</button>
+                        <button id="bouton-5">5</button>
+                        <button id="bouton-6">6</button>
+                        <button id="bouton-7">7</button>
+                        <button id="bouton-8">8</button>
+                        <button id="bouton-9">9</button>
+                        <button id="bouton-,">virgule</button>
+                    </div>
+
+                    <div id="operation">
+                        <button id="bouton-+">+</button>
+                        <button id="bouton--">-</button>
+                        <button id="bouton-*">*</button>
+                        <button id="bouton-/">/</button>
+                        <button id="bouton-=">=</button>
+                    </div>
+                </div>
+
+                <div>
+                       <button id="bouton-raz">Nouvelle opération</button>
+                </div>
+    </body>
+</html>
+
+<script>
+
+var A = "";
+var B = "";
+var O = "";
+var choixOperande = "CA"
+
+// Fonction de mise à l'écoute des boutons
+document.getElementById("bouton-0").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-1").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-2").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-3").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-4").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-5").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-6").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-7").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-8").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-9").addEventListener("click",saisieChiffre);
+document.getElementById("bouton-,").addEventListener("click",saisieChiffre);
+
+
+document.getElementById("bouton-+").addEventListener("click",saisieOperation);
+document.getElementById("bouton--").addEventListener("click",saisieOperation);
+document.getElementById("bouton-*").addEventListener("click",saisieOperation);
+document.getElementById("bouton-/").addEventListener("click",saisieOperation);
+document.getElementById("bouton-=").addEventListener("click",saisieOperation);
+
+document.getElementById("bouton-raz").addEventListener("click",razOperation);
+
+// Fonction de saisie des chiffres
+function saisieChiffre() {
+    switch (this.id) {
+        case "bouton-0" :
+            if (choixOperande === "CA") {A=A+"0"; document.getElementById("calcul").value=A;} else {B=B+"0";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-1" :
+            if (choixOperande === "CA") {A=A+"1"; document.getElementById("calcul").value=A;} else {B=B+"1";document.getElementById("calcul").value=B;} break;
+ 
+        case "bouton-2" :
+            if (choixOperande === "CA") {A=A+"2"; document.getElementById("calcul").value=A;} else {B=B+"2";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-3" :
+            if (choixOperande === "CA") {A=A+"3"; document.getElementById("calcul").value=A;} else {B=B+"3";document.getElementById("calcul").value=B;} break;
+        
+        case "bouton-4" :
+            if (choixOperande === "CA") {A=A+"4"; document.getElementById("calcul").value=A;} else {B=B+"4";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-5" :
+            if (choixOperande === "CA") {A=A+"5"; document.getElementById("calcul").value=A;} else {B=B+"5";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-6" :
+            if (choixOperande === "CA") {A=A+"6"; document.getElementById("calcul").value=A;} else {B=B+"6";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-7" :
+            if (choixOperande === "CA") {A=A+"7"; document.getElementById("calcul").value=A;} else {B=B+"7";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-8" :
+            if (choixOperande === "CA") {A=A+"8"; document.getElementById("calcul").value=A;} else {B=B+"8";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-9" :
+            if (choixOperande === "CA") {A=A+"9"; document.getElementById("calcul").value=A;} else {B=B+"9";document.getElementById("calcul").value=B;} break;
+
+        case "bouton-," :
+            if (choixOperande === "CA") {A=A+"."; document.getElementById("calcul").value=A;} else {B=B+".";document.getElementById("calcul").value=B;} break;
+
+        default : document.getElementById("calcul").value = "Oouups !!!";           
+    }
+}
+
+// Fonction de saisie de l'operation
+function saisieOperation() {
+    switch (this.id) {
+        case "bouton-+" : O="+"; choixOperande="CB"; break;
+        case "bouton--" : O="-"; choixOperande="CB"; break;
+        case "bouton-*" : O="*"; choixOperande="CB"; break;
+        case "bouton-/" : O="/"; choixOperande="CB"; break;
+        case "bouton-=" : lanceCalcul(); break; 
+        default : document.getElementById("calcul").value = "Oouups !!!";       
+    }
+}
+
+// Fonction qui lance le calcul réellement et affiche le résultat
+function lanceCalcul () {
+
+    RA = parseFloat(A); 
+    RB = parseFloat(B);
+
+    switch (O) {
+        case "+" : var R=RA+RB; document.getElementById("calcul").value = R; break;
+        case "-" : var R=RA-RB; document.getElementById("calcul").value = R; break;
+        case "*" : var R=RA*RB; document.getElementById("calcul").value = R; break;
+        case "/" : var R=RA/RB; document.getElementById("calcul").value = R; break;
+        default  : document.getElementById("calcul").value = "Oouups !!!";
+    }
+}
+
+// Réinitialisation du calcul
+function razOperation() {
+
+     O = "";  
+     A = "";
+     B = "";
+    choixOperande = "CA";
+    document.getElementById("calcul").value = "";
+}
+
+</script>
