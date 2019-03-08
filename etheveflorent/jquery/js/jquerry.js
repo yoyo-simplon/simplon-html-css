@@ -1,9 +1,12 @@
 $(document).ready(function(){
-
+//exo 1
 $("#text").click(function(){
     $(this).toggleClass("text");
 
 })
+
+//----------------------------------------------------------------------------------------
+//exo 2
    var $width=0;
 $("#b1").click(function(){
  
@@ -31,6 +34,12 @@ $("#b4").click(function() {
 $("#b5").click(function() {
     $("#rect").show();
 })
+//-----------------------------------------------------------------------------------------------
+//exo 3
+$("a").click(function(){
 
 
+$(this).next().fadeIn(100);
+$(this).parent().siblings().find("a").next("ul").fadeOut(100);
+})
 });
