@@ -1,0 +1,72 @@
+
+<head>
+    <title>Jeu de "Pierre-Papier-Ciseaux" en Javascript</title>
+</head>
+    
+    <body>
+        <button onclick="initialisation()">START</button> 
+        <input onclick="valeur()" type="button" class="btn" value="pierre" class="btn"/>
+        <input onclick="valeur()" type="button" class="btn" value="feuille" class="btn"/>
+        <input onclick="valeur()" type="button" class="btn" value="ciseaux" class="btn"/>
+       
+    
+        <script>
+          //initialisation de variables
+            var choix_joueur = 0;
+            var choix_ordi = 0;
+            var choix = ['pierre','feuille','ciseau'];
+            var equal = "égalité";
+            var win = "you win";
+            var lose = "ia win";
+            var user_point=0;
+            var ia_point=0;
+           
+                //fonction initialisation
+
+function valeur (element){
+    var element=document.getElementsByClassName('btn').value;
+    alert("element");
+    return element;
+}
+
+             function initialisation(choix_joueur,choix_ordi){
+                 var pas=0;
+                 for (pas = 0; pas < 3; pas++) {
+  // Ceci sera exécuté 3 fois
+   // À chaque éxécution, la variable "pas" augmentera de 1
+   // Lorsque'elle sera arrivée à 3, le boucle se terminera.
+              alert (nouvelle partie, faites votre choix);
+                var choix_joueur = valeur();/*prompt('choisissez pierre, feuille ou ciseau');*/
+                var rand = choix[Math.floor(Math.random() * choix.length)];
+                //alert(rand);
+                choix_ordi=rand;
+
+           
+               if (choix_joueur==choix_ordi){
+                        alert(equal);
+                     }else if(((choix_joueur=="pierre")&&(choix_ordi=="ciseau"))||((choix_joueur=="feuille")&&(choix_ordi=="pierre"))||((choix_joueur=="ciseau")&&(choix_ordi=="feuille"))){
+                        alert(win);
+                        user_point++;
+                    }else{
+                        alert(lose); 
+                        ai_point++;   
+                     }
+
+                    alert(user_point+" - "+ia_point);
+                     document.getElementsByTagName("p")[0].innerHTML=user_point+" - "+ia_point;
+
+
+                }
+               
+// alert('Nouvelle manche'+pas);
+// break;
+        
+               
+}
+
+       
+            
+            
+            </script>
+      
+    </body>
