@@ -17,7 +17,7 @@ p
 {
     text-align: center; 
     font-family: Verdana, Tahoma, sans-serif ; 
-    font-size: 30px;  
+    font-size: 25px;  
     color: yellow;
 }
 
@@ -55,12 +55,11 @@ header
 
 h3
 {
+
     text-align: center; 
-    font-size: 50px; 
-    box-shadow: 0px 0px 5px 6px #1c1a19;
-    width: 1880px;
-    margin-top: 200px;
-    color: yellow;
+    font-size: 70px; 
+    width: 100%;
+    color: rgb(0, 4, 255);
 }
 @media all and (max-width: 1024px)
 
@@ -88,13 +87,14 @@ h3
 {
     margin-top: 15px;
     height: 200px;
-    width: 118em;
+    width: 99% ;
     border-radius: 5px; 
     background: url('image/san-francisco.jpg') no-repeat;
     position: relative;
-    box-shadow: 0px 4px 4px #1c1a19;
-    margin-top: 200px;
-    margin-bottom: 25px;
+    /*box-shadow: 0px 4px 4px #1c1a19;*/
+    box-shadow: 0px 0px 6px 6px #1c1a19;
+   /*margin-top: 200px;*/
+    margin-bottom: 300px;
 
 }
 @media all and (max-width: 1024px)
@@ -104,18 +104,16 @@ h3
         display: none;
     }
 }
-/*h2
+h2
 {
     font-size: 50px;
     font-family: Impact, "Arial", Verdana, sans-serif ;
     border: 3px rgb(245, 150, 7) inset;
     text-shadow: 2px 2px 4px rgb(245, 153, 68);
-    margin-top: 100px;
+    margin-top: 400px;
     text-align: center;
 
-    text-align: center;
-
-}*/
+}
 
 .conteneur2 {
     border: 5px solid rgb(0, 122, 96);
@@ -128,6 +126,7 @@ h3
     margin-top: 80px;
     margin-bottom: 30px;
     height: 150px;
+    width: 98%;
     border-radius: 15px;
 }
 .element
@@ -202,7 +201,7 @@ fieldset{
     flex-direction: column;
     width: 27vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 30vh;
     color: yellow;
 }
@@ -210,7 +209,7 @@ fieldset{
 .texte_comp 
 {
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 20px;
     margin-top: 3vh;
 }
 
@@ -219,6 +218,6 @@ fieldset{
     text-align: center;
     font-size: 30px;
     padding-bottom: 5px;
-    margin-top: 800px;
+    margin-top: 300px;
     margin-bottom: 300px;
 }
