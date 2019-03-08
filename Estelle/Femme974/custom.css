@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-
 .flex {
   display: flex;
   justify-content: center;
@@ -22,18 +21,6 @@
   font-family: "Pacifico", cursive;
 }
 
-.nav a {
-  color: #3A539B !important;
-}
-
-a:hover {
-  font-weight: bold;
-}
-
-.nav .button {
-  color: white !important;
-}
-
 .hero {
   background-image: url("ressources/head.png");
   background-size: cover;
@@ -52,38 +39,20 @@ a:hover {
 #how {
   flex-direction: row !important;
 }
-
 #how .container {
   margin: 25px;
 }
-
 #how .container i {
   margin-bottom: 15px;
   color: #3A539B;
 }
-
 #how .container i,
 #how .container h3 {
   font-size: 2.5em;
   font-weight: bold;
 }
-
 #how .container p {
   font-size: 1.2em;
-}
-
-.footerflex {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-
-.footer ul li {
-  list-style-type: none;
-}
-
-.footer a {
-  color: #3A539B;
 }
 
 /*# sourceMappingURL=custom.css.map */
