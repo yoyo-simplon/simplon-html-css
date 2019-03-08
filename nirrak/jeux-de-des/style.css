@@ -67,6 +67,7 @@ h3 {
 
 .globalScore img {
     height: 120px;
+    box-shadow: 1px 1px 12px #555;
 }
 
 /*  Score local     */
