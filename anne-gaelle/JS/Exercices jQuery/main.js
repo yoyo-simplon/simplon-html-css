@@ -28,4 +28,11 @@ $(document).ready(() => {
             $('#rectangle').css('height', "80px");
         }
     });
+
+    $('#menu1').on('click', () => {
+        $('#ulMenu1').toggle();
+    });
+    $('#menu2').on('click', () => {
+        $('#ulMenu2').toggle();
+    });
 });
