@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.1s;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background: linear-gradient(to left,rgb(233, 144, 89),rgb(213, 176, 69));
+}
+main{
+    background: linear-gradient(to left,rgb(255, 255, 255)49.9%,rgb(236, 236, 236)50%);
+    height: 95vh;
+    margin-top: 2.5vh;
+}
+
+/*  Configuration générale de commandes à cliquer  */
+.cmdGame {
+    Display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.cmdGame img {   
+    height: 20px;
+}
+
+.cmdGame h3 {
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+/*  Configuration de prise en main des joueurs   */
+.players {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 30px;    
+}
+.gamer1,.gamer2 {
+    width: 400px;
+    display: flex;
+    justify-content: center;    
+}
+#mainplayer1, #mainplayer2 {
+    height: 15px;
+    padding: 10px 30px;     
+}
+
+
+/*  Configuration des scores globaux     */
+.globalScore {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+    padding-top: 20px;   
+}
+
+.globalScore h1 {
+    font-size: 110px;
+    padding: 0 135px;   
+}
+
+.globalScore img {
+    height: 120px;
+    box-shadow: 1px 1px 12px #555;
+}
+
+/*  Score local     */
+.localScore h2 {
+    padding-top: 5px;
+    color: white;
+    font-size: 37px;
+}
+.localScore h4 {
+    font-size: 22px;
+}
+.player1, .player2 {
+    width: 150px;
+    height: 95px;
+    text-align: center;
+    padding-top: 8px; 
+    margin: 37px 0;
+    background-color: #eb4d4d;
+}
+.localScore .localGame {
+    display: flex;
+    flex-direction: column; 
+    margin: 0 100px;    
+}
+.localScore {
+    height: 80px;
+    display: flex;
+    justify-content: center;   
+}
