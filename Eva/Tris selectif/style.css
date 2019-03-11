@@ -1,0 +1,23 @@
+header {
+  background-image: url("images/recycle-12.jpg");
+  width: 90%;
+  margin-left: 50px;
+  height: 300px; }
+
+h1 {
+  color: #17721c;
+  font-size: 70px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 30px; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
