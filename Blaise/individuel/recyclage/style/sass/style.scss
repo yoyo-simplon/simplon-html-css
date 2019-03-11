@@ -1,0 +1,60 @@
+//Mes @mixin ---------
+@mixin flex_box($flex_direction, $justify_content, $align_items){
+    display: flex;
+    flex-direction: $flex_direction;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+@mixin no_parding_margin {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    border: 2px solid cornflowerblue;
+}
+
+body {
+    @include no_parding_margin();
+    font-family: 'Quicksand', sans-serif;
+}
+
+// DEBUT HEADER
+header {
+    @include flex_box(column, center, center);
+    text-align: center;
+    background-image: url(../../img/bg_header.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    ul {
+        @include flex_box(row, space-around, center); 
+        li {
+            list-style-type: none;
+        }
+    }
+
+}
+// FIN HEADER
+
+//DEBUT SECTION
+#les_poubelles {
+    @include flex_box(column, center, center); 
+}
+
+#differente_poubelle {
+    @include flex_box(rows, flex-start, flex-start);
+    article {
+        height: 100%;
+    }
+}
+//FIN SECTION
+
+//id="les_poubelles"

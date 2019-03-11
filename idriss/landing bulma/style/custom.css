@@ -9,7 +9,7 @@
   justify-content: space-around; }
 
 header {
-  background-image: url("img/banner-bg.jpg"); }
+  background-image: url("../img/banner-bg.jpg"); }
   header hr {
     width: 20%; }
 
@@ -23,7 +23,7 @@ li {
   list-style-type: none; }
 
 .bottom {
-  background-image: url("img/banner-bg.jpg");
+  background-image: url("../img/banner-bg.jpg");
   height: 300px; }
 
 footer ul {
