@@ -1,0 +1,130 @@
+@import "scss/bootstrap";
+
+.bootstrap-slide {
+    display: flex;
+    justify-content: center;
+    .carousel-inner {
+        width: 50%;
+        height: 200px;
+        margin-top: 10px;
+    }
+}
+
+* {
+    margin: 0px;
+    Padding: 0px;
+}
+
+body {
+    background-color: rgb(229, 226, 226);
+}
+
+h1,h2, h3 {
+    font-family: 'Quicksand:500', sans-serif
+}
+
+p {
+    font-family: 'Quicksand:400', sans-serif
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin:20px 50px;
+    padding: 15px 0;
+    background-color: #17721c;
+    border: 1px solid black;
+}
+
+.section1 {
+display: flex;
+justify-content: space-around;
+}
+
+.why, .how {
+    width: 500px;
+    height: 180px;
+    padding: 0 15px;
+    border: 1px solid black;
+}
+
+.section2 h2 {
+    padding: 25px 0 5px 50px;
+}
+
+.dechet {
+    display: flex;
+    justify-content: space-around; 
+
+    .bonasavoir {
+        margin:5px 5px;
+    }
+    .dechet-x {
+        width: 300px;
+        height: 165px;
+        border: 1px solid black; 
+        ul {
+            height: 92px;
+            padding:0 35px;
+            overflow-y: scroll;
+        }
+        p {
+            padding: 0 15px;
+        }
+    }
+    .dechet-y {
+        width: 300px;
+        height: 165px;
+        padding-left: 15px;
+        border: 1px solid black; 
+        p {
+            height: 125px;
+            overflow-y: scroll;
+        }    
+    }
+}
+
+
+.section3 {
+    h2 {
+        padding: 25px 0 0 50px;
+    }
+    p {
+        padding: 0 50px;
+    }
+}
+
+.famillepoubelle {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 50px;
+    .poubelle {
+        width: 250px;
+        height: 250px;
+        color: white;
+        background-color: #72173C;
+        border: 1px solid black;  
+        ul {
+            padding:0 35px;
+            height: 92px;
+            overflow-y: scroll;
+        }
+        h3, p {
+            padding-left: 10px;
+        }
+    }
+}
+
+.section4 {
+    margin: 0 50px;
+    ul {
+        padding:0 35px;
+        height: 127px;
+        overflow-y: scroll;
+        border: 1px solid black;
+    }
+    h2 {
+        margin-top: 25px;
+    }
+}
+
