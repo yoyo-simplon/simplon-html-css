@@ -134,7 +134,8 @@ main #poubelles_couleurs .side article {
 footer {
   background-color: #72173C !important;
 }
-footer .content, footer strong {
+footer .content,
+footer strong {
   color: white !important;
   font-size: 1.2em !important;
 }
@@ -146,6 +147,27 @@ footer a:hover {
 }
 footer #social > a {
   margin: 25px;
+}
+
+@media all and (max-width: 900px) {
+  main {
+    width: 100%;
+    margin-top: 35px;
+  }
+  main .flex {
+    flex-direction: column !important;
+  }
+  main #poubelles_couleurs {
+    border: none;
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    padding-top: 0;
+  }
+  main #poubelles_couleurs article {
+    width: 95vw !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

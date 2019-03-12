@@ -169,13 +169,15 @@ main {
 footer {
     background-color: $magenta !important;
 
-    .content, strong {
+    .content,
+    strong {
         color: white !important;
         font-size: 1.2em !important;
     }
 
     a {
         color: #28A228;
+
         &:hover {
             color: #1BA39C;
         }
@@ -183,5 +185,29 @@ footer {
 
     #social>a {
         margin: 25px;
+    }
+}
+
+@media all and (max-width: 900px) {
+    main {
+        width: 100%;
+        margin-top: 35px;
+
+        .flex {
+            flex-direction: column !important;
+        }
+
+        #poubelles_couleurs {
+            border: none;
+            width: 100% !important;
+            flex-wrap: wrap;
+            margin: auto;
+            align-items: center;
+            padding-top: 0;
+
+            article {
+                width: 95vw !important;
+            }
+        }
     }
 }
