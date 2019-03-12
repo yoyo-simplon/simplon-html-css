@@ -1,0 +1,60 @@
+
+/* corp de la page */
+h1{
+    text-align: center;
+    font-size: 200px;
+
+}
+
+header{
+   background-image: url("img/recycle-1-1311872.jpg");
+    height:1000px;
+    width: 1500px; 
+    
+}
+
+.block1{
+    p{ 
+    text-align: center;
+    font-size: 36px;
+    background-color: magenta;
+} 
+ } 
+ .block2{
+     h2{
+        text-align: center; 
+        font-size: 36px;
+        
+     }
+ } 
+ .block3{
+    h2{
+       text-align: center; 
+       font-size: 36px;
+    }
+} 
+nav {
+
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+
+
+h3{
+    text-align: center; 
+   font-size: 28px;
+   
+}
+
+
+footer{
+   background-color: magenta;
+   height: 50px;
+   width: auto;
+   text-align: center;
+   font-size:18px; 
+}
+    
