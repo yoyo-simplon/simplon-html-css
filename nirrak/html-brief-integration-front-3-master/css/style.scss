@@ -69,12 +69,12 @@ h1 {
 }
 
 .dechet {
-    @include affichage(space-around);
+    @include affichage(space-between);
     .bonasavoir {
         margin:5px 5px;
     }
     .dechet-x {
-        width: 300px;
+        width: 250px;
         height: 185px;
         border: 1px solid $bordureNoire; 
         ul {
@@ -87,7 +87,7 @@ h1 {
         }
     }
     .dechet-y {
-        width: 300px;
+        width: 250px;
         height: 185px;
         padding-left: 15px;
         border: 1px solid $bordureNoire; 
@@ -112,7 +112,7 @@ h1 {
     @include affichage(space-between);
     margin: 0 50px;
     .poubelle {
-        width: 220px;
+        width: 190px;
         height: 300px;
         color: white;
         background-color: $couleurMagenta;

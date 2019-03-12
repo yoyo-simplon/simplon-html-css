@@ -51,11 +51,11 @@ h1 {
 
 .dechet {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
   .dechet .bonasavoir {
     margin: 5px 5px; }
   .dechet .dechet-x {
-    width: 300px;
+    width: 250px;
     height: 185px;
     border: 1px solid black; }
     .dechet .dechet-x ul {
@@ -65,7 +65,7 @@ h1 {
     .dechet .dechet-x p {
       padding: 0 15px; }
   .dechet .dechet-y {
-    width: 300px;
+    width: 250px;
     height: 185px;
     padding-left: 15px;
     border: 1px solid black; }
@@ -83,7 +83,7 @@ h1 {
   justify-content: space-between;
   margin: 0 50px; }
   .famillepoubelle .poubelle {
-    width: 220px;
+    width: 190px;
     height: 300px;
     color: white;
     background-color: #72173C;
