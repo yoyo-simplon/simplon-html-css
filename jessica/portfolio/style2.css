@@ -1,31 +1,24 @@
-
-
-
 h1
 {
     font-size: 40px;
     font-family: Impact, "Arial", Verdana, sans-serif ;
-    border: 3px blue inset;
+    border: 3px rgb(0, 255, 255) inset;
 }
+
 h1
-    {
-        background-color: rgba(253, 116, 4, 0.555);
-        text-align: center;
-        animation-direction: reverse; 
-    }
-p 
-    {
-        text-align: center; 
-<<<<<<< HEAD
-        color: rgb(0, 0, 0);
-=======
-        color: rgb(21, 22, 54);
->>>>>>> 1a272f12742557ce03fa3fc1c45123405ffc7171
-        font-family: Verdana, Geneva, Tahoma, sans-serif ; 
-        font-size: 20px;
-    }
+{
+    background-color: rgba(3, 106, 138, 0.829);
+    text-align: center; 
+}
+h5 
+{
+    text-align: center; 
+    font-family: 'Cookie', cursive;
+    font-size: 35px;  
+    color: yellow;
+    text-shadow: 8px 8px 10px rgb(102, 58, 0);
 
-
+}
 .imageflottante
 {
     float: left;
@@ -34,48 +27,44 @@ p
     transform: rotate(10deg);
     
 }
-
 body
 {
-    background-image: url("neige2.jpg")  ;
+    background-image: url("image/board-.jpg");
+    background-size: cover;
 }
 #conteneur
-
 {
-
     display: flex;
-
     flex-wrap: nowrap;
-
     justify-content: flex-end; 
 }
-
-
 header
 {
-   
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-   
+    align-items: flex-end;  
 }
-
 h3
 {
-    text-align: center; 
-    font-size: 50px; 
-    box-shadow: 0px 0px 5px 6px #1c1a19;
+    font-family: 'Lobster', cursive;
+    text-align: center ; 
+    font-size: 110px; 
+    width: 100%;
+    color: rgb(8, 8, 8);
+    text-shadow: 8px 8px 10px rgb(255, 230, 0);
 }
-
-
-#bloc_page
+@media all and (max-width: 1024px)
 
 {
-
+    h3
+    {
+        width: auto;
+    }
+}
+#bloc_page
+{
     width: 900px;
-
     margin: 40px;
-
 }
 @media all and (max-width: 1024px)
 {
@@ -84,93 +73,19 @@ h3
         width: auto;
     }
 }
-nav ul
-
-{
-
-    list-style-type: none;
-
-    display: flex;
- 
-    
-}
-
-
-nav li
-
-{
-
-    margin-left: 25px;
-    color: #181818;
-    margin-right:20px;
-    margin-left:20px;
-
-}
-
-
-nav a
-
-{
-
-    font-size: 2em;
-
-    color: #fcfcfc;
- 
-    padding-bottom: 5px;
-    
-   -webkit-transforme: rotateZ(-30deg);
-    
-    -ms-transforme: rotateZ(-30deg);
-    
-    border-radius:4%;
-   
-    box-shadow: inset  0 0 25px #0508a8;
-    
-  
-}
-@media all and (max-width: 1024px)
-{
-    nav
-    {
-        width: auto;
-        text-align: left;
-    }
-    
-    nav li
-    {
-        display: block;
-        padding-left: 4px;
-    }
-    
-    nav a
-    {
-        font-size: 1.1em;
-    }
-    
-    nav a:hover
-    {
-        border-bottom: 0;
-    }
-}
 #banniere_image
-
 {
-
     margin-top: 15px;
-
     height: 200px;
-
-    /*! border-radius: 5px; */
-
-    background: url('san-francisco.jpg') no-repeat;
-
+    width: 99% ;
+    border-radius: 5px; 
+    background: url('image/san-francisco.jpg') no-repeat;
     position: relative;
+    /*box-shadow: 0px 4px 4px #1c1a19;*/
+    box-shadow: 0px 0px 6px 6px #1c1a19;
+   /*margin-top: 200px;*/
+    margin-bottom: 300px;
 
-    box-shadow: 0px 4px 4px #1c1a19;
-
-    margin-bottom: 25px;
-
-    animation: cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 @media all and (max-width: 1024px)
 {
@@ -185,13 +100,10 @@ h2
     font-family: Impact, "Arial", Verdana, sans-serif ;
     border: 3px rgb(245, 150, 7) inset;
     text-shadow: 2px 2px 4px rgb(245, 153, 68);
-<<<<<<< HEAD
-    text-align: center
-=======
+    margin-top: 400px;
     text-align: center;
->>>>>>> 1a272f12742557ce03fa3fc1c45123405ffc7171
-}
 
+}
 .conteneur2 {
     border: 5px solid rgb(0, 122, 96);
     margin-top: 10px;
@@ -203,6 +115,7 @@ h2
     margin-top: 80px;
     margin-bottom: 30px;
     height: 150px;
+    width: 98%;
     border-radius: 15px;
 }
 .element
@@ -220,12 +133,12 @@ h2
   body, html {
       height:100%;
       width:100%;
-      font-family: "San Francisco";
+      font-family: "San Francisco"; 
+     
       font-weight: 200
   }
   .flexFont {
       height:8em;
-      
       background-color:#ffffff00;
       padding:1%;
       margin: 10px;
@@ -242,12 +155,134 @@ h2
 fieldset{
     display: flex;
 }
-#formulaire
-{
-    text-align: center;
-    font-size: 30px;
-    
-    padding-bottom: 5px;
-    margin-top: 800px;
 
+
+@media all and (max-width: 1024px)
+{
+    #compétence
+    {
+        width: auto;
+    }
+
+    .titre_comp
+    {
+        width: auto;
+    }
 }
+
+a{
+    color: aqua;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+}
+#compétence 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.titre_comp>i 
+{
+    font-size: 30px;
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+    
+}
+  
+.titre_comp 
+{
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30vh;
+    color: yellow;
+    text-shadow: 8px 8px 10px rgb(255, 0, 0);
+    font-family: 'Aref Ruqaa', serif;
+}
+  
+.texte_comp 
+{
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 3vh;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+    font-family: 'Gentium Book Basic', serif;
+}
+
+#formulaire 
+{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form {
+   padding: 30px;
+    border: 5px solid #ccc;
+    background-color: rgba(1, 83, 104, 0.658);
+    
+}
+p{
+    color: yellow;
+    font-size: 20px;
+}
+#cf {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+    margin-top: 20px;
+  }
+  
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #cf img.top:hover {
+    opacity:0;
+  }
+
+
+  #menu {
+    font-size: 1vw;
+   /* position: fixed;*/
+    width: 99%;
+    background: linear-gradient(#2f2f2f99, #1e1e1e66);
+    font-weight: bold;
+  }
+  
+  ul {
+   
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  
+  ul>a {
+    text-decoration: none;
+  }
+  
+  

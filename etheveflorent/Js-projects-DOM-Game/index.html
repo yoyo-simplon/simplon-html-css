@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Player 1<i class="fas fa-circle"></i></h2>
+            <h3 id="score1"></h3>
+            <div id="current1">Current</div>
+        </section>
+
+
+        <section>
+            <h2>Player 1<i class="fas fa-circle"></i></h2>
+            <h3 id="score2"></h3>
+            <div id="current2">Current</div>
+
+        </section>
+        <div id="centre">
+                <h1 onclick="newGame()"><i class="fas fa-plus"></i></i>New game</h1>
+                <img src="images/dice-1.png" id="dice" alt="dé" />
+                <p onclick="rolldice()"><i class="fas fa-sync"></i>Roll the dice</p>
+    
+                <p onclick="hold()"><i class="fas fa-arrow-down"></i>Hold</p>
+            </div>
+
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

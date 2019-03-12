@@ -1,0 +1,46 @@
+* {
+  border: 2px solid cornflowerblue; }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Quicksand', sans-serif; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../../img/bg_header.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh; }
+
+.nav {
+  position: sticky;
+  top: 0; }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .nav ul li {
+      list-style-type: none; }
+
+#les_poubelles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#differente_poubelle {
+  display: flex;
+  flex-direction: rows;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  #differente_poubelle article {
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
