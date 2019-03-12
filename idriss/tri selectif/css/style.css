@@ -1,0 +1,112 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: url("../img/recycling-makes-cents-1539973.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  height: 80px;
+  background: rgba(114, 23, 59, 0.699);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#accueil {
+  height: 80vh;
+}
+
+#accueil h1 {
+  font-size: 20vh;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#accueil .blocarticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+#accueil .articlesaccueil {
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.555);
+}
+
+#accueil h2 {
+  color: #17721c;
+}
+
+#accueil .articleImg {
+  width: 100%;
+  height: 80%;
+}
+
+#accueil .accueilBottom {
+  height: 8vh;
+  background: rgba(114, 23, 59, 0.699);
+  color: white;
+  text-align: center;
+}
+
+#commentFaire {
+  background: rgba(255, 255, 255, 0.89);
+  margin: 0 10%;
+  text-align: center;
+}
+
+#commentFaire .bon {
+  margin-bottom: 0px;
+}
+
+#lesPoubelles {
+  background: rgba(255, 255, 255, 0.89);
+  margin: 0 10%;
+  text-align: center;
+}
+
+#lesPoubelles h4 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+#lesAutresProduits {
+  background: rgba(255, 255, 255, 0.89);
+  margin: 0 10%;
+  text-align: center;
+}
+
+#lesAutresProduits img {
+  width: 75%;
+  margin-top: 10%;
+}
+
+.trash {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.trash img {
+  width: 15%;
+}
+/*# sourceMappingURL=style.css.map */
