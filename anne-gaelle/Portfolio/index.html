@@ -16,15 +16,16 @@
         <section class="bloc home" id="home">
             <nav>
                 <ul>
-                    <li>🌈</li>
+                    <li class="hidden">🌈</li>
                     <li><a href=#accueil>Accueil</a></li>
                     <li><a href=#about>A Propos</a></li>
                     <li><a href=#comp>Compétences</a></li>
                     <li><a href=#pf>Portfolio</a></li>
                     <li><a href=#contact>Contact</a></li>
-                    <li>🌈</li>
+                    <li class="hidden">🌈</li>
                 </ul>
             </nav>
+            <div id="zone1">
             <article id="accueil">
                 <h1>Anne-Gaëlle</h1>
                 <h2>< / Développeuse Web ></h2>
@@ -34,6 +35,7 @@
                 <a class="button" href=#contact>Contact Me!</a>
             </div>
             <div id="arrow" class="down"><a href=#about><i class="fas fa-angle-down"></i></a></div>
+        </div>
         </section>
 
         <section class="bloc about" id="about">
@@ -80,13 +82,14 @@
            <span class="ccflex">
                 <h4><i class="fas fa-images"></i> // Mon Portfolio</h4>
                     <div id="galery">
-                        <a href="resources/pf1.PNG" target="_blank"><img src="resources/pf1.PNG" alt="Portfolio 1" title="Portfolio 1" /></a>
+                        <a href="https://github.com/Shi974/Shi974.github.io" target="_blank"><img src="resources/pf1.PNG" alt="Portfolio 1" title="Portfolio 1" /></a>
                         <a href="resources/pf2.PNG" target="_blank"><img src="resources/pf2.PNG" alt="Portfolio 2" title="Portfolio 2"/></a>
                         <a href="resources/pf3.PNG" target="_blank"><img src="resources/pf3.PNG" alt="Portfolio 3" title="Portfolio 3"/></a>
                         <a href="resources/pf4.PNG" target="_blank"><img src="resources/pf4.PNG" alt="Portfolio 4" title="Portfolio 4"/></a>
                         <a href="resources/pf5.PNG" target="_blank"><img src="resources/pf5.PNG" alt="Portfolio 5" title="Portfolio 5"/></a>
                         <a href="resources/pf6.PNG" target="_blank"><img src="resources/pf6.PNG" alt="Portfolio 6" title="Portfolio 6"/></a>
                     </div>
+                    <span id="more"><a href="https://github.com/Shi974/effective-invention" target="_blank" >Voir plus ...</a></span>
                 <div id="arrow" class="down"><a href=#contact><i class="fas fa-angle-down"></i></a></div>
             </span>
         </section>
@@ -105,8 +108,8 @@
                     <input type="text" name="subject" id="subject" placeholder=" Objet" />
                     <textarea name="message" id="message" placeholder=" Message"></textarea>
                     <ul class="actions">
-                        <li><input type="submit" value="Envoyer" class="bouton" /></li>
-                        <li><input type="reset" value="Annuler" class="bouton" /></li>
+                        <li><input type="submit" value="Envoyer" class="bouton" id="submit" /></li>
+                        <li><input type="reset" value="Annuler" class="bouton" id="annuler" /></li>
                     </ul>
                 </form>
             </fieldset>

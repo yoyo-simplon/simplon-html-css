@@ -2,26 +2,23 @@ h1
 {
     font-size: 40px;
     font-family: Impact, "Arial", Verdana, sans-serif ;
-    border: 3px blue inset;
+    border: 3px rgb(0, 255, 255) inset;
 }
 
 h1
 {
-    background-color: rgba(253, 116, 4, 0.555);
-    text-align: center;
-    animation-direction: reverse; 
-    
+    background-color: rgba(3, 106, 138, 0.829);
+    text-align: center; 
 }
-
-p 
+h5 
 {
     text-align: center; 
-    font-family: Verdana, Tahoma, sans-serif ; 
-    font-size: 25px;  
+    font-family: 'Cookie', cursive;
+    font-size: 35px;  
     color: yellow;
+    text-shadow: 8px 8px 10px rgb(102, 58, 0);
+
 }
-
-
 .imageflottante
 {
     float: left;
@@ -30,36 +27,31 @@ p
     transform: rotate(10deg);
     
 }
-
 body
 {
     background-image: url("image/board-.jpg");
     background-size: cover;
 }
-
 #conteneur
 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end; 
 }
-
 header
 {
-   
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-   
+    align-items: flex-end;  
 }
-
 h3
 {
-
-    text-align: center; 
-    font-size: 70px; 
+    font-family: 'Lobster', cursive;
+    text-align: center ; 
+    font-size: 110px; 
     width: 100%;
-    color: rgb(0, 4, 255);
+    color: rgb(8, 8, 8);
+    text-shadow: 8px 8px 10px rgb(255, 230, 0);
 }
 @media all and (max-width: 1024px)
 
@@ -69,7 +61,6 @@ h3
         width: auto;
     }
 }
-
 #bloc_page
 {
     width: 900px;
@@ -82,7 +73,6 @@ h3
         width: auto;
     }
 }
-
 #banniere_image
 {
     margin-top: 15px;
@@ -114,7 +104,6 @@ h2
     text-align: center;
 
 }
-
 .conteneur2 {
     border: 5px solid rgb(0, 122, 96);
     margin-top: 10px;
@@ -144,7 +133,8 @@ h2
   body, html {
       height:100%;
       width:100%;
-      font-family: "San Francisco";
+      font-family: "San Francisco"; 
+     
       font-weight: 200
   }
   .flexFont {
@@ -180,7 +170,10 @@ fieldset{
     }
 }
 
-
+a{
+    color: aqua;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+}
 #compétence 
 {
     display: flex;
@@ -201,23 +194,95 @@ fieldset{
     flex-direction: column;
     width: 27vw;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     margin-bottom: 30vh;
     color: yellow;
+    text-shadow: 8px 8px 10px rgb(255, 0, 0);
+    font-family: 'Aref Ruqaa', serif;
 }
   
 .texte_comp 
 {
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 3vh;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+    font-family: 'Gentium Book Basic', serif;
 }
 
-#formulaire
+#formulaire 
 {
+    font-family: 'Lobster', cursive;
     text-align: center;
-    font-size: 30px;
-    padding-bottom: 5px;
-    margin-top: 300px;
-    margin-bottom: 300px;
+    font-size: 10px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+form {
+   padding: 30px;
+    border: 5px solid #ccc;
+    background-color: rgba(1, 83, 104, 0.658);
+    
+}
+p{
+    color: yellow;
+    font-size: 20px;
+}
+#cf {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+    margin-top: 20px;
+  }
+  
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #cf img.top:hover {
+    opacity:0;
+  }
+
+
+  #menu {
+    font-size: 1vw;
+   /* position: fixed;*/
+    width: 99%;
+    background: linear-gradient(#2f2f2f99, #1e1e1e66);
+    font-weight: bold;
+  }
+  
+  ul {
+   
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+  }
+  
+  
+  ul>a {
+    text-decoration: none;
+  }
+  
+  
