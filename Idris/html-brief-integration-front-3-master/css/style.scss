@@ -1,0 +1,48 @@
+nav{
+    height: 30px;
+    background-color: #72173c;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;   
+}
+
+ul a {
+    color: white;    
+}
+
+#slider{
+    display: flex;
+    flex-direction: row;  
+}
+
+#reseauxsociaux{
+height: 50px;
+background-color: #72173c;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+align-items: center;
+padding-left: 80px;
+padding-right: 80px;
+font-size: 30px; 
+}
+
+.barrederecherche {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+
+
+
+
+
