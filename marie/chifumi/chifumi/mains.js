@@ -16,7 +16,7 @@ var choix=c;
         if(tour>0) {
             varchoix=prompt("Pierre,Feuille,Ciseaux");
              varjoueur=["Pierre;Feuille;Ciseaux"];
-             varAI=joueur[Math.floor(choixAI()*toolbar.lengt-1)];
+             varAI=joueur[Math.floor(choixAI()*schifumi.lengt-1)];
         }
      
 
@@ -30,8 +30,8 @@ else if ((joueur="papier")&&(choixAI="cailloux")); {
     alert("gagné");
     tour++;
 }
-document.getElementById("joueur").innerHTML ="score joueur :"+ scorejoueur,
-document.getElementById("AI").innerHTML = "score AI :"+"scoreAI";
+document.getElementById("joueur").innerHTML ="score joueur :"+ score_joueur;
+document.getElementById("AI").innerHTML = "score ordinateur :"+  scoreAI;
 
 if ((joueur="papier")&&(choixAI="ciseaux")){
     alert("perdu");

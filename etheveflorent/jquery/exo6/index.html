@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+<meta type="content" charset="utf-8" />
+<title>Exercice 6 - Javascript & jQuery - Jonathan Path</title>
+<style>
+  body { font-family:'Helvetica Neue'; font-weight:lighter; }
+  section { padding:10em 5em; text-align:center; }
+  #logo { position:absolute; top:0; width:100%; text-align:center; color:white; }
+  #logo span { background:black; display:inline-block; padding:1em; border-radius:0 0 5px 5px; }
+  div { display:inline-block; margin:0 1em 1em 0; border-radius:5px; box-shadow:0 2px 2px rgba(0,0,0,0.1); height:150px; width:150px; cursor:pointer; border:solid 2px white; }
+  .bloc1 { background-image:url(http://subtlepatterns.com/patterns/tex2res5.png); }
+  .bloc2 { background-image:url(http://subtlepatterns.com/patterns/tex2res4.png); }
+  .bloc3 { background-image:url(http://subtlepatterns.com/patterns/tex2res3.png); }
+  .bloc4 { background-image:url(http://subtlepatterns.com/patterns/tex2res2.png); }
+  .bloc5 { background-image:url(http://subtlepatterns.com/patterns/tex2res1.png); }
+  .bloc6 { background-image:url(http://subtlepatterns.com/patterns/arches.png); }
+  #logo span {}
+</style>
+</head>
+<body>
+  <a href="#" id="logo"><span>Mon Logo</span></a>
+  <section id="patterns">
+  <div class="bloc1"></div>
+  <div class="bloc2"></div>
+  <div class="bloc3"></div>
+  <div class="bloc4"></div>
+  <div class="bloc5"></div>
+  <div class="bloc4"></div>
+  </section>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // je lance une action sur le clic sur chaque div contenue dans l'ID "patterns"
+//var mesdiv=$("div").nextAll();
+
+$("div").click(function(){
+    //var bck=el.css("background-color");
+    $("body").css("background-image",$(this).css("background-image"));
+})
+
+$("#logo").mouseenter(function(){
+    console.log("logo")
+   $(this).animate({"margin-bottom":"0px"},500) ;
+    });
+  // j'anime le logo au hover sur celui-ci
+
+  // je remet le logo dans sa position initiale lorsque je retire la souris
+});
+</script>
+<!-- Google Analytics. -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37172545-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+
+
+  })();
+
+</script>
+</body>
+</html>
