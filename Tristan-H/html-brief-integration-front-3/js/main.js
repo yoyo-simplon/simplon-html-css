@@ -7,7 +7,7 @@ var loop;
 var i = 0;
 $(document).ready(function () {
     $("#bt1").click(function () {
-        $("#art1").slideToggle("slow");
+        $("#art1").slideDown("slow");
         $("#art2").slideUp("slow");
         $("#art3").slideUp("slow");
         $("#art4").slideUp("slow");
@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
     $("#bt2").click(function () {
         $("#art1").slideUp("slow");
-        $("#art2").slideToggle("slow");
+        $("#art2").slideDown("slow");
         $("#art3").slideUp("slow");
         $("#art4").slideUp("slow");
         $("#art5").slideUp("slow");
@@ -31,7 +31,7 @@ $(document).ready(function () {
     $("#bt3").click(function () {
         $("#art1").slideUp("slow");
         $("#art2").slideUp("slow");
-        $("#art3").slideToggle("slow");
+        $("#art3").slideDown("slow");
         $("#art4").slideUp("slow");
         $("#art5").slideUp("slow");
         $("#art6").slideUp("slow");
@@ -43,7 +43,7 @@ $(document).ready(function () {
         $("#art1").slideUp("slow");
         $("#art2").slideUp("slow");
         $("#art3").slideUp("slow");
-        $("#art4").slideToggle("slow");
+        $("#art4").slideDown("slow");
         $("#art5").slideUp("slow");
         $("#art6").slideUp("slow");
         $("#art7").slideUp("slow");
