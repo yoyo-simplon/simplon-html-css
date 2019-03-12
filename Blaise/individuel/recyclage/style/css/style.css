@@ -1,5 +1,9 @@
-* {
-  border: 2px solid cornflowerblue; }
+html {
+  scroll-behavior: smooth; }
+
+.style {
+  height: 5px;
+  background-color: #72173c; }
 
 body {
   padding: 0px;
@@ -17,17 +21,65 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh; }
+  header h1 {
+    font-size: 4em;
+    padding: 0px;
+    margin: 0px;
+    color: #17721c; }
+  header #grand_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  header #grand_title {
+    background-color: rgba(0, 0, 0, 0.95);
+    border-top: 4px solid #72173c;
+    border-bottom: 4px solid #72173c;
+    padding: 20px; }
+  header .sous_title {
+    width: 50%;
+    text-align: center; }
+    header .sous_title h3 {
+      color: #17721c; }
+  header div {
+    width: 100%;
+    color: white; }
+  header #separateur {
+    border: 1px solid #72173c;
+    width: 30%; }
 
 .nav {
   position: sticky;
-  top: 0; }
+  top: 0;
+  height: 100%;
+  box-shadow: 0px 2px 5px black;
+  background-color: #72173c;
+  font-weight: bold; }
   .nav ul {
+    padding: 0px;
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding: 10px; }
     .nav ul li {
       list-style-type: none; }
+  .nav a:visited {
+    color: white; }
+  .nav a:link {
+    text-decoration: none; }
+
+.middle_page {
+  padding: 30px; }
+  .middle_page ul {
+    padding: 0px;
+    margin: 0px; }
+  .middle_page li {
+    list-style-position: inside; }
+
+.tri_selectif p {
+  text-align: center; }
 
 #les_poubelles {
   display: flex;
@@ -41,6 +93,20 @@ header {
   justify-content: flex-start;
   align-items: flex-start; }
   #differente_poubelle article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 100%; }
+
+article {
+  margin-bottom: 100px; }
+
+h3, h2 {
+  color: #72173c;
+  text-align: center; }
+
+img {
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
