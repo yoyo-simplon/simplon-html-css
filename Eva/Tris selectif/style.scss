@@ -1,3 +1,20 @@
+
+
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width:86%;
+    border: 3px solid #72173C;
+    padding:2%;
+    margin-bottom: 90px;
+    height:550px;
+
+    
+}
+
+
+
 header {
 
     background-image: url("images/recycle-12.jpg");  
@@ -15,6 +32,10 @@ padding-top: 30px;
 
 }
 
+h2,h3{ color:#17721c;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .nav{
 display: flex;
 flex-direction: row; 
@@ -24,6 +45,98 @@ list-style: none;
 }
 
 a{
-   
+   color: #72173C;
     text-decoration: none;
+    font-size:20px;
+    font-style:bold;
+    background-color:rgba(255, 255, 255, 0.61);
+    
+}
+
+footer{
+@extend header;
+background-image: url("images/recycling2.jpg");  
+width:73%;
+margin-left:200px;
+background-position: center;
+display: flex;
+flex-direction:nowrap;
+align-items: center;
+
+}
+
+.liste{
+    display:flex;
+    flex-direction:row;
+}
+
+section
+{
+    width:80%;
+margin-left:200px;
+}
+
+
+.logo{
+    width:20%;
+}
+
+.intro{
+
+    margin-top:50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    margin-left:80px;
+}
+
+.introtxt{
+    text-align: justify;
+    color:#17721c;
+}
+
+p{
+    text-align: justify-all;
+    width:50%;
+}
+
+i
+{
+    font-size: 50px;
+}
+
+.textfooter
+{   
+    display:flex;
+    justify-content:space-between;
+     width: 100%;
+}
+
+img
+{
+ width:80%;
+}
+
+.trash{
+    
+ float: right;
+    width:130%;
+   margin-right: 80px;
+ margin-top: 20px;
+}
+
+.carton
+{
+    float: right;
+    width:130%;
+    margin-right: 80px;
+  margin-top: 20px;
+}
+
+.bouton
+{
+    display: flex;
+    flex-direction: column;
+    width:150px;
 }
