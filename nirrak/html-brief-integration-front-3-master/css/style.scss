@@ -1,14 +1,23 @@
-@import "scss/bootstrap";
+/* Mixin    */
+@mixin affichage ($orientation) {
+    display: flex;
+    justify-content: $orientation;
+}
+
+/*  Variable    */
+$couleurVerte: #17721c;;
+$couleurMagenta:#72173C;
+$bordureNoire: black;
 
 .bootstrap-slide {
     display: flex;
-    justify-content: center;
+    @include affichage(center);
     .carousel-inner {
         width: 50%;
         height: 200px;
         margin-top: 10px;
     }
-}
+} 
 
 * {
     margin: 0px;
@@ -19,7 +28,7 @@ body {
     background-color: rgb(229, 226, 226);
 }
 
-h1,h2, h3 {
+h1, h2, h3 {
     font-family: 'Quicksand:500', sans-serif
 }
 
@@ -32,37 +41,42 @@ h1 {
     text-align: center;
     margin:20px 50px;
     padding: 15px 0;
-    background-color: #17721c;
-    border: 1px solid black;
+    background-color: $couleurVerte;
+    border: 1px solid $bordureNoire;
 }
 
 .section1 {
-display: flex;
-justify-content: space-around;
+@include affichage(space-around);
 }
 
-.why, .how {
+.tri {
     width: 500px;
-    height: 180px;
-    padding: 0 15px;
-    border: 1px solid black;
+    margin: 0 50px;
+    height: 185px;
+    padding-left: 15px;  
+    border: 1px solid $bordureNoire;
+    p {
+        height: 92px;
+        overflow-y: scroll;
+    }
 }
 
-.section2 h2 {
-    padding: 25px 0 5px 50px;
+.section2 {
+    margin: 0 50px;
+    h2 {
+        padding-top: 25px;
+    }
 }
 
 .dechet {
-    display: flex;
-    justify-content: space-around; 
-
+    @include affichage(space-around);
     .bonasavoir {
         margin:5px 5px;
     }
     .dechet-x {
         width: 300px;
-        height: 165px;
-        border: 1px solid black; 
+        height: 185px;
+        border: 1px solid $bordureNoire; 
         ul {
             height: 92px;
             padding:0 35px;
@@ -74,9 +88,9 @@ justify-content: space-around;
     }
     .dechet-y {
         width: 300px;
-        height: 165px;
+        height: 185px;
         padding-left: 15px;
-        border: 1px solid black; 
+        border: 1px solid $bordureNoire; 
         p {
             height: 125px;
             overflow-y: scroll;
@@ -95,15 +109,14 @@ justify-content: space-around;
 }
 
 .famillepoubelle {
-    display: flex;
-    justify-content: space-between; 
+    @include affichage(space-between);
     margin: 0 50px;
     .poubelle {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 300px;
         color: white;
-        background-color: #72173C;
-        border: 1px solid black;  
+        background-color: $couleurMagenta;
+        border: 1px solid $bordureNoire;  
         ul {
             padding:0 35px;
             height: 92px;
@@ -121,10 +134,99 @@ justify-content: space-around;
         padding:0 35px;
         height: 127px;
         overflow-y: scroll;
-        border: 1px solid black;
+        border: 1px solid $bordureNoire;
     }
     h2 {
         margin-top: 25px;
     }
 }
 
+@media all and (max-width: 800px) {
+    p, li {
+        font-size: 80%;
+    } 
+
+    header {
+        h1 {
+            width: 220px;
+            height: 40px;
+            padding: 7px;
+            font-size: 130%;
+        }
+    }
+
+    .section1, .dechet, .famillepoubelle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 {
+        .tri {
+            width: 220px;
+            height: 170px;
+            margin-top: 5px;
+            h2 {
+                font-size: 110%;
+            }           
+            p {
+                height: 100px;
+            }
+
+        }
+    }
+
+
+    .section2 {
+        h2 {
+            padding-top: 5px;
+            font-size: 110%;
+        }
+        .dechet {
+            .dechet-x {
+                width: 220px;
+                height: 200px;
+                margin-top: 5px;
+                ul {
+                    height: 120px;
+                }
+            }
+            .dechet-y {
+                width: 220px;
+                height: 200px;
+                margin-top: 5px;
+                .bonasavoir p {
+                    height: 160px;
+                }
+            }   
+        }
+    }
+    .section3 { 
+
+        h2 {
+            font-size: 110%;
+            padding-top: 5px;
+        }
+        .famillepoubelle {
+            .poubelle {
+                height: 200px;
+                margin-top: 5px;
+                h3 {
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+
+    .section4 {
+        width: 220px;
+        height: 200px;
+        h2 {
+            margin-top: 5px;
+            font-size: 110%;
+        }
+        ul {
+            height: 150px;
+        }
+    }
+
+}
