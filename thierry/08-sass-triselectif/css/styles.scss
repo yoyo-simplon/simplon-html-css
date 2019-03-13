@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*** CSS
+Projet.08: projet triSelectif
+
+Objectifs
+
+- Une assocation de tri sélectif a besoin d'une page internet informative à destinations des collégiens. 
+- Le but de cette page est d'expliquer les différentes couleurs de poubelles et leur fonction.
+-
+- Créer un wireframe en vous basant sur l'objectif du site, la cible et le contenu fourni
+- Développer la page HTML en respectant le wireframe et la charte graphique
+- Le design n'est pas le plus important, il peut être simple, mais il doit être professionnel.
+- Utiliser SASS pour créer votre feuille CSS
+-
+- Charte graphique:
+- Vert : #17721c
+- Magenta : #72173C
+- La police est *Quicksand Regular* pour les corps de textes et 
+- *Quicksand medium* pour les titres (h1,h2, etc.)
+***/
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+/* generic */
+body {
+  background-color: white;
+  color: #afb5b6;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+/* - - -  - - -  - - -  header hero  - - -  - - -  - - - */
+header {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 800px;
+  background-image: url("../img/tri-selectif-eco.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.scss.map */

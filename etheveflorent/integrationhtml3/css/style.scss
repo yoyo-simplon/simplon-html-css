@@ -1,0 +1,126 @@
+@font-face{
+    font-family: "quicksandregular";
+    src:url("../font/Quicksand-Regular.ttf");
+}
+@font-face{
+    font-family: "quicksandmedium";
+    src:url("../font/Quicksand-Medium.ttf");
+}
+
+main{
+    width:1020px;
+    font-family: "quicksandregular";
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    
+}
+#navBar{
+    display: flex;
+justify-content: space-around;
+    background-color: #17721C;
+    opacity: 0.760;
+}
+a{
+color:white;
+border: 1px solid black;
+border-radius: 10px;
+width: 120px;
+    text-align: center;
+}
+#header{
+    background-color:#17721C;
+    opacity: 0.5;
+
+}
+footer{
+    @extend #header;
+    margin: 0;
+  
+    button{
+        color: black;
+        border:0;
+        margin: 10px 30px;
+        border-radius: 5px;
+    }
+}
+
+h3{
+    border: 1px solid black;
+    font-family: "quicksandmedium",sans-serif;
+  
+
+    p{
+        background-color: #17721C;
+        opacity: 0.7;
+    }
+}
+h1{
+    font-family: "Quicksandmedium",sans-serif;
+    border:solid 1px #17721C;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+        background-color: #17721C;
+        opacity: 0.7;
+    color:white;
+}
+#accordeon{
+
+    h3{
+height: 30px;
+line-height: 30px;
+text-align: center;
+    }
+    div{
+   
+        background-color: #17721C;
+        //background-color: #72173C;
+      // background-color: rgba(23, 114, 28,0.900);
+        opacity: 0.7;
+        color:white;
+        border:solid black 1px;
+        border-bottom-style: double;
+    
+}
+i{
+float: right;
+    text-align: center;
+    height: 30px;
+line-height: 30px;
+}
+}
+
+
+
+@keyframes carousel{
+    0%{
+        content: url("../img/cardboard-recycling.jpg");
+    }
+    16%{
+        content: url("../img/pile-of-trash.jpg");
+    }
+    32%{
+        content: url("../img/recycle.jpg");
+    }
+    48%{
+        content: url("../img/recycling.jpg");
+    }
+    64%{
+        content: url("../img/recycling2.jpg");
+    }
+    80%{
+        content: url("../img/tri-selectif-eco.jpg");
+    }
+    100%{
+        content: url("../img/cardboard-recycling.jpg");
+    }
+}
+
+#carousel{
+animation: carousel 60s infinite;
+width: 100%;
+height: 450px;
+padding: 0;
+}
