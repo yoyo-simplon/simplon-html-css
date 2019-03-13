@@ -1,4 +1,7 @@
 header{
+    margin: 0px;
+    padding: 0px;
+    height: 33%;
 #logo{
     display: flex;
     width: 300px;
@@ -56,5 +59,16 @@ article{
 }
 footer{
     background-color: #17721c;
+}
+body{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left:10%;
+    margin-right:10%;  
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+
 }
 

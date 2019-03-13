@@ -17,6 +17,15 @@ $(document).ready(function () {
         $("#art8").slideUp("slow");
         $("#art9").slideUp("slow");
     });
+    $("#btn1").mouseover(function () {
+        $("#btn1").css("background-color", "#17721c");
+        $("#bt1").css("color", "white");
+    });
+    $("#btn1").mouseout(function () {
+        $("#btn1").css("background-color", "white");
+        $("#bt1").css("color", "#17721c");
+    });
+   
     $("#bt2").click(function () {
         $("#art1").slideUp("slow");
         $("#art2").slideDown("slow");
@@ -27,6 +36,14 @@ $(document).ready(function () {
         $("#art7").slideUp("slow");
         $("#art8").slideUp("slow");
         $("#art9").slideUp("slow");
+    });
+    $("#btn2").mouseover(function () {
+        $("#btn2").css("background-color", "#17721c");
+        $("#bt2").css("color", "white");
+    });
+    $("#btn2").mouseout(function () {
+        $("#btn2").css("background-color", "white");
+        $("#bt2").css("color", "#17721c");
     });
     $("#bt3").click(function () {
         $("#art1").slideUp("slow");
@@ -39,6 +56,14 @@ $(document).ready(function () {
         $("#art8").slideUp("slow");
         $("#art9").slideUp("slow");
     });
+    $("#btn3").mouseover(function () {
+        $("#btn3").css("background-color", "#17721c");
+        $("#bt3").css("color", "white");
+    });
+    $("#btn3").mouseout(function () {
+        $("#btn3").css("background-color", "white");
+        $("#bt3").css("color", "#17721c");
+    });
     $("#bt4").click(function () {
         $("#art1").slideUp("slow");
         $("#art2").slideUp("slow");
@@ -50,6 +75,15 @@ $(document).ready(function () {
         $("#art8").slideUp("slow");
         $("#art9").slideUp("slow");
     });
+    $("#btn4").mouseover(function () {
+        $("#btn4").css("background-color", "#17721c");
+        $("#bt4").css("color", "white");
+    });
+    $("#btn4").mouseout(function () {
+        $("#btn4").css("background-color", "white");
+        $("#bt4").css("color", "#17721c");
+    });
+    
     
 
     $(document).ready(function () {
