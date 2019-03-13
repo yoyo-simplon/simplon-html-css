@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #app {
+            font-size: 1.3em;
+            width: 100%;
+        }
+        input, button {
+            font-size: 1em;
+        }
+        li {
+            border-bottom: 2px solid rgba(153, 151, 151, 0.5);
+        }
+        li>button {
+            font-size: 0.5em;
+            border: none !important;
+        }
+        .close {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,12 +50,12 @@
             <div id="app">
                 <div>
                     <input v-model="element">
-                    <button @click="addTodo(element)">Ajouter une tâche</button>
+                    <button @click="addTodo(element)" class="button is-primary">Ajouter un item</button>
                 </div>
                 <hr>
                 <ol>
                     <li v-for="todo in todos">
-                        {{ todo.text }}
+                        <input type="checkbox" v-model="todo.completed"> {{ todo.text }} <button class="button is-normal" @click="removeTodo(element)"><i class="fas fa-times close"></i></button>
                     </li>
                 </ol>
             </div>
