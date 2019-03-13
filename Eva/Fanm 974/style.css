@@ -1,0 +1,44 @@
+.block_page{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+nav ul{
+    display:flex;
+    flex-direction: row;
+
+}
+
+nav ul li{
+list-style: none;
+    margin-right: 30px;
+}
+a:link{
+        text-decoration: none;
+}
+section{
+width:60%;
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.content{
+    display:flex;
+    flex-direction: row;   
+    flex-wrap: wrap;
+}
+aside{
+    display:flex;
+flex-direction: column;
+width: 20%;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+}
+.images{
+    display:flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+}

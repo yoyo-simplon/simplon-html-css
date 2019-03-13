@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #app {
+            font-size: 1.3em;
+            width: 100%;
+        }
+        input, button {
+            font-size: 1em;
+        }
+        li {
+            border-bottom: 2px solid rgba(153, 151, 151, 0.5);
+        }
+        li>button {
+            font-size: 0.5em;
+            border: none !important;
+        }
+        .close {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    To Do List
+                </h1>
+                <h2 class="subtitle">
+                    <i class="fas fa-clipboard-list"></i> Les choses que tu dois faire mais que tu ne fais jamais
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div id="app">
+                <div>
+                    <input v-model="element">
+                    <button @click="addTodo(element)" class="button is-primary">Ajouter un item</button>
+                </div>
+                <hr>
+                <ol>
+                    <li v-for="todo in todos">
+                        <input type="checkbox" v-model="todo.completed"> {{ todo.text }} <button class="button is-normal" @click="removeTodo(element)"><i class="fas fa-times close"></i></button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
