@@ -20,13 +20,14 @@
         }
         li {
             border-bottom: 2px solid rgba(153, 151, 151, 0.5);
+            margin-left: 20px;
         }
         li>button {
             font-size: 0.5em;
             border: none !important;
         }
         .close {
-            color: red;
+            color: #ff3860;
         }
     </style>
 </head>
@@ -49,15 +50,23 @@
         <div class="container">
             <div id="app">
                 <div>
-                    <input v-model="element">
+                    <i class="fas fa-pencil-alt"></i> <input v-model="element" placeholder="Nouvelle tâche"
+                        @keyup.enter="addTodo(element)">
                     <button @click="addTodo(element)" class="button is-primary">Ajouter un item</button>
                 </div>
                 <hr>
                 <ol>
                     <li v-for="todo in todos">
-                        <input type="checkbox" v-model="todo.completed"> {{ todo.text }} <button class="button is-normal" @click="removeTodo(element)"><i class="fas fa-times close"></i></button>
+                        <input type="checkbox" v-model="todo.completed">
+                        <label @dblclick="todo.edit = true">{{ todo.text }}</label>
+                        <input v-show="todo.edit == true" v-model="todo.text" @keyup.enter="todo.edit=false; $emit('update')">
+                        <button class="button is-normal" @click="removeTodo(todo)"><i class="fas fa-times close"></i></button>
                     </li>
                 </ol>
+                <hr>
+                <div id="total" class="button is-danger">
+                    <strong>{{ count }} tâches à faire</strong>
+                </div>
             </div>
         </div>
     </section>
