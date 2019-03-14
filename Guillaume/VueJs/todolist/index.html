@@ -15,26 +15,32 @@
 
     <div id="app">
         <h1>todolist</h1>
+
+
+
+        <div>
+            <ol>
+                <li v-for="(tache, index) in taches">
+                    <input type="checkbox" v-model="tache.termine">
+                    <input v-model="tache.value" placeholder="nouvelle tâche..." :class="{termine: tache.termine}">
+                    <button @click="deleteTache(index)">
+                        Supprimer
+                    </button>
+
+                   
+                </li>
+            </ol>
+
+        </div>
+
+
         <button @click="addTache">
             Ajouter une tâche
         </button>
 
-        <!-- <input v-model="newTache"> -->
 
-        <div v-for="(tache, index) in taches">
-            <input v-model="tache.value" placeholder="nouvelle tâche...">
-            <button @click="deleteTache(index)">
-                Supprimer
-            </button>
-
-            <button @click="termineTache(tache)">
-                Terminé
-            </button>
-        </div>
-
-
-
-        <pre>{{ $data }}</pre>
+        <!-- debug -->
+        <!-- <pre>{{ $data }}</pre> -->
     </div>
 
 
