@@ -23,7 +23,7 @@
                    aria-label="Full name"
                    v-model="newTodo"
                    @keypress.enter="addTodo(newTodo)"
-                   >
+                >
             <button class="flex-no-shrink bg-purple hover:bg-purple-dark border-purple hover:border-purple-dark text-sm border-4 text-white py-1 px-2 rounded" 
                     type="button"
                     @click="addTodo(newTodo)"
@@ -34,6 +34,7 @@
                     type="button"
                     @click="cancelTodo()"
                     >
+
               Cancel
             </button>
           </div>
