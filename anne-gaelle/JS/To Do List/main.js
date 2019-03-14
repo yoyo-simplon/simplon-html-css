@@ -3,29 +3,40 @@ var app = new Vue({
     data: {
         todos: [{
                 text: 'Learn JavaScript',
-                completed: true
+                completed: true,
+                edit: false,
             },
             {
                 text: 'Learn Vue',
-                completed: false
+                completed: false,
+                edit: false,
             },
             {
                 text: 'Build something awesome',
-                completed: false
+                completed: false,
+                edit: false,
+            },
+            {
+                text: 'Play GTA Online',
+                completed: true,
+                edit: false,
             }
         ]
     },
     methods: {
         addTodo: function (e) { // Ajoute dynamiquement à l'array donc à la liste
-            this.todos.push({text: e});
-            e.resetForm(); // sensé faire un clear form après l'ajout à l'array - ne fonctionne pas :<
+            this.todos.push({
+                text: e, completed: false, edit: false
+            });
+            this.element = ''; // Clear form après envoi
         },
-        removeTodo: function (e) { // FONCTION POUR ENLEVER UN ITEM ... JE DOIS TROUVER COMMENT LIER L'INDEX
-            // this.todos.splice({text: e}); // NOT GOOD - enlève TOUTE l'array, need index - //TODO// le remove
-            //this.todos.splice(this.todos.indexOf(e),1); // Méthode actuelle : remove par le bas
-            this.todos.splice(e,1); // Remove par le haut ....
+        removeTodo: function (e) { // Fonction pour enlever un item
+            this.todos.splice(this.todos.indexOf(e), 1);
+        },
+    },
+    computed: {
+        count() { // Renvoie un compteur de tâches non complétées
+            return this.todos.filter(todo => !todo.completed).length;
         }
-    }
+    },
 });
-
-//TODO// A FAIRE : clear this.form

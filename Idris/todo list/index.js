@@ -14,6 +14,7 @@ let app = new Vue({
         cancelTodo () {
             this.newTodo = ''
         },
+
         removeTodo (index) {
             this.todos.splice(index, 1)
         },

@@ -1,0 +1,577 @@
+/*** *** *** CSS
+-
+Projet.08: projet triSelectif
+Version: 1.1.0
+-
+Objectifs
+-
+- Une assocation de tri sélectif a besoin d'une page internet informative à destinations des collégiens. 
+- Le but de cette page est d'expliquer les différentes couleurs de poubelles et leur fonction.
+-
+- Créer un wireframe en vous basant sur l'objectif du site, la cible et le contenu fourni
+- Développer la page HTML en respectant le wireframe et la charte graphique
+- Le design n'est pas le plus important, il peut être simple, mais il doit être professionnel.
+- Utiliser SASS pour créer votre feuille CSS
+-
+- Charte graphique:
+- Vert : #17721c
+- Magenta : #72173C
+- La police est *Quicksand Regular* pour les corps de textes et 
+- *Quicksand medium* pour les titres (h1,h2, etc.)
+-
+Cadre
+- Binome : Nir / Thierry pour la partie wireframing
+- Solo : Thierry pour la partie html/sass
+*** *** ***/
+
+/* - - -  - - -  - - -    - - -  - - -  - - - */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+$font-principal: 'Quicksand', sans-serif;
+$font-titre: 'Quicksand', sans-serif;
+$vert: #17721c;
+$magenta: #72173C;
+
+/* - - -  - - -  - - -    - - -  - - -  - - - */
+
+/* - - -  - - -  - - -  generic  - - -  - - -  - - - */
+body{
+    background-color: white;
+    color: $vert;
+    font-family: $font-principal;
+    font-size: 18px;
+}
+
+/* - - -  - - -  - - -  header hero  - - -  - - -  - - - */
+header {
+//  border: 2px red solid;       //only for demo/troubleshooting
+    background-color: $magenta;      // only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+    
+//   width: 100%;
+//   height: 280px;
+//   background: #aaa url('../img/tri-selectif-eco3.jpg') no-repeat center;
+//   background-size: cover;
+
+    border-radius: 5px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.zimaz {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.slogan1{
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slogan2{
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* - - -  - - -  - - -  titres  - - -  - - -  - - - */
+h1 h2{
+    font-family: $font-titre; 
+    font-weight: 500;
+}
+
+/* - - -  - - -  - - -  main  main main - - -  - - -  - - - */
+
+main {
+// border: 2px red solid;     //  only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+// background-color: #aaa;      // only for demo/troubleshooting   
+
+    width: auto;
+    height: auto;
+    color: $magenta;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+
+/* - - -  - - -  - - -  pourquoi / comment  - - -  - - -  - - - */
+.PourquoiComment {
+//    border: 2px blue solid;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+.Pourquoi {
+    // border: 2px blueviolet solid;     //  only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+//    background-color: #bbb;      // only for demo/troubleshooting 
+    flex-basis: 50%;  
+    border-top: 1px #bbb solid;
+}
+.Comment {
+    // border: 2px blueviolet solid;     //  only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+//    background-color: #bbb;      // only for demo/troubleshooting  
+    flex-basis: 50%;
+    border-top: 1px #bbb solid;
+}
+/* - - -  - - -  - - -  familles  - - -  - - -  - - - */
+.Familles {
+//    border: 2px blue solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.ArticleBlocFamilles {
+//    border: 2px blue dotted;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+.FamilleArticle {
+    // border: 2px blueviolet solid;      // only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+    background-color: #bbb;      // only for demo/troubleshooting  
+    flex-basis: 33%;
+}
+
+/* - - -  - - -  - - -  poubelles  - - -  - - -  - - - */
+.Poubelles {
+//    border: 2px blue solid;
+    margin: 10px;
+    padding: 10px;
+}
+.ArticleBlocPoubelles {
+//    border: 2px blue dotted;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+}
+.PoubelleArticle {
+    // border: 2px blueviolet solid;       // only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+    background-color: #bbb;      // only for demo/troubleshooting  
+    flex-basis: 25%;
+}
+
+/* - - -  - - -  - - -  autres  - - -  - - -  - - - */
+.AutresProduits {
+//    border: 2px blue solid;
+    margin: 10px;
+    padding: 10px;
+}
+.ArticleBlocAutresProduits {
+//    border: 2px blue dotted;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;    
+}
+.AutresProduitsArticle {
+    // border: 2px blueviolet solid;       // only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+    background-color: #bbb;      // only for demo/troubleshooting 
+}
+/* - - -  - - -  - - -  slider aside  - - -  - - -  - - - */
+.Slider {
+    // border: 2px blueviolet solid;       // only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+//  background-color: #ccc;      // only for demo/troubleshooting  
+
+ //   display: flex;
+ //   flex-direction: row;
+ //   align-items: flex-start;
+ //   justify-content: center;  
+}
+footer {
+        // border: 2px blueviolet solid;       only for demo/troubleshooting
+    margin: 10px;                  // only for demo/troubleshooting
+    padding:10px;                  // only for demo/troubleshooting
+    background-color: $magenta;      // only for demo/troubleshooting  
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;  
+
+}
+
+/* - - -  - - -  - - -  responsive  - - -  - - -  - - - */
+
+
+@media only screen and (min-width: 768px) { // Mobile First: changing the design when the width gets larger than 768px
+
+    .PourquoiComment{
+        border-top: 2px #bbb solid;
+    }
+    .slogan1{
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .slogan2{
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .PourquoiComment {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;  
+    }
+    .Pourquoi{
+        border-top: none;
+    }
+    .Comment{
+        border-top: none;
+    }
+
+    .ArticleBlocFamilles {
+        border: 2px blue dotted;
+        margin: 10px;
+        padding: 10px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: nowrap;  
+    }
+    .FamilleArticle {
+        background-color: white;
+    }
+
+    .ArticleBlocPoubelles {
+        border: 2px blue dotted;
+        margin: 10px;
+        padding: 10px;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;  
+    }
+    .PoubelleArticle {
+        background-color: white;
+    }
+    .ArticleBlocAutresProduits {
+        border: 2px blue dotted;
+    }        
+    .AutresProduitsArticle {
+        background-color: white;
+    }
+
+
+}
+
+
+
+/* - - -  - - -  - - -  carousel  - - -  - - -  - - - */
+
+
+.container {
+//    border: 2px red solid;  // only for demo/troubleshooting
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    margin-left: 0 3%;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.button--inactive {
+    opacity: 0.2;
+}
+
+.button img {
+    width: 60%;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+}
+.card__text-content {
+//    border: 1px green solid; // only for demo/troubleshooting
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.card__summary{
+//    border: 1px blue solid; // only for demo/troubleshooting
+    width: 60%;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+
+.box {
+//   border: 1px blue solid; // only for demo/troubleshooting
+/*     margin: -1.5rem; */
+    width: 12rem;
+    height: 20rem;
+    box-shadow: 0px 0px 2rem 0px #888888;
+    background-color: $vert;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition: 1s all; */
+}
+
+.box:nth-child(2n) {
+    transform: scale(0.85);
+    z-index: -1;
+}
+
+.box:nth-child(2) {
+  left: 5%;
+}
+
+.box:nth-child(4) {
+  left: -5%;
+}
+
+.box:nth-child(4n + 1) {
+    transform: scale(0.75);
+    z-index: -2;
+}
+
+.box:nth-child(1) {
+  left: 15%;
+}
+
+.box:nth-child(5) {
+  left: -15%;
+}
+
+.card__text-content {
+    text-align: center;
+    width: 75%;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.box--hide {
+    display: none;
+}
+
+.move-out-from-left {
+    animation: moveOutLeft 0.5s ease-in-out;
+}
+
+.move-out-from-right {
+    animation: moveOutRight 0.5s ease-in-out;
+}
+
+.move-to-position5-from-left {
+    animation: moveToP5Left 0.5s ease-in-out;
+}
+
+.move-to-position4-from-left {
+    animation: moveToP4Left 0.5s ease-in-out;
+}
+
+.move-to-position3-from-left {
+    animation: moveToP3Left 0.5s ease-in-out;
+}
+
+.move-to-position2-from-left {
+    animation: moveToP2Left 0.5s ease-in-out;
+}
+
+
+.move-to-position1-from-left{
+    animation: moveToP1Left 0.5s ease-in-out;
+}
+
+.move-to-position5-from-right{
+    animation: moveToP5Right 0.5s ease-in-out;
+}
+.move-to-position4-from-right{
+    animation: moveToP4Right 0.5s ease-in-out;
+}
+.move-to-position3-from-right{
+    animation: moveToP3Right 0.5s ease-in-out;
+}
+.move-to-position2-from-right{
+    animation: moveToP2Right 0.5s ease-in-out;
+}
+.move-to-position1-from-right{
+    animation: moveToP1Right 0.5s ease-in-out;
+}
+
+@keyframes moveOutLeft {
+    0% {
+        transform: scale(0.75) translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5) translateX(-150%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.25) translateX(0%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveOutRight {
+    0% {
+        transform: scale(0.75) translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.5) translateX(150%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0.25) translateX(0%);
+        opacity: 0;
+    }
+}
+
+
+@keyframes moveToP5Left {
+    from {
+        transform: scale(0.75) translateX(100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+@keyframes moveToP4Left {
+    from {
+        transform: scale(0.75) translateX(100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP3Left {
+    from {
+        transform: scale(0.85) translateX(100%);
+    }
+    to {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes moveToP2Left {
+    from {
+        transform: scale(1) translateX(100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP1Left {
+    from {
+        transform: scale(0.85) translateX(100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+
+@keyframes moveToP1Right {
+    from {
+        transform: scale(0.75) translateX(-100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+@keyframes moveToP2Right {
+    from {
+        transform: scale(0.75) translateX(-100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP3Right {
+    from {
+        transform: scale(0.85) translateX(-100%);
+    }
+    to {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes moveToP4Right {
+    from {
+        transform: scale(1) translateX(-100%);
+    }
+    to {
+        transform: scale(0.85) translateX(0);
+    }
+}
+
+@keyframes moveToP5Right {
+    from {
+        transform: scale(0.85) translateX(-100%);
+    }
+    to {
+        transform: scale(0.75) translateX(0);
+    }
+}
+
+
+
+
