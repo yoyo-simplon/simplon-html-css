@@ -20,12 +20,18 @@ new Vue({
       },
 
       
-      termineTache: function (index) {
-        console.log(index);
-        this.taches.push({index, termine: 'toto'});
-        console.log(this.taches);
+      // termineTache: function (index) {
+      //   console.log(index);
+      //   this.taches.push({index, termine: 'toto'});
+      //   console.log(this.taches);
 
-      },
+      // },
+
+      termineTache: function (tache){
+        // console.log(index);
+        tache.termine = true;
+        console.log(tache)
+      }
       
       
     }
