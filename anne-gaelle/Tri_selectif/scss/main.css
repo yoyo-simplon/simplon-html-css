@@ -141,6 +141,7 @@ footer strong {
 }
 footer a {
   color: #28A228;
+  font-weight: bold;
 }
 footer a:hover {
   color: #1BA39C;
