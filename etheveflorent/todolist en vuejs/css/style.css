@@ -21,3 +21,8 @@ button{
     color: grey;
     text-decoration: dashed;
 }
+#listcontent *{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

@@ -2,13 +2,15 @@ var myli = new Vue({
     el: '#myli',
     data: {
         isActive:false,
-      edit:false,
-      text:true,
+      isedit:false,
+      istext:true,
         todos: [{
-                text: "list1"
+                text: "list1",
+                isedit:false
             },
             {
-                text: "liste2"
+                text: "liste2",
+                isedit:false
             }
         ]
     },
@@ -27,11 +29,21 @@ var myli = new Vue({
 
             this.$refs.tache.isActive=!this.$refs.tache.isActive;
         },
+
+    /*  update:function(el,i){
+            myli.todos[i].text=el.text;
+            this.isedit=false;
+      this.istext=true; 
+      myli.todos.pop();
+        }
+        ,*/
         modifier:function(el){
-            var text=prompt("Modifier la tâches",el.text);
+           /* var text=prompt("Modifier la tâches",el.text);
             if(text!=null){
                 el.text=text;
-            }
+            }*/
+            this.isedit=true;
+      this.istext=false;     
 
         }
 
@@ -43,7 +55,7 @@ new Vue({
     created() {
         window.addEventListener("keypress", (e) => {
             if (e.key == "Enter") {
-                myli.todos.push({ text: e.target.value });
+                myli.todos.push({ text: e.target.value,isedit:false });
             }
         });
     }

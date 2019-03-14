@@ -15,20 +15,27 @@
         <input type="text" id="maliste" class="" placeholder="entrez une tâche" /><button @click="effacer()">Supprimer le(s) tâche(s)</button>
         
             <ul id="myli" class="column is-12">
+            <div id="listcontent"> 
                 <li v-for="(todo, index) in todos" class="column tache" ref="tache" v-bind:class="{completed:isActive}" >
-               <input type="checkbox" @change="completer(todo)" class="ischecked"/> 
+               <input type="checkbox" @change="completer()" class="ischecked"/> 
                
-          
+          <div v-show="isedit==false">
                {{ todo.text }}
-             
+          </div>
+        
+            <input type="text"  v-model="todo.text" @keyup.enter="isedit=false;$emit('update')" v-show="isedit==true"/>    
+            
+                    <i class="fas fa-pencil-alt" @click="modifier"></i>
                <button @click="deleteliste(index)">x</button>
-               <i class="fas fa-pencil-alt" @click="modifier"></i>
-                </li>
+
+            
+            
+                </li></div>
             </ul>
         </div>
 </div>
 
-              <script src="https://cdn.jsdelivr.net/npm/vue"> </script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
               <script src="js/script.js"> </script>
 </body>
 </html>
