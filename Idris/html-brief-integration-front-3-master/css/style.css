@@ -3,116 +3,111 @@ nav {
   background-color: #17721c;
   padding-left: 300px;
   padding-right: 300px;
-  margin-top: 10px; }
+  margin-top: 20px;
+}
 
 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+}
 
 ul a {
   color: white;
-  list-style-type: none; }
+}
 
+/* Slider */
+.slider {
+  max-width: 1000px;
+  max-height: 200px;
+  position: relative;
+  margin: auto;
+  height: 1500px;
+  width: 800px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 2;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
 #reseauxsociaux {
-  height: 70px;
-  background-color: #17721c;
+  height: 50px;
+  background-color: #8ae08a;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-left: 80px;
   padding-right: 80px;
-  font-size: 30px; }
+  font-size: 30px;
+}
 
 .barrederecherche {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .letri {
   height: 150px;
   border: 2px black solid;
   margin-top: 5px;
   text-align: center;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
 
 #pourquoicomment {
   height: 500px;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   text-align: center;
-  color: #17721c; }
-  #pourquoicomment .pourquoi p {
-    margin-right: 20px; }
-  #pourquoicomment h2 {
-    font-size: 30px; }
+  color: green;
+}
 
 #lesdifferentesfamilles {
   height: 300px;
   background-color: #8ae08a;
-  padding-top: 50px;
+  padding-top: 80px;
   text-align: center;
-  color: #72173c; }
+  color: #72173c;
+}
 
 #Bonasavoir {
-  box-shadow: 0px 0px 6px 6px #72173c;
-  width: 100%;
-  height: 300px;
-  color: #17721c;
+  height: 200px;
+  color: green;
   text-align: center;
-  font-family: 'Lobster', cursive;
-  font-size: 25px;
-  margin-top: 50px; }
-  #Bonasavoir h4 {
-    font-size: 50px;
-    font-family: 'Marcellus SC', serif; }
+}
 
 .image {
-  padding: 20px;
   height: 700px;
-  text-align: center; }
-  .image p {
-    font-size: 32px;
-    color: #17721c;
-    font-family: 'Marcellus SC', serif; }
-
-.container-fluid {
-  background-color: #8ae08a; }
-  .container-fluid h5 {
-    margin-top: 15px;
-    color: #72173c;
-    font-family: 'Donegal One', serif; }
-  .container-fluid p {
-    color: #72173c;
-    margin-top: 15px;
-    font-family: 'Donegal One', serif;
-    font-size: 20px; }
-
-#autresproduits h6 {
-  margin-top: 20px;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Aclonica', sans-serif;
-  margin-top: 50px; }
-#autresproduits p {
-  margin-top: 15px;
-  text-align: center;
-  margin-bottom: 50px; }
-
-footer {
-  background: #72173c;
-  display: flex;
-  flex-direction: column;
-  color: #17721c; }
-  footer .contact {
-    text-align: center; }
-  footer .mentionlegale {
-    text-align: center; }
-  footer .reseauxsociaux {
-    display: flex;
-    justify-content: center; }
+}
 
 /*# sourceMappingURL=style.css.map */
