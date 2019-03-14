@@ -17,6 +17,10 @@ $(document).ready(function () {
         $("#art8").slideUp("slow");
         $("#art9").slideUp("slow");
     });
+    $("#btn1").mouseover(function(){
+        $("#btn1").css("background-color", "#17721c" );
+        $("#btn1").css("background-color", "#17721c");
+    });
     $("#bt2").click(function () {
         $("#art1").slideUp("slow");
         $("#art2").slideDown("slow");

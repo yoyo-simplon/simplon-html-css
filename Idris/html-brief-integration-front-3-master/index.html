@@ -9,8 +9,26 @@
     <link href="css/tuto.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Lobster|Marcellus+SC|Aclonica|Donegal+One" rel="stylesheet"> 
+
     <title>Tri selectif</title>
- 
+    
+         
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+         
+        <script>
+        jQuery(function(){
+        $(function () {
+        $(window).scroll(function () {
+        if ($(this).scrollTop() > 200 ) { 
+        $('#scrollUp').css('right','10px');
+        } else { 
+        $('#scrollUp').removeAttr( 'style' );
+        }
+         
+        });
+        });
+        });
+        </script>
 </head>
 <body>
 
@@ -28,7 +46,7 @@
                 <li><i class="fas fa-home"> Bon à Savoir</i></li>
             </a>  
             
-             <a href="#autres produits">
+             <a href="#autresproduits">
                 <li><i class="fas fa-home"> Autre Produit</i></li>
             </a>
 
@@ -36,9 +54,14 @@
         </ul>
     </nav>
 
-    <div id="reseauxsociaux">
+    <img name="slide" id="slider" width="100%" height="700px">
+
+
+    <div id="reseauxsociaux"> 
 
         <div class="reseaux sociaux">
+        
+
             <a><i class="fab fa-facebook-square"></i></a>
             <a><i class="fab fa-twitter-square"></i></a>
             <a><i class="fab fa-google-plus-square"></i></a>
@@ -55,20 +78,20 @@
 
 <main>
     <div class="letri ">
-        <h1> <i class="fas fa-recycle"></i> Trions nos déchets pour ne pas polluer notre environnement <i class="fas fa-recycle"></i></h1>
+        <h1> <i class="fas fa-recycle"></i> <b><u>Trions nos déchets pour ne pas polluer notre environnement</u></b> <i class="fas fa-recycle"></i></h1>
         <p>Les éco gestes et les bonnes pratiques permettent de privilégier notre environnement et de préserver notre santé.<br> Consommer malin contribuent aussi à la protection de notre planète.</p>
     </div>
 
     <div id="pourquoicomment">
 
         <div class="pourquoi">
-           <p><img src="img/cardboard-recycling-bale-1325417.jpg" height="300px" width="720px" alt="cardboard"></p>
+           <p><img src="img/image1.jpg" height="400px" width="750px" alt="cardboard"></p>
             <h2><u> <i class="fas fa-recycle"></i> Pourquoi faire du tri sélectif ?</u></h2>
             <p>La nature ne sait pas détruire nos déchets qui polluent la planète.<br> On va donc récupérer nos déchets pour économiser des matières premières,<br> telles que le bois afin de protéger les forêts donc la nature.<br> De ce fait, bien faire son tri a pour objectif de pouvoir réutiliser des matériaux,<br> pour en faire des produits recyclés.</p>
         </div>
 
         <div class="comment">
-                <p><img src="img/recycling-2-1456880.jpg" height="300px" width="720px" alt="recycling"></p>
+                <p><img src="img/image4.jpg" height="400px" width="750px" alt="recycling"></p>
                 <h2><u> <i class="fas fa-recycle"></i> Comment faire du tri sélectif ?</u></h2>
                 <p>On va trier ces différents déchets par famille.<br> Ceux-ci seront déposés dans des poubelles ou conteneurs adéquats<br> ou transportés à la déchetterie.</p>
         </div>
@@ -76,33 +99,33 @@
     </div>
 
     <div id="lesdifferentesfamilles">
-        <h3>Les différentes familles de produits ou déchets</h3>
+        <h3><b><u>Les différentes familles de produits ou déchets</u></b></h3>
         <p>Les produits ou déchets seront triés par famille, c'est-à-dire :</p>
 
             
 
-            * plastique 
-            * papier carton 
-            * métaux 
-            * verres 
-            * déchets organiques
-            * bois 
-            * textile/cuir 
-            * mobilier 
-            * électronique/électrique 
-            * déchets du bâtiment 
-            * déchets dangereux 
-            * divers.
-
+        <p> * Plastique 
+            * Papier carton 
+            * Métaux 
+            * Verres 
+            * Déchets organiques
+            * Bois 
+            * Textile/cuir 
+            * Mobilier 
+            * Electronique/électrique 
+            * Déchets du bâtiment 
+            * Déchets dangereux 
+            * Divers.
+            </p>
              
         
 
         <p> <u> Pour effectuer un tri adapté :</u><br>
                 
-            * on trie tous les emballages et le papier <br>
-            * pour les emballages en plastique, seuls les bouteilles et les flacons doivent être triés <br>
-            * les papiers et les emballages carton humides ou trop gras vont directement dans la poubelle des ordures ménagères <br>
-            * on peut laisser les bouchons sur les bouteilles en plastique. Il est inutile de laver les emballages, il suffit de bien les vider.
+            * On trie tous les emballages et le papier <br>
+            * Pour les emballages en plastique, seuls les bouteilles et les flacons doivent être triés <br>
+            * Les papiers et les emballages carton humides ou trop gras vont directement dans la poubelle des ordures ménagères <br>
+            * On peut laisser les bouchons sur les bouteilles en plastique. Il est inutile de laver les emballages, il suffit de bien les vider.
         </p>
     </div>
 
@@ -116,7 +139,7 @@
     <div id="les différentes poubelles">
 
         <div class="image">
-        <img src="img/tri-selectif.jpg" width="40%" alt="tri-selectif">
+        <img src="img/tri-selectif.jpg" width="50%" alt="tri-selectif">
         <p><b>On dispose de différentes poubelles à la maison pour trier ses déchets, à savoir : la poubelle jaune, la poubelle verte,<br> la poubelle bleue, la poubelle ordinaire (couvercle marron, bordeaux).</b></p>
 
         </div>
@@ -208,7 +231,7 @@
 
     <div class="mentionlegale">
 
-        <a href="">mention legale</a>
+        <a href="">Mention legale</a>
 
     </div>
 
@@ -220,10 +243,39 @@
     </div>
     
     </div>
-
+            <div id="scrollUp">
+                <a href="#top"><img src="img/fleche.png" height="50px" width="50px" /></a>
+                </div>
 </footer>
     
+<script>
+    var i = 0; 
+    var images = []; 
+    var time = 6000; 
+
     
+    images[0] = "img/image1.jpg";
+    images[1] = "img/image2.jpg";
+    images[2] = "img/image3.jpg";
+    images[3] = "img/image4.jpg";
+
+    
+    function changeImg() {
+        document.slide.src = images[i];
+        
+        if (i < images.length - 1) {
+           
+            i++;
+        } else {
+            
+            i = 0;
+        }
+        
+        setTimeout("changeImg()", time);
+    }
+    
+    window.onload = changeImg;
+</script>
     
 </body>
 </html>
