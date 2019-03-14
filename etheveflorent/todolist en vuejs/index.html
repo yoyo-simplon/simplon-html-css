@@ -13,8 +13,8 @@
     <input type="text" id="maliste" class="is-centered" />
         <div id="app">
             <ul id="myli">
-                <li v-for="(todo, index) in todos" @click="deleteliste(index)" >
-                {{ todo.text }}
+                <li v-for="(todo, index) in todos"  >
+               <input type="checkbox" /> {{ todo.text }}<button @click="deleteliste(index)">x</button>
                 </li>
                 </ul>
         </div>
