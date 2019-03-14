@@ -1,21 +1,8 @@
-var app5 = new Vue({
-  el: '#app-5',
+var app =new Vue({
+  el: '#app',
   data: {
-   todos: [{
-       text: 'Apprendre JavaScript'
-     },
-     {
-       text: 'Apprendre Vue'
-     },
-     {
-       text: 'Créer quelque chose de génial'
-     }
-   ]
+    state:[],
   },
-  methods: {
-    seeTodos: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-  }
-  
+ 
+
 });
