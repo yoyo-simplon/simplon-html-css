@@ -1,0 +1,28 @@
+#content{
+border: solid 1px black;
+display:flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+}
+
+li{
+    outline: black solid 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li:hover{
+    background-color:aqua;
+}
+button{
+    float: right;
+}
+.completed{
+    color: grey;
+    text-decoration: dashed;
+}
+#listcontent *{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

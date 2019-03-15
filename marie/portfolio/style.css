@@ -1,10 +1,73 @@
 /* element de la page */
-/* body */
-body
-{
-    background-color: blanchedalmond;
+    
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+    text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:32px;
+  padding-top:40vh;
+  height:100vh;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
 }
 
+div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+div:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+p {
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+}
 #page
 {
     color: black;
@@ -16,25 +79,34 @@ body
 
 /* entête */
 
-h2
+header
+{
+    background-image: url("img/banner.jpg"); 
+    background-repeat: no-repeat; 
+    position : relative;
+    height: 1000px;
+    width: auto;
+    margin-left: 60px;
+}
+h1
 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.list
+list
 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 70px;
     display: flex;
     justify-content: space-around;
 }
 
 section
 {
-    background-color: white;
+    
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -53,7 +125,7 @@ p
 
 }
 
-h3
+h2
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;

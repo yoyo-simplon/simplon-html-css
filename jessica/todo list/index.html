@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+    <title>todo list</title>
+</head>
+<body>
+
+ 
+
+<div id="app" class="flex w-screen h-auto p-4">
+    <div class="w-1/4 h-full bg-grey-darkest"></div>
+    <div class="flex-col w-1/2 h-full bg-grey-lightest rounded-lg overflow-scroll p-2 shadow-md">
+        <h1 class="flex-1 font-sans font-thin text-center text-5xl text-grey-darkest">Todos</h1>
+          <div class="flex items-center border-b border-b-2 border-teal py-2">
+            <input class="font-sans font-thin text-2xl appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none" 
+                   type="text" 
+                   placeholder="New Todo" 
+                   aria-label="Full name"
+                   v-model="newTodo"
+                   @keypress.enter="addTodo(newTodo)"
+                >
+            <button class="flex-no-shrink bg-purple hover:bg-purple-dark border-purple hover:border-purple-dark text-sm border-4 text-white py-1 px-2 rounded" 
+                    type="button"
+                    @click="addTodo(newTodo)"
+                    >
+              Add
+            </button>
+            <button class="flex-no-shrink border-transparent border-4 text-red hover:text-teal-darker text-sm py-1 px-2 rounded" 
+                    type="button"
+                    @click="cancelTodo()"
+                    >
+
+              Cancel
+            </button>
+          </div>
+        <template v-if="todos.length == 0">
+            <h3 class="flex-1 font-sans font-thin text-center text-3xl text-grey-darker bg-teal-lighter p-4 m-1">No Todos</h3>
+        </template>
+        <template v-else>
+            <div class="flex bg-grey-light w-full h-auto p-2 mt-4 rounded-lg" v-for="(todo, index) in todos" :key="index">
+                <h3 class="w-5/6 font-sans font-light text-2xl text-center bg-grey-lightest pt-1 shadow-md rounded-lg">{{ todo }}</h3>
+                <div class="w-1/6 text-right pr-2 xHolder">
+                    <i class="fa fa-times text-2xl" aria-hidden="true" @click="removeTodo(index)"></i>
+                </div>
+            </div>
+            <button class="w-full bg-red-light hover:bg-red text-white font-thin py-2 px-8 mt-4 rounded"
+                    @click="clearAll()"
+                    >
+                Clear All
+            </button>
+        </template>
+    </div>
+    <div class="w-1/4 h-full bg-grey-darkest"></div>
+</div>
+
+
+ 
+ <script src="index.js"></script>
+      
+   
+
+</body>
+</html>

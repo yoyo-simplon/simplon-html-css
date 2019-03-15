@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body >
+    <div id="content" class="column is-4 is-offset-4">
+    <div id="app">
+        <input type="text" id="maliste" class="" placeholder="entrez une tâche" /><button @click="effacer()">Supprimer le(s) tâche(s)</button>
+        
+            <ul id="myli" class="column is-12">
+            <div id="listcontent"> 
+                <li v-for="(todo, index) in todos" class="column tache" ref="tache" v-bind:class="{completed:isActive}" >
+               <input type="checkbox" @change="completer()" class="ischecked"/> 
+               
+          <div v-show="isedit==false">
+               {{ todo.text }}
+          </div>
+        
+            <input type="text"  v-model="todo.text" @keyup.enter="isedit=false;$emit('update')" v-show="isedit==true"/>    
+            
+                    <i class="fas fa-pencil-alt" @click="modifier"></i>
+               <button @click="deleteliste(index)">x</button>
+
+            
+            
+                </li></div>
+            </ul>
+        </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+              <script src="js/script.js"> </script>
+</body>
+</html>

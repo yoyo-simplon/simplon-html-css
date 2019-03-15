@@ -1,0 +1,28 @@
+  <!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="assets/css/index3.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    
+        <div id="app">
+            <h1 class="top">TODO LIST</h1>
+            <div class="wrapper">
+              <div class="controls">
+                <input v-model="newTodo" @keyup.enter="addTodo" type="text" placeholder="New tasks go here..." autofocus>
+                <button class="add" v-on:click="addTodo">Add</button>
+                <button class="clear" v-on:click="clearTodos">Clear</button>
+              </div>
+              <ul>
+                <todo-item v-for="(todo, index) in todos"
+                           v-bind:title="todo.title"
+                           v-bind:completed="todo.completed"
+                           v-on:toggle="toggle(index)"
+                           v-on:delete="deleteTodo(index)"></todo-item>
+              </ul>
+            </div>
+          </div>
+            
+        <script src="assets/js/index3.js"></script>
+    </body>
+</html>
