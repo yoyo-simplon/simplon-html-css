@@ -13,9 +13,13 @@
 <body>
     <div id="app">
         <h2>To do list</h2>
-        <input type="text" name="newTask" id="newTask"v-model="task">
-<button name="add" id="add" v-on:click="addTask">Nouvelle tache</button>
-      
+        <input type="text" name="newTask" id="newTask" v-model="task">
+        <button name="add" id="add" v-on:click="addTask">Nouvelle tache</button>
+        <ul>
+            <newtask v-for="task in list">{{newTask}} </newtask>
+            
+        </ul>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

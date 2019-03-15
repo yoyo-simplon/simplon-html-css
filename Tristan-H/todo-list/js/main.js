@@ -1,30 +1,35 @@
-let newtask={
-  props:{
+let newtask = {
+  props: {
     state: "",
-    task:""
-},
- 
-  template: `<div id="item">
+    task: ""
+  },
+
+  template: `<li id="item">
                <p>{{task}}</p>
                <p>tâche {{ state }} </p>
-               <input type="radio" id="wait" value="en attente" v-model="state">
-               <label for= "wait" > en attente</label>
                <input type="radio" id="en-cours" value="en cours" v-model="state" checked="checked">
                <label for="en cours">en cours</label>
                <input type="radio" id="fini" value="fini" v-model="state">
-               <label for="fini">fini</label
-               ></div>`
+               <label for="fini">fini</label>
+               <button name="deletetask" id="deletetask"v-on:click="deletetask">supprimer</button>
+               </li>`
 };
 var app =new Vue({
   el: '#app',
+  components:{newtask},
+  
   data: {
     state:"",
     task:"",
+    list:[],
   },
-  components:{newtask},
+  
   methods: {
     addTask: function(){
-      this.compoments.push(newtask);
+      this.list.push({components:{newtask} });
+    },
+    deletetask:function(){
+      this.list.splice({components:{newtask}});
     }
   },
 
