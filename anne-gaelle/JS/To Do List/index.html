@@ -41,6 +41,7 @@
         .modif {
             color: hsl(204, 86%, 53%);
         }
+
         /* PURE CSS CLOCK */
         .clock {
             position: relative;
@@ -205,10 +206,10 @@
                 <hr>
                 <ol>
                     <li v-for="todo in todos" :class="{completed: todo.completed}">
-                        <input type="checkbox" v-model="todo.completed">
-                        <!--<label @dblclick="todo.edit = true"><!-->
-                        <span>{{ todo.text }}</span>
-                        <!--</label> -->
+                        <label class="checkbox">
+                            <input type="checkbox" v-model="todo.completed">
+                            <span>{{ todo.text }}</span>
+                        </label>
                         <button class="button is-normal" @click="todo.edit = true"><i class="fas fa-pencil-alt modif"></i></button>
                         <input v-show="todo.edit == true" v-model="todo.text" @keyup.enter="todo.edit=false; $emit('update')">
                         <button class="button is-normal" @click="removeTodo(todo)"><i class="fas fa-times close"></i></button>
