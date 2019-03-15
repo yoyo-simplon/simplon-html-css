@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
     <title>todo list</title>
 </head>
@@ -30,16 +30,13 @@
                     >
               Add
             </button>
-            <!-- <button class="flex-no-shrink border-transparent border-4 text-red hover:text-teal-darker text-sm py-1 px-2 rounded" 
+            <button class="flex-no-shrink border-transparent border-4 text-red hover:text-teal-darker text-sm py-1 px-2 rounded" 
                     type="button"
                     @click="cancelTodo()"
                     >
 
               Cancel
-            </button> -->
-
-            
-            
+            </button>
           </div>
         <template v-if="todos.length == 0">
             <h3 class="flex-1 font-sans font-thin text-center text-3xl text-grey-darker bg-teal-lighter p-4 m-1">No Todos</h3>
@@ -58,7 +55,7 @@
             </button>
         </template>
     </div>
- 
+    <div class="w-1/4 h-full bg-grey-darkest"></div>
 </div>
 
 

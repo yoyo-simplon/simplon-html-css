@@ -21,8 +21,6 @@ let app = new Vue({
         clearAll () {
             this.todos = []
         }
-
-        
     }
 })
 

@@ -21,22 +21,45 @@ nav{
       }
 }
 #reseauxsociaux{
-height: 60px;
-background-color: $bg;
-display: flex;
-flex-direction: row;
+height: 100px;
+background-color: $color;
+display: $display;
 justify-content: space-between;
-align-items: center;
-padding: 30px;
-font-size: 40px; 
+font-size: 20px; 
+margin-top: 0px;
+color: $bg;
+}
+
+#reseauxsociaux div{
+    width: 16%;
+    display: $display;
+    justify-content: space-evenly;
+    align-items: center;
+    /*margin-top: 50px;*/
+}
+#reseauxsociaux div a{
+    font-size: 30px;
+    height: 0px;
+  
+    justify-content: center;
+    
+}
+
+#reseauxsociaux div a i:hover{
+    cursor: pointer;
+    color: yellow;
+   
 }
 
 .barrederecherche {
+  
     display: $display; 
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 20px;
-    height: 40px;;
+   justify-content: flex-end;
+    width: 10px;
+    height: 30px;;
+    font-size: 20px;
+    background-color: $color;
+    margin-top: 50px;
 }
 .letri{
     height: 200px;
@@ -54,6 +77,7 @@ font-size: 40px;
 #pourquoicomment{
    margin-top: 200px;
   margin-bottom: 240px;
+  padding: 20px;
       .pourquoi p{
         margin-right: 20px;
       }
@@ -92,11 +116,11 @@ font-size: 40px;
   }
    box-shadow: 0px 0px 6px 6px $color;
   width: 100%;
-    height: 400px;
+    height: 600px;
     color:$bg;
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-size: 35px;
     margin-top: 200px;  
 }    
 .image{
@@ -123,7 +147,7 @@ font-size: 40px;
         font-family: 'Donegal One', serif;
         font-size: 20px;
       }
-  background-color: rgb(10, 192, 10);
+  background-color: rgba(10, 192, 10, 0.397);
 }
 #autresproduits{
     h6{
@@ -154,13 +178,7 @@ footer{
       .mentionlegale{
         text-align: center;
       }
-        .reseauxsociaux{
-            display: $display;
-            justify-content: center;
-            font-size: 40px;
-            padding: 20px;
-          }
-}
+    }
 #scrollUp
 {
 position: fixed;

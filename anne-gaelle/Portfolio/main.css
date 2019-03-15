@@ -425,20 +425,14 @@ fieldset li input:hover {
     font-size: 1.5em;
 }
 
+#contact {
+    height: 100vh;
+}
+
 #more a:hover {
     animation: hoverColorMe2 0.7s;
     animation-fill-mode: forwards;
 }
-
-/*@media all and (max-height: 1024px) {
-    body {
-        display: flex;
-    }
-	.bloc {
-        height: auto;
-        width: 100%;
-    }
-}*/
 
 @media all and (max-width: 1024px) {
     body {
