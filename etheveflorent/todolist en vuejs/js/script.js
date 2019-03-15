@@ -1,63 +1,40 @@
 var myli = new Vue({
     el: '#myli',
     data: {
-        isActive:false,
-      isedit:false,
-      istext:true,
+        element:"",
         todos: [{
                 text: "list1",
-                isedit:false
+                completed: false,
+                edit:false
             },
             {
                 text: "liste2",
-                isedit:false
+                completed: false,
+                edit:false
             }
         ]
     },
-    methods:{
-        deleteliste:function(index){
-            myli.todos.splice(index,1);
-        },
-        effacer:function(){//efface toutes les lignes où la checkbox est cochés
-            var listes=document.getElementsByClassName("taches.completed");
-
-            Array.forEach(listes,(el)=>{
-                myli.todos.splice(myli.todos.indexOf(el),1);
-            })
-        },
-        completer: function(){
-
-            this.$refs.tache.isActive=!this.$refs.tache.isActive;
-        },
-
-    /*  update:function(el,i){
-            myli.todos[i].text=el.text;
-            this.isedit=false;
-      this.istext=true; 
-      myli.todos.pop();
+    mounted(){
+this.text=localStorage.text;
+this.completed=localStorage.completed;
+this.edit=localStorage.edit;
+    },watch:{
+        stockage(text,completed,edit){
+localStorage.text=text;
+localStorage.completed=completed;
+localStorage.edit=edit;
         }
-        ,*/
-        modifier:function(el){
-           /* var text=prompt("Modifier la tâches",el.text);
-            if(text!=null){
-                el.text=text;
-            }*/
-            this.isedit=true;
-      this.istext=false;     
-
+    },
+    methods: {
+        deleteliste: function (index) {
+            myli.todos.splice(index, 1);
+        },
+        modifier: function (el) {
+            this.edit = true;
+        },
+        ajout:function(el){
+            myli.todos.push({ text: el,completed: false,edit:false  });
         }
 
     }
 })
-
-new Vue({
-    el: "#maliste",
-    created() {
-        window.addEventListener("keypress", (e) => {
-            if (e.key == "Enter") {
-                myli.todos.push({ text: e.target.value,isedit:false });
-            }
-        });
-    }
-
-}) 

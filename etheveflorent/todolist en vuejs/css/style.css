@@ -7,10 +7,14 @@ background-color: burlywood;
 }
 
 li{
-    outline: black solid 1px;
-    font-family: 'Courier New', Courier, monospace;
-}
 
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 55px;
+    height: 55px;
+}
+h1{
+    text-align: center;
+}
 li:hover{
     background-color:aqua;
 }
@@ -20,9 +24,5 @@ button{
 .completed{
     color: grey;
     text-decoration: dashed;
-}
-#listcontent *{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    
 }
