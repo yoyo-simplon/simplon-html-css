@@ -12,14 +12,10 @@
 
 <body>
     <div id="app">
-        <div id="item">
-            <p>faire du sport</p>
-            <p>tâche {{state}} </p>
-            <input type="radio" id="en-cours" value="en cours" v-model="state">
-            <label for="en cours">en cours</label>
-            <input type="radio" id="fini" value="en cours" v-model="state">
-            <label for="fini">fini</label>
-        </div>
+        <h2>To do list</h2>
+        <input type="text" name="newTask" id="newTask"v-model="task">
+<button name="add" id="add" v-on:click="addTask">Nouvelle tache</button>
+      
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
