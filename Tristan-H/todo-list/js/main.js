@@ -1,7 +1,7 @@
 let newtask = {
   props: {
     state: "",
-    task: ""
+    task: "",
   },
 
   template: `<li id="item">
@@ -9,10 +9,10 @@ let newtask = {
                <p>tâche {{ state }} </p>
                <input type="radio" id="en-cours" value="en cours" v-model="state" checked="checked">
                <label for="en cours">en cours</label>
-               <input type="radio" id="fini" value="fini" v-model="state">
+               <input type= "radio" id= "fini" value= "fini" v-model= "state" class= " custom-radio" >
                <label for="fini">fini</label>
-               <button name="deletetask" id="deletetask"v-on:click="deletetask">supprimer</button>
-               </li>`
+               <button name= "deletetask" id= "deletetask" v-on: click = "deletetask" class= " btn-danger" > supprimer </button>
+             </li>`
 };
 var app =new Vue({
   el: '#app',
