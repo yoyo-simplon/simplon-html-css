@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
         <title>Pierre feuille ciseaux</title>
         <meta charset="UTF-8"/>
-        <style>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Shojumaru" rel="stylesheet"> 
+        <!-- <style>
             button{
                 border: 0px;
                 border-radius: 10px;
@@ -13,14 +15,17 @@
                 color:rgb(0, 0, 0);
                 height: 50px;
             }
-            </style>
+            </style> -->
+            
     </head>
     <body>
         <div id="block-jeu">
+                <h1>Shifumi !</h1>
+
             <div>
-                <button id="pierre">pierre</button>
-                <button id="feuille">feuille</button>
-                <button id="ciseaux">ciseaux</button>
+                <button id="pierre"><img src="images/pierre.jpg" width="90px" height="80px"><br> Pierre</button>
+                <button id="feuille"><img src="images/feuille.jpg"width="90px" height="80px"><br>Feuille</button>
+                <button id="ciseaux"><img src="images/ciseau.jpg"width="90px" height="80px"><br>Ciseaux</button>
             </div>
             <div id="statut-jeu"></div>
         </div>
@@ -108,7 +113,7 @@
  
                 finJeu++;
  
-                    if(finJeu >= 4){
+                    if(finJeu >= 3){
                         afficheur.sendMessage("Le jeu est fini</br>Ordinateur : " + scortO + "</br>Player : " + scortU);
                         return;
                     }
