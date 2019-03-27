@@ -1,7 +1,7 @@
 let newtask = {
   props: {
     state: "",
-    task: ""
+    task: "",
   },
 
   template: `<li id="item">
