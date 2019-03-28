@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+    <style>
+        .you, .bot {
+            font-size: 1.5em;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        input {
+            font-size: 0.8em;
+        }
+
+        .you, #name {
+            color: blue;
+            text-align: end;
+        }
+
+        .timestamp {
+            font-size: 0.5em;
+            color: black;
+        }
+
+        @media all and (max-width: 1200px) {
+            .flex {
+                flex-direction: column;
+            }
+            #clear {
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Chat Box</h1>
+                <h2 class="subtitle is-3">
+                    Vue.js
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <main id="app">
+
+                <section id="chat">
+                    <p v-for="message in messages" class="message"
+                        :class="{ 'you': message.author === 'you', 'bot': message.author !== 'you' }">
+                        {{ message.body }}
+                        <br><span class="timestamp">{{ message.timestamp }}</span>
+                        <!-- <button class="button is-normal" @click="todo.edit = true"><i class="fas fa-pencil-alt modif"></i></button>
+                        <input v-show="todo.edit == true" v-model="todo.text" @keyup.enter="todo.edit=false; $emit('update')">
+                        <button class="button is-normal" @click="removeTodo(todo)"><i class="fas fa-times close"></i></button> -->
+                    </p>
+
+                    <div class="flex">
+                        <form @submit.prevent="sendMessage('bot')" id="person1-form">
+                            <label for="person1-input">Bot</label>
+                            <input v-model="botMessage" id="person1-input" type="text"
+                                placeholder="Bip Bip Boup Boup BOUp!">
+                            <button type="submit" class="button is-info">Envoyer</button>
+                        </form>
+
+                        <button @click="clearAllMessages" class="button is-danger" id="clear">Effacer les messages</button>
+
+                        <form @submit.prevent="sendMessage('you')" id="person2-form">
+                            <label for="person2-input" id="name"></label>
+                            <input v-model="youMessage" id="person2-input" type="text"
+                                placeholder="Entrez votre message">
+                            <button type="submit" class="button is-info">Envoyer</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
