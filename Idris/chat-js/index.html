@@ -10,11 +10,37 @@
     <h1>chat-js</h1>
 
 <main id="app">
-    <ul>
+    <ul v-if="salon == 'chats'">
         <li v-for="(chat, index) in chats">
-            <span >{{chat.value}}</span>
-            <div class="field created-at">{{ createdAtDisplay }}</div>
+            <span >{{chat.pseudo}}</span>
+            <div>
+                <span class="{disabled:chat.termine}" v-if="chat.edit == false"  @dblclick="editMessage(chat)">{{chat.value}}</span>
+                <input v-if="chat.edit == true" type="text" class="modifyInput" v-model="chat.value" v-focus v-on:keyup.enter="editInputMessage(chat)">
+                <button @click="deleteMessage(index)">supprimer</button>
+
+            </div>
+            
+            <span >{{chat.date}}</span>
+
+           
         </li>
+        
+    </ul>
+    <ul v-if="salon == 'salon2'">
+        <li  v-for="(salon2, index) in salon2s">
+            <span >{{salon2.pseudo}}</span>
+            <div>
+                <span class="{disabled:salon2.termine}" v-if="salon2.edit == false"  @dblclick="editMessage(salon2)">{{salon2.value}}</span>
+                <input v-if="salon2.edit == true" type="text" class="modifyInput" v-model="salon2.value" v-focus v-on:keyup.enter="editInputMessage(salon2)">
+                <button @click="deleteMessage(index)">supprimer</button>
+
+            </div>
+            
+            <span >{{salon2.date}}</span>
+
+           
+        </li>
+
     </ul>
 
 
@@ -23,9 +49,23 @@
 
 
     <form>
+        <span v-if="editPseudoInput == true">Pseudo :</span> 
+        <!-- <span v-if="editPseudoInput == false" >{{this.user}}</span> -->
+        <button v-if="editPseudoInput == false" type="button" @click="editPseudoInput = true">Changer le pseudo</button> 
+        <input v-if="editPseudoInput == true" type="text-" v-on:keyup.enter="changePseudo()" v-model="user" id="pseudouser"><br>
+        Message :
         <input type="text" v-model="message" id="messenger">
-        <button @click="envoyerMessage(message)" type="button">envoyer</button>
+        <button @click="envoyerMessage()" type="button">envoyer</button>
+        <button @click="goChats(chats)" type="button">Chats</button>
+        <button @click="goSalon2()" type="button">salon2</button>
+
+        
     </form>
+    <ul>
+        <!-- <li v-for="(listUser, index) in listUsers"> -->
+            {{listUsers.user}}
+        <!-- </li> -->
+    </ul>
     </main>
     <script src="js/vue.js"></script>
     <script src="js/moment-with-locales.js"></script>
