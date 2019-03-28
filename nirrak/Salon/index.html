@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>         
+            <script src="https://unpkg.com/moment@2.24.0/moment.js"></script>     
+            <link rel="stylesheet" media="" href="style.css" />     
+        <title> SALON </title>
+    </head>
+    
+    <body>
+
+        <header>
+
+        </header>
+
+        <main>
+            <div id="app">
+
+                    <div class="champSaisie"> 
+                        <div class="flexSalon">
+                            <p>Salon : </p> 
+                            <select v-model="salon">
+                                <option>Blablabla</option>
+                                <option>Ressource</option>
+                                <option>Veille</option>
+                            </select>
+                        </div>
+
+                        <div class="flexPseudo">
+                            <p>Pseudo : </p> 
+                            <input type="text" v-model="pseudo" id="formpseudo" placeholder="Noter votre pseudo">
+                        </div>
+
+                        <div class="flexMessage">
+                            <p>Message : </p>
+                            <textarea v-model="msg" cols="27" rows="3" placeholder="Nouveau message ..."></textarea>
+                            <datetime v-model="daty"></datetime>
+                        </div>          
+
+                        <div class="flexAjout">
+                            <button @click="addchat(pseudo,msg,daty)" type="button">Envoyer le message</button>               
+                        </div>
+                    </div>
+
+                    <div class="champAffichage">
+                        <ul>
+                            <li v-for="{salon, pseudo, msg, daty} in filtreSalon(tableau, salon)">
+                                <p> <strong>Auteur: </strong>{{pseudo}}</p>
+                                <p> <strong>Date: </strong> {{daty}}</p>
+                                <p><strong>Message: </strong> </p>
+                                <textarea id="formmsg" cols="27" rows="3">{{msg}}</textarea> 
+                                <br><br>
+                            </li>
+                        </ul>
+                    </div> 
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>

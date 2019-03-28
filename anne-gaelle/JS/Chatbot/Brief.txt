@@ -1,0 +1,14 @@
+BRIEF chatbot JS
+- possibilité de choisir son pseudo
+- plusieurs salons
+- affichage de la date d'envoi du message
+- affichage des messages de haut en bas
+- avoir un historique de conversations
+- modification des messages
+
+- responsive
+- pas de rafraichissement
+
+Bonus : 
+- conversations privées
+- suppression des messages

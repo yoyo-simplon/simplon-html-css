@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vue.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+ 
+  <!-- <div id="todo">
+    <input type="text" v-model="saisi">
+    <button type="button" @click="add_element">Add element</button>
+    <p v-for="element in mon_tableau">
+      {{ element }} <button type="button" @click="delete_element">Supprimer</button>
+    </p>
+  </div> -->
+
+  <div id="todo">
+    <input type="text" v-model="saisi">
+    <button type="button" @click="add_element">Ajouter</button>
+    <p v-for="item in mon_tableau">
+      {{item}} <button :index="mon_index" type="button" @click="delete_element">Supprimer</button>
+    </p>
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
