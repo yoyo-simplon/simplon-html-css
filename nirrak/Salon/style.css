@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.1s;
+}
+
+#formpseudo {
+    width: 190px;
+    height: 21px;
+}
+
+#formmsg {
+    width: 100%;
+}
+
+.champSaisie {
+    margin: 20px;
+    padding-top: 20px;
+    height: 100px;
+    display: flex;
+    justify-content:  space-around;
+    border: 1px solid blue;
+
+}
+.champAffichage {
+    margin: 20px;
+    padding: 20px;
+    height: 450px;
+    font-size: 14px;
+    line-height: 150%;
+    overflow-y: scroll;
+    border: 1px solid blue;
+}
+
+@media all and (max-width: 750px)
+{
+    .champSaisie {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-top: 5px;
+        margin-left: 20px;
+        padding-left: 20px;
+        width: 230px;
+        height: 250px;
+        border: 1px solid blue;
+    }
+
+    .champAffichage {
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-left: 30px;
+        width: 200px;
+        height: 400px;
+        font-size: 12px;
+        line-height: 160%;
+        overflow-y: scroll;
+        border: 1px solid blue;
+    }
+} 
+
+
