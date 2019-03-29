@@ -20,4 +20,9 @@
 .messages{
     height: 100%;
 }
-li{list-style: none;}
+.alert-info{
+    list-style: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 5px;
+}

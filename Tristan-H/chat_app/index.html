@@ -52,9 +52,9 @@
 
                             <div class="row">
                                 <div class="input-group">
-                                    <textarea name="txtarea" placeholder="votre message" autofocus="autofocus" id="msg"
-                                        class="form-control" v-model="msg" @keyup.enter="sendMsg()">
-                                    </textarea>
+                                    <input type="text" name="txtarea" ref="msgref" placeholder="votre message" autofocus="autofocus" id="txtarea"
+                                        class="form-control" v-model="msg" @keyup.enter="sendMsg()" >
+                                    
 
                                     <div class="input-group-append">
                                         <input type="submit" value="send" class="btn btn-success" v-on:click="sendMsg()">

@@ -9,6 +9,7 @@ var chatApp = new Vue({
         seen:false,
         unseen:true,
         salon:'',
+        
     },
     methods: {
         sendMsg: function () { 
@@ -17,7 +18,10 @@ var chatApp = new Vue({
                 msg:this.msg,
                 
             });
-            this.txtarea.value='';
-         }
+            this.$refs.msgref.focus();
+            this.msg='';
+         },
+         
+         
     },
 });
