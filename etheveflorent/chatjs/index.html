@@ -11,38 +11,57 @@
 </head>
 
 <body>
-    <div id="chat" class="columns is-10">
+    <div id="chat" class="columns is-8">
        <section id="content">
-        <div id="aside" class="column is-3">
+        <div id="aside" class="column is-2">
             
             <h3>Salons</h3>
                 <ul >
-                    <li v-for="tab in tabs" v-model="salon" @click="currentTab=tab" :class="['tab-button', { active: currentTab === tab }]">
+                    <li v-for="tab in tabs" v-model="salon" @click="currentTab=tab;autoscroll" :class="['tab-button', { active: currentTab === tab }]">
                         {{tab}}
                     </li>
 
                 </ul>
         </div>
-        <div id="messages" class="column is-8">
+        <div id="messages" class="column is-5">
           
             <ul>
                 <li v-for="msg in listmsg" v-if="msg.salon==currentTab">
-                    <span v-if="msg.isEdit==false" @click="msg.isEdit=true" :class="{disabled :msg.isEdit}">{{msg.time}}{{msg.author}}:{{msg.text}}</span>
+                    <span v-if="msg.isEdit==false" @click="msg.isEdit=true" :class="{disabled :msg.isEdit}">{{msg.time}}-{{msg.author}}:{{msg.text}}</span>
                     <input type="text" v-model="msg.text" v-if="msg.isEdit==true" @keyup.enter="msg.isEdit=false">
                 </li>
             </ul>
+                   </div> 
+            <div  class="column i-3" id="users">
+               <span v-for="user in userstab" class="column is-one-fifth is-6-mobile">{{user}}</span>
+            </div>
 
-        </div>
     </section>
-<section id="text" class="columns is-10">
+<section id="text" class="columns is-5">
         <input type="text" id="msg" @keyup.enter="addmsg" v-model="text" class="column is-8" style="width:60%"/>
         
         <input type="text" id="pseudo" v-if="visible" v-model="pseudo" @keyup.enter="setNom" placeholder="votre pseudo" class="column is-2"/>
-        <span v-else>{{pseudo}}</span>
-        <button v-if="!visible" @click="visible=!visible" style="width:50%">Changer de pseudo</button>
+        <span v-else>{{pseudo}}</span></br>
+        <a href="#" v-if="!visible" @click="visible=!visible;userstab.pop()" >Changer de pseudo</a>
     
     </section>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDLdCnx2h6kNAlTpsCaFgxU34ztUOJLnb0",
+    authDomain: "chatjs-64bc0.firebaseapp.com",
+    databaseURL: "https://chatjs-64bc0.firebaseio.com",
+    projectId: "chatjs-64bc0",
+    storageBucket: "chatjs-64bc0.appspot.com",
+    messagingSenderId: "403277165041"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/script.js"></script>
 </body>
