@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="app">
+        <h3>{{title}}</h3>
+        <form @submit.prevent=addTodo>
+            <label for="newTodo">A faire</label>
+            <input v-model="newTodo" type="text" name="newTodo" id="newTodo" value="">
+            <button type="submit" name="button">Ajouter</button>
+        </form>
+        <button @clicktype="allDone" type="button" name="button">Tout est fait</button>
+        <ul>
+            <li v-for="todo in todos">
+                <input type="checkbox" v-model="todo.done">
+                <span :class="{done: todo.done}">{{todo.title}}</span>
+                <button @click="removeTodo(todo)" type="">Retirer</button>
+            </li>
+        </ul>
+    </main>
+    <script src="js/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.chat-box{
+    
+    height: 500px;
+   /* hide shadow behind image */
+   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+   width: 70%;
+   left: 15%;
+   /* one half of the remaining 30% */
+   
+ 
+}
+.modal-title{
+    background-color: lightblue;
+    color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+}
+.messages{
+    height: 100%;
+}
+li{list-style: none;}

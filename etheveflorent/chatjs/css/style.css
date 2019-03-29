@@ -1,0 +1,34 @@
+#chat{
+    display: flex;
+    flex-direction: column;
+    margin:0; 
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    outline: solid 1px black;
+}
+.tab-button {
+    padding: 6px 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #f0f0f0;
+    margin-bottom: -1px;
+    margin-right: -1px;
+  }
+
+.tab-button.active {
+    background: #e0e0e0;
+  }
+  .tab {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #aside{
+    outline: solid 1px black;
+  }
