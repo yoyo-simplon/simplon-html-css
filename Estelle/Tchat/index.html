@@ -5,18 +5,23 @@
     <title>Page Title</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!--<header>
-        <h1>TALK</h1>
-        <h2>Bienvenue sur TALK une plateforme de tchat gratuite</h2>
-    </header>-->
+<body onload="afficher()">
+    <header>
+            <p id="bienvenue">Pseudo</p>
+            <div id="block-pseudo">
+                <label>Entrez un pseudo</label>
+                <input id="pseudo" type="text" placeholder="John Doe">
+                <button onclick="newPseudo()">Valider</button>
+            </div>
+            
+    </header>
 
     <section>
-        <div class="container">
-            <p>Taper votre message</p>
-            <input type="text" id="pseudo" placeholder="Message...">
+        <div id="test" class="container">
+            <label>Taper votre message</label>
+            <input id="message" type="text" placeholder="Message...">
             <button onclick="newElement()">Valider</button>
-            <p id="para"></p>
+            <p id="para" name="message" onchange="sessionStorage.message=this.value"></p>
         </div>
     </section>
 

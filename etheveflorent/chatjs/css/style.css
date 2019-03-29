@@ -2,13 +2,36 @@
     display: flex;
     flex-direction: column;
     margin:0; 
+    height: 400px;
+    box-shadow: 3px 4px 4px #888888;
+}
+#text{
+  margin: 0;
+}
+#messages{
+  outline: solid 1px black;
+  overflow: scroll;
+  height: 400px;
 }
 
-
+#users{
+  display: flex;
+  flex-direction: column;
+  outline: solid 1px black;
+}
+#users span{
+  background-color: #CCC;
+  margin-top:5px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+}
 #content{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    height: 400px;
     outline: solid 1px black;
 }
 .tab-button {
@@ -18,8 +41,6 @@
     border: 1px solid #ccc;
     cursor: pointer;
     background: #f0f0f0;
-    margin-bottom: -1px;
-    margin-right: -1px;
   }
 
 .tab-button.active {
@@ -31,4 +52,13 @@
   }
   #aside{
     outline: solid 1px black;
+  }
+  @media all and (max-width:500px){
+    #users span{
+      margin-top:2px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+
   }
