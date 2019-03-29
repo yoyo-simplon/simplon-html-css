@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <div id="chat_box">
+        <h1>Chat Box</h1>
+        <div class="message_utilisateur1">
+            <input v-model="utilisateur" type="text" placeholder="Entrez votre pseudo"><br />
+            <input v-model="commentaire" type="text" placeholder="Entrez votre message"><br />
+            <button v-on:click="envoyer">Envoyer</button>
+            
+        </div>
+        <p v-for="(commentaire, index,) in mon_tableau" v-bind:index="mon_tableau.index"> à : {{ commentaire.heure }} - {{ utilisateur }} : {{ commentaire.message }}
+            <button v-on:click="remove_message(index)">Suppr</button>
+            <input v-show="commentaire.edit == true" v-model="commentaire.message" @keyup.enter="commentaire.edit=false; $emit('update')">
+            <button class="button is-normal" @click="commentaire.edit = true">Modifier</button>
+
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
