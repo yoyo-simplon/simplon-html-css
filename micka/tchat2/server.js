@@ -14,24 +14,59 @@ http.listen(3000, function(){
 });
 
 io.on('connection', function(socket){
+  var loggedUser;
   console.log('a user connected');
   socket.on('disconnect', function(){
-    console.log('user disconnected');
+  console.log('user disconnected');
   });
-});
 
-io.on('connection', function (socket) {
+  socket.on('chat-message', function (message) {
+    // io.emit('chat-message', message);
+    console.log('message : ' + message.text);
+
+  socket.on('user-login', function (loggedUser) {
+      console.log('user logged in : ' + loggedUser.username);
+      user = loggedUser;
+      
+  socket.on('chat-message', function (message) {
+        message.username = loggedUser.username; // On intègre ici le nom d'utilisateur au message
+        io.emit('chat-message', message);
+        console.log('Message de : ' + loggedUser.username);
+
+/**
+   * Déconnexion d'un utilisateur : broadcast d'un 'service-message'
+   */
+  socket.on('disconnect', function () {
+    if (loggedUser !== undefined) {
+      console.log('user disconnected : ' + loggedUser.username);
+      var serviceMessage = {
+        text: 'User "' + loggedUser.username + '" disconnected',
+        type: 'logout'
+      };
+      socket.broadcast.emit('service-message', serviceMessage);
+    }
+  });
+
+  /**
+   * Connexion d'un utilisateur via le formulaire :
+   *  - sauvegarde du user
+   *  - broadcast d'un 'service-message'
+   */
+  socket.on('user-login', function (user) {
+    loggedUser = user;
+    if (loggedUser !== undefined) {
+      var serviceMessage = {
+        text: 'User "' + loggedUser.username + '" logged in',
+        type: 'login'
+      };
+      socket.broadcast.emit('service-message', serviceMessage);
+    }
+  });
+        
+  });
+  });
+  });
+  });
 
   
-  console.log('a user connected');
-  socket.on('disconnect', function () {
-    console.log('user disconected');
-  });
-
- 
-
-socket.on('chat-message', function (message) {
-  io.emit('chat-message', message);
-  console.log('message : ' + message.text);
-});
-});
+  
