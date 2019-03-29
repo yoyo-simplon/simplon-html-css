@@ -3,7 +3,7 @@
 var chatApp = new Vue({
     el: '#chatApp',
     data: {
-        message: [],
+        messages: [],
         msg:'',
         pseudo:'',
         seen:false,
@@ -12,7 +12,12 @@ var chatApp = new Vue({
     },
     methods: {
         sendMsg: function () { 
-            this.message.push({msg:''});
+            this.messages.push({
+                pseudo:this.pseudo,
+                msg:this.msg,
+                
+            });
+            this.txtarea.value='';
          }
     },
 });
