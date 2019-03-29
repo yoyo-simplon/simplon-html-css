@@ -109,7 +109,9 @@
                     <p v-for="message in channelSelected(messages, selected)" class="message"
                         :class="{ 'you': message.author === 'you', 'bot': message.author !== 'you' }">
                         {{ message.body }}
-                        <br><span class="timestamp">{{ message.timestamp }}</span>
+                        <br>
+                        <!-- <span>{{ message.prenom }}</span> -->
+                        <span class="timestamp">{{ message.timestamp }}</span>
                         <button class="button is-normal fakebouton" @click="message.edit = true"><i
                                 class="fas fa-pencil-alt modif"></i></button>
                         <input v-show="message.edit == true" v-model="message.body"

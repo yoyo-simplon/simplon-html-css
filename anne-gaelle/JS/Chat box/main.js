@@ -44,6 +44,15 @@ new Vue({
             }
         ]
     },
+    mounted() {
+        if (localStorage.getItem('messages')) { // Initie la sauvegarde
+          try {
+            this.messages = JSON.parse(localStorage.getItem('messages'));
+          } catch(g) {
+            localStorage.removeItem('messages');
+          }
+        }
+      },
     methods: {
         sendMessage: function (e) { // Ajoute dynamiquement à l'array donc à la liste
             if (e === 'you') {
@@ -55,6 +64,7 @@ new Vue({
                         selected: this.selected,
                     }),
                     this.youMessage = ''; // Clear form après envoi
+                    this.saveMessages();
             } else {
                 this.messages.push({
                         body: this.botMessage,
@@ -64,6 +74,7 @@ new Vue({
                         selected: this.selected,
                     }),
                     this.botMessage = ''; // Clear form après envoi
+                    this.saveMessages();
             }
         },
         clearAllMessages() {
@@ -76,8 +87,10 @@ new Vue({
             return messages.filter(function (f) {
                 return f.selected == selected;
             })
-        }
+        },
+        saveMessages() { // Sauvegarde dans le JSON - local storage
+            const parsed = JSON.stringify(this.messages);
+            localStorage.setItem('messages', parsed);
+          }
     },
 });
-
-//TODO// Ajouter la fonction pour mettre en stockage local et rappeler
