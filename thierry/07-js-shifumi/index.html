@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>shiFuMi v5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/shifumi.css">
+    </head>
+    <body>
+        <header>
+            <h2>Shifumi (pierre / feuille / ciseaux)</h2>
+            <img src=https://images.pexels.com/photos/1249214/pexels-photo-1249214.jpeg width=auto height=500px alt='pierre feuille ciseaux'/>
+        </header>
+        <section>
+                <nav class="choix">
+                    <button type="button" class="SHIFU_btn" onclick="comparer(this.value);" value="0" />
+                    <img src="https://images.pexels.com/photos/161702/harmony-relax-rock-moqui-161702.jpeg" width=200px height=150px alt="pierre" /></button>
+    
+                    <button type="button" class="SHIFU_btn" onclick="comparer(this.value);" value="1" />
+                    <img src="https://images.pexels.com/photos/86397/leaf-individually-linde-lipovina-86397.jpeg" width=200px height=150px alt="feuille" /></button>
+    
+                    <button type="button" class="SHIFU_btn" onclick="comparer(this.value);" value="2" />
+                    <img src="https://images.pexels.com/photos/322345/pexels-photo-322345.jpeg" width=200px height=150px alt="ciseaux" /></button>
+    
+                    <p class="vasy">Vas-y click l'image de ton choix!</p>
+                </nav>
+                
+                <article>
+                  <h1 class="resultat">Resultat:</h1>
+                  <div id="SHIFU_displayResult"></div>
+                </article>
+        </section>
+
+        <script src="assets/js/shifumi.js" async defer></script>
+    </body>
+</html>
+

@@ -1,0 +1,30 @@
+@import "scss/bootstrap.scss";
+nav.row{
+    height: 50px;
+    color: rgb(172, 172, 172);
+    background: rgb(235, 235, 235);
+    a{
+        color: rgb(99, 99, 99);
+    } 
+}
+.top_banner{
+    height: 500px;
+    background: url("../img/intro-bg.jpg");
+    background-size: cover;
+    
+}
+
+#sect1,#sect3{
+    background: rgb(235, 235, 235);
+}
+#bottom_banner{
+    background: url("../img/banner-bg.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 767px){
+    img.col-md-4:nth-child(1){
+        order: +1;
+    }
+    
+
+}

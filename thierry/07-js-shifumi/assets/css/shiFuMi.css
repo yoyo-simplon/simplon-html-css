@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    width: 960px;
+    height: auto;
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  section {
+    width: 960px;
+    display: flex;
+  }
+  
+  nav {
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  article {
+    background-color: white;
+    padding: 10px;
+  }
+  
+button.SHIFU_btn { padding:0; cursor:pointer; }
+button.SHIFU_btn img { display:block; width:120px; height:100px; }
+
+#SHIFU_displayResult b { color: blue; }
+#SHIFU_displayResult h4 { font-weight:normal; }
+  

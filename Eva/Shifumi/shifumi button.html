@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <title>Page Title</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Shojumaru" rel="stylesheet"> 
+       <script src="main.js"></script>
+    </head>
+
+    <body>
+        <h1> Shifumi Game ! </h1>
+
+        <div class=bouton>
+           <button class="pierre">pierre</button> 
+           <button class="feuille">feuille</button> 
+           <button class="ciseaux">ciseaux</button> 
+        </div>
+
+        <div class=icones>
+           <p><i class="fas fa-hockey-puck"></i> </p>
+           <p><i class="fas fa-leaf"></i> </p>
+           <p><i class="fas fa-cut"></i> </p> 
+        </div>
+
+        <div class="resultat"></div>
+ 
+
+
+
+
+        <script>   
+         const buttons = document.querySelectorAll("button")
+         let pointsPlayer= 0;
+         let pointsBot = 0;
+
+         for (let i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", function() {
+           const player = buttons[i].innerHTML;
+           const bot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
+           let resultat = "";
+
+           
+
+           if (player === bot) { 
+                resultat = "Draw";
+                
+           }
+            else if ((player === "pierre" && bot  === "ciseaux") || (player == "feuille" && bot == "pierre") || (player == "ciseaux" && bot == "feuille" )) {
+                resultat = "You Win !";
+                pointsPlayer = pointsPlayer+ 1;
+           }
+            else {
+                resultat = " You loose Try again !";
+                pointsBot = pointsBot+ 1; 
+            }
+            document.querySelector(".resultat").innerHTML = `
+            player : ${player}</br>
+            bot : ${bot}</br>
+            ${resultat}</br>
+            <div class="salut">${pointsPlayer} Player</br>
+            ${pointsBot} Ordi</div>`;
+          });
+          }  
+
+   
+
+        </script>
+
+    </body>
+</html>

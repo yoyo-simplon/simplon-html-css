@@ -27,7 +27,7 @@ body {
 
 .comp {
     background-color: #dcedc1;
-  }
+}
 
 .contact {
     background-color: #ffaaa5;
@@ -58,25 +58,27 @@ li {
 }
 
 a {
-    color: #632C65/*E2A9E5*/;
+    color: #632C65
+        /*E2A9E5*/
+    ;
     font-style: italic;
     text-decoration: none;
 }
 
-    li a:hover {
-        animation: hoverColorMe2 0.7s;
-        animation-fill-mode: forwards;
-    }
+li a:hover {
+    animation: hoverColorMe2 0.7s;
+    animation-fill-mode: forwards;
+}
 
-    @keyframes hoverColorMe2 {
-        100% {
-            font-weight: 700;
-            font-style: italic;
-            text-shadow: 2px 2px #E2A9E5;
-            color: #FFF;
-            border-bottom: 1px solid #E2A9E5;
-        }
+@keyframes hoverColorMe2 {
+    100% {
+        font-weight: 700;
+        font-style: italic;
+        text-shadow: 2px 2px #E2A9E5;
+        color: #FFF;
+        border-bottom: 1px solid #E2A9E5;
     }
+}
 
 h1 {
     color: #632C65;
@@ -94,7 +96,8 @@ h2 {
     font-size: 3.5em;
 }
 
-#accueil h1, h2 {
+#accueil h1,
+h2 {
     font-family: "Staatliches", sans-serif;
 }
 
@@ -130,7 +133,9 @@ article {
 @keyframes hoverColorMe {
     100% {
         border: 2px solid #4B384C;
-        background-color: #FFF/*E2A9E5*/;
+        background-color: #FFF
+            /*E2A9E5*/
+        ;
         color: #632C65;
         font-weight: 700;
         font-style: italic;
@@ -147,26 +152,30 @@ article {
     font-size: 4em;
 }
 
-    #about #arrow {
-        padding-top: 170px;
-    }
+#about #arrow {
+    padding-top: 170px;
+}
 
 i {
-    color: /*#E2A9E5*/ purple;
+    color:
+        /*#E2A9E5*/
+        purple;
     text-align: center;
 }
 
-    i:hover {
-        animation: hoverColorMe3 0.7s;
-        animation-fill-mode: forwards;
-    }
+i:hover {
+    animation: hoverColorMe3 0.7s;
+    animation-fill-mode: forwards;
+}
 
-    @keyframes hoverColorMe3 {
-        100% {
-            text-shadow: 3px 3px #FFF /*632C65*/;
-            color: #E2A9E5;
-        }
+@keyframes hoverColorMe3 {
+    100% {
+        text-shadow: 3px 3px #FFF
+            /*632C65*/
+        ;
+        color: #E2A9E5;
     }
+}
 
 .down {
     animation: floatd 3s infinite;
@@ -180,9 +189,11 @@ i {
     0% {
         transform: translatey(0px);
     }
+
     50% {
         transform: translatey(-20px);
     }
+
     100% {
         transform: translatey(0px);
     }
@@ -192,9 +203,11 @@ i {
     0% {
         transform: translatey(20px);
     }
+
     50% {
         transform: translatey(0);
     }
+
     100% {
         transform: translatey(20px);
     }
@@ -277,65 +290,65 @@ img {
 }
 
 form {
-	display: grid;
+    display: grid;
 }
 
 form div {
-	margin: auto;
-	padding-bottom: 5px;
+    margin: auto;
+    padding-bottom: 5px;
 }
 
 input {
-	color: #181818;
-	background: white;
-	height: 30px;
-	margin: auto;
-	font-family: "Neou", Verdana, Arial, "sans-serif";
-	margin-bottom: 2px;
-	border: 2px solid black;
-	width: 150px;
-	border-radius: 5px;
-	padding: 5px;
+    color: #181818;
+    background: white;
+    height: 30px;
+    margin: auto;
+    font-family: "Neou", Verdana, Arial, "sans-serif";
+    margin-bottom: 2px;
+    border: 2px solid black;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 input:focus {
-	background: white;
-	border: solid 2px #6f0783;
-	border-radius: 5px;
-	box-shadow: 3px 3px #ff8b94;
+    background: white;
+    border: solid 2px #6f0783;
+    border-radius: 5px;
+    box-shadow: 3px 3px #ff8b94;
 }
 
 input[type=text] {
-	width: 150px;
-	transition: ease-in-out, width .35s ease-in-out;
+    width: 150px;
+    transition: ease-in-out, width .35s ease-in-out;
 }
 
 input[type=text]:focus {
-	width: 350px;
+    width: 350px;
 }
 
 textarea {
-	color: #181818;
-	background: white;
-	height: 100px;
-	/*align-self: flex-end;*/
-	margin: auto;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	font-family: "Neou", Verdana, Arial, "sans-serif";
-	height: 10rem;
-	border: 2px solid black;
-	width: 70%;
-	transition: ease-in-out, width .35s ease-in-out;
-	border-radius: 5px;
-	padding: 5px;
+    color: #181818;
+    background: white;
+    height: 100px;
+    /*align-self: flex-end;*/
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: "Neou", Verdana, Arial, "sans-serif";
+    height: 10rem;
+    border: 2px solid black;
+    width: 70%;
+    transition: ease-in-out, width .35s ease-in-out;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 textarea:focus {
-	border: solid 2px #6f0783;
-	border-radius: 5px;
-	box-shadow: 3px 3px #ff8b94;
-	width: 90%;
+    border: solid 2px #6f0783;
+    border-radius: 5px;
+    box-shadow: 3px 3px #ff8b94;
+    width: 90%;
 }
 
 hr {
@@ -344,44 +357,44 @@ hr {
 }
 
 fieldset {
-	width: 98%;
-	margin: auto;
+    width: 98%;
+    margin: auto;
     padding: 1%;
     border-color: transparent;
 }
 
 fieldset ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-around;
-	font-family: "Neou", Verdana, Arial, "sans-serif";
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Neou", Verdana, Arial, "sans-serif";
 }
 
 fieldset li input {
-	position: relative;
-	color: #6f0783;
-	font-size: 1.1em;
-	height: auto;
-	padding: 5px;
-	border-radius: 5px;
+    position: relative;
+    color: #6f0783;
+    font-size: 1.1em;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 fieldset li input:hover {
-	bottom: 5px;
-	color: #181818 !important;
-	text-shadow: 1px 1px 2px #ff8b94;
-	box-shadow: 3px 3px #ff8b94;
-	border: solid 2px #6f0783;
-	border-radius: 5px;
+    bottom: 5px;
+    color: #181818 !important;
+    text-shadow: 1px 1px 2px #ff8b94;
+    box-shadow: 3px 3px #ff8b94;
+    border: solid 2px #6f0783;
+    border-radius: 5px;
 }
 
 #mail {
-    color: #6f0783; 
+    color: #6f0783;
 }
 
-    #mail:hover {
-        animation: hoverColorMe2 2s;
-    }
+#mail:hover {
+    animation: hoverColorMe2 2s;
+}
 
 .ccflex {
     display: flex;
@@ -406,21 +419,27 @@ fieldset li input:hover {
     padding: 10px;
 }
 
-/*@media all and (max-height: 1024px) {
-    body {
-        display: flex;
-    }
-	.bloc {
-        height: auto;
-        width: 100%;
-    }
-}*/
+.ccflex span,
+#contact p {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#contact {
+    height: 100vh;
+}
+
+#more a:hover {
+    animation: hoverColorMe2 0.7s;
+    animation-fill-mode: forwards;
+}
 
 @media all and (max-width: 1024px) {
     body {
         display: flex;
     }
-	.bloc {
+
+    .bloc {
         height: 100vh;
         width: auto;
         max-height: 100vh;
@@ -445,7 +464,48 @@ fieldset li input:hover {
         height: auto;
     }
 
+    .ccflex span {
+        max-width: 185px;
+        height: auto;
+        font-size: 1.2em;
+    }
+
+    #contact p {
+        font-size: 1.2em;
+    }
+
     nav {
         font-size: 1em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    i {
+        font-size: 0.8em;
+    }
+
+    .boutons {
+        margin-top: 5%;
+    }
+
+    #zone1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    input {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 70%;
+        transition: ease-in-out, width .35s ease-in-out;
+    }
+
+    #submit, #annuler {
+        width: 100%;
     }
 }

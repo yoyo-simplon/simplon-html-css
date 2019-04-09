@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .success{
+            color: green;
+        }
+        .error{
+            color: red;
+        }
+        .main.container{
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui inverted fixed menu">
+        <div class="header item">Tutoriel</div>
+    </div>
+
+
+    <!-- v-bind:href ou :href -->
+    <div class="ui main container" id="app">
+
+        <!-- v-model="message" (ce champ sera lié a cette variable "message") -->
+        <input type="checkbox" v-model="success">
+        <a :href="link + '/tutoriels'" :title="message">{{ message }}</a>
+
+<!-- 
+         boucle avec v-for
+        <ul>
+            <li v-for="person in persons">{{ person }}</li>
+        </ul>
+ -->
+<!-- v-if=variable(si la variable est true, l'element est afiché, si la variable est a false elle disparait du code html au lieu d'etre juste masqué ) -->
+
+<!-- v-show produit le meme resultat sauf que un display:none sera appliqué à l'élément si la variable est à false, l'élément sera alors juste masqué mais toujour présent dans le code html -->
+
+        <div class="ui message" :class="{success: success, error: !success}">
+            <p>{{ message }}</p>
+        </div>
+
+        <!-- v-on:click ou @click -->
+        <i class="close icon" @click="close">test</i>
+
+        <!-- v-else Affiche l'élément si le v-if n'es pas affiché 
+        <div class="ui error message" v-else>
+            <p>Echec, ça n'a pas marché</p>
+        </div>-->
+        
+
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

@@ -12,12 +12,13 @@ header {
     flex-direction: column;
 }
 
-nav {
+.nav {
     width: 1040px;
     display: flex;
+    flex-direction: row;
 }
 
-nav ul {
+.nav-tabs {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -35,13 +36,58 @@ ul a:hover {
     color: black;
 }
 
-.intro {
+.nav-tabs {
+    justify-content: flex-end;
+}
+
+.jumbotron {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     width: 1040px;
-    height: 500px;
+    height: 400px;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
     background-image: url(../img/intro-bg.jpg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 900;
+}
+
+section img {
+    height: 60%;
+    position: center;
+}
+
+.display-4 {
+    font-weight: bolder;
+}
+
+.btnjbt {
+    padding: 5px;
+}
+
+.my-2 {
+    border: 1px solid white;
+    width: 250px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.lead {
+    text-align: center;
 }
 
 .intro h1,
@@ -65,8 +111,9 @@ section {
     justify-content: space-between;
 }
 
-main {
-    margin-top: 30px;
+.main {
+    margin-top: 0px;
+    padding-top: 0px
 }
 
 img {
@@ -92,10 +139,25 @@ footer ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1040px;
+    width: 1020px;
     height: 100px;
 }
 
 .end h2 {
     color: white;
+}
+
+h2 {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+}
+
+#pair {
+    background-color: rgb(226, 225, 225);
 }

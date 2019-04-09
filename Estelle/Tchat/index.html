@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="afficher()">
+    <header>
+            <p id="bienvenue">Pseudo</p>
+            <div id="block-pseudo">
+                <label>Entrez un pseudo</label>
+                <input id="pseudo" type="text" placeholder="John Doe">
+                <button onclick="newPseudo()">Valider</button>
+            </div>
+            
+    </header>
+
+    <section>
+        <div id="test" class="container">
+            <label>Taper votre message</label>
+            <input id="message" type="text" placeholder="Message...">
+            <button onclick="newElement()">Valider</button>
+            <p id="para" name="message" onchange="sessionStorage.message=this.value"></p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

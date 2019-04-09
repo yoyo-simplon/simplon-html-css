@@ -1,0 +1,64 @@
+#chat{
+    display: flex;
+    flex-direction: column;
+    margin:0; 
+    height: 400px;
+    box-shadow: 3px 4px 4px #888888;
+}
+#text{
+  margin: 0;
+}
+#messages{
+  outline: solid 1px black;
+  overflow: scroll;
+  height: 400px;
+}
+
+#users{
+  display: flex;
+  flex-direction: column;
+  outline: solid 1px black;
+}
+#users span{
+  background-color: #CCC;
+  margin-top:5px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    outline: solid 1px black;
+}
+.tab-button {
+    padding: 6px 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #f0f0f0;
+  }
+
+.tab-button.active {
+    background: #e0e0e0;
+  }
+  .tab {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #aside{
+    outline: solid 1px black;
+  }
+  @media all and (max-width:500px){
+    #users span{
+      margin-top:2px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+
+  }

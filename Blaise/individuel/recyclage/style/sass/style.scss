@@ -1,0 +1,164 @@
+// MES @mixin ---------
+@mixin flex_box($flex_direction, $justify_content, $align_items){
+    display: flex;
+    flex-direction: $flex_direction;
+    justify-content: $justify_content;
+    align-items: $align_items;
+}
+
+@mixin no_parding_margin {
+    padding: 0px;
+    margin: 0px;
+}
+// FIN @minxin----------
+
+
+// MES VARIABLES
+$couleur_vert : #17721c;
+$couleur_rouge : #72173c; 
+// FIN VARIABLES
+
+html {
+  scroll-behavior: smooth;
+}
+
+.style {
+    height: 5px;
+    background-color:$couleur_rouge;
+}
+
+// * {
+//     border: 2px solid aqua;
+// }
+
+body {
+    @include no_parding_margin();
+    font-family: 'Quicksand', sans-serif;
+}
+
+// DEBUT HEADER
+header {
+    
+    h1 {
+        font-size: 4em;
+        @include no_parding_margin();
+        color : #17721c
+    }
+
+    #grand_title {
+        @include flex_box(column, center, center);
+    }
+
+    @include flex_box(column, center, center);
+    text-align: center;
+    background-image: url(../../img/bg_header.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    
+    #grand_title {
+        background-color: rgba(0, 0, 0, 0.95);
+        border-top: 4px solid $couleur_rouge;
+        border-bottom: 4px solid $couleur_rouge;
+        padding: 20px;
+        
+    }
+    .sous_title {
+        width: 50%;
+        text-align: center;
+        h3 {
+            color: $couleur_vert;
+        }
+    }
+    div {
+        width: 100%;
+        color:   white ;
+    }
+    #separateur {
+        border: 1px solid $couleur_rouge;
+        width: 30%
+    }
+}
+// DEBUT NAVIGATION
+.nav {
+    position: sticky;
+    top: 0;
+    height: 100%;
+    box-shadow: 0px 2px 5px black;
+    ul {
+        @include no_parding_margin();
+        @include flex_box(row, space-around, center); 
+        padding: 10px;
+        li {
+            
+            list-style-type: none;
+        }
+    }
+    background-color: $couleur_rouge;
+    font-weight: bold;
+    a:visited {
+        color: white;
+      }
+    a:link {
+        text-decoration: none;
+    }
+// FIN NAVIGATION
+
+}
+// FIN HEADER
+
+// DEBUT MIDDLE PAGE 
+
+.middle_page {
+    padding: 30px;
+    ul {
+        @include no_parding_margin();
+    }
+    li {
+        list-style-position: inside;
+    }
+}
+
+.tri_selectif p { 
+    text-align: center;
+}
+
+
+
+//DEBUT SECTION
+#les_poubelles {
+    @include flex_box(column, center, center); 
+}
+
+#differente_poubelle {
+    @include flex_box(rows, flex-start, flex-start);
+    article {
+        @include flex_box(column, flex-start, center);
+        height: 100%;      
+    }
+}
+
+article {
+    margin-bottom: 100px;
+}
+
+
+
+h3, h2 {
+    color: $couleur_rouge;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+
+
+
+
+//FIN SECTION
+
+//id="les_poubelles"
+

@@ -1,0 +1,176 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #72173C;
+  font-family: 'Quicksand', sans-serif; }
+
+h1, h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500; }
+
+h2 {
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+  margin-bottom: 1.5%; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+nav {
+  height: 5%;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-around; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 60%;
+    margin-top: 0.5%;
+    margin-left: 7%; }
+  nav input {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    height: 65%;
+    margin-top: 0.44%;
+    border: none; }
+
+header {
+  background-image: url("../../img/cardboard.jpg");
+  background-position: center;
+  background-position: 20% 48%;
+  height: 24%;
+  background-size: 115%;
+  background-attachment: fixed; }
+  header #overlay {
+    position: relative;
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #17721c;
+    /* Black background with opacity */
+    opacity: 0.6;
+    z-index: 1;
+    /* Specify a stack order in case you're using a different order for other elements */ }
+
+.absolute {
+  z-index: 1000;
+  position: absolute; }
+
+h1.absolute {
+  font-size: 5.5em;
+  color: greenyellow;
+  text-shadow: -3px 3px 3px #17721c;
+  top: 8%;
+  left: 35%; }
+
+#logo {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  z-index: 1000;
+  top: 7.1%;
+  left: 1%;
+  box-shadow: -2px 2px 2px #17721c; }
+
+ul.absolute {
+  top: 22%;
+  left: 37%;
+  display: flex;
+  list-style-type: none; }
+  ul.absolute li {
+    margin-left: 5%;
+    border-radius: 5px;
+    background-color: #e2dada;
+    border: 1px solid #726b6b;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font-size: 0.58em;
+    letter-spacing: 0.15rem;
+    min-width: 36.7%; }
+
+button.absolute {
+  top: 22.5%;
+  left: 47.15%;
+  border-radius: 5px;
+  background-color: #e2dada;
+  border: none;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font-size: 0.58em;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  min-width: 7%;
+  color: #17721c; }
+
+button {
+  border: none; }
+
+li a button {
+  min-width: 80%;
+  color: #17721c;
+  border: none; }
+
+span {
+  margin-right: 10%;
+  margin-left: 3%; }
+
+section {
+  background-color: #17721c;
+  /* Black background with opacity */
+  opacity: 0.9; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <div id="content" class="column is-4 is-offset-4">
+        <h1>Liste de tâches</h1>
+        <div id="app">
+            <input type="text" id="maliste" class="" placeholder="entrez une tâche" @keyup.enter="ajout(element)" v-model="element"/>
+
+            <ul id="myli" class="column is-12">
+                <div id="listcontent">
+                    <li v-for="(todo, index) in todos" class="column tache" ref="tache" :class="{completed:todo.completed}">
+                        <i class="fas fa-check" @click="todo.completed=true"></i>
+
+                        <span v-show="todo.edit==false" :class="{disabled:todo.edit}"> {{ todo.text }}</span>
+
+                        <input type="text" v-model="todo.text" @keyup.enter="todo.edit=false" v-show="todo.edit==true" />
+
+                        <i class="fas fa-pencil-alt" @click="todo.edit=true"></i>
+                        <i class="fas fa-times" @click="deleteliste(index)"></i>
+
+                    </li>
+                </div>
+
+            </ul>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script src="js/script.js"> </script>
+</body>
+
+</html>

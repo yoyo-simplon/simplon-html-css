@@ -1,0 +1,251 @@
+@import "scss/bootstrap";
+
+/*  configuration du corps de la page   */
+body {
+    font-family: arial;
+}
+
+.bootstrap-slide {
+    display: flex;
+    justify-content: center;
+    .carousel-inner {
+        width: 50%;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+/*  configuration du navigateur en haut de la page  */
+nav ul {
+    list-style-type: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; 
+    justify-content: space-around;
+    padding: 0px;
+    margin-right:50px;
+}
+
+/*  configuration des boutons   */
+button {
+    width: 100px;
+}
+
+/*  configuration en-tête de la page   */
+.entete {
+    background-image: url("../img/intro-bg.jpg");
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin: 0px;
+}
+
+/*  configuration du balise h4 et de la ligne dans l'en-tête de la page   */
+header {
+    hr {
+        width: 250px;
+        border: 1px solid white;
+    }
+    h4 {
+        margin: 0px;
+        padding: 0px;    
+    }
+}
+
+/*  configuration des images et du trait dans le corps  */
+section {
+    img {
+        height: 302px;
+        padding: 45px;
+    }
+    hr {
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 0px;
+        border: 1px solid rgb(150, 147, 147);
+    }
+}
+
+/*  configuration du texte   */
+.texte {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/*  mise en page de la première  et la troisième information    */
+.info1, .info3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(245, 243, 243);
+}
+
+
+/*  mise en page de la deuxième information    */
+.info2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+/*  mise en page du bas de page */
+.basdepage {
+    background-image: url("../img/banner-bg.jpg");
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.footsocial {
+    margin-left: 100px;
+}
+
+strong {
+    font-size: 130%;
+}
+
+.footnav {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 38%;
+        padding-top: 4px;
+        padding-left: 0px;
+        margin-left: 200px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;    
+    }
+}
+
+#copyright {
+    width: 40%;
+    margin-left: 200px;  
+}
+
+/*  Mise en place du rupture à 992px    */
+@media all and (max-width: 992px)
+{
+ 
+    header hr {
+        width: 200px;
+    }
+    
+    .headsocial {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+    }
+
+    .info1, .info3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .info2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    } 
+
+    section{
+        hr {
+            margin-top: 5px;
+        }
+        img {
+            padding: 0px;
+        }
+    }
+
+    .footsocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .footnav ul {
+        display: flex;
+        flex-direction: column; 
+        font-size: 80%;
+        margin-left: 50px;
+    }
+
+    strong {
+        font-size: 100%;
+    }
+
+    .basdepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*  Mise en place du rupture à 544px    */
+@media all and (max-width: 544px)
+{   
+     nav {
+         ul {
+            display: flex;
+            flex-direction: column;
+            font-size: 80%;
+         }
+         a {
+             text-decoration: none;
+         } 
+    }
+
+    .entete {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .texte {
+        width: 200px;
+        font-size: 80%;
+    }
+
+    section {
+        img {
+            height: 150px;
+       }
+    }
+
+    strong {
+        font-size: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #copyright {
+        width: 200px;
+        font-size: 80%;
+        margin-left: 0px;  
+    }
+
+    .carousel-inner {
+        min-width: 210px;
+    }
+
+    .carousel-indicators {
+        visibility: hidden;
+    }
+}

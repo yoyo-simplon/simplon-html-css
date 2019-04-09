@@ -1,0 +1,177 @@
+header {
+  height: 700px;
+  background-image: url("img/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.column {
+  margin: 20px;
+}
+
+#line {
+  border: 1px grey solid;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.container {
+  padding-top: 250px;
+}
+
+.title {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.buttons {
+  padding-top: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.article {
+  border: 4px green solid;
+}
+
+.columnNested {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+}
+
+.marge {
+  margin-bottom: 200px;
+}
+
+footer {
+  background-image: url("img/banner-bg.jpg");
+  height: 200px;
+  background-position: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.ul2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: small;
+}
+
+/*
+body
+{
+    background-color:white;
+
+}
+
+
+.first
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+
+header
+{
+background: url("img/intro-bg.jpg");
+background-position: center;
+height:500px;
+}
+
+.topbanner
+{
+    margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.button
+{
+    display: flex;
+    justify-content: center;
+}
+
+h1
+{
+    color: white;
+    font-size: 50px;
+}
+
+h2
+{
+    color: white;
+}
+
+
+.image
+{
+    width:250px;
+}
+
+section
+{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+article
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.art
+{
+    background-color: rgba(143, 142, 142, 0.116);
+}
+
+footer
+{
+    background: url("img/banner-bg.jpg");
+    height: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+
+}
+
+
+.footer
+{
+font-size: 25px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.ul2
+{
+    size: 2px;
+}
+
+*/
+
+/*# sourceMappingURL=custom.css.map */

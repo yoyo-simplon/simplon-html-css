@@ -1,0 +1,28 @@
+#content{
+border: solid 1px black;
+display:flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+}
+
+li{
+
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 55px;
+    height: 55px;
+}
+h1{
+    text-align: center;
+}
+li:hover{
+    background-color:aqua;
+}
+button{
+    float: right;
+}
+.completed{
+    color: grey;
+    text-decoration: dashed;
+    
+}

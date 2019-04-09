@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+  </form>
+  <script>
+
+   //Dans le fichier HTML fourni, afficher une boite de dialogue
+   // avec le message : *"Merci de votre participation"* quand le champ de saisie perd le focus.
+   var element = document.getElementById('nom');
+    
+    element.onblur = function() {
+     // var link = document.getElementById('image1');
+         // var src = element.src;
+          //alert(src);
+         //element.src = 'images/image1_2.jpg';
+         alert("Merci de votre participation");
+    };
+   </script>
+</body>
+</html>

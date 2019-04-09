@@ -2,17 +2,23 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="container">
 
-            <nav class="navBar">
-                <img src="poisson.jpg" class="logo" alt="poisson" />
+        <div class="columns">
+            <div class="column is-1 is-vcentered">
+                <img src="img/poisson.jpg" class="logo image is-64x64" alt="poisson" />
+            </div>
+            <!--<nav class="navBar">
+                
                 <ul>
                     <li><a href="#" aria-labeledby="accueil">Accueil</a></li>
                     <li><a href="#apropos" aria-labeledby="apropos">A propos</a></li>
@@ -20,7 +26,17 @@
                     <li><a href="#diplomes" aria-labeledby="diplôme">Diplôme</a></li>
                     <li><a href="#contact" aria-labeledby="contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav>-->
+
+            <div class="column is-offset-4 is-7">
+                <a href="#" aria-labeledby="accueil">Accueil</a>
+                <a href="#" aria-labeledby="a propos">A propos</a>
+                <a href="#" aria-labeledby="compétence">Compétences</a>
+                <a href="#" aria-labeledby="diplômes">Diplômes</a>
+                <a href="#" aria-labeledby="contact">Contact</a>
+            </div>
+
+
         </div>
         </nav>
     </div>
@@ -41,35 +57,46 @@
     </div>
 
     <div class="competences" id="competences">
-        <div class="titre">Compétences</div>
-        <div class="content">
-            <section>
-                <div>
+        <div class="titre is-offset-8">Compétences</div>
+        <div class="content container-fluid is-10">
+
+            <section class="columns is-8 is-mobile">
+                <div class="column is-5">
                     <h4>2015-2016</h4>
 
                     AFPAR Saint Denis formation développeur logicel 8 mois
                 </div>
-                <img src="ecole.png" alt=ecole" class="image_circle" />
-
-            </section>
-
-            <section>
-                <img src="ecole.png" alt=ecole" class="image_circle" />
-                <div>
-                    <h4>2015-2016</h4>
-
-                    AFPAR Saint Denis formation développeur logicel 8 mois
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="columns is-8">
+                <div class="column is-offset-5 is-2">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                </div>
+                <div class="column is-4">
                     <h4>2015-2016</h4>
 
                     AFPAR Saint Denis formation développeur logicel 8 mois
                 </div>
-                <img src="ecole.png" alt=ecole" class="image_circle" />
+            </section>
 
+            <section class="columns is-8 ">
+                <div class="column is-5">
+                    <h4>2015-2016</h4>
+
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                </div>
             </section>
 
         </div>
@@ -79,40 +106,83 @@
     <div class="diplomes" id="diplomes">
         <div class="titre">diplômes</div>
         <div class="content">
-            
-                <section>
-                    <div>
-                        <h4>2015-2016</h4>
 
-                        AFPAR Saint Denis formation développeur logicel 8 mois
-                    </div>
-                    <img src="ecole.png" alt=ecole" class="image_circle" aria-labelledby="ecole" />
+            <section class="columns is-8 ">
+                <div class="column is-5">
+                    <h4>2015-2016</h4>
 
-                </section>
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                </div>
+            </section>
 
-                <section>
-                    <img src="ecole.png" alt=ecole" class="image_circle" />
-                    <div>
-                        <h4>2007-2014</h4>
-                        Ecole d'ingenieur Supinfo
+            <section class="columns is-8">
+                <div class="column is-offset-5 is-2">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                </div>
+                <div class="column is-4">
+                    <h4>2015-2016</h4>
 
-                    </div>
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+            </section>
 
-                </section>
-                <section>
-                    <div>
-                        <h4>2015-2016</h4>
+            <section class="columns is-8 ">
+                <div class="column is-5">
+                    <h4>2015-2016</h4>
 
-                        AFPAR Saint Denis formation développeur logicel 8 mois
-                    </div>
-                    <img src="ecole.png" alt=ecole" class="image_circle" />
+                    AFPAR Saint Denis formation développeur logicel 8 mois
+                </div>
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                    <figure class="image is-128x128">
+                        <img src="img/ecole.png" alt=ecole" class="image_circle is-rounded is-offset-5" />
+                    </figure>
+                </div>
+            </section>
 
-                </section>
+        </div>
 
-            </div>
-       
 
     </div>
+    <div id="portfolio">
+        <h2 class="titre is-offset-8">Portfolio</h2>
+        <div id="exemples">
+           <figure class="column is-3">
+            <img src="img/sass.jpeg" alt="sass" />
+        </figure>
+        <figure class="column is-3">
+                <img src="img/maquette.png" alt="sass" />
+            </figure>
+            <figure class="column is-3">
+                    <img src="img/maquette2.jpeg" alt="sass" />
+                </figure>
+        </div>
+    </div>
+
+    <!--
+                fenêtre modale afin d'afficher les images en grand
+            -->
+    <div class="container" id="app">
+        <div class="modal column is-offset-4">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <img src="" id="fullscreen" />
+                <button class="modal-close"></button>
+            </div>
+
+        </div>
+
+    </div>
+
 
     <div id="contact" id="contact">
         <form method="POST">
@@ -124,6 +194,8 @@
         </textarea>
         </form>
     </div>
+
+
 </body>
 
 </html>

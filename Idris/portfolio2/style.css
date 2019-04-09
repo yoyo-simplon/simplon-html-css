@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*body
+{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGAAhfEwioZ5B-8ikbnq7i5zaLB-l0acZLaHgcjvY9IndEN1oDg);
+}*/
+
+
+#identité
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: space-around; 
+    background-color:rgb(155, 210, 226);
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    background-size: cover;
+    height: 500px;
+    padding-top: 40px;
+    /*padding-bottom: 20px;*/
+}
+
+.nomprenom
+{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    font-size: 30px;
+    
+}
+
+/*.prenom{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 30px;
+    padding-right: 20px;
+}*/
+
+.métier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+
+}
+
+.barrenav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+}
+
+#description
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color:#ffff;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#compétences{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color:rgb(155, 210, 226);*/
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    background-size: cover;
+    font-size: 20px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#diplomesetformations{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    font-size: 20px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
+a{
+display: flex;
+justify-content: center;
+}
+
+#formulaire
+{
+    text-align: center;
+    font-size: 30px;
+    /* background-color: rgb(155, 210, 226);*/
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    background-size: cover;
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+
+}
+
+.boutton{ 
+
+    background-color:#ffff ;
+    height: 50px;
+
+}
+
+footer{
+    background-color: #ffff; 
+    /* background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w); */
+    /* background-size: cover; */
+    background-color: #ffff;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+i {
+    font-size: 50px;
+}
+
+
+@keyframes maphoto {
+    0%{
+        transform: translateX(0px);
+ }
+
+ 50%{
+     transform: translateX(50px);
+ }
+
+ 100%{
+     transform: translateX(100px) rotate(360deg);
+ }
+}
+
+.element:hover
+{
+    animation: maphoto 2s;
+}
+
+#scrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: -100px;
+    opacity: 0.5; 
+}
+
+.reseaux{
+
+display: flex;
+flex-direction: row;
+
+}
+
+.git{
+display: flex;
+justify-content: right;
+padding-right: 20px;
+}
+
+.link{
+display: flex;
+justify-content: left;
+padding-left: 20px;
+}
+
+/*div{
+    top: 10px;
+}*/

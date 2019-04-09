@@ -1,0 +1,16 @@
+$hauteur : 100%;
+$hauteur-banner :100%-20%;
+@import 'header';
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{
+    height:$hauteur;
+}
+
+header{
+    height:$hauteur;
+}
