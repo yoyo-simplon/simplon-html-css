@@ -53,10 +53,15 @@ ul{
 .titres h1{
 
     font-size: 130px;
-    margin: 0px;
-
 }
 
+.titres li{
+    padding-right: 30px;
+}
+
+.titres li:first-child{
+    list-style-type: none;
+}
 
 .titres ul{
 
@@ -64,12 +69,12 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     font-size: 18px;
-
 }
 
 .reseauxsociaux{
 
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center; 
     background-color: grey;
@@ -78,8 +83,24 @@ ul{
 
 }
 
+.reseaux{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color:grey;
+    width:200px;
+
+}
+
 .reseauxsociaux i{
     font-size: 25px;
+}
+
+hr{
+    color: grey;
+    margin-bottom: 50px;
 }
 
 .impression{
@@ -88,7 +109,7 @@ ul{
     background-color: white;
     height: 90px;
     width: 900px;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
     text-align: center;
 
 }

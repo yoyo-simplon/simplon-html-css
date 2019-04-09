@@ -1,3 +1,4 @@
+/*** IL est propre ce code et bien pensé ***/
 var prenom = prompt("Entrez votre prénom");
 document.getElementById("name").innerHTML = prenom;
 

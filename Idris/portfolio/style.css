@@ -1,37 +1,85 @@
-body
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*body
 {
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGAAhfEwioZ5B-8ikbnq7i5zaLB-l0acZLaHgcjvY9IndEN1oDg);
-}
+}*/
 
 
 #identité
 {
-
-    background-color:rgb(226, 226, 114);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgb(155, 210, 226);
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    height: 500px;
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 .nom
 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .prenom{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
+}
+
+.métier{
+    text-align: center;
+    font-size: 30px;
+
 }
 
 #description
 {
     display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     font-size: 30px;
-    background-color: rgb(226, 226, 114);
+    background-color:#ffff;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
-a
-{
+#compétences{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color:rgb(155, 210, 226);*/
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    font-size: 20px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#diplomesetformations{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    font-size: 20px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
+a{
 display: flex;
 justify-content: center;
 }
@@ -40,11 +88,33 @@ justify-content: center;
 {
     text-align: center;
     font-size: 30px;
-    background-color: rgb(226, 226, 114);
-    padding-bottom: 5px;
-    margin-top: 50px;
+    /* background-color: rgb(155, 210, 226);*/
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
 
 }
+
+/*.boutton{
+
+    background-color: #ffff;
+    height: 50px;
+
+}*/
+
+footer{
+    /*background-color: #ffff; */
+    background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+i {
+    font-size: 50px;
+}
+
 
 @keyframes maphoto {
     0%{
@@ -65,4 +135,14 @@ justify-content: center;
     animation: maphoto 2s;
 }
 
+#scrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: -100px;
+    opacity: 0.5; }
+  
 
+
+/*div{
+    top: 10px;
+}*/
