@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Hosting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        .logo {
+            max-height: 50px;
+        }
+
+        h3 {
+            margin-top: 15px;
+            font-weight: bold !important;
+        }
+
+        p,
+        ol {
+            font-size: 1.2em;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        pre {
+            background-color: #212121;
+            color: white;
+            width: 300px;
+            margin-top: 2px;
+            margin-left: 20px;
+            padding: 3px 0 3px 10px;
+        }
+
+        .red {
+            color: #ff3860;
+        }
+
+        .blue {
+            color: #209cee;
+        }
+
+        .link {
+            background-color: hsl(0, 0%, 86%);
+            color: #212121;
+            width: 340px;
+            margin-top: 2px;
+            margin-left: 20px;
+            padding: 3px 0 3px 10px;
+        }
+
+        .highlight {
+            font-style: italic;
+            color: #ff3860;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero is-info is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Firebase Hosting <img
+                        src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png" alt=""
+                        class="logo">
+                </h1>
+                <h2 class="subtitle">
+                    Tutoriel noob 101
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="title">Création du projet</h3>
+            <div>
+                <ol>
+                    <li>Aller sur le panneau de contrôle de <a href="https://console.firebase.google.com/u/0/"
+                            alt="Ouvrir le Panneau de contrôle Firebase dans une nouvelle fenêtre"
+                            title="Panneau de contrôle Firebase" target="_blank">Firebase <i
+                                class="fas fa-external-link-alt"></i></a>. Se connecter si cela n'est pas encore fait.
+                    </li>
+                    <li>Cliquer sur le <i class="fas fa-plus blue"></i> afin de créer et nommer un nouveau projet.</li>
+                </ol>
+            </div>
+
+            <hr>
+
+            <h3 class="title">Installer Firebase CLI</h3>
+            <div>
+                <p>A présent il faut utiliser Firebase en ligne de commande. Il faut avoir <a
+                        href="https://nodejs.org/en/" target="_blank" alt="Ouvrir Node.js dans une nouvelle fenêtre"
+                        title="node.js">Node.js <i class="fas fa-external-link-alt"></i></a> et <a
+                        href="https://www.npmjs.com/" target="_blank" alt="Ouvrir npm dans une nouvelle fenêtre"
+                        title="npm">npm <i class="fas fa-external-link-alt"></i></a> d'installé sur la
+                    machine.</p>
+                <ol>
+                    <li>Installer Node.js. <i class="fas fa-exclamation-triangle red"></i> La version 6 minimum est
+                        obligatoire. <i class="fas fa-exclamation-triangle red"></i></li>
+                    <li>Installer Firebase CLI via NPM avec la commande suivante :
+                        <pre><i class="fas fa-dollar-sign"></i> npm install -g firebase-tools</pre>
+                    </li>
+                    <li>Se connecter à Firebase avec son compte Google en entrant la commande :
+                        <pre><i class="fas fa-dollar-sign"></i> firebase login</pre>
+                    </li>
+                    <li>Vérifier si la connection est fonctionnelle et si l'accès aux projets est possible :
+                        <pre><i class="fas fa-dollar-sign"></i> firebase list</pre>
+                        Cette commande liste les différents projets disponibles dans le panneau de contrôle.</li>
+                    <li>Mettre à jour la version de CLI en entrant à nouveau la commande :
+                        <pre><i class="fas fa-dollar-sign"></i> npm install -g firebase-tools</pre>
+                    </li>
+                </ol>
+            </div>
+
+            <hr>
+
+            <h3 class="title">Initialiser le projet</h3>
+            <div>
+                <ol>
+                    <li>Pour connecter le projet local au projet Firebase, lancer la commande suivante depuis la
+                        <strong>racine</strong> du projet sur votre machine :
+                        <pre><i class="fas fa-dollar-sign"></i> firebase init</pre>
+                    </li>
+                    <li>Dans la console, choisir l'option concernant le <strong>hosting</strong>. La touche
+                        <em>espace</em> sert à se déplacer et <em>entrée</em> sert à valider le choix.</li>
+                    <li>Sélectionner le projet Firebase à relier au projet local.</li>
+                    <li><strong class="blue">[Optionnel]</strong> Spécifier un répertoire publique pour l'emplacement de
+                        la racine Firebase. Ce
+                        dossier contiendra tous les fichiers servis ainsi que le index.html qui seront déployés sur
+                        l'hébergeur.<br>Par défaut l'initialisation crée un fichier <strong>public</strong>, cela peut
+                        être modifié dans le fichier <strong>firebase.json</strong>.</li>
+                    <li>Choisir la configuration du site à déployer : "<strong>one-page app</strong>".</li>
+                </ol>
+            </div>
+
+            <hr>
+
+            <h3 class="title">Déployer le projet</h3>
+            <div>
+                <ol>
+                    <li>Pour déployer le site, il faut entrer la commande suivante à la racine du projet local :
+                        <pre><i class="fas fa-dollar-sign"></i> firebase deploy</pre>
+                    </li>
+                    <li>Cette commande déploie une version du site à l'adresse de Firebase par défaut soit
+                        <pre class="link"><span class="highlight">id-projet-firebase</span>.firebaseapp.com</pre>
+                    </li>
+                    <li>Pour être sûr du push des bons fichiers, déplacer le index.html et autres fichiers dans le
+                        dossier <strong>public</strong> et relancer la commande <strong>deploy</strong>.</li>
+                </ol>
+            </div>
+
+            <h3 class="title">And voilà !</h3>
+            <p>Le site est déployé et le tuto est terminé !</p>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
