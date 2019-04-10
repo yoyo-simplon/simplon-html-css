@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Héberger un site Wordpress sur HEROKU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Comment héberger un site Wordpress sur HEROKU</h1>
+    </header>
+
+    <section class="container">
+        <article class="introduction">
+            <h2>INTRODUCTION</h2>
+            <p>Salutation ! Aujourd'hui nous allons voir comme vu dans le titre comment mettre un site Wordpress sur
+                HEROKU.
+                Un petite intruction ne fera pas de mal. HEROKU est une plateforme de deploiement d'application web sur
+                un Cloud, il fonctionne
+                comme un hébergeur web qui propose d'héberger des sites web.
+            </p>
+        </article>
+
+        <article class="installation">
+            <h2>INSTALLATION</h2>
+
+            <div class="inscription-heroku">
+                <h3>1- Inscription sur HEROKU</h3>
+                <p>Aller sur le site de <a href="https://www.heroku.com/" target="_blank">HEROKU</a> et cliquer sur <span>Sign up</span>
+                </p>
+                <img src="img/heroku-sign_up.png" alt="inscription heroku">
+                <p>Un mail de confirmation à valider vous sera envoyé.</p>
+                <p>Votre inscription sur le site est terminé</p>
+            </div>
+
+            <div class="create-github-repo">
+                <h3>2- Créer un repo Github </h3>
+                <ol>
+                    <li>Aller sur <a href="https://github.com" target="_blank">github</a></li>
+                    <li>S'inscrire (ou se connecter si vous avez déjà un compte)</li>
+                    <li>Aller sur le + en haut à droite et cliquer sur "new repository"</li>
+                    <li>Choisir un nom pour le repo</li>
+                    <li>Tout le reste est au choix (publique ou privée, ajouter un READ.ME ou non)</li>
+                    <li>Cliquer sur "create a repository"</li>
+                </ol>
+                <P>Votre repo est créer HOURRA!</P>
+            </div>
+            <div class="wp-on-github">
+                <h3>3- Mettre le site WordPress sur Github</h3>
+                <h4>a- installer git sur votre ordinateur</h4>
+                <ol>
+                    <li>Aller sur le site de <a href="https://git-scm.com/" target="_blank">git</a></li>
+                    <li>Cliquer sur le Downloads rouge</li>
+                    <li>choisir ensuite la version de git pour votre system d'exploitation (Windows, Linux ou Mac et
+                        64bit/32bit)</li>
+                    <li>sous windows faire un double clique sur le fichier télécharger</li>
+                    <li>Sous Linux (debian/Ubuntu) dans le terminaln entrer la ligne de commde suivante #sudo apt-get install
+                        git </li>
+                        <li> si git est déjà installé sur votre ordinateur, vous dans le terminal utiliser la ligne de commande suivante: #git clone https://github.com/git/git</li>
+                </ol>
+                <h4>b-envoyer votre wordpress sur github</h4>
+                <ol>
+                    <li>Ouvrir le terminal</li>
+                    <li>ce placer dans le dossier de votre site wordpress $ cd non du dossier wordpress</li>
+                    <li>initialiser le git avec la ligne de commande  $git init</li>
+                    <li>créer un remote: $ git remote add origin https://github.com/username/non de votre dossier WP</li>
+                    <li>et ensuite pousser votre dossier sur github $ git push origin master</li>
+                </ol>
+            </div>
+            <div class="wp_onheroku">
+                <h3>3- Heberger votre Wordpres sur heroku</h3>
+                <ol>
+                    <li>Aller sur <a href="https://www.heroku.com/" target="_blank">heroku</a></li>
+                    <li>Aller sur "NEW" en haut à droite et cliquer sur "Create New application"</li>
+                    <li>Entrer un nom pour l'application et la région</li>
+                    <li>Aller sur l'onglet deploy</li>
+                    <li>à la section "deployment method" et selectionner à son github</li>
+                    <li>cliquer ensuite sur "search" et selectionner votre repo WordPress</li>
+                    <li>il faudra ensuite déployer la brache</li>
+                    <li>à la section Manual deploy</li>
+                </ol>
+            </div>
+
+        </article>
+    </section>
+</body>
+
+</html>
