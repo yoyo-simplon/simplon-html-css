@@ -8,31 +8,40 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
+    <link rel="preload" href="pdf/cv-yoann-martini.pdf" as="embed">
+  </head>
 <body>
-    <div class="box1"  id="section1">
-        <a href="#section1"><h1>A propos</h1></a>
+    <div class="box1">
+        <h1>Yoann MARTINI <br/> Développeur web junior</h1>
+        
     </div>
 
     <div class="contenu-text">
-        <p></p>
+      <h1>A propos</h1>  
+      <p>Agé de 29 ans je suis actuellement en formation développeur web chez Simplon Réunion.
+        Passioné par le web design et la programmation,je souhaite devenir développeur web full stack junior.
+      </p>
     </div>
 
-    <div class="box2"  id="section2">
-        <a href="#section2"><h1>Curriculum vitae</h1></a>
+    <div class="box2">
+        <h1>Curriculum vitae</h1></a>
     </div>
 
     <div class="contenu-text">
-        <p></p>
+      <embed src="pdf/cv-yoann-martini.pdf" width=800 height=600 type='application/pdf'/>
     </div>
 
-    <div class="box3"  id="section3">
+    <div class="box3">
         <a href="#section3"><h1>Projets</h1></a>
+    </div>
+
+    <div class="contenu-text">
+      <embed src="pdf/cv-yoann-martini.pdf" width=800 height=600 type='application/pdf'/>
     </div>
 
     
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links
           $("a").on('click', function(event) {
@@ -57,6 +66,6 @@
             } // End if
           });
         });
-        </script>
+        </script> -->
 </body>
 </html>
