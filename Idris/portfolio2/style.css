@@ -3,12 +3,6 @@
     padding: 0px;
 }
 
-/*body
-{
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGAAhfEwioZ5B-8ikbnq7i5zaLB-l0acZLaHgcjvY9IndEN1oDg);
-}*/
-
-
 #identité
 {
     display: flex;
@@ -27,8 +21,9 @@
 {
     display: flex;
     justify-content: center;
-    /* text-align: center; */
+    align-items: center; 
     font-size: 30px;
+    height: 80px;
     
 }
 
@@ -40,23 +35,53 @@
     padding-right: 20px;
 }*/
 
-.métier{
+.metier{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    height: 200px;
     
-
 }
 
+
+
 .barrenav{
-    display: flex;
+
+    color: white;
+    display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 30px;
     background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
 }
+
+.barrenav a{
+
+color: #ffff;
+text-decoration: none;
+font: bold 20px Arial, Helvetica, sans-serif;
+
+}
+
+.barrenav a:hover
+{
+
+    color:black;
+    background: #86dddc;
+    padding:20px 40px 4px 10px;
+    float:left;
+    width:auto;
+    border-right:1px solid #42432d;
+    text-decoration:none;
+    font:bold 1em/1em Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    text-shadow: 2px 2px 2px #555;
+
+}
+
+
 
 #description
 {
