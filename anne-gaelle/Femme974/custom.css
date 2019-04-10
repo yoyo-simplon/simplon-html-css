@@ -86,4 +86,10 @@ a:hover {
   color: #3A539B;
 }
 
+@media print {
+  body {
+    max-width: 100vw;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
