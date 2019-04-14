@@ -21,6 +21,7 @@ const app = new Vue({
       this.todos.forEach(todo => {
         todo.done = true;
       });
+      
     }
   }
 });
