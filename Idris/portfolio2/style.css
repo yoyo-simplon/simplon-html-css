@@ -48,27 +48,28 @@
 
 .barrenav{
 
-    color: white;
+    color: black;
     display: flex; 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
     height: 30px;
     background-image: url(https://static1.squarespace.com/static/58ebf210893fc04885c0a8a8/t/5900cc19197aead4c570eee2/1493768694463/Homepage_FastFlow_BG.jpg?format=1500w);
 }
 
 .barrenav a{
 
-color: #ffff;
+color: black;
 text-decoration: none;
 font: bold 20px Arial, Helvetica, sans-serif;
-
+position:fixed;
 }
 
 .barrenav a:hover
 {
 
-    color:black;
+    color:yellow;
     background: #86dddc;
     padding:20px 40px 4px 10px;
     float:left;
