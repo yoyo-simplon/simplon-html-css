@@ -3,119 +3,230 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anne-Gaëlle - Développeuse Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
-    <div id="main">
-        <section class="bloc home" id="home">
-            <nav>
-                <ul>
-                    <li class="hidden">🌈</li>
-                    <li><a href=#accueil>Accueil</a></li>
-                    <li><a href=#about>A Propos</a></li>
-                    <li><a href=#comp>Compétences</a></li>
-                    <li><a href=#pf>Portfolio</a></li>
-                    <li><a href=#contact>Contact</a></li>
-                    <li class="hidden">🌈</li>
-                </ul>
+
+    <!-- HOME + NAV -->
+    <section class="hero is-info is-large bloc" id="home">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item subtitle is-3" href="#portfolio" alt="Portfolio" title="Portfolio">
+                            Portfolio
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroB" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="#about" title="A Propos de Moi" alt="A Propos de Moi">
+                                A Propos
+                            </a>
+                            <a class="navbar-item" href="#comp" title="Mes Compétences" alt="Mes Compétences">
+                                Compétences
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-info is-inverted" href="#contact" alt="Contact" title="Contact">
+                                    <span>Contact</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div id="zone1">
-            <article id="accueil">
-                <h1>Anne-Gaëlle</h1>
-                <h2>< / Développeuse Web ></h2>
-            </article>
-            <div class="boutons">
-                <a class="button" href=#about>Know More</a>
-                <a class="button" href=#contact>Contact Me!</a>
-            </div>
-            <div id="arrow" class="down"><a href=#about><i class="fas fa-angle-down"></i></a></div>
         </div>
-        </section>
 
-        <section class="bloc about" id="about">
-                <h4><i class="fas fa-portrait"></i> // About</h4>
-                <div id="sepa">
-                    <a href="resources/myAvatar.png" title="Photo de profil" atl="Photo de profil" target="_blank"><img src="resources/myAvatar.png"></a>
-                    <div id="text">
-                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium,
-                        totam rem aperiam
-                        eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt,
-                        explicabo. Nemo enim ipsam
-                        voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        dolores
-                        eos, qui ratione
-                        voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet,
-                        consectetur, adipisci velit,
-                        sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat
-                        voluptatem. Ut enim ad minima
-                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                        commodi consequatur?
-                    </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Anne-Gaëlle
+                </h1>
+                <h2 class="title is-2">
+                    < / Développeuse Web>
+                </h2>
+                <h3 class="subtitle is-5"><i class="fas fa-award"></i> Certifiée <a
+                    href="https://directory.opquast.com/fr/certificat/C6Q9BD/" target="_blank"
+                    title="Voir la certification Opquast dans une nouvelle fenêtre" class="link">Expert Opquast</a> et
+                    <a href="https://agiliste.fr/introduction-methodes-agiles/" target="_blank" class="link">Méthodes Agiles</a> <i class="fas fa-user-graduate"></i></h3>
+            </div>
+        </div>
+        <span class="float has-text-centered">
+            <a href="#about" alt="" class="arrow"><i class="fas fa-angle-down"></i></a>
+        </span>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="section bloc" id="about">
+        <div class="container has-text-centered">
+            <h3 class="title"><i class="fas fa-portrait"></i> // A propos de moi</h3>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a href="resources/myAvatar.png" target="_blank" alt="">
+                        <img src="resources/myAvatar.png">
+                    </a>
                 </div>
-            <div id="arrow" class="down ab-fl"><a href=#comp><i class="fas fa-angle-down"></i></a></div>
-        </section>
+                <div class="column is-two-thirds" id="text">
+                    Je m'appelle Anne-Gaëlle, jeune Réunionnaise en reconversion professionnelle, j'aspire à être
+                    Développeuse Web.
+                    Actuellement apprenante chez Simplon.co Réunion, j'aime découvrir et expérimenter les nouvelles
+                    techniques de développement, mais pas que !<br>
+                    A travers ce portfolio réalisé par mes soins, vous pourrez découvrir mes compétences ainsi que mon
+                    travail.<br>
+                    Pour toute question ou information, n'hésitez pas à me <a href="#contact"
+                        alt="Aller à la section de contact" class="has-text-danger">contacter</a> !
+                </div>
+            </div>
+        </div>
 
-        <section id="comp" class="bloc comp">
-            <span class="ccflex">
-                <h4><i class="fas fa-laptop-code"></i> // Mes compétences</h4>
-                <div id="cv">
-                    <ul>
-                        <li>♦ Une tonne de créativité ainsi que de la débrouillardise <i class="fas fa-magic"></i></li>
-                        <li>♦ 50 kilos de HTML 5 <i class="fab fa-html5"></i></li>
-                        <li>♦ 10 litres de CSS 3 <i class="fab fa-css3-alt"></i></li>
-                        <li>♦ Une pincée de JavaScript <i class="fab fa-js"></i></li>
-                        <li>♦ Une touche de design graphique (Photofiltre Studio, Suite Photoshop, Inkscape) <i class="fas fa-crop"></i></li>
+        <div class="column has-text-centered float" id="ar_ab">
+            <span>
+                <a href="#comp" alt="" class="arrow"><i class="fas fa-angle-down"></i></a>
+            </span>
+        </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="section bloc" id="comp">
+        <div class="container has-text-centered">
+            <h3 class="title"><i class="fas fa-laptop-code"></i> // Mes Compétences</h3>
+            <div class="columns">
+                <div class="column is-full">
+                    <ul class="competences">
+                        <li>Une tonne de créativité et de débrouillardise <i class="fas fa-magic"></i></li>
+                        <li>50 kilos de HTML 5 <i class="fab fa-html5"></i></li>
+                        <li>10 litres de CSS 3 <i class="fab fa-css3-alt"></i></li>
+                        <li>3 cuillères à soupe de JavaScript <i class="fab fa-js"></i></li>
+                        <li>Une pincée de design graphique (Photofiltre Studio, Photoshop, Inkscape) <i
+                                class="fas fa-crop"></i></li>
                     </ul>
                 </div>
-                <div id="arrow" class="down"><a href=#pf><i class="fas fa-angle-down"></i></a></div>
-            </span>
-        </section>
+            </div>
+        </div>
 
-       <section id="pf" class="bloc pf">
-           <span class="ccflex">
-                <h4><i class="fas fa-images"></i> // Mon Portfolio</h4>
-                    <div id="galery">
-                        <a href="https://github.com/Shi974/Shi974.github.io" target="_blank"><img src="resources/pf1.PNG" alt="Portfolio 1" title="Portfolio 1" /></a>
-                        <a href="resources/pf2.PNG" target="_blank"><img src="resources/pf2.PNG" alt="Portfolio 2" title="Portfolio 2"/></a>
-                        <a href="resources/pf3.PNG" target="_blank"><img src="resources/pf3.PNG" alt="Portfolio 3" title="Portfolio 3"/></a>
-                        <a href="resources/pf4.PNG" target="_blank"><img src="resources/pf4.PNG" alt="Portfolio 4" title="Portfolio 4"/></a>
-                        <a href="resources/pf5.PNG" target="_blank"><img src="resources/pf5.PNG" alt="Portfolio 5" title="Portfolio 5"/></a>
-                        <a href="resources/pf6.PNG" target="_blank"><img src="resources/pf6.PNG" alt="Portfolio 6" title="Portfolio 6"/></a>
-                    </div>
-                    <span id="more"><a href="https://github.com/Shi974/effective-invention" target="_blank" >Voir plus ...</a></span>
-                <div id="arrow" class="down"><a href=#contact><i class="fas fa-angle-down"></i></a></div>
-            </span>
-        </section>
+        <div class="column is-full has-text-centered">
+            <div class="button is-primary is-medium">
+                <a href="resources/AnneGaelle-CurriculumVitae.pdf" id="download">Télécharger mon CV <i
+                        class="far fa-save"></i></a>
+            </div>
+        </div>
 
-        <section id="contact" class="bloc contact">
-            <div id="arrow"><a href=#home class="up"><i class="fas fa-angle-up"></i></a></div>
-            <h4><i class="fas fa-at"></i> // Contact</h4>
+        <div class="column has-text-centered float" id="ar_cp">
+            <span>
+                <a href="#portfolio" alt="" class="arrow"><i class="fas fa-angle-down"></i></a>
+            </span>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section bloc" id="portfolio">
+        <div class="container has-text-centered">
+            <h3 class="title"><i class="fas fa-images"></i> // Mon Portfolio</h3>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <a href="resources/pf10.PNG" target="_blank"><img src="resources/pf10.PNG" alt="Portfolio 1"
+                            title="Portfolio 1" /></a>
+                    <a href="resources/pf2.PNG" target="_blank"><img src="resources/pf2.PNG" alt="Portfolio 2"
+                            title="Portfolio 2" /></a>
+                </div>
+                <div class="column is-one-third">
+                    <a href="resources/pf3.PNG" target="_blank"><img src="resources/pf3.PNG" alt="Portfolio 3"
+                            title="Portfolio 3" /></a>
+                    <a href="resources/pf4.PNG" target="_blank"><img src="resources/pf4.PNG" alt="Portfolio 4"
+                            title="Portfolio 4" /></a>
+                </div>
+                <div class="column is-one-third">
+                    <a href="resources/pf8.PNG" target="_blank"><img src="resources/pf8.PNG" alt="Portfolio 5"
+                            title="Portfolio 5" /></a>
+                    <a href="resources/pf9.PNG" target="_blank"><img src="resources/pf9.PNG" alt="Portfolio 6"
+                            title="Portfolio 6" /></a>
+                </div>
+            </div>
+
+            <a class="button is-info is-medium" href="https://github.com/Shi974/effective-invention" alt=""
+                title="Ouvrir GitHub dans une nouvelle fenêtre" target="_blank">
+                Voir mon code sur GitHub <i class="fab fa-github"></i>
+            </a>
+
+            <div class="column has-text-centered float" id="ar_pf">
+                <span>
+                    <a href="#contact" alt="" class="arrow"><i class="fas fa-angle-down"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section bloc" id="contact">
+        <div class="container has-text-centered">
+            <h3 class="title"><i class="fas fa-at"></i> // Contact</h3>
             <hr>
-            <p><a id="mail" href="mail@contact.me" target="_blank">Ecrivez moi ...</a></p>
-            <fieldset>
-                <form method="post" action="#">
-                    <div>
-                        <input type="text" name="name" id="name" placeholder=" Nom" />
-                        <input type="text" name="email" id="email" placeholder=" Email" />
-                    </div>
-                    <input type="text" name="subject" id="subject" placeholder=" Objet" />
-                    <textarea name="message" id="message" placeholder=" Message"></textarea>
-                    <ul class="actions">
-                        <li><input type="submit" value="Envoyer" class="bouton" id="submit" /></li>
-                        <li><input type="reset" value="Annuler" class="bouton" id="annuler" /></li>
-                    </ul>
-                </form>
-            </fieldset>
-        </section>
+            <h4>Retrouvez-moi sur les réseaux ...</h4>
+            <div id="social" class="content has-text-centered">
+                <div class="field">
+                    <a class="button is-link iconesociale" href="https://www.linkedin.com/in/annegaellet/"
+                        alt="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="button is-link iconesociale" href="https://github.com/Shi974/" alt="GitHub"
+                        title="GitHub">
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                    <a class="button is-link iconesociale" href="https://codepen.io/shi974/" alt="CodePen"
+                        title="Codepen">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </div>
+            </div>
+            <a class="button is-primary is-medium" href="mailto:terrentroy.anne@gmail.com" alt="Envoyer un email"
+                title="Envoyer un email">
+                <i class="fas fa-envelope" id="mail"></i> terrentroy.anne@gmail.com
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Made with <strong><i class="fas fa-heart" alt="love"></i></strong> by <a
+                        href="shi974.github.io">Anne-Gaëlle T</a>.<br>
+                    Code source sous licence <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br>
+                    Copyright <i class="far fa-copyright" alt=""></i> 2019 - Tous droits réservés.<br>
+                    <a class="button is-link" href="#home" alt="Retour accueil">Retour à l'accueil <i
+                            class="fas fa-home" id="up"></i></a>
+                </p>
+            </div>
+        </footer>
+    </section>
 
-    </div>
+    <!-- BURGER SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
